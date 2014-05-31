@@ -7,9 +7,10 @@ html(lang="en")
     link(href="http://code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css", rel="stylesheet")
   body
     div#header
-        div.ion-loading-b
+        img#avatar(src=data.author.avatar)
         h1!= data.author.name
         h2= data.author.function
+        div.ion-loading-b
     
     div#content
         p 
