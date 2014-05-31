@@ -1,0 +1,66 @@
+#contact
+{
+    text-align: center;
+}
+
+#contact .fa, #contact .fa:visited {
+    color: #575d72;
+    font-size: 3.2em;
+    margin: 10px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#contact .fa:hover  {
+    color: #ffffff;
+}
+
+body, html
+{
+    text-align: center;
+    background: #e7e7e7;
+    color: #575d72;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+#header h1 {
+    margin: 0px;
+    margin-top: 10px;
+    padding:0px;
+    text-align: center;
+}
+
+#content {
+    background: #f0f0f0;
+    margin: 0px;
+    border-bottom: #c9cbd8 solid 1px;
+    border-top: #c9cbd8 solid 1px;
+    height: 100px;
+    padding:20px;
+}
+
+#header .fa
+{
+    font-size: 5em;
+    margin: 10px;
+    margin-top: 80px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#header {
+    box-shadow: 0px -10px 15px 3px rgba(0, 0, 0, 0.2) inset;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    height: 400px;
+    background: url('../img/background.png') no-repeat fixed;
+    background-position: bottom;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+

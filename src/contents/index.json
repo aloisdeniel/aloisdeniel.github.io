@@ -1,0 +1,27 @@
+{
+    "template": "index.jade",
+    "author" : 
+    {
+        "name": "Alo&iuml;s Deniel",
+        "function": "Mobile development"
+    },
+    "contacts":
+    [
+        {
+            "icon" : "twitter",
+            "link" :"https://twitter.com/aloisdeniel"
+        },
+        {
+            "icon" : "facebook",
+            "link" :"http://www.facebook.com/alois.deniel"
+        },
+        {
+            "icon" : "linkedin-square",
+            "link" :"https://www.linkedin.com/profile/view?id=278047650"
+        },
+        {
+            "icon" : "envelope-square",
+            "link" :"mailto:alois.deniel@gmail.com"
+        }
+    ]
+}

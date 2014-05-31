@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  - var data = contents["index.json"].metadata
+  head
+    title!= data.author.name
+    link(rel="stylesheet", href="css/design.css")
+    link(href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", rel="stylesheet")
+  body
+    div#header
+        div.fa.fa-mobile-phone
+        h1!= data.author.name
+        h2= data.author.function
+    
+    div#content
+        p 
+    
+    p CONTACT
+    
+    div#contact
+        each contact in data.contacts
+            a.fa(class=["fa-"+contact.icon] href=contact.link)
+        
