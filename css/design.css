@@ -41,9 +41,9 @@ body, html
     padding:20px;
 }
 
-#header .fa
+#header .ion-loading-b
 {
-    font-size: 5em;
+    font-size: 8em;
     margin: 10px;
     margin-top: 80px;
     font-style: normal;

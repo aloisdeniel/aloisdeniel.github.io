@@ -1,6 +1,6 @@
 var wintersmith = require('wintersmith');
 
-var env = wintersmith({'port' : 29600});
+var env = wintersmith({'port' : 29600, output: '../'});
 
 // build site
 env.build(function(error) {

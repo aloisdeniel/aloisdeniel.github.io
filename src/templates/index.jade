@@ -4,10 +4,10 @@ html(lang="en")
   head
     title!= data.author.name
     link(rel="stylesheet", href="css/design.css")
-    link(href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", rel="stylesheet")
+    link(href="http://code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css", rel="stylesheet")
   body
     div#header
-        div.fa.fa-mobile-phone
+        div.ion-loading-b
         h1!= data.author.name
         h2= data.author.function
     
@@ -18,5 +18,5 @@ html(lang="en")
     
     div#contact
         each contact in data.contacts
-            a.fa(class=["fa-"+contact.icon] href=contact.link)
+            a.fa(class=["ion-"+contact.icon] href=contact.link)
         

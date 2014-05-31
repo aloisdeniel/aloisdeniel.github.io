@@ -8,19 +8,19 @@
     "contacts":
     [
         {
-            "icon" : "twitter",
+            "icon" : "social-twitter",
             "link" :"https://twitter.com/aloisdeniel"
         },
         {
-            "icon" : "facebook",
+            "icon" : "social-facebook",
             "link" :"http://www.facebook.com/alois.deniel"
         },
         {
-            "icon" : "linkedin-square",
+            "icon" : "social-linkedin",
             "link" :"https://www.linkedin.com/profile/view?id=278047650"
         },
         {
-            "icon" : "envelope-square",
+            "icon" : "email",
             "link" :"mailto:alois.deniel@gmail.com"
         }
     ]
