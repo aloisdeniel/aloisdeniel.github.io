@@ -79,7 +79,7 @@ function renderContact()
         $("#content").html(templates["contact-index"]({ contacts : contacts.links}));
           
       })
-      .fail(function(xhr, status, error {
+      .fail(function(xhr, status, error) {
         alert( "error" + xhr.responseText);
       });
 }
