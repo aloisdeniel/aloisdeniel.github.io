@@ -275,6 +275,24 @@ textarea {
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+    100% {
+    opacity:1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
 .fadeIn, .hide-menu-avatar,  .hide-menu-name, .hide-menu-section
 {
     -webkit-animation:fadeIn 0.5s forwards;
@@ -409,16 +427,42 @@ body
   }
 }
 
+@keyframes showHeader {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes hideHeader {
+
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
 .show-header {
-    -webkit-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: showHeader;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: showHeader;
 }
 
 .hide-header {
-    -webkit-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: hideHeader;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: hideHeader;
 }
 
 /* ==========================================================================
@@ -505,6 +549,26 @@ body
     font-size: 26px;
 }
 
+@keyframes showMenu {
+  0% {
+    transform: translate3d(0, -120px, 0);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes hideMenu {
+
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: translate3d(0, -120px, 0);
+  }
+}
+
 @-webkit-keyframes showMenu {
   0% {
     transform: translate3d(0, -120px, 0);
@@ -526,15 +590,21 @@ body
 }
 
 .show-menu {
-    -webkit-animation-duration: 0.60s;
+  -webkit-animation-duration: 0.60s;
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: showMenu;
+  animation-duration: 0.60s;
+  animation-fill-mode: both;
+  animation-name: showMenu;
 }
 
 .hide-menu {
-    -webkit-animation-duration: 0.45s;
+  -webkit-animation-duration: 0.45s;
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: hideMenu;
+  animation-duration: 0.45s;
+  animation-fill-mode: both;
+  animation-name: hideMenu;
 }
 
 /* ==========================================================================
