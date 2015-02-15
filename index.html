@@ -1,1 +1,75 @@
-<!DOCTYPE html><html lang="en"><head><title>Alo&iuml;s Deniel</title><link rel="stylesheet" href="css/design.css"><link href="http://code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css" rel="stylesheet"></head><body><div id="header"><img id="avatar" src="http://fr.gravatar.com/userimage/61495695/6de6bba49acdfb8e6c894c58dce4ea44.jpg?size=120"><h1>Alo&iuml;s Deniel</h1><h2>MOBILE DEVELOPMENT</h2><div class="ion-loading-b"></div></div><div id="content"><p></p></div><h3>CONTACT</h3><div id="contact"><a href="https://twitter.com/aloisdeniel" class="fa ion-social-twitter"></a><a href="http://www.facebook.com/alois.deniel" class="fa ion-social-facebook"></a><a href="https://www.linkedin.com/profile/view?id=278047650" class="fa ion-social-linkedin"></a><a href="mailto:alois.deniel@gmail.com" class="fa ion-email"></a></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Aloïs Deniel</title>
+		<meta name="description" content="Personal page of Aloïs Deniel" />
+		<meta name="keywords" content="blog, mvvm, csharp, xamarin, developer, alois, deniel" />
+		<meta name="author" content="Aloïs Deniel" />
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+		<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+	<body>
+        <div id="header" class="show-header">
+            <img src="http://www.gravatar.com/avatar/093260fab3e542911199de8f4c3b6175.png" />
+            <h3 id="header-section">BLOG&nbsp;&nbsp;<i class="icon ion-ios-book-outline"></i></h3>
+            <h1>Aloïs Deniel</h1>
+            <h2><span>I'm a developer</span></h2>
+        </div>
+        <div id="menu" class="show-menu">
+            <img id="menu-avatar" src="http://www.gravatar.com/avatar/093260fab3e542911199de8f4c3b6175.png" />
+            <h1 id="menu-name">Aloïs Deniel</h1>
+            <h2 id="menu-section">BLOG</h2>
+            <a class="icon ion-ios-book-outline" href="?section=blog"></a>
+            <a class="icon ion-ios-help-outline" href="?section=about"></a>
+            <a class="icon ion-ios-albums-outline" href="?section=projects"></a>
+            <a class="icon ion-ios-email-outline" href="?section=contact"></a>
+        </div>
+        <div id="content">
+            
+        <script id="contact-index-template" type="text/x-handlebars-template">
+            <div class="contacts">
+                {{#each contacts}}
+                <a class="contact" href="{{link}}">
+                    <i class="icon {{icon}}"></i>
+                    <h3>{{title}}</h3>
+                    <p>{{name}}</p>
+                </a>
+                {{/each}}
+            </div>
+        </script>
+            
+        <script id="blog-index-template" type="text/x-handlebars-template">
+            {{#each articles}}
+            <a class="post" href="?section=blog&id={{link}}">
+                <i class="icon ion-ios-arrow-right"></i>
+                <h2>{{title}}</h2>
+                <h3>{{date}} - ({{langs}})</h3>
+            </a>
+            {{/each}}
+        </script>
+        
+        </div>
+        
+        <div id="footer">
+            <p>© 2015 Copyright Aloïs Deniel</p>
+        </div>
+        
+        <!-- Script imports -->
+        
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/typed.js/dist/typed.min.js"></script>
+        <script src="bower_components/markdown/lib/markdown.js"></script>
+        <script src="bower_components/handlebars/handlebars.min.js"></script>
+        <script src="bower_components/moment/min/moment.min.js"></script>
+        <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

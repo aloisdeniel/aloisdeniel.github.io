@@ -1,0 +1,34 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "authors": [
+    "Deniel Aloïs <alois.deniel@gmail.com>"
+  ],
+  "description": "Personal blog of Aloïs Deniel",
+  "main": "index.html",
+  "keywords": [
+    "personal",
+    "blog"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "waypoints": "~3.1.1",
+    "jquery": "~2.1.3",
+    "typed.js": "*",
+    "modernizr": "~2.8.3",
+    "normalize.css": "~3.0.2",
+    "animate.css": "~3.2.0",
+    "markdown": "~0.5.0",
+    "handlebars": "~3.0.0",
+    "moment": "~2.9.0"
+  }
+}
