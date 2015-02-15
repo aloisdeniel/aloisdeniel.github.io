@@ -53,7 +53,6 @@ $(function(){
     
         renderSection(section);
     
-        console.log("id:"+id)
         if(section === "blog")
         {
             if(id !== null)
@@ -75,9 +74,13 @@ $(function(){
 function renderContact()
 {
       $.get( urls.contacts, function(contacts) {
+          console.log(contacts.links)
         //Rendering the list
         $("#content").html(templates["contact-index"]({ contacts : contacts.links}));
-          console.log(contacts.links)
+          
+      })
+      .fail(function() {
+        alert( "error" );
       });
 }
 
