@@ -73,14 +73,13 @@ $(function(){
 
 function renderContact()
 {
-      $.get( urls.contacts, function(contacts) {
-          console.log(contacts.links)
+      $.get(urls.contacts).done(function(contacts) {
         //Rendering the list
         $("#content").html(templates["contact-index"]({ contacts : contacts.links}));
           
       })
       .fail(function(xhr, status, error) {
-        alert( "error" + xhr.responseText);
+        alert(status+ "error" + xhr.responseText);
       });
 }
 
