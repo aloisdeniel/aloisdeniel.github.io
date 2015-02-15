@@ -730,6 +730,10 @@ body
 
 @media (max-width: 700px) {
     
+    #content h1 {
+        font-size: 25px;
+    }
+    
     #header h1 
     {
         font-family: 'Raleway', sans-serif;
