@@ -2,7 +2,7 @@
 
 var urls = {
     blog: "https://api.github.com/repositories/20356629/contents/data/blog",
-    article: "https://api.github.com/repositories/20356629/contents/data/blog/",
+    article: "/data/blog/",
     contacts: "/data/contacts/contacts.json"
 };
 
@@ -155,7 +155,7 @@ function renderArticle(name)
     $.get(urls.article+name, function(content) {
         
         article.content = content;
-        
+        console.log(content);
         var content = markdown.toHTML(article.content);
         content += disqus(article.id,article.title);
 
