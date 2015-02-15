@@ -2,6 +2,7 @@
 
 var urls = {
     blog: "https://api.github.com/repositories/20356629/contents/data/blog",
+    article: "https://api.github.com/repositories/20356629/contents/data/blog/",
     contacts: "/data/contacts/contacts.json"
 };
 
@@ -49,7 +50,7 @@ $(function(){
         });
     
         var section = getParameterByName("section");
-        var id = getParameterByName("id");
+        var id = getParameterByName("url");
     
         renderSection(section);
     
@@ -57,7 +58,7 @@ $(function(){
         {
             if(id !== null)
             {
-                renderArticle(example_article);
+                renderArticle(id);
             }
             else
             {
@@ -73,14 +74,10 @@ $(function(){
 
 function renderContact()
 {
-      $.get(urls.contacts).done(function(contacts) {
+    $.get(urls.contacts, function(contacts) {
         //Rendering the list
         $("#content").html(templates["contact-index"]({ contacts : contacts.links}));
-          
-      })
-      .fail(function(xhr, status, error) {
-        alert(status+ "error" + xhr.responseText);
-      });
+    });
 }
 
 function renderArticles(lang)
@@ -148,16 +145,28 @@ function renderArticles(lang)
     });
 }
 
-function renderArticle(article)
+function renderArticle(name)
 {
-    var content = markdown.toHTML(article.content);
-    content += disqus(article.id,article.title);
+    var article = {
+        id: name,
+        title: name.substring(18,a.name.length - 3).replace(/_/g," ")
+    };
     
-    $("#content").html(content);   
-    
-    $('#content pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
+    $.get(urls.article+name, function(content) {
+        
+        article.content = content;
+        
+        var content = markdown.toHTML(article.content);
+        content += disqus(article.id,article.title);
+
+        $("#content").html(content);   
+
+        $('#content pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
     });
+    
+    
 }
 
 function renderSection(section)
