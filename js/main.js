@@ -149,7 +149,7 @@ function renderArticle(name)
 {
     var article = {
         id: name,
-        title: name.substring(18,a.name.length - 3).replace(/_/g," ")
+        title: name.substring(18,name.length - 3).replace(/_/g," ")
     };
     
     $.get(urls.article+name, function(content) {
