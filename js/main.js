@@ -77,6 +77,7 @@ function renderContact()
       $.get( urls.contacts, function(contacts) {
         //Rendering the list
         $("#content").html(templates["contact-index"]({ contacts : contacts.links}));
+          console.log(contacts.links)
       });
 }
 
