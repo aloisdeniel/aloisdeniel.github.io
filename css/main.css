@@ -799,4 +799,10 @@ body
     {
         font-size: 14px;
     }
+    
+    #content .contacts .contact
+    {
+        width: 80%;
+        margin-left: 10%;   
+    }
 }
