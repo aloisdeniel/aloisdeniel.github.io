@@ -47,7 +47,7 @@
             
         <script id="blog-index-template" type="text/x-handlebars-template">
             {{#each articles}}
-            <a class="post" href="#" onClick="navigateArticle({{link}});return false;">
+            <a class="post" href="#" onClick="navigateArticle('{{link}}');return false;">
                 <i class="icon ion-ios-arrow-right"></i>
                 <h2>{{title}}</h2>
                 <h3>{{date}} - ({{langs}})</h3>
