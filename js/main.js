@@ -62,28 +62,24 @@ function navigateArticle(name)
 function navigateBlog()
 {
     history.pushState({ section: "blog"}, "blog", "/blog");
-    renderSection("blog");
     renderArticles();
 }
 
 function navigateAbout()
 {
     history.pushState({ section: "about"}, "about", "/about");
-    renderSection("about");
     renderContact();
 }
 
 function navigateProjects()
 {
     history.pushState({ section: "projects"}, "projects", "/projects");
-    renderSection("projects");
     renderContact();
 }
 
 function navigateContact()
 {
     history.pushState({ section: "contact"}, "contact", "/contact");
-    renderSection("contact");
     renderContact();
 }
 
@@ -98,27 +94,8 @@ $(function(){
             showCursor: true,
             cursorChar: "_"
         });
-    
-        var section = getParameterByName("section");
-        var id = getParameterByName("url");
-    
-        renderSection(section);
-    
-        if(section === "blog")
-        {
-            if(id !== null)
-            {
-                renderArticle(id);
-            }
-            else
-            {
-                renderArticles();
-            }
-        }
-        else
-        {
-            renderContact();
-        }
+        
+        renderArticles();
     
     });
 
@@ -126,6 +103,8 @@ $(function(){
 
 function renderContact()
 {
+    renderSection("contact");
+    
     $.get(urls.contacts, function(contacts) {
         //Rendering the list
         $("#content").html(templates["contact-index"]({ contacts : contacts.links}));
@@ -136,6 +115,8 @@ function renderArticles(lang)
 {
     if(!lang)
         lang = "en";
+    
+    renderSection("blog");
     
     $.get( urls.blog, function(list) {
       
@@ -199,6 +180,8 @@ function renderArticles(lang)
 
 function renderArticle(name)
 {
+    renderSection("blog");
+    
     var article = {
         id: name,
         title: name.substring(18,name.length - 3).replace(/_/g," ")
@@ -223,11 +206,15 @@ function renderArticle(name)
 
 function renderAbout()
 {
+    renderSection("about");
+    
     $("#content").html("<h2>Soon ...</h2>");
 }
 
 function renderProjects()
 {
+    renderSection("projects");
+    
     $("#content").html("<h2>Soon ...</h2>");
 }
 
@@ -259,6 +246,8 @@ function renderSection(section)
     $("#menu-section").text(name);   
     $("#header-section").html('<span>'+name+'&nbsp;&nbsp;<i class="icon '+icon+'"></i></span>');   
 }
+
+/* Top bar animations */
 
 function showAnimation(ids,on)
 {
