@@ -38,6 +38,14 @@ window.onpopstate = function(event) {
     {
         renderContact();
     }
+    else if(event.state.section === "about")
+    {
+        renderAbout();
+    }
+    else if(event.state.section === "projects")
+    {
+        renderProjects();
+    }
     else
     {
         renderArticles();
@@ -47,18 +55,35 @@ window.onpopstate = function(event) {
 function navigateArticle(name)
 {
     history.pushState({ section: "blog", name: name}, name, "/blog?article="+name);
+    renderSection("blog");
     renderArticle(name);
 }
 
 function navigateBlog()
 {
     history.pushState({ section: "blog"}, "blog", "/blog");
+    renderSection("blog");
     renderArticles();
+}
+
+function navigateAbout()
+{
+    history.pushState({ section: "about"}, "about", "/about");
+    renderSection("about");
+    renderContact();
+}
+
+function navigateProjects()
+{
+    history.pushState({ section: "projects"}, "projects", "/projects");
+    renderSection("projects");
+    renderContact();
 }
 
 function navigateContact()
 {
     history.pushState({ section: "contact"}, "contact", "/contact");
+    renderSection("contact");
     renderContact();
 }
 
@@ -96,6 +121,8 @@ $(function(){
         }
     
     });
+
+/* Rendering */
 
 function renderContact()
 {
@@ -192,6 +219,16 @@ function renderArticle(name)
     });
     
     
+}
+
+function renderAbout()
+{
+    $("#content").html("<h2>Soon ...</h2>");
+}
+
+function renderProjects()
+{
+    $("#content").html("<h2>Soon ...</h2>");
 }
 
 function renderSection(section)
