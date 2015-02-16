@@ -68,13 +68,13 @@ function navigateBlog()
 function navigateAbout()
 {
     history.pushState({ section: "about"}, "about", "/about");
-    renderContact();
+    renderAbout();
 }
 
 function navigateProjects()
 {
     history.pushState({ section: "projects"}, "projects", "/projects");
-    renderContact();
+    renderProjects();
 }
 
 function navigateContact()
