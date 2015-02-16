@@ -6,15 +6,7 @@ var urls = {
     contacts: "/data/contacts/contacts.json"
 };
 
-var example_article_content = "# Introduction to MVVM pattern \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum finibus, molestie tellus at, hendrerit turpis. Donec et nisl purus. Curabitur elementum dolor eget tortor posuere gravida. Morbi nec velit tortor. Vivamus at nibh ac diam mollis consequat. Praesent sodales sodales nibh, quis sagittis lacus pulvinar sollicitudin. Sed consectetur placerat luctus. Sed ut dapibus nunc. Suspendisse potenti. Quisque ligula felis, sollicitudin at aliquet condimentum, suscipit a purus. Nam consectetur nisi massa, eget fringilla nibh fringilla sed. Pellentesque sit amet nisi elit. Ut ac vulputate nibh. Duis a laoreet elit, in tempor sapien. Fusce tempor luctus nisl\n\n## Subtitle\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum finibus, molestie tellus at, hendrerit turpis. Donec et nisl purus. Curabitur elementum dolor eget tortor posuere gravida. Morbi nec velit tortor. Vivamus at nibh ac diam mollis consequat. Praesent sodales\n\n* a list\n* element\n* other\n\nSodales nibh, quis sagittis lacus pulvinar sollicitudin. Sed consectetur placerat luctus. Sed ut dapibus nunc. Suspendisse potenti. Quisque ligula felis, sollicitudin at aliquet condimentum, suscipit a purus. Nam consectetur nisi massa, eget fringilla nibh fringilla sed. Pellentesque sit amet nisi elit. Ut ac vulputate nibh. Duis a [a internal link](http://social.msdn.microsoft.com/Forums/getfile/194987) laoreet elit, in tempor sapien. Fusce tempor luctus nisl\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum finibus, molestie tellus at, hendrerit turpis. Donec et nisl purus. Curabitur elementum dolor eget tortor posuere gravida. Morbi nec ![a internal link](http://social.msdn.microsoft.com/Forums/getfile/194987) velit tortor. Vivamus at nibh ac diam mollis consequat. Praesent sodales sodales nibh, quis sagittis lacus pulvinar sollicitudin. Sed consectetur placerat luctus. Sed ut dapibus nunc. Suspendisse potenti. Quisque ligula felis, sollicitudin at aliquet condimentum, suscipit a purus. Nam consectetur nisi massa, eget fringilla nibh fringilla sed. Pellentesque sit amet nisi elit. Ut ac vulputate nibh. Duis a laoreet elit, in tempor sapien. Fusce tempor luctus nis\n\n### Subsubtitle\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum finibus, molestie\n\n\tvar x= 55 + 52.0;\n\n\n\n tellus at, hendrerit turpis. Donec et nisl purus. Curabitur elementum dolor eget tortor posuere gravida. Morbi nec velit tortor. Vivamus at nibh ac diam mollis consequat. Praesent sodales sodales nibh, quis sagittis lacus pulvinar sollicitudin. Sed consectetur placerat luctus. Sed ut dapibus nunc. Suspendisse potenti. Quisque ligula felis, sollicitudin at aliquet condimentum, suscipit a purus. Nam consectetur nisi massa, eget fringilla nibh fringilla sed. Pellentesque sit amet nisi elit. Ut ac vulputate nibh. Duis a laoreet elit, in tempor sapien. Fusce tempor luctus nis";
-
 var disqus = function(id,title) { return '<div id="disqus_thread"></div><script type="text/javascript">var disqus_shortname = "aloisdeniel";var disqus_identifier = "'+id+'";var disqus_title = "'+title+'";(function() {var dsq = document.createElement("script"); dsq.type = "text/javascript"; dsq.async = true;dsq.src = "//aloisdeniel.disqus.com/embed.js";(document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>'; }
-
-var example_article = {
-    "id": "[201502141753](en)Introduction_to_MVVM_Pattern.md",
-    "title" : "Introduction to MVVM Pattern",
-    "content": example_article_content
-};
 
 var headers_messages = [
                 "I'm a developer", 
@@ -38,6 +30,39 @@ function getParameterByName(name) {
         results = regex.exec(location.search);
         return results === null ? null : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
+
+/* Navigation */
+
+window.onpopstate = function(event) {
+    if(event.state.section === "contact")
+    {
+        renderContact();
+    }
+    else
+    {
+        renderArticles();
+    }
+};
+
+function navigateArticle(name)
+{
+    history.pushState({ section: "blog", name: name}, name, "/blog?article="+name);
+    renderArticles();
+}
+
+function navigateBlog()
+{
+    history.pushState({ section: "blog"}, "blog", "/blog");
+    renderArticles();
+}
+
+function navigateContact()
+{
+    history.pushState({ section: "contact"}, "contact", "/contact");
+    renderContact();
+}
+
+/* Main */
 
 $(function(){
         $("#header h2 span").typed({

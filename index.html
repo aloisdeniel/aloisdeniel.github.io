@@ -26,10 +26,10 @@
             <img id="menu-avatar" src="http://www.gravatar.com/avatar/093260fab3e542911199de8f4c3b6175.png" />
             <h1 id="menu-name">Aloïs Deniel</h1>
             <h2 id="menu-section">BLOG</h2>
-            <a class="icon ion-ios-book-outline" href="?section=blog"></a>
-            <a class="icon ion-ios-help-outline" href="?section=about"></a>
-            <a class="icon ion-ios-albums-outline" href="?section=projects"></a>
-            <a class="icon ion-ios-email-outline" href="?section=contact"></a>
+            <a class="icon ion-ios-book-outline" href="#" onClick="navigateBlog();return false;"></a>
+            <a class="icon ion-ios-help-outline" href="#" onClick="navigateContact();return false;"></a>
+            <a class="icon ion-ios-albums-outline" href="#" onClick="navigateContact();return false;"></a>
+            <a class="icon ion-ios-email-outline" href="#" onClick="navigateContact();return false;"></a>
         </div>
         <div id="content">
             
@@ -47,7 +47,7 @@
             
         <script id="blog-index-template" type="text/x-handlebars-template">
             {{#each articles}}
-            <a class="post" href="?section=blog&url={{link}}">
+            <a class="post" href="#" onClick="navigateArticle({{link}});return false;">
                 <i class="icon ion-ios-arrow-right"></i>
                 <h2>{{title}}</h2>
                 <h3>{{date}} - ({{langs}})</h3>
