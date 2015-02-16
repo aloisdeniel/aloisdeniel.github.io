@@ -48,7 +48,15 @@ window.onpopstate = function(event) {
     }
     else
     {
-        renderArticles();
+        if(typeof event.state.name !== 'undefined')
+        {
+            renderArticle(event.state.name);
+        }
+        else
+        {
+            renderArticles();
+        }
+        
     }
 };
 
@@ -95,7 +103,7 @@ $(function(){
             cursorChar: "_"
         });
         
-        renderArticles();
+        navigateBlog();
     
     });
 
@@ -130,7 +138,7 @@ function renderArticles(lang)
         
         var result = $.grep(articles, function(e){ return e.id == id; });
         
-            if (result.length == 0) {
+            if (result.length === 0) {
                 var links = {};
                 links[lang] = {
                     title: title,
