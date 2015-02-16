@@ -47,7 +47,7 @@ window.onpopstate = function(event) {
 function navigateArticle(name)
 {
     history.pushState({ section: "blog", name: name}, name, "/blog?article="+name);
-    renderArticles();
+    renderArticle(name);
 }
 
 function navigateBlog()
