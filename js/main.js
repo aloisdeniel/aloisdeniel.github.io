@@ -196,6 +196,12 @@ function renderArticles(lang)
 
         });
 
+        articles.sort(function(a, b) {
+            if(a.date > b.date) return -1;
+            if(a.date < b.date) return 1;
+            return 0;
+        });
+        
         //Getting articles for current lang
         var articles_vm = [];
         articles.forEach(function(a) {
