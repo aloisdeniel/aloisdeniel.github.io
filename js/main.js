@@ -62,6 +62,11 @@ function navigate()
     var section = getParameterByName("section");
     var id = getParameterByName("article");
 
+    if(typeof id !== 'undefined' && id !== null)
+    {
+        id = decodeURIComponent(id);
+    }
+    
     onPopState({
         state: {
             section: section,
@@ -177,7 +182,7 @@ function renderArticles(lang)
             {
                 var link = {
                     title: article.title,
-                    link: a.name,
+                    link: encodeURIComponent(a.name),
                     content: a.download_url
                 };
 
