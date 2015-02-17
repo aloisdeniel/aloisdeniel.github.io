@@ -42,6 +42,9 @@ function extractArticle(fileName)
 {
     var match = articleNameRegex.exec(fileName);
     
+    if(match === null)
+        return null;
+    
     return {
         id: fileName,
         date: match[1],
@@ -170,22 +173,25 @@ function renderArticles(lang)
         
             var article = extractArticle(a.name);
             
-            var link = {
-                title: article.title,
-                link: a.name,
-                content: a.download_url
-            };
-            
-            var result = $.grep(articles, function(e){ return e.id == id; });
-
-            if (result.length === 0) {
-                article.links = {};
-                article.links[lang] = link;
-                articles.push(article);
-            }
-            else
+            if(article != null)
             {
-                result[0].links[lang] = link; 
+                var link = {
+                    title: article.title,
+                    link: a.name,
+                    content: a.download_url
+                };
+
+                var result = $.grep(articles, function(e){ return e.id == id; });
+
+                if (result.length === 0) {
+                    article.links = {};
+                    article.links[lang] = link;
+                    articles.push(article);
+                }
+                else
+                {
+                    result[0].links[lang] = link; 
+                }
             }
 
         });
