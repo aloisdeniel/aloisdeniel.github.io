@@ -8,6 +8,8 @@ var urls = {
 
 var disqus = function(id,title) { return '<div id="disqus_thread"></div><script type="text/javascript">var disqus_shortname = "aloisdeniel";var disqus_identifier = "'+id+'";var disqus_title = "'+title+'";(function() {var dsq = document.createElement("script"); dsq.type = "text/javascript"; dsq.async = true;dsq.src = "//aloisdeniel.disqus.com/embed.js";(document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>'; }
 
+
+
 var headers_messages = [
                 "I'm a developer", 
                 "I'm a mobile application developer",
@@ -29,6 +31,25 @@ function getParameterByName(name) {
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
         results = regex.exec(location.search);
         return results === null ? null : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+/* Articles */
+
+//Example : [201502121356](eng){Tips,CSharp}Introduction_to_MVVM_pattern.md
+var articleNameRegex = /\[(\d{12})\]\(([a-z]+)\)\{(([A-Za-z0-1]+,?)+)\}([A-Za-z0-1_-]+).md/;
+
+function extractArticle(fileName)
+{
+    var match = articleNameRegex.exec(fileName);
+    
+    return {
+        id: fileName,
+        date: match[1],
+        lang: match[2],
+        title: match[5].replace(/_/g," "),
+        tags: match[3].split(',')
+    };
+    
 }
 
 /* Navigation */
@@ -147,33 +168,24 @@ function renderArticles(lang)
         var articles = [];
         list.forEach(function(a) {
         
-        var id = a.name.substring(1,13);
-        var lang = a.name.substring(15,17);
-        var title = a.name.substring(18,a.name.length - 3).replace(/_/g," ");
-        
-        var result = $.grep(articles, function(e){ return e.id == id; });
-        
-            if (result.length === 0) {
-                var links = {};
-                links[lang] = {
-                    title: title,
-                    link: a.name,
-                    content: a.download_url
-                };
+            var article = extractArticle(a.name);
+            
+            var link = {
+                title: article.title,
+                link: a.name,
+                content: a.download_url
+            };
+            
+            var result = $.grep(articles, function(e){ return e.id == id; });
 
-                articles.push({
-                   id: id,
-                   date: a.name.substring(1,13),
-                   links: links
-                });
+            if (result.length === 0) {
+                article.links = {};
+                article.links[lang] = link;
+                articles.push(article);
             }
             else
             {
-                result[0].links[lang] =  {
-                    title: title,
-                    link: a.name,
-                    content: a.download_url
-                }; 
+                result[0].links[lang] = link; 
             }
 
         });
