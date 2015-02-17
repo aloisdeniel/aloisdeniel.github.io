@@ -65,7 +65,7 @@ function navigate()
     onPopState({
         state: {
             section: section,
-            name: id
+            name: encodeURIComponent(id)
         }
     });
 }
