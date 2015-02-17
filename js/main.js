@@ -33,7 +33,23 @@ function getParameterByName(name) {
 
 /* Navigation */
 
-window.onpopstate = function(event) {
+function navigate()
+{
+    var section = getParameterByName("section");
+    var id = getParameterByName("article");
+
+    onPopState({
+        state: {
+            section: section,
+            name: id
+        }
+    });
+}
+
+
+window.onpopstate = onPopState;
+
+function onPopState(event) {
     if(event.state.section === "contact")
     {
         renderContact();
@@ -48,7 +64,7 @@ window.onpopstate = function(event) {
     }
     else
     {
-        if(typeof event.state.name !== 'undefined')
+        if(typeof event.state.name !== 'undefined' || event.state.name === null)
         {
             renderArticle(event.state.name);
         }
@@ -62,32 +78,32 @@ window.onpopstate = function(event) {
 
 function navigateArticle(name)
 {
-    history.pushState({ section: "blog", name: name}, name, "/blog?article="+name);
+    history.pushState({ section: "blog", name: name}, name, "?section=blog&article="+name);
     renderSection("blog");
     renderArticle(name);
 }
 
 function navigateBlog()
 {
-    history.pushState({ section: "blog"}, "blog", "/blog");
+    history.pushState({ section: "blog"}, "blog", "?section=blog");
     renderArticles();
 }
 
 function navigateAbout()
 {
-    history.pushState({ section: "about"}, "about", "/about");
+    history.pushState({ section: "about"}, "about", "?section=about");
     renderAbout();
 }
 
 function navigateProjects()
 {
-    history.pushState({ section: "projects"}, "projects", "/projects");
+    history.pushState({ section: "projects"}, "projects", "?section=projects");
     renderProjects();
 }
 
 function navigateContact()
 {
-    history.pushState({ section: "contact"}, "contact", "/contact");
+    history.pushState({ section: "contact"}, "contact", "?section=contact");
     renderContact();
 }
 
