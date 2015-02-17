@@ -845,8 +845,9 @@ body
         font-family: 'Raleway', sans-serif;
         font-weight: 100;
         color: #ffffff;
-        font-size: 28px;
-        margin-top: 3px;
+        font-size: 20px;
+        margin-top: 7px;
+        margin-bottom: 7px;
         padding: 0px;
     }
     
@@ -878,13 +879,13 @@ body
     
     #header h2
     {
-        font-size: 16px;
+        font-size: 13px;
     }
     
     #header h3
     {
         
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 400;
         margin-top: 12px;
     }
