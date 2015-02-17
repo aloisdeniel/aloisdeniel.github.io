@@ -209,7 +209,8 @@ function renderArticles(lang)
                     langs: Object.keys(a.links).join(", "),
                     link: link.link,
                     title: link.title,
-                    content: link.download_url
+                    content: link.download_url,
+                    tags: a.tags
                 });
             }
         });
