@@ -65,7 +65,7 @@ function navigate()
     onPopState({
         state: {
             section: section,
-            name: encodeURIComponent(id)
+            name: id === null ? null : encodeURIComponent(id)
         }
     });
 }
@@ -74,7 +74,12 @@ function navigate()
 window.onpopstate = onPopState;
 
 function onPopState(event) {
-    if(event.state.section === "contact")
+    
+    if(typeof event.state === "undefined" || event.state === null)
+    {
+        renderArticles();
+    }
+    else if(event.state.section === "contact")
     {
         renderContact();
     }
@@ -88,13 +93,13 @@ function onPopState(event) {
     }
     else
     {
-        if(typeof event.state.name !== 'undefined' && event.state.name !== null && event.state.name.length > 0)
+        if(typeof event.state.name === 'undefined' || event.state.name === null || event.state.name.length === 0)
         {
-            renderArticle(event.state.name);
+            renderArticles();
         }
         else
         {
-            renderArticles();
+            renderArticle(event.state.name);
         }
     }
 };
