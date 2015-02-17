@@ -181,7 +181,7 @@ function renderArticles(lang)
                     content: a.download_url
                 };
 
-                var result = $.grep(articles, function(e){ return e.id == id; });
+                var result = $.grep(articles, function(e){ return e.id == article.id; });
 
                 if (result.length === 0) {
                     article.links = {};
