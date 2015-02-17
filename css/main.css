@@ -747,6 +747,14 @@ body
     margin-bottom: 0px;
 }
 
+#content .post h3 .tag
+{
+    font-size: 10px;
+    color: #fff;
+    background: rgb(97, 150, 226);
+    border-radius: 10px;
+}
+
 #content .post .icon
 {
     float: right;

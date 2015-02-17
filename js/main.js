@@ -88,7 +88,7 @@ function onPopState(event) {
     }
     else
     {
-        if(typeof event.state.name !== 'undefined' || event.state.name === null)
+        if(typeof event.state.name !== 'undefined' && event.state.name !== null)
         {
             renderArticle(event.state.name);
         }

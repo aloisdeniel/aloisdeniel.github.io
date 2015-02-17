@@ -50,7 +50,7 @@
             <a class="post" href="#" onClick="navigateArticle('{{link}}');return false;">
                 <i class="icon ion-ios-arrow-right"></i>
                 <h2>{{title}}</h2>
-                <h3>{{date}} - ({{langs}})</h3>
+                <h3>{{#each tags}}<span class="tag">{{this}}</span>{{/each}}{{date}} - ({{langs}})</h3>
             </a>
             {{/each}}
         </script>
