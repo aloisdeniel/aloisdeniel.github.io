@@ -72,7 +72,6 @@ function onPopState(event) {
         {
             renderArticles();
         }
-        
     }
 };
 
@@ -119,7 +118,7 @@ $(function(){
             cursorChar: "_"
         });
         
-        navigateBlog();
+        navigate();
     
     });
 
