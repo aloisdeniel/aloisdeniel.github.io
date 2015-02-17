@@ -23,7 +23,9 @@ headers_messages.sort(function() { return 0.5 - Math.random() });
 
 var templates = {
     "blog-index" : Handlebars.compile($('#blog-index-template').html()),
-    "contact-index" : Handlebars.compile($('#contact-index-template').html())
+    "contact-index" : Handlebars.compile($('#contact-index-template').html()),
+    "about-index" : Handlebars.compile($('#about-index-template').html()),
+    "projects-index" : Handlebars.compile($('#projects-index-template').html())
 };
 
 function getParameterByName(name) {
@@ -260,14 +262,14 @@ function renderAbout()
 {
     renderSection("about");
     
-    $("#content").html("<h2>Soon ...</h2>");
+    $("#content").html(templates["about-index"]({ articles: articles_vm, lang: lang }));
 }
 
 function renderProjects()
 {
     renderSection("projects");
     
-    $("#content").html("<h2>Soon ...</h2>");
+    $("#content").html(templates["projects-index"]({ articles: articles_vm, lang: lang }));
 }
 
 function renderSection(section)
