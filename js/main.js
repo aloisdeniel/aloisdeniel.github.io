@@ -36,7 +36,7 @@ function getParameterByName(name) {
 /* Articles */
 
 //Example : [201502121356](eng){Tips,CSharp}Introduction_to_MVVM_pattern.md
-var articleNameRegex = /\[(\d{12})\]\(([a-z]+)\)\{(([A-Za-z0-1]+,?)+)\}([A-Za-z0-1_-]+).md/;
+var articleNameRegex = /\[(\d{12})\]\(([a-z]+)\)\{(([A-Za-z0-1@ #]+,?)+)\}([A-Za-z0-1@#'éèà _-]+).md/;
 
 function extractArticle(fileName)
 {
@@ -231,8 +231,7 @@ function renderArticle(name)
     
     $.get(urls.article+name, function(content) {
         
-        article.content = content;
-        console.log(content);
+        article.content = content.replace("![](/images/","![](/data/blog/images/");
         var content = markdown.toHTML(article.content);
         content += disqus(article.id,article.title);
 
