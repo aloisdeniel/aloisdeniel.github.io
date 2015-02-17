@@ -234,7 +234,7 @@ function renderArticle(name)
         title: name.substring(18,name.length - 3).replace(/_/g," ")
     };
     
-    $.get(urls.article+name, function(content) {
+    $.get(urls.article+encodeURIComponent(name), function(content) {
         
         article.content = content.replace("![](/images/","![](/data/blog/images/");
         var content = markdown.toHTML(article.content);
