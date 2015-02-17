@@ -685,6 +685,10 @@ body
 
 #content code {
     background: rgb(255, 255, 255);
+    padding: 3px;
+}
+
+#content pre code {
     padding: 20px;
 }
 
