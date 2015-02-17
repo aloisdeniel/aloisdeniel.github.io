@@ -262,14 +262,14 @@ function renderAbout()
 {
     renderSection("about");
     
-    $("#content").html(templates["about-index"]({ articles: articles_vm, lang: lang }));
+    $("#content").html(templates["about-index"]({}));
 }
 
 function renderProjects()
 {
     renderSection("projects");
     
-    $("#content").html(templates["projects-index"]({ articles: articles_vm, lang: lang }));
+    $("#content").html(templates["projects-index"]({}));
 }
 
 function renderSection(section)
