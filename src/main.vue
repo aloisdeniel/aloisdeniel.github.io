@@ -15,6 +15,10 @@
   $margin-normal: 20px;
   $margin-large: 50px;
 
+  $bubble-small: 35px;
+  $bubble-medium: 45px;
+  $bubble-large: 60px;
+
   @mixin box-shadow($params) {
     -webkit-box-shadow : $params;
        -moz-box-shadow : $params;
@@ -54,7 +58,6 @@
         margin: 0px;
         font-size: 0.65em;
         color: $color-grey-semilight;
-        display: block;
         text-decoration: none;
     }
 
@@ -84,6 +87,80 @@
   .section-light {
     @extend .section;
     background-color: $color-grey-semilight;
+  }
+
+  .bubble {
+    background: $color-white;
+    color: $color-grey-dark;
+    display: inline-block;
+    margin: $margin-small;
+  }
+
+  .bubble-small {
+    @extend .bubble;
+    width: $bubble-small;
+    height: $bubble-small;
+    border-radius: ($bubble-small / 2);
+
+    h2 {
+      margin: 0px;
+      font-size: 8px;
+    }
+    h4 {
+      margin: 0px;
+      margin-top: 3px;
+      font-size: 7px;
+    }
+  }
+
+  .bubble-medium {
+    @extend .bubble;
+    width: $bubble-medium;
+    height: $bubble-medium;
+    border-radius: ($bubble-medium / 2);
+
+    h2 {
+      margin: 0px;
+      font-size: 9px;
+    }
+    h4 {
+      margin: 0px;
+      margin-top: 4px;
+      font-size: 8px;
+    }
+  }
+
+  .bubble-large {
+    @extend .bubble;
+    width: $bubble-large;
+    height: $bubble-large;
+    border-radius: ($bubble-large / 2);
+
+    h2 {
+      margin: 0px;
+      margin-top: 8px;
+      font-size: 11px;
+    }
+    h4 {
+      margin: 0px;
+      font-size: 9px;
+    }
+  }
+
+  .contact a
+  {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  a:hover .contact-icon
+  {
+    opacity: 1;
+  }
+
+  .contact-icon
+  {
+    opacity: 0.5;
   }
 
   .header
@@ -140,7 +217,7 @@
 
   <section-about info="{{about}}"></section-about>
 
-  <section-skills></section-skills>
+  <section-skills medium="{{ skills.medium }}" major="{{ skills.major }}" minor="{{ skills.minor }}"></section-skills>
 
   <section-jobs></section-jobs>
 
@@ -170,17 +247,20 @@ function getAge(dateString) {
 module.exports = {
   data: {
     contact: [
-      { link: 'mailto:alois.deniel@outlook.com', title: 'email'},
-      { link: 'https://twitter.com/aloisdeniel', title: 'twitter'},
-      { link: 'https://github.com/aloisdeniel', title: 'github'}
-
-
+      { link: 'mailto:alois.deniel@outlook.com', icon: 'mail'},
+      { link: 'https://twitter.com/aloisdeniel', icon: 'twitter'},
+      { link: 'https://github.com/aloisdeniel', icon: 'github'}
     ],
     about: [
         getAge("1988/06/02") + ' year old',
         'live in Rennes, France',
         'work for Orange Business Services'
-      ]
+      ],
+    skills: {
+      major: [ { name: "C#" , type: "L" }, { name: "Xamarin", type: "F" }, { name: "Windows UAP", type: "F" }, { name: "Visual Studio", type: "T" }],
+      medium: [ { name: "nodejs", type: "F" }],
+      minor: [ { name: "Vue.js", type: "F" }]
+    }
   }
 };
 </script>

@@ -1,10 +1,17 @@
+var webpack = require("webpack");
 var vue = require('vue-loader')
 
 module.exports = {
-  entry: "./src/main.js",
+  entry: {
+    app: "./src/main.js",
+    vendor: [ 'vue' ]
+  },
   output: {
     filename: "./dist/bundle.js"
   },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin("vendor", "./dist/vendor.bundle.js")
+  ],
   module: {
     loaders: [
       { test: /\.css$/, loader: "style-loader!css-loader" },
