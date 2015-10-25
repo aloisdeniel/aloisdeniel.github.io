@@ -1,7 +1,3 @@
-<style lang="sass?outputStyle=expanded">
-
-</style>
-
 <template>
   <i class="icon icons8-{{icon}}"></i>
   <h1>{{title}}</h1>

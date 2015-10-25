@@ -1,9 +1,3 @@
-<style lang="sass?outputStyle=expanded">
-
-
-
-</style>
-
 <template>
 <div class="contact section-dark">
   <section-header icon="comments" title="CONTACT"></section-header>

@@ -1,16 +1,12 @@
-<style lang="sass?outputStyle=expanded">
-
-</style>
-
 <template>
 <div class="section">
   <section-header icon="briefcase" title="JOBS"></section-header>
-  <p>soon</p>
+  <timeline events='{{events}}'></timeline>
 </div>
 </template>
 
 <script>
 module.exports = {
-  props: []
+  props: [ "events"]
 };
 </script>

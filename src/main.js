@@ -1,11 +1,13 @@
 var normalize = require('normalize.css/normalize.css')
 var icons = require('windows-10-icons/font/styles.min.css')
+var styles = require('./scss/styles.scss')
 var Vue = require('vue')
 var appOptions = require('./main.vue')
 
 var components = [
   'icon',
   'bubble',
+  'timeline',
   'section-about',
   'section-contact',
   'section-header',

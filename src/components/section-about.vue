@@ -1,7 +1,3 @@
-<style lang="sass?outputStyle=expanded">
-
-</style>
-
 <template>
 <div class="section-dark">
   <section-header icon="user-male" title="ABOUT ME"></section-header>

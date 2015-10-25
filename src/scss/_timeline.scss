@@ -1,0 +1,160 @@
+.timeline {
+	margin: 20px 20px 0px 20px;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+
+/* The line */
+
+.timeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 4px;
+  border-right: 4px dotted $color-accent;
+	left: 50%;
+  margin: 0px;
+	margin-left: -4px;
+}
+
+.timeline > li {
+	position: relative;
+}
+
+/* The date/time */
+
+.timeline > li .time {
+	display: block;
+	width: 48%;
+	padding-right: 100px;
+	position: absolute;
+}
+
+.timeline > li .time span {
+	display: block;
+	text-align: right;
+}
+
+.timeline > li .time span:first-child {
+	font-size: 0.75em;
+	color: $color-grey-dark;
+}
+
+.timeline > li .time span:last-child {
+  font-size: 1.2em;
+	color: $color-accent;
+}
+
+/* Right content */
+
+.timeline > li .label {
+	margin: 0 0px 20px 53%;
+	background: $color-grey-semitransparent;
+	color: #fff;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	font-weight: 300;
+	position: relative;
+	border-radius: 5px;
+  text-align: left;
+  color: $color-grey-dark;
+}
+
+.timeline > li .label h2 {
+	margin: 0px;
+	font-size: 1em;
+  color: $color-accent;
+  text-align: left;
+}
+
+.timeline > li .label h3 {
+	margin: 0px;
+	font-size: 0.8em;
+  color: $color-grey-dark;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* The triangle */
+
+.timeline > li .label:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: $color-grey-semitransparent;
+	border-width: 10px;
+	top: 10px;
+}
+
+/* The icons */
+
+.timeline > li .icon {
+	width: 16px;
+	height: 16px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	font-size: 1.4em;
+	line-height: 40px;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	background: $color-accent;
+	border-radius: 50%;
+	text-align: center;
+	left: 50%;
+	top: 0;
+	margin: 10px 0 0 -6px;
+}
+
+/* Example Media Queries */
+
+@media screen and (max-width: 65.375em) {
+
+	.timeline > li .time span:last-child {
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (max-width: 47.2em) {
+	.timeline:before {
+		display: none;
+	}
+
+	.timeline > li .time {
+		width: 100%;
+		position: relative;
+		padding: 0 0 20px 0;
+	}
+
+	.timeline > li .time span {
+		text-align: center;
+	}
+
+	.timeline > li .label {
+		margin: 0 0 30px 0;
+		padding: 1em;
+		font-weight: 400;
+		font-size: 95%;
+	}
+
+	.timeline > li .label:after {
+		right: auto;
+		left: 50%;
+		border-right-color: transparent;
+		border-bottom-color: $color-grey-semitransparent;
+		top: -20px;
+    margin-left: -10px;
+	}
+
+	.timeline > li .icon {
+		display: none;
+	}
+}

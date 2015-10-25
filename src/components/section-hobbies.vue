@@ -1,7 +1,3 @@
-<style lang="sass?outputStyle=expanded">
-
-</style>
-
 <template>
 <div class="section">
   <section-header icon="airport" title="HOBBIES"></section-header>
