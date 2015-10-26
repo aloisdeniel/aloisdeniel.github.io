@@ -19,15 +19,15 @@ module.exports = {
   props: {
     major: {
       type: Array,
-      default: () => []
+      default: function() { return []; }
     },
     medium: {
       type: Array,
-      default: () => []
+      default: function() { return []; }
     },
     minor: {
       type: Array,
-      default: () => []
+      default: function() { return []; }
     }
   }
 };

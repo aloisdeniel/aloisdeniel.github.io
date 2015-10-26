@@ -4,9 +4,10 @@ webpackJsonp([0],[
 
 	var normalize = __webpack_require__(13)
 	var icons = __webpack_require__(17)
-	var styles = __webpack_require__(23)
-	var Vue = __webpack_require__(26)
-	var appOptions = __webpack_require__(93)
+	var icons = __webpack_require__(23)
+	var styles = __webpack_require__(25)
+	var Vue = __webpack_require__(28)
+	var appOptions = __webpack_require__(95)
 
 	var components = [
 	  'icon',
@@ -30,12 +31,12 @@ webpackJsonp([0],[
 
 	// Filters
 	filters.forEach(function(f) {
-	  Vue.filter(f, __webpack_require__(96)("./"+f+'.js'));
+	  Vue.filter(f, __webpack_require__(99)("./"+f+'.js'));
 	});
 
 	//Components
 	components.forEach(function(c) {
-	  Vue.component(c, __webpack_require__(99)("./"+c+'.vue'));
+	  Vue.component(c, __webpack_require__(102)("./"+c+'.vue'));
 	});
 
 	var app = new Vue(appOptions).$mount('#app')
@@ -454,8 +455,8 @@ webpackJsonp([0],[
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./styles.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./styles.scss");
+			module.hot.accept("!!./../css-loader/index.js!./animate.min.css", function() {
+				var newContent = require("!!./../css-loader/index.js!./animate.min.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -473,7 +474,7 @@ webpackJsonp([0],[
 
 
 	// module
-	exports.push([module.id, ".section, .section-accent, .section-dark, .section-light {\n  width: 100%;\n  min-height: 100px;\n  padding-top: 20px;\n  padding-bottom: 20px; }\n  .section .icon, .section-accent .icon, .section-dark .icon, .section-light .icon {\n    display: block;\n    font-size: 2.5em; }\n  .section h1, .section-accent h1, .section-dark h1, .section-light h1 {\n    margin-top: 0px;\n    font-size: 0.75em;\n    font-weight: 400; }\n  .section p, .section-accent p, .section-dark p, .section-light p {\n    margin: 0px;\n    font-size: 0.65em; }\n  .section a, .section-accent a, .section-dark a, .section-light a {\n    margin: 0px;\n    font-size: 0.65em;\n    color: #c0c5cb;\n    text-decoration: none; }\n  .section a:hover, .section-accent a:hover, .section-dark a:hover, .section-light a:hover {\n    color: #ffffff;\n    text-decoration: underline; }\n\n.section-accent {\n  background-color: #2075f5;\n  color: #ffffff; }\n\n.section-dark {\n  background-color: #26262c;\n  color: #ffffff; }\n  .section-dark\np {\n    color: #c0c5cb; }\n\n.section-light {\n  background-color: #c0c5cb; }\n\n@media screen and (max-width: 47.2em) {\n  .section .icon, .section-accent .icon, .section-dark .icon, .section-light .icon {\n    font-size: 1.6em; } }\n\n.timeline {\n  margin: 20px 20px 0px 20px;\n  padding: 0;\n  list-style: none;\n  position: relative; }\n\n/* The line */\n.timeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  width: 4px;\n  border-right: 4px dotted #2075f5;\n  left: 50%;\n  margin: 0px;\n  margin-left: -4px; }\n\n.timeline > li {\n  position: relative; }\n\n/* The date/time */\n.timeline > li .time {\n  display: block;\n  width: 48%;\n  padding-right: 100px;\n  position: absolute; }\n\n.timeline > li .time span {\n  display: block;\n  text-align: right; }\n\n.timeline > li .time span:first-child {\n  font-size: 0.75em;\n  color: #26262c; }\n\n.timeline > li .time span:last-child {\n  font-size: 1.2em;\n  color: #2075f5; }\n\n/* Right content */\n.timeline > li .label {\n  margin: 0 0px 20px 53%;\n  background: rgba(0, 0, 0, 0.12);\n  color: #fff;\n  padding: 0.5em 1em;\n  font-size: 1em;\n  font-weight: 300;\n  position: relative;\n  border-radius: 5px;\n  text-align: left;\n  color: #26262c; }\n\n.timeline > li .label h2 {\n  margin: 0px;\n  font-size: 1em;\n  color: #2075f5;\n  text-align: left; }\n\n.timeline > li .label h3 {\n  margin: 0px;\n  font-size: 0.8em;\n  color: #26262c;\n  text-align: left;\n  margin-bottom: 10px; }\n\n/* The triangle */\n.timeline > li .label:after {\n  right: 100%;\n  border: solid transparent;\n  content: \" \";\n  height: 0;\n  width: 0;\n  position: absolute;\n  pointer-events: none;\n  border-right-color: rgba(0, 0, 0, 0.12);\n  border-width: 10px;\n  top: 10px; }\n\n/* The icons */\n.timeline > li .icon {\n  width: 16px;\n  height: 16px;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  font-size: 1.4em;\n  line-height: 40px;\n  -webkit-font-smoothing: antialiased;\n  position: absolute;\n  background: #2075f5;\n  border-radius: 50%;\n  text-align: center;\n  left: 50%;\n  top: 0;\n  margin: 10px 0 0 -6px; }\n\n/* Example Media Queries */\n@media screen and (max-width: 65.375em) {\n  .timeline > li .time span:last-child {\n    font-size: 1.1em; } }\n\n@media screen and (max-width: 47.2em) {\n  .timeline:before {\n    display: none; }\n  .timeline > li .time {\n    width: 100%;\n    position: relative;\n    padding: 0 0 20px 0; }\n  .timeline > li .time span {\n    text-align: center; }\n  .timeline > li .label {\n    margin: 0 0 30px 0;\n    padding: 1em;\n    font-weight: 400;\n    font-size: 95%; }\n  .timeline > li .label:after {\n    right: auto;\n    left: 50%;\n    border-right-color: transparent;\n    border-bottom-color: rgba(0, 0, 0, 0.12);\n    top: -20px;\n    margin-left: -10px; }\n  .timeline > li .icon {\n    display: none; } }\n\nbody {\n  text-align: center;\n  font-family: \"Open Sans\", sans-serif;\n  background: #f3f3f3;\n  color: #26262c; }\n\n.bubble, .bubble-small, .bubble-medium, .bubble-large {\n  background: #ffffff;\n  color: #26262c;\n  display: inline-block;\n  margin: 10px; }\n\n.bubble-small {\n  width: 35px;\n  height: 35px;\n  border-radius: 17.5px; }\n  .bubble-small h2 {\n    margin: 0px;\n    font-size: 8px; }\n  .bubble-small h4 {\n    margin: 0px;\n    margin-top: 3px;\n    font-size: 7px; }\n\n.bubble-medium {\n  width: 45px;\n  height: 45px;\n  border-radius: 22.5px; }\n  .bubble-medium h2 {\n    margin: 0px;\n    font-size: 9px; }\n  .bubble-medium h4 {\n    margin: 0px;\n    margin-top: 4px;\n    font-size: 8px; }\n\n.bubble-large {\n  width: 60px;\n  height: 60px;\n  border-radius: 30px; }\n  .bubble-large h2 {\n    margin: 0px;\n    margin-top: 8px;\n    font-size: 11px; }\n  .bubble-large h4 {\n    margin: 0px;\n    font-size: 9px; }\n\n.contact a {\n  display: inline-block;\n  margin: 5px; }\n\na:hover .contact-icon {\n  opacity: 1; }\n\n.contact-icon {\n  opacity: 0.5; }\n\n.header\n.portrait {\n  -webkit-box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  -moz-box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  width: 150px;\n  height: 150px;\n  background-image: url(" + __webpack_require__(25) + ");\n  margin: auto;\n  margin-top: 50px;\n  border-radius: 75px; }\n\n.header\n.icon {\n  font-size: 1.2em;\n  color: #c0c5cb;\n  margin-bottom: 50px; }\n\n.header\n.icon.main {\n  font-size: 1.8em;\n  color: #2075f5;\n  padding: 0px;\n  margin-bottom: 50px; }\n\n.header\nh1 {\n  font-weight: 700;\n  text-align: center;\n  font-size: 1.3em;\n  margin-top: 50px;\n  margin-bottom: 0px;\n  padding: 0px; }\n\n.header\nh2 {\n  font-family: \"Fira Mono\", sans-serif;\n  font-weight: 400;\n  color: #2075f5;\n  text-align: center;\n  font-size: 0.8em;\n  margin-top: 3px;\n  padding: 0px; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";/*!\nAnimate.css - http://daneden.me/animate\nLicensed under the MIT license - http://opensource.org/licenses/MIT\n\nCopyright (c) 2015 Daniel Eden\n*/.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}.animated.hinge{-webkit-animation-duration:2s;animation-duration:2s}.animated.bounceIn,.animated.bounceOut,.animated.flipOutX,.animated.flipOutY{-webkit-animation-duration:.75s;animation-duration:.75s}@-webkit-keyframes bounce{100%,20%,53%,80%,from{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1);-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}40%,43%{-webkit-animation-timing-function:cubic-bezier(0.755,.050,.855,.060);animation-timing-function:cubic-bezier(0.755,.050,.855,.060);-webkit-transform:translate3d(0,-30px,0);transform:translate3d(0,-30px,0)}70%{-webkit-animation-timing-function:cubic-bezier(0.755,.050,.855,.060);animation-timing-function:cubic-bezier(0.755,.050,.855,.060);-webkit-transform:translate3d(0,-15px,0);transform:translate3d(0,-15px,0)}90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}@keyframes bounce{100%,20%,53%,80%,from{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1);-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}40%,43%{-webkit-animation-timing-function:cubic-bezier(0.755,.050,.855,.060);animation-timing-function:cubic-bezier(0.755,.050,.855,.060);-webkit-transform:translate3d(0,-30px,0);transform:translate3d(0,-30px,0)}70%{-webkit-animation-timing-function:cubic-bezier(0.755,.050,.855,.060);animation-timing-function:cubic-bezier(0.755,.050,.855,.060);-webkit-transform:translate3d(0,-15px,0);transform:translate3d(0,-15px,0)}90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}.bounce{-webkit-animation-name:bounce;animation-name:bounce;-webkit-transform-origin:center bottom;transform-origin:center bottom}@-webkit-keyframes flash{100%,50%,from{opacity:1}25%,75%{opacity:0}}@keyframes flash{100%,50%,from{opacity:1}25%,75%{opacity:0}}.flash{-webkit-animation-name:flash;animation-name:flash}@-webkit-keyframes pulse{from{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes pulse{from{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}.pulse{-webkit-animation-name:pulse;animation-name:pulse}@-webkit-keyframes rubberBand{from{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(0.75,1.25,1);transform:scale3d(0.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes rubberBand{from{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(0.75,1.25,1);transform:scale3d(0.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}.rubberBand{-webkit-animation-name:rubberBand;animation-name:rubberBand}@-webkit-keyframes shake{100%,from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}20%,40%,60%,80%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}}@keyframes shake{100%,from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}20%,40%,60%,80%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}}.shake{-webkit-animation-name:shake;animation-name:shake}@-webkit-keyframes swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}100%{-webkit-transform:rotate3d(0,0,1,0deg);transform:rotate3d(0,0,1,0deg)}}@keyframes swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}100%{-webkit-transform:rotate3d(0,0,1,0deg);transform:rotate3d(0,0,1,0deg)}}.swing{-webkit-transform-origin:top center;transform-origin:top center;-webkit-animation-name:swing;animation-name:swing}@-webkit-keyframes tada{from{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes tada{from{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}.tada{-webkit-animation-name:tada;animation-name:tada}@-webkit-keyframes wobble{from{-webkit-transform:none;transform:none}15%{-webkit-transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg);transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg)}30%{-webkit-transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg);transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg)}45%{-webkit-transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg);transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg)}60%{-webkit-transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg);transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg)}75%{-webkit-transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg);transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg)}100%{-webkit-transform:none;transform:none}}@keyframes wobble{from{-webkit-transform:none;transform:none}15%{-webkit-transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg);transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg)}30%{-webkit-transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg);transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg)}45%{-webkit-transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg);transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg)}60%{-webkit-transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg);transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg)}75%{-webkit-transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg);transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg)}100%{-webkit-transform:none;transform:none}}.wobble{-webkit-animation-name:wobble;animation-name:wobble}@-webkit-keyframes jello{100%,11.1%,from{-webkit-transform:none;transform:none}22.2%{-webkit-transform:skewX(-12.5deg) skewY(-12.5deg);transform:skewX(-12.5deg) skewY(-12.5deg)}33.3%{-webkit-transform:skewX(6.25deg) skewY(6.25deg);transform:skewX(6.25deg) skewY(6.25deg)}44.4%{-webkit-transform:skewX(-3.125deg) skewY(-3.125deg);transform:skewX(-3.125deg) skewY(-3.125deg)}55.5%{-webkit-transform:skewX(1.5625deg) skewY(1.5625deg);transform:skewX(1.5625deg) skewY(1.5625deg)}66.6%{-webkit-transform:skewX(-.78125deg) skewY(-.78125deg);transform:skewX(-.78125deg) skewY(-.78125deg)}77.7%{-webkit-transform:skewX(0.390625deg) skewY(0.390625deg);transform:skewX(0.390625deg) skewY(0.390625deg)}88.8%{-webkit-transform:skewX(-.1953125deg) skewY(-.1953125deg);transform:skewX(-.1953125deg) skewY(-.1953125deg)}}@keyframes jello{100%,11.1%,from{-webkit-transform:none;transform:none}22.2%{-webkit-transform:skewX(-12.5deg) skewY(-12.5deg);transform:skewX(-12.5deg) skewY(-12.5deg)}33.3%{-webkit-transform:skewX(6.25deg) skewY(6.25deg);transform:skewX(6.25deg) skewY(6.25deg)}44.4%{-webkit-transform:skewX(-3.125deg) skewY(-3.125deg);transform:skewX(-3.125deg) skewY(-3.125deg)}55.5%{-webkit-transform:skewX(1.5625deg) skewY(1.5625deg);transform:skewX(1.5625deg) skewY(1.5625deg)}66.6%{-webkit-transform:skewX(-.78125deg) skewY(-.78125deg);transform:skewX(-.78125deg) skewY(-.78125deg)}77.7%{-webkit-transform:skewX(0.390625deg) skewY(0.390625deg);transform:skewX(0.390625deg) skewY(0.390625deg)}88.8%{-webkit-transform:skewX(-.1953125deg) skewY(-.1953125deg);transform:skewX(-.1953125deg) skewY(-.1953125deg)}}.jello{-webkit-animation-name:jello;animation-name:jello;-webkit-transform-origin:center;transform-origin:center}@-webkit-keyframes bounceIn{100%,20%,40%,60%,80%,from{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}100%{opacity:1;-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes bounceIn{100%,20%,40%,60%,80%,from{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}100%{opacity:1;-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}.bounceIn{-webkit-animation-name:bounceIn;animation-name:bounceIn}@-webkit-keyframes bounceInDown{100%,60%,75%,90%,from{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(0,-3000px,0);transform:translate3d(0,-3000px,0)}60%{opacity:1;-webkit-transform:translate3d(0,25px,0);transform:translate3d(0,25px,0)}75%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}90%{-webkit-transform:translate3d(0,5px,0);transform:translate3d(0,5px,0)}100%{-webkit-transform:none;transform:none}}@keyframes bounceInDown{100%,60%,75%,90%,from{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(0,-3000px,0);transform:translate3d(0,-3000px,0)}60%{opacity:1;-webkit-transform:translate3d(0,25px,0);transform:translate3d(0,25px,0)}75%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}90%{-webkit-transform:translate3d(0,5px,0);transform:translate3d(0,5px,0)}100%{-webkit-transform:none;transform:none}}.bounceInDown{-webkit-animation-name:bounceInDown;animation-name:bounceInDown}@-webkit-keyframes bounceInLeft{100%,60%,75%,90%,from{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(-3000px,0,0);transform:translate3d(-3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(25px,0,0);transform:translate3d(25px,0,0)}75%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}90%{-webkit-transform:translate3d(5px,0,0);transform:translate3d(5px,0,0)}100%{-webkit-transform:none;transform:none}}@keyframes bounceInLeft{100%,60%,75%,90%,from{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(-3000px,0,0);transform:translate3d(-3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(25px,0,0);transform:translate3d(25px,0,0)}75%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}90%{-webkit-transform:translate3d(5px,0,0);transform:translate3d(5px,0,0)}100%{-webkit-transform:none;transform:none}}.bounceInLeft{-webkit-animation-name:bounceInLeft;animation-name:bounceInLeft}@-webkit-keyframes bounceInRight{100%,60%,75%,90%,from{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1)}from{opacity:0;-webkit-transform:translate3d(3000px,0,0);transform:translate3d(3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(-25px,0,0);transform:translate3d(-25px,0,0)}75%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}90%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}100%{-webkit-transform:none;transform:none}}@keyframes bounceInRight{100%,60%,75%,90%,from{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1)}from{opacity:0;-webkit-transform:translate3d(3000px,0,0);transform:translate3d(3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(-25px,0,0);transform:translate3d(-25px,0,0)}75%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}90%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}100%{-webkit-transform:none;transform:none}}.bounceInRight{-webkit-animation-name:bounceInRight;animation-name:bounceInRight}@-webkit-keyframes bounceInUp{100%,60%,75%,90%,from{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1)}from{opacity:0;-webkit-transform:translate3d(0,3000px,0);transform:translate3d(0,3000px,0)}60%{opacity:1;-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}75%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}90%{-webkit-transform:translate3d(0,-5px,0);transform:translate3d(0,-5px,0)}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@keyframes bounceInUp{100%,60%,75%,90%,from{-webkit-animation-timing-function:cubic-bezier(0.215,.61,.355,1);animation-timing-function:cubic-bezier(0.215,.61,.355,1)}from{opacity:0;-webkit-transform:translate3d(0,3000px,0);transform:translate3d(0,3000px,0)}60%{opacity:1;-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}75%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}90%{-webkit-transform:translate3d(0,-5px,0);transform:translate3d(0,-5px,0)}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.bounceInUp{-webkit-animation-name:bounceInUp;animation-name:bounceInUp}@-webkit-keyframes bounceOut{20%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}50%,55%{opacity:1;-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}100%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}}@keyframes bounceOut{20%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}50%,55%{opacity:1;-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}100%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}}.bounceOut{-webkit-animation-name:bounceOut;animation-name:bounceOut}@-webkit-keyframes bounceOutDown{20%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}40%,45%{opacity:1;-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}100%{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}}@keyframes bounceOutDown{20%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}40%,45%{opacity:1;-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}100%{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}}.bounceOutDown{-webkit-animation-name:bounceOutDown;animation-name:bounceOutDown}@-webkit-keyframes bounceOutLeft{20%{opacity:1;-webkit-transform:translate3d(20px,0,0);transform:translate3d(20px,0,0)}100%{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}}@keyframes bounceOutLeft{20%{opacity:1;-webkit-transform:translate3d(20px,0,0);transform:translate3d(20px,0,0)}100%{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}}.bounceOutLeft{-webkit-animation-name:bounceOutLeft;animation-name:bounceOutLeft}@-webkit-keyframes bounceOutRight{20%{opacity:1;-webkit-transform:translate3d(-20px,0,0);transform:translate3d(-20px,0,0)}100%{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}}@keyframes bounceOutRight{20%{opacity:1;-webkit-transform:translate3d(-20px,0,0);transform:translate3d(-20px,0,0)}100%{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}}.bounceOutRight{-webkit-animation-name:bounceOutRight;animation-name:bounceOutRight}@-webkit-keyframes bounceOutUp{20%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}40%,45%{opacity:1;-webkit-transform:translate3d(0,20px,0);transform:translate3d(0,20px,0)}100%{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}}@keyframes bounceOutUp{20%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}40%,45%{opacity:1;-webkit-transform:translate3d(0,20px,0);transform:translate3d(0,20px,0)}100%{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}}.bounceOutUp{-webkit-animation-name:bounceOutUp;animation-name:bounceOutUp}@-webkit-keyframes fadeIn{from{opacity:0}100%{opacity:1}}@keyframes fadeIn{from{opacity:0}100%{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes fadeInDown{from{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInDown{from{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown}@-webkit-keyframes fadeInDownBig{from{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInDownBig{from{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}100%{opacity:1;-webkit-transform:none;transform:none}}.fadeInDownBig{-webkit-animation-name:fadeInDownBig;animation-name:fadeInDownBig}@-webkit-keyframes fadeInLeft{from{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInLeft{from{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}.fadeInLeft{-webkit-animation-name:fadeInLeft;animation-name:fadeInLeft}@-webkit-keyframes fadeInLeftBig{from{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInLeftBig{from{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}.fadeInLeftBig{-webkit-animation-name:fadeInLeftBig;animation-name:fadeInLeftBig}@-webkit-keyframes fadeInRight{from{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInRight{from{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}.fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight}@-webkit-keyframes fadeInRightBig{from{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInRightBig{from{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}100%{opacity:1;-webkit-transform:none;transform:none}}.fadeInRightBig{-webkit-animation-name:fadeInRightBig;animation-name:fadeInRightBig}@-webkit-keyframes fadeInUp{from{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInUp{from{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}@-webkit-keyframes fadeInUpBig{from{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInUpBig{from{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}100%{opacity:1;-webkit-transform:none;transform:none}}.fadeInUpBig{-webkit-animation-name:fadeInUpBig;animation-name:fadeInUpBig}@-webkit-keyframes fadeOut{from{opacity:1}100%{opacity:0}}@keyframes fadeOut{from{opacity:1}100%{opacity:0}}.fadeOut{-webkit-animation-name:fadeOut;animation-name:fadeOut}@-webkit-keyframes fadeOutDown{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@keyframes fadeOutDown{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}.fadeOutDown{-webkit-animation-name:fadeOutDown;animation-name:fadeOutDown}@-webkit-keyframes fadeOutDownBig{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}}@keyframes fadeOutDownBig{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}}.fadeOutDownBig{-webkit-animation-name:fadeOutDownBig;animation-name:fadeOutDownBig}@-webkit-keyframes fadeOutLeft{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@keyframes fadeOutLeft{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}.fadeOutLeft{-webkit-animation-name:fadeOutLeft;animation-name:fadeOutLeft}@-webkit-keyframes fadeOutLeftBig{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}}@keyframes fadeOutLeftBig{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}}.fadeOutLeftBig{-webkit-animation-name:fadeOutLeftBig;animation-name:fadeOutLeftBig}@-webkit-keyframes fadeOutRight{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}@keyframes fadeOutRight{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.fadeOutRight{-webkit-animation-name:fadeOutRight;animation-name:fadeOutRight}@-webkit-keyframes fadeOutRightBig{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}}@keyframes fadeOutRightBig{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}}.fadeOutRightBig{-webkit-animation-name:fadeOutRightBig;animation-name:fadeOutRightBig}@-webkit-keyframes fadeOutUp{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes fadeOutUp{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}.fadeOutUp{-webkit-animation-name:fadeOutUp;animation-name:fadeOutUp}@-webkit-keyframes fadeOutUpBig{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}}@keyframes fadeOutUpBig{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}}.fadeOutUpBig{-webkit-animation-name:fadeOutUpBig;animation-name:fadeOutUpBig}@-webkit-keyframes flip{from{-webkit-transform:perspective(400px) rotate3d(0,1,0,-360deg);transform:perspective(400px) rotate3d(0,1,0,-360deg);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-190deg);transform:perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-190deg);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}50%{-webkit-transform:perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-170deg);transform:perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-170deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}80%{-webkit-transform:perspective(400px) scale3d(.95,.95,.95);transform:perspective(400px) scale3d(.95,.95,.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:perspective(400px);transform:perspective(400px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}}@keyframes flip{from{-webkit-transform:perspective(400px) rotate3d(0,1,0,-360deg);transform:perspective(400px) rotate3d(0,1,0,-360deg);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-190deg);transform:perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-190deg);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}50%{-webkit-transform:perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-170deg);transform:perspective(400px) translate3d(0,0,150px) rotate3d(0,1,0,-170deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}80%{-webkit-transform:perspective(400px) scale3d(.95,.95,.95);transform:perspective(400px) scale3d(.95,.95,.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:perspective(400px);transform:perspective(400px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}}.animated.flip{-webkit-backface-visibility:visible;backface-visibility:visible;-webkit-animation-name:flip;animation-name:flip}@-webkit-keyframes flipInX{from{-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}100%{-webkit-transform:perspective(400px);transform:perspective(400px)}}@keyframes flipInX{from{-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}100%{-webkit-transform:perspective(400px);transform:perspective(400px)}}.flipInX{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;-webkit-animation-name:flipInX;animation-name:flipInX}@-webkit-keyframes flipInY{from{-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}100%{-webkit-transform:perspective(400px);transform:perspective(400px)}}@keyframes flipInY{from{-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}100%{-webkit-transform:perspective(400px);transform:perspective(400px)}}.flipInY{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;-webkit-animation-name:flipInY;animation-name:flipInY}@-webkit-keyframes flipOutX{from{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);opacity:1}100%{-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);opacity:0}}@keyframes flipOutX{from{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);opacity:1}100%{-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);opacity:0}}.flipOutX{-webkit-animation-name:flipOutX;animation-name:flipOutX;-webkit-backface-visibility:visible!important;backface-visibility:visible!important}@-webkit-keyframes flipOutY{from{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-15deg);transform:perspective(400px) rotate3d(0,1,0,-15deg);opacity:1}100%{-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);opacity:0}}@keyframes flipOutY{from{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-15deg);transform:perspective(400px) rotate3d(0,1,0,-15deg);opacity:1}100%{-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);opacity:0}}.flipOutY{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;-webkit-animation-name:flipOutY;animation-name:flipOutY}@-webkit-keyframes lightSpeedIn{from{-webkit-transform:translate3d(100%,0,0) skewX(-30deg);transform:translate3d(100%,0,0) skewX(-30deg);opacity:0}60%{-webkit-transform:skewX(20deg);transform:skewX(20deg);opacity:1}80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg);opacity:1}100%{-webkit-transform:none;transform:none;opacity:1}}@keyframes lightSpeedIn{from{-webkit-transform:translate3d(100%,0,0) skewX(-30deg);transform:translate3d(100%,0,0) skewX(-30deg);opacity:0}60%{-webkit-transform:skewX(20deg);transform:skewX(20deg);opacity:1}80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg);opacity:1}100%{-webkit-transform:none;transform:none;opacity:1}}.lightSpeedIn{-webkit-animation-name:lightSpeedIn;animation-name:lightSpeedIn;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}@-webkit-keyframes lightSpeedOut{from{opacity:1}100%{-webkit-transform:translate3d(100%,0,0) skewX(30deg);transform:translate3d(100%,0,0) skewX(30deg);opacity:0}}@keyframes lightSpeedOut{from{opacity:1}100%{-webkit-transform:translate3d(100%,0,0) skewX(30deg);transform:translate3d(100%,0,0) skewX(30deg);opacity:0}}.lightSpeedOut{-webkit-animation-name:lightSpeedOut;animation-name:lightSpeedOut;-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}@-webkit-keyframes rotateIn{from{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate3d(0,0,1,-200deg);transform:rotate3d(0,0,1,-200deg);opacity:0}100%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:none;transform:none;opacity:1}}@keyframes rotateIn{from{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate3d(0,0,1,-200deg);transform:rotate3d(0,0,1,-200deg);opacity:0}100%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:none;transform:none;opacity:1}}.rotateIn{-webkit-animation-name:rotateIn;animation-name:rotateIn}@-webkit-keyframes rotateInDownLeft{from{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate3d(0,0,1,-45deg);transform:rotate3d(0,0,1,-45deg);opacity:0}100%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:none;transform:none;opacity:1}}@keyframes rotateInDownLeft{from{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate3d(0,0,1,-45deg);transform:rotate3d(0,0,1,-45deg);opacity:0}100%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:none;transform:none;opacity:1}}.rotateInDownLeft{-webkit-animation-name:rotateInDownLeft;animation-name:rotateInDownLeft}@-webkit-keyframes rotateInDownRight{from{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate3d(0,0,1,45deg);transform:rotate3d(0,0,1,45deg);opacity:0}100%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:none;transform:none;opacity:1}}@keyframes rotateInDownRight{from{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate3d(0,0,1,45deg);transform:rotate3d(0,0,1,45deg);opacity:0}100%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:none;transform:none;opacity:1}}.rotateInDownRight{-webkit-animation-name:rotateInDownRight;animation-name:rotateInDownRight}@-webkit-keyframes rotateInUpLeft{from{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate3d(0,0,1,45deg);transform:rotate3d(0,0,1,45deg);opacity:0}100%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:none;transform:none;opacity:1}}@keyframes rotateInUpLeft{from{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate3d(0,0,1,45deg);transform:rotate3d(0,0,1,45deg);opacity:0}100%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:none;transform:none;opacity:1}}.rotateInUpLeft{-webkit-animation-name:rotateInUpLeft;animation-name:rotateInUpLeft}@-webkit-keyframes rotateInUpRight{from{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate3d(0,0,1,-90deg);transform:rotate3d(0,0,1,-90deg);opacity:0}100%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:none;transform:none;opacity:1}}@keyframes rotateInUpRight{from{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate3d(0,0,1,-90deg);transform:rotate3d(0,0,1,-90deg);opacity:0}100%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:none;transform:none;opacity:1}}.rotateInUpRight{-webkit-animation-name:rotateInUpRight;animation-name:rotateInUpRight}@-webkit-keyframes rotateOut{from{-webkit-transform-origin:center;transform-origin:center;opacity:1}100%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate3d(0,0,1,200deg);transform:rotate3d(0,0,1,200deg);opacity:0}}@keyframes rotateOut{from{-webkit-transform-origin:center;transform-origin:center;opacity:1}100%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate3d(0,0,1,200deg);transform:rotate3d(0,0,1,200deg);opacity:0}}.rotateOut{-webkit-animation-name:rotateOut;animation-name:rotateOut}@-webkit-keyframes rotateOutDownLeft{from{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}100%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate3d(0,0,1,45deg);transform:rotate3d(0,0,1,45deg);opacity:0}}@keyframes rotateOutDownLeft{from{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}100%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate3d(0,0,1,45deg);transform:rotate3d(0,0,1,45deg);opacity:0}}.rotateOutDownLeft{-webkit-animation-name:rotateOutDownLeft;animation-name:rotateOutDownLeft}@-webkit-keyframes rotateOutDownRight{from{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}100%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate3d(0,0,1,-45deg);transform:rotate3d(0,0,1,-45deg);opacity:0}}@keyframes rotateOutDownRight{from{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}100%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate3d(0,0,1,-45deg);transform:rotate3d(0,0,1,-45deg);opacity:0}}.rotateOutDownRight{-webkit-animation-name:rotateOutDownRight;animation-name:rotateOutDownRight}@-webkit-keyframes rotateOutUpLeft{from{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}100%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate3d(0,0,1,-45deg);transform:rotate3d(0,0,1,-45deg);opacity:0}}@keyframes rotateOutUpLeft{from{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}100%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate3d(0,0,1,-45deg);transform:rotate3d(0,0,1,-45deg);opacity:0}}.rotateOutUpLeft{-webkit-animation-name:rotateOutUpLeft;animation-name:rotateOutUpLeft}@-webkit-keyframes rotateOutUpRight{from{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}100%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate3d(0,0,1,90deg);transform:rotate3d(0,0,1,90deg);opacity:0}}@keyframes rotateOutUpRight{from{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}100%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate3d(0,0,1,90deg);transform:rotate3d(0,0,1,90deg);opacity:0}}.rotateOutUpRight{-webkit-animation-name:rotateOutUpRight;animation-name:rotateOutUpRight}@-webkit-keyframes hinge{0%{-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}20%,60%{-webkit-transform:rotate3d(0,0,1,80deg);transform:rotate3d(0,0,1,80deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}40%,80%{-webkit-transform:rotate3d(0,0,1,60deg);transform:rotate3d(0,0,1,60deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;opacity:1}100%{-webkit-transform:translate3d(0,700px,0);transform:translate3d(0,700px,0);opacity:0}}@keyframes hinge{0%{-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}20%,60%{-webkit-transform:rotate3d(0,0,1,80deg);transform:rotate3d(0,0,1,80deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}40%,80%{-webkit-transform:rotate3d(0,0,1,60deg);transform:rotate3d(0,0,1,60deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;opacity:1}100%{-webkit-transform:translate3d(0,700px,0);transform:translate3d(0,700px,0);opacity:0}}.hinge{-webkit-animation-name:hinge;animation-name:hinge}@-webkit-keyframes rollIn{from{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes rollIn{from{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}100%{opacity:1;-webkit-transform:none;transform:none}}.rollIn{-webkit-animation-name:rollIn;animation-name:rollIn}@-webkit-keyframes rollOut{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(100%,0,0) rotate3d(0,0,1,120deg);transform:translate3d(100%,0,0) rotate3d(0,0,1,120deg)}}@keyframes rollOut{from{opacity:1}100%{opacity:0;-webkit-transform:translate3d(100%,0,0) rotate3d(0,0,1,120deg);transform:translate3d(100%,0,0) rotate3d(0,0,1,120deg)}}.rollOut{-webkit-animation-name:rollOut;animation-name:rollOut}@-webkit-keyframes zoomIn{from{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes zoomIn{from{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}.zoomIn{-webkit-animation-name:zoomIn;animation-name:zoomIn}@-webkit-keyframes zoomInDown{from{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);-webkit-animation-timing-function:cubic-bezier(0.55,.055,.675,.19);animation-timing-function:cubic-bezier(0.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-webkit-animation-timing-function:cubic-bezier(0.175,.885,.32,1);animation-timing-function:cubic-bezier(0.175,.885,.32,1)}}@keyframes zoomInDown{from{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);-webkit-animation-timing-function:cubic-bezier(0.55,.055,.675,.19);animation-timing-function:cubic-bezier(0.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-webkit-animation-timing-function:cubic-bezier(0.175,.885,.32,1);animation-timing-function:cubic-bezier(0.175,.885,.32,1)}}.zoomInDown{-webkit-animation-name:zoomInDown;animation-name:zoomInDown}@-webkit-keyframes zoomInLeft{from{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);-webkit-animation-timing-function:cubic-bezier(0.55,.055,.675,.19);animation-timing-function:cubic-bezier(0.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(10px,0,0);transform:scale3d(.475,.475,.475) translate3d(10px,0,0);-webkit-animation-timing-function:cubic-bezier(0.175,.885,.32,1);animation-timing-function:cubic-bezier(0.175,.885,.32,1)}}@keyframes zoomInLeft{from{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);-webkit-animation-timing-function:cubic-bezier(0.55,.055,.675,.19);animation-timing-function:cubic-bezier(0.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(10px,0,0);transform:scale3d(.475,.475,.475) translate3d(10px,0,0);-webkit-animation-timing-function:cubic-bezier(0.175,.885,.32,1);animation-timing-function:cubic-bezier(0.175,.885,.32,1)}}.zoomInLeft{-webkit-animation-name:zoomInLeft;animation-name:zoomInLeft}@-webkit-keyframes zoomInRight{from{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);-webkit-animation-timing-function:cubic-bezier(0.55,.055,.675,.19);animation-timing-function:cubic-bezier(0.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);-webkit-animation-timing-function:cubic-bezier(0.175,.885,.32,1);animation-timing-function:cubic-bezier(0.175,.885,.32,1)}}@keyframes zoomInRight{from{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);-webkit-animation-timing-function:cubic-bezier(0.55,.055,.675,.19);animation-timing-function:cubic-bezier(0.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);-webkit-animation-timing-function:cubic-bezier(0.175,.885,.32,1);animation-timing-function:cubic-bezier(0.175,.885,.32,1)}}.zoomInRight{-webkit-animation-name:zoomInRight;animation-name:zoomInRight}@-webkit-keyframes zoomInUp{from{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);-webkit-animation-timing-function:cubic-bezier(0.55,.055,.675,.19);animation-timing-function:cubic-bezier(0.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);-webkit-animation-timing-function:cubic-bezier(0.175,.885,.32,1);animation-timing-function:cubic-bezier(0.175,.885,.32,1)}}@keyframes zoomInUp{from{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);-webkit-animation-timing-function:cubic-bezier(0.55,.055,.675,.19);animation-timing-function:cubic-bezier(0.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);-webkit-animation-timing-function:cubic-bezier(0.175,.885,.32,1);animation-timing-function:cubic-bezier(0.175,.885,.32,1)}}.zoomInUp{-webkit-animation-name:zoomInUp;animation-name:zoomInUp}@-webkit-keyframes zoomOut{from{opacity:1}50%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}100%{opacity:0}}@keyframes zoomOut{from{opacity:1}50%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}100%{opacity:0}}.zoomOut{-webkit-animation-name:zoomOut;animation-name:zoomOut}@-webkit-keyframes zoomOutDown{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);-webkit-animation-timing-function:cubic-bezier(0.55,.055,.675,.19);animation-timing-function:cubic-bezier(0.55,.055,.675,.19)}100%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(0.175,.885,.32,1);animation-timing-function:cubic-bezier(0.175,.885,.32,1)}}@keyframes zoomOutDown{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);-webkit-animation-timing-function:cubic-bezier(0.55,.055,.675,.19);animation-timing-function:cubic-bezier(0.55,.055,.675,.19)}100%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(0.175,.885,.32,1);animation-timing-function:cubic-bezier(0.175,.885,.32,1)}}.zoomOutDown{-webkit-animation-name:zoomOutDown;animation-name:zoomOutDown}@-webkit-keyframes zoomOutLeft{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(42px,0,0);transform:scale3d(.475,.475,.475) translate3d(42px,0,0)}100%{opacity:0;-webkit-transform:scale(.1) translate3d(-2000px,0,0);transform:scale(.1) translate3d(-2000px,0,0);-webkit-transform-origin:left center;transform-origin:left center}}@keyframes zoomOutLeft{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(42px,0,0);transform:scale3d(.475,.475,.475) translate3d(42px,0,0)}100%{opacity:0;-webkit-transform:scale(.1) translate3d(-2000px,0,0);transform:scale(.1) translate3d(-2000px,0,0);-webkit-transform-origin:left center;transform-origin:left center}}.zoomOutLeft{-webkit-animation-name:zoomOutLeft;animation-name:zoomOutLeft}@-webkit-keyframes zoomOutRight{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(-42px,0,0);transform:scale3d(.475,.475,.475) translate3d(-42px,0,0)}100%{opacity:0;-webkit-transform:scale(.1) translate3d(2000px,0,0);transform:scale(.1) translate3d(2000px,0,0);-webkit-transform-origin:right center;transform-origin:right center}}@keyframes zoomOutRight{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(-42px,0,0);transform:scale3d(.475,.475,.475) translate3d(-42px,0,0)}100%{opacity:0;-webkit-transform:scale(.1) translate3d(2000px,0,0);transform:scale(.1) translate3d(2000px,0,0);-webkit-transform-origin:right center;transform-origin:right center}}.zoomOutRight{-webkit-animation-name:zoomOutRight;animation-name:zoomOutRight}@-webkit-keyframes zoomOutUp{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-webkit-animation-timing-function:cubic-bezier(0.55,.055,.675,.19);animation-timing-function:cubic-bezier(0.55,.055,.675,.19)}100%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(0.175,.885,.32,1);animation-timing-function:cubic-bezier(0.175,.885,.32,1)}}@keyframes zoomOutUp{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-webkit-animation-timing-function:cubic-bezier(0.55,.055,.675,.19);animation-timing-function:cubic-bezier(0.55,.055,.675,.19)}100%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(0.175,.885,.32,1);animation-timing-function:cubic-bezier(0.175,.885,.32,1)}}.zoomOutUp{-webkit-animation-name:zoomOutUp;animation-name:zoomOutUp}@-webkit-keyframes slideInDown{from{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@keyframes slideInDown{from{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.slideInDown{-webkit-animation-name:slideInDown;animation-name:slideInDown}@-webkit-keyframes slideInLeft{from{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@keyframes slideInLeft{from{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.slideInLeft{-webkit-animation-name:slideInLeft;animation-name:slideInLeft}@-webkit-keyframes slideInRight{from{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@keyframes slideInRight{from{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.slideInRight{-webkit-animation-name:slideInRight;animation-name:slideInRight}@-webkit-keyframes slideInUp{from{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@keyframes slideInUp{from{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.slideInUp{-webkit-animation-name:slideInUp;animation-name:slideInUp}@-webkit-keyframes slideOutDown{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}100%{visibility:hidden;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@keyframes slideOutDown{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}100%{visibility:hidden;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}.slideOutDown{-webkit-animation-name:slideOutDown;animation-name:slideOutDown}@-webkit-keyframes slideOutLeft{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}100%{visibility:hidden;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@keyframes slideOutLeft{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}100%{visibility:hidden;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}.slideOutLeft{-webkit-animation-name:slideOutLeft;animation-name:slideOutLeft}@-webkit-keyframes slideOutRight{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}100%{visibility:hidden;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}@keyframes slideOutRight{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}100%{visibility:hidden;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.slideOutRight{-webkit-animation-name:slideOutRight;animation-name:slideOutRight}@-webkit-keyframes slideOutUp{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}100%{visibility:hidden;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes slideOutUp{from{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}100%{visibility:hidden;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}.slideOutUp{-webkit-animation-name:slideOutUp;animation-name:slideOutUp}", ""]);
 
 	// exports
 
@@ -482,11 +483,49 @@ webpackJsonp([0],[
 /* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(26);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(16)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./styles.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./styles.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(15)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".section, .section-accent, .section-dark, .section-light {\n  width: 100%;\n  min-height: 100px;\n  padding-top: 20px;\n  padding-bottom: 20px; }\n  .section .icon, .section-accent .icon, .section-dark .icon, .section-light .icon {\n    display: block;\n    font-size: 2.5em; }\n  .section h1, .section-accent h1, .section-dark h1, .section-light h1 {\n    margin-top: 0px;\n    font-size: 0.75em;\n    font-weight: 400; }\n  .section p, .section-accent p, .section-dark p, .section-light p {\n    margin: 0px;\n    font-size: 0.65em; }\n  .section a, .section-accent a, .section-dark a, .section-light a {\n    margin: 0px;\n    font-size: 0.65em;\n    color: #c0c5cb;\n    text-decoration: none; }\n  .section a:hover, .section-accent a:hover, .section-dark a:hover, .section-light a:hover {\n    color: #ffffff;\n    text-decoration: underline; }\n\n.section-accent {\n  background-color: #2075f5;\n  color: #ffffff; }\n\n.section-dark {\n  background-color: #26262c;\n  color: #ffffff; }\n  .section-dark\np {\n    color: #c0c5cb; }\n\n.section-light {\n  background-color: #c0c5cb; }\n\n@media screen and (max-width: 47.2em) {\n  .section .icon, .section-accent .icon, .section-dark .icon, .section-light .icon {\n    font-size: 1.6em; } }\n\n.timeline {\n  margin: 20px 20px 0px 20px;\n  padding: 0;\n  list-style: none;\n  position: relative; }\n\n/* The line */\n.timeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  width: 4px;\n  border-right: 4px dotted #2075f5;\n  left: 50%;\n  margin: 0px;\n  margin-left: -4px; }\n\n.timeline > li {\n  position: relative; }\n\n/* The date/time */\n.timeline > li .time {\n  display: block;\n  width: 48%;\n  padding-right: 100px;\n  position: absolute; }\n\n.timeline > li .time span {\n  display: block;\n  text-align: right; }\n\n.timeline > li .time span:first-child {\n  font-size: 0.75em;\n  color: #26262c; }\n\n.timeline > li .time span:last-child {\n  font-size: 1.2em;\n  color: #2075f5; }\n\n/* Right content */\n.timeline > li .label {\n  margin: 0 0px 20px 53%;\n  background: rgba(0, 0, 0, 0.12);\n  color: #fff;\n  padding: 0.5em 1em;\n  font-size: 1em;\n  font-weight: 300;\n  position: relative;\n  border-radius: 5px;\n  text-align: left;\n  color: #26262c; }\n\n.timeline > li .label h2 {\n  margin: 0px;\n  font-size: 1em;\n  color: #2075f5;\n  text-align: left; }\n\n.timeline > li .label h3 {\n  margin: 0px;\n  font-size: 0.8em;\n  color: #26262c;\n  text-align: left;\n  margin-bottom: 10px; }\n\n/* The triangle */\n.timeline > li .label:after {\n  right: 100%;\n  border: solid transparent;\n  content: \" \";\n  height: 0;\n  width: 0;\n  position: absolute;\n  pointer-events: none;\n  border-right-color: rgba(0, 0, 0, 0.12);\n  border-width: 10px;\n  top: 10px; }\n\n/* The icons */\n.timeline > li .icon {\n  width: 16px;\n  height: 16px;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  font-size: 1.4em;\n  line-height: 40px;\n  -webkit-font-smoothing: antialiased;\n  position: absolute;\n  background: #2075f5;\n  border-radius: 50%;\n  text-align: center;\n  left: 50%;\n  top: 0;\n  margin: 10px 0 0 -6px; }\n\n/* Example Media Queries */\n@media screen and (max-width: 65.375em) {\n  .timeline > li .time span:last-child {\n    font-size: 1.1em; } }\n\n@media screen and (max-width: 47.2em) {\n  .timeline:before {\n    display: none; }\n  .timeline > li .time {\n    width: 100%;\n    position: relative;\n    padding: 0 0 20px 0; }\n  .timeline > li .time span {\n    text-align: center; }\n  .timeline > li .label {\n    margin: 0 0 30px 0;\n    padding: 1em;\n    font-weight: 400;\n    font-size: 95%; }\n  .timeline > li .label:after {\n    right: auto;\n    left: 50%;\n    border-right-color: transparent;\n    border-bottom-color: rgba(0, 0, 0, 0.12);\n    top: -20px;\n    margin-left: -10px; }\n  .timeline > li .icon {\n    display: none; } }\n\nbody {\n  text-align: center;\n  font-family: \"Open Sans\", sans-serif;\n  background: #f3f3f3;\n  color: #26262c; }\n\n.bubble, .bubble-small, .bubble-medium, .bubble-large {\n  background: #ffffff;\n  color: #26262c;\n  display: inline-block;\n  margin: 10px; }\n\n.bubble-small {\n  width: 35px;\n  height: 35px;\n  border-radius: 17.5px; }\n  .bubble-small h2 {\n    margin: 0px;\n    font-size: 8px; }\n  .bubble-small h4 {\n    margin: 0px;\n    margin-top: 3px;\n    font-size: 7px; }\n\n.bubble-medium {\n  width: 45px;\n  height: 45px;\n  border-radius: 22.5px; }\n  .bubble-medium h2 {\n    margin: 0px;\n    font-size: 9px; }\n  .bubble-medium h4 {\n    margin: 0px;\n    margin-top: 4px;\n    font-size: 8px; }\n\n.bubble-large {\n  width: 60px;\n  height: 60px;\n  border-radius: 30px; }\n  .bubble-large h2 {\n    margin: 0px;\n    margin-top: 8px;\n    font-size: 11px; }\n  .bubble-large h4 {\n    margin: 0px;\n    font-size: 9px; }\n\n.contact a {\n  display: inline-block;\n  margin: 5px; }\n\na:hover .contact-icon {\n  opacity: 1; }\n\n.contact-icon {\n  opacity: 0.5; }\n\n.header\n.portrait {\n  -webkit-box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  -moz-box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  width: 150px;\n  height: 150px;\n  background-image: url(" + __webpack_require__(27) + ");\n  margin: auto;\n  margin-top: 50px;\n  border-radius: 75px; }\n\n.header\n.icon {\n  font-size: 1.2em;\n  color: #c0c5cb;\n  margin-bottom: 50px; }\n\n.header\n.icon.main {\n  font-size: 1.8em;\n  color: #2075f5;\n  padding: 0px;\n  margin-bottom: 50px; }\n\n.header\nh1 {\n  font-weight: 700;\n  text-align: center;\n  font-size: 1.3em;\n  margin-top: 50px;\n  margin-bottom: 0px;\n  padding: 0px; }\n\n.header\nh2 {\n  font-family: \"Fira Mono\", sans-serif;\n  font-weight: 400;\n  color: #2075f5;\n  text-align: center;\n  font-size: 0.8em;\n  margin-top: 3px;\n  padding: 0px; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
 	module.exports = __webpack_require__.p + "dist/assets/58b76c5a4e616dee52e713fcf6927d8f.png"
 
 /***/ },
-/* 26 */,
-/* 27 */,
 /* 28 */,
 /* 29 */,
 /* 30 */,
@@ -552,39 +591,33 @@ webpackJsonp([0],[
 /* 90 */,
 /* 91 */,
 /* 92 */,
-/* 93 */
+/* 93 */,
+/* 94 */,
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(94)
-	module.exports.template = __webpack_require__(95)
+	module.exports = __webpack_require__(96)
+	module.exports.template = __webpack_require__(98)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
+	hotAPI.createRecord(id, module.exports)
 	module.hot.accept(["-!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue","-!vue-html!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./main.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue"))
-	Ctor.options.template = require("-!vue-html!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./main.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var newOptions = require("-!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue")
+	var newTemplate = require("-!vue-html!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./main.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 94 */
-/***/ function(module, exports) {
+/* 96 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var wow = __webpack_require__(97)
 
 	function getAge(dateString) {
 	    var today = new Date();
@@ -598,6 +631,9 @@ webpackJsonp([0],[
 	}
 
 	module.exports = {
+	  ready: function() {
+	    new wow.WOW().init();
+	  },
 	  data: {
 	    header: {
 	      name: "Aloïs Deniel",
@@ -666,82 +702,25 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 95 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"header section\">\r\n      <div class=\"portrait\"></div>\r\n      <h1>{{ header.name }}</h1>\r\n      <h2>{{ header.profile }}</h2>\r\n      <i class=\"icon main icons8-iphone\"></i>\r\n      <i class=\"icon icons8-angle-down\"></i>\r\n  </div>\r\n\r\n  <section-about info=\"{{about}}\"></section-about>\r\n\r\n  <section-skills medium=\"{{ skills.medium }}\" major=\"{{ skills.major }}\" minor=\"{{ skills.minor }}\"></section-skills>\r\n\r\n  <section-jobs events=\"{{jobs}}\"></section-jobs>\r\n\r\n  <section-studies events=\"{{studies}}\"></section-studies>\r\n\r\n  <section-opensource></section-opensource>\r\n\r\n  <section-hobbies></section-hobbies>\r\n\r\n  <section-contact items=\"{{contact}}\"></section-contact>";
-
-/***/ },
-/* 96 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var map = {
-		"./age.js": 97,
-		"./shape.js": 98
-	};
-	function webpackContext(req) {
-		return __webpack_require__(webpackContextResolve(req));
-	};
-	function webpackContextResolve(req) {
-		return map[req] || (function() { throw new Error("Cannot find module '" + req + "'.") }());
-	};
-	webpackContext.keys = function webpackContextKeys() {
-		return Object.keys(map);
-	};
-	webpackContext.resolve = webpackContextResolve;
-	module.exports = webpackContext;
-	webpackContext.id = 96;
-
-
-/***/ },
 /* 97 */
 /***/ function(module, exports) {
 
-	module.exports = function (value) {
-	  var today = new Date();
-	  var birthDate = new Date(dateString);
-	  var age = today.getFullYear() - birthDate.getFullYear();
-	  var m = today.getMonth() - birthDate.getMonth();
-	  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-	      age--;
-	  }
-	  return age;
-	};
-
+	/*! WOW - v1.1.0 - 2015-04-04
+	* Copyright (c) 2015 Matthieu Aussaguel; Licensed MIT */(function(){var a,b,c,d,e,f=function(a,b){return function(){return a.apply(b,arguments)}},g=[].indexOf||function(a){for(var b=0,c=this.length;c>b;b++)if(b in this&&this[b]===a)return b;return-1};b=function(){function a(){}return a.prototype.extend=function(a,b){var c,d;for(c in b)d=b[c],null==a[c]&&(a[c]=d);return a},a.prototype.isMobile=function(a){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(a)},a.prototype.createEvent=function(a,b,c,d){var e;return null==b&&(b=!1),null==c&&(c=!1),null==d&&(d=null),null!=document.createEvent?(e=document.createEvent("CustomEvent"),e.initCustomEvent(a,b,c,d)):null!=document.createEventObject?(e=document.createEventObject(),e.eventType=a):e.eventName=a,e},a.prototype.emitEvent=function(a,b){return null!=a.dispatchEvent?a.dispatchEvent(b):b in(null!=a)?a[b]():"on"+b in(null!=a)?a["on"+b]():void 0},a.prototype.addEvent=function(a,b,c){return null!=a.addEventListener?a.addEventListener(b,c,!1):null!=a.attachEvent?a.attachEvent("on"+b,c):a[b]=c},a.prototype.removeEvent=function(a,b,c){return null!=a.removeEventListener?a.removeEventListener(b,c,!1):null!=a.detachEvent?a.detachEvent("on"+b,c):delete a[b]},a.prototype.innerHeight=function(){return"innerHeight"in window?window.innerHeight:document.documentElement.clientHeight},a}(),c=this.WeakMap||this.MozWeakMap||(c=function(){function a(){this.keys=[],this.values=[]}return a.prototype.get=function(a){var b,c,d,e,f;for(f=this.keys,b=d=0,e=f.length;e>d;b=++d)if(c=f[b],c===a)return this.values[b]},a.prototype.set=function(a,b){var c,d,e,f,g;for(g=this.keys,c=e=0,f=g.length;f>e;c=++e)if(d=g[c],d===a)return void(this.values[c]=b);return this.keys.push(a),this.values.push(b)},a}()),a=this.MutationObserver||this.WebkitMutationObserver||this.MozMutationObserver||(a=function(){function a(){"undefined"!=typeof console&&null!==console&&console.warn("MutationObserver is not supported by your browser."),"undefined"!=typeof console&&null!==console&&console.warn("WOW.js cannot detect dom mutations, please call .sync() after loading new content.")}return a.notSupported=!0,a.prototype.observe=function(){},a}()),d=this.getComputedStyle||function(a){return this.getPropertyValue=function(b){var c;return"float"===b&&(b="styleFloat"),e.test(b)&&b.replace(e,function(a,b){return b.toUpperCase()}),(null!=(c=a.currentStyle)?c[b]:void 0)||null},this},e=/(\-([a-z]){1})/g,this.WOW=function(){function e(a){null==a&&(a={}),this.scrollCallback=f(this.scrollCallback,this),this.scrollHandler=f(this.scrollHandler,this),this.start=f(this.start,this),this.scrolled=!0,this.config=this.util().extend(a,this.defaults),this.animationNameCache=new c,this.wowEvent=this.util().createEvent(this.config.boxClass)}return e.prototype.defaults={boxClass:"wow",animateClass:"animated",offset:0,mobile:!0,live:!0,callback:null},e.prototype.init=function(){var a;return this.element=window.document.documentElement,"interactive"===(a=document.readyState)||"complete"===a?this.start():this.util().addEvent(document,"DOMContentLoaded",this.start),this.finished=[]},e.prototype.start=function(){var b,c,d,e;if(this.stopped=!1,this.boxes=function(){var a,c,d,e;for(d=this.element.querySelectorAll("."+this.config.boxClass),e=[],a=0,c=d.length;c>a;a++)b=d[a],e.push(b);return e}.call(this),this.all=function(){var a,c,d,e;for(d=this.boxes,e=[],a=0,c=d.length;c>a;a++)b=d[a],e.push(b);return e}.call(this),this.boxes.length)if(this.disabled())this.resetStyle();else for(e=this.boxes,c=0,d=e.length;d>c;c++)b=e[c],this.applyStyle(b,!0);return this.disabled()||(this.util().addEvent(window,"scroll",this.scrollHandler),this.util().addEvent(window,"resize",this.scrollHandler),this.interval=setInterval(this.scrollCallback,50)),this.config.live?new a(function(a){return function(b){var c,d,e,f,g;for(g=[],c=0,d=b.length;d>c;c++)f=b[c],g.push(function(){var a,b,c,d;for(c=f.addedNodes||[],d=[],a=0,b=c.length;b>a;a++)e=c[a],d.push(this.doSync(e));return d}.call(a));return g}}(this)).observe(document.body,{childList:!0,subtree:!0}):void 0},e.prototype.stop=function(){return this.stopped=!0,this.util().removeEvent(window,"scroll",this.scrollHandler),this.util().removeEvent(window,"resize",this.scrollHandler),null!=this.interval?clearInterval(this.interval):void 0},e.prototype.sync=function(){return a.notSupported?this.doSync(this.element):void 0},e.prototype.doSync=function(a){var b,c,d,e,f;if(null==a&&(a=this.element),1===a.nodeType){for(a=a.parentNode||a,e=a.querySelectorAll("."+this.config.boxClass),f=[],c=0,d=e.length;d>c;c++)b=e[c],g.call(this.all,b)<0?(this.boxes.push(b),this.all.push(b),this.stopped||this.disabled()?this.resetStyle():this.applyStyle(b,!0),f.push(this.scrolled=!0)):f.push(void 0);return f}},e.prototype.show=function(a){return this.applyStyle(a),a.className=a.className+" "+this.config.animateClass,null!=this.config.callback&&this.config.callback(a),this.util().emitEvent(a,this.wowEvent),this.util().addEvent(a,"animationend",this.resetAnimation),this.util().addEvent(a,"oanimationend",this.resetAnimation),this.util().addEvent(a,"webkitAnimationEnd",this.resetAnimation),this.util().addEvent(a,"MSAnimationEnd",this.resetAnimation),a},e.prototype.applyStyle=function(a,b){var c,d,e;return d=a.getAttribute("data-wow-duration"),c=a.getAttribute("data-wow-delay"),e=a.getAttribute("data-wow-iteration"),this.animate(function(f){return function(){return f.customStyle(a,b,d,c,e)}}(this))},e.prototype.animate=function(){return"requestAnimationFrame"in window?function(a){return window.requestAnimationFrame(a)}:function(a){return a()}}(),e.prototype.resetStyle=function(){var a,b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],e.push(a.style.visibility="visible");return e},e.prototype.resetAnimation=function(a){var b;return a.type.toLowerCase().indexOf("animationend")>=0?(b=a.target||a.srcElement,b.className=b.className.replace(config.animateClass,"").trim()):void 0},e.prototype.customStyle=function(a,b,c,d,e){return b&&this.cacheAnimationName(a),a.style.visibility=b?"hidden":"visible",c&&this.vendorSet(a.style,{animationDuration:c}),d&&this.vendorSet(a.style,{animationDelay:d}),e&&this.vendorSet(a.style,{animationIterationCount:e}),this.vendorSet(a.style,{animationName:b?"none":this.cachedAnimationName(a)}),a},e.prototype.vendors=["moz","webkit"],e.prototype.vendorSet=function(a,b){var c,d,e,f;d=[];for(c in b)e=b[c],a[""+c]=e,d.push(function(){var b,d,g,h;for(g=this.vendors,h=[],b=0,d=g.length;d>b;b++)f=g[b],h.push(a[""+f+c.charAt(0).toUpperCase()+c.substr(1)]=e);return h}.call(this));return d},e.prototype.vendorCSS=function(a,b){var c,e,f,g,h,i;for(h=d(a),g=h.getPropertyCSSValue(b),f=this.vendors,c=0,e=f.length;e>c;c++)i=f[c],g=g||h.getPropertyCSSValue("-"+i+"-"+b);return g},e.prototype.animationName=function(a){var b;try{b=this.vendorCSS(a,"animation-name").cssText}catch(c){b=d(a).getPropertyValue("animation-name")}return"none"===b?"":b},e.prototype.cacheAnimationName=function(a){return this.animationNameCache.set(a,this.animationName(a))},e.prototype.cachedAnimationName=function(a){return this.animationNameCache.get(a)},e.prototype.scrollHandler=function(){return this.scrolled=!0},e.prototype.scrollCallback=function(){var a;return!this.scrolled||(this.scrolled=!1,this.boxes=function(){var b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],a&&(this.isVisible(a)?this.show(a):e.push(a));return e}.call(this),this.boxes.length||this.config.live)?void 0:this.stop()},e.prototype.offsetTop=function(a){for(var b;void 0===a.offsetTop;)a=a.parentNode;for(b=a.offsetTop;a=a.offsetParent;)b+=a.offsetTop;return b},e.prototype.isVisible=function(a){var b,c,d,e,f;return c=a.getAttribute("data-wow-offset")||this.config.offset,f=window.pageYOffset,e=f+Math.min(this.element.clientHeight,this.util().innerHeight())-c,d=this.offsetTop(a),b=d+a.clientHeight,e>=d&&b>=f},e.prototype.util=function(){return null!=this._util?this._util:this._util=new b},e.prototype.disabled=function(){return!this.config.mobile&&this.util().isMobile(navigator.userAgent)},e}()}).call(this);
 
 /***/ },
 /* 98 */
 /***/ function(module, exports) {
 
-	module.exports = function (value) {
-
-	  var brandIconData = {
-	    twitter: "M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265 0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032 1.474 6.038 0 9.34-5 9.34-9.338 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z",
-	    github: "M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8",
-	    spotify: "M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.56-8-8-8zm3.68 11.56c-.16.24-.44.32-.68.16-1.88-1.16-4.24-1.4-7.04-.76-.28.08-.52-.12-.6-.36-.08-.28.12-.52.36-.6 3.04-.68 5.68-.4 7.76.88.28.12.32.44.2.68zm.96-2.2c-.2.28-.56.4-.84.2-2.16-1.32-5.44-1.72-7.96-.92-.32.08-.68-.08-.76-.4-.08-.32.08-.68.4-.76 2.92-.88 6.52-.44 9 1.08.24.12.36.52.16.8zm.08-2.24C10.16 5.6 5.88 5.44 3.44 6.2c-.4.12-.8-.12-.92-.48-.12-.4.12-.8.48-.92 2.84-.84 7.52-.68 10.48 1.08.36.2.48.68.28 1.04-.2.28-.68.4-1.04.2z",
-	    mail: "m 4.658682,5.2012829 -4.62347321,-3.5515991 0,8.1750631 4.62347321,-4.623464 z m 11.137699,-5.20267555 -15.70686069,0 L 7.9366965,6.0265623 15.796381,-0.00139265 Z M 10.136208,6.0314319 7.9360056,7.7188478 5.7323549,6.0260145 0.05438598,11.704026 l 15.75438602,0 -5.672564,-5.6725941 z m 1.0744,-0.8240011 4.626888,4.6268728 0,-8.1754589 -4.626888,3.5485861 z"
-	  }
-
-	  return brandIconData[value];
-	};
-
+	module.exports = "<div class=\"header section\">\r\n      <div class=\"portrait animated fadeIn\"></div>\r\n      <h1 class=\"animated fadeIn\">{{ header.name }}</h1>\r\n      <h2 class=\"animated fadeIn\">{{ header.profile }}</h2>\r\n      <i class=\"icon main icons8-iphone animated zoomIn\"></i>\r\n      <i class=\"icon icons8-angle-down wow rubberBand\"></i>\r\n  </div>\r\n\r\n  <section-about info=\"{{about}}\"></section-about>\r\n\r\n  <section-skills medium=\"{{ skills.medium }}\" major=\"{{ skills.major }}\" minor=\"{{ skills.minor }}\"></section-skills>\r\n\r\n  <section-jobs events=\"{{jobs}}\"></section-jobs>\r\n\r\n  <section-studies events=\"{{studies}}\"></section-studies>\r\n\r\n  <section-opensource></section-opensource>\r\n\r\n  <section-hobbies></section-hobbies>\r\n\r\n  <section-contact items=\"{{contact}}\"></section-contact>";
 
 /***/ },
 /* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./bubble.vue": 100,
-		"./icon.vue": 103,
-		"./section-about.vue": 106,
-		"./section-contact.vue": 109,
-		"./section-header.vue": 112,
-		"./section-hobbies.vue": 115,
-		"./section-jobs.vue": 118,
-		"./section-opensource.vue": 121,
-		"./section-skills.vue": 124,
-		"./section-studies.vue": 127,
-		"./timeline.vue": 130
+		"./age.js": 100,
+		"./shape.js": 101
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -759,48 +738,67 @@ webpackJsonp([0],[
 
 /***/ },
 /* 100 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__(101)
-	module.exports.template = __webpack_require__(102)
-	if (false) {
-	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
-	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./bubble.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./bubble.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
-	})
-	})()
-	}
+	module.exports = function (value) {
+	  var today = new Date();
+	  var birthDate = new Date(dateString);
+	  var age = today.getFullYear() - birthDate.getFullYear();
+	  var m = today.getMonth() - birthDate.getMonth();
+	  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+	      age--;
+	  }
+	  return age;
+	};
+
 
 /***/ },
 /* 101 */
 /***/ function(module, exports) {
 
-	module.exports = {
-	  props: ['name', 'description', 'size']
+	module.exports = function (value) {
+
+	  var brandIconData = {
+	    twitter: "M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265 0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032 1.474 6.038 0 9.34-5 9.34-9.338 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z",
+	    github: "M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8",
+	    spotify: "M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.56-8-8-8zm3.68 11.56c-.16.24-.44.32-.68.16-1.88-1.16-4.24-1.4-7.04-.76-.28.08-.52-.12-.6-.36-.08-.28.12-.52.36-.6 3.04-.68 5.68-.4 7.76.88.28.12.32.44.2.68zm.96-2.2c-.2.28-.56.4-.84.2-2.16-1.32-5.44-1.72-7.96-.92-.32.08-.68-.08-.76-.4-.08-.32.08-.68.4-.76 2.92-.88 6.52-.44 9 1.08.24.12.36.52.16.8zm.08-2.24C10.16 5.6 5.88 5.44 3.44 6.2c-.4.12-.8-.12-.92-.48-.12-.4.12-.8.48-.92 2.84-.84 7.52-.68 10.48 1.08.36.2.48.68.28 1.04-.2.28-.68.4-1.04.2z",
+	    mail: "m 4.658682,5.2012829 -4.62347321,-3.5515991 0,8.1750631 4.62347321,-4.623464 z m 11.137699,-5.20267555 -15.70686069,0 L 7.9366965,6.0265623 15.796381,-0.00139265 Z M 10.136208,6.0314319 7.9360056,7.7188478 5.7323549,6.0260145 0.05438598,11.704026 l 15.75438602,0 -5.672564,-5.6725941 z m 1.0744,-0.8240011 4.626888,4.6268728 0,-8.1754589 -4.626888,3.5485861 z"
+	  }
+
+	  return brandIconData[value];
 	};
+
 
 /***/ },
 /* 102 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<div class=\"bubble-{{size}}\">\r\n  <h2>{{name}}</h2>\r\n  <h4>{{description}}</h4>\r\n</div>";
+	var map = {
+		"./bubble.vue": 103,
+		"./icon.vue": 106,
+		"./section-about.vue": 109,
+		"./section-contact.vue": 112,
+		"./section-header.vue": 115,
+		"./section-hobbies.vue": 118,
+		"./section-jobs.vue": 121,
+		"./section-opensource.vue": 124,
+		"./section-skills.vue": 127,
+		"./section-studies.vue": 130,
+		"./timeline.vue": 133
+	};
+	function webpackContext(req) {
+		return __webpack_require__(webpackContextResolve(req));
+	};
+	function webpackContextResolve(req) {
+		return map[req] || (function() { throw new Error("Cannot find module '" + req + "'.") }());
+	};
+	webpackContext.keys = function webpackContextKeys() {
+		return Object.keys(map);
+	};
+	webpackContext.resolve = webpackContextResolve;
+	module.exports = webpackContext;
+	webpackContext.id = 102;
+
 
 /***/ },
 /* 103 */
@@ -810,25 +808,15 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(105)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./icon.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./icon.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./bubble.vue"], function () {
+	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./bubble.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
@@ -838,14 +826,14 @@ webpackJsonp([0],[
 /***/ function(module, exports) {
 
 	module.exports = {
-	  props: [ 'size', 'color', 'shape']
+	  props: ['name', 'description', 'size']
 	};
 
 /***/ },
 /* 105 */
 /***/ function(module, exports) {
 
-	module.exports = "<svg viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:{{size}}px;height:{{size}}px;\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"1.414\"><path class=\"contact-icon\" d=\"{{shape | shape}}\" fill=\"{{color}}\" fill-rule=\"nonzero\"/></svg>";
+	module.exports = "<div class=\"bubble-{{size}} wow zoomIn\">\r\n  <h2>{{name}}</h2>\r\n  <h4>{{description}}</h4>\r\n</div>";
 
 /***/ },
 /* 106 */
@@ -855,25 +843,15 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(108)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-about.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-about.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./icon.vue"], function () {
+	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./icon.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
@@ -883,14 +861,14 @@ webpackJsonp([0],[
 /***/ function(module, exports) {
 
 	module.exports = {
-	  props: ['info']
+	  props: [ 'size', 'color', 'shape']
 	};
 
 /***/ },
 /* 108 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"section-dark\">\r\n  <section-header icon=\"user-male\" title=\"ABOUT ME\"></section-header>\r\n  <p v-repeat=\"info\">{{$value}}</p>\r\n</div>";
+	module.exports = "<svg viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:{{size}}px;height:{{size}}px;\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"1.414\"><path class=\"contact-icon\" d=\"{{shape | shape}}\" fill=\"{{color}}\" fill-rule=\"nonzero\"/></svg>";
 
 /***/ },
 /* 109 */
@@ -900,25 +878,15 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(111)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-contact.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-contact.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-about.vue"], function () {
+	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-about.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
@@ -928,19 +896,14 @@ webpackJsonp([0],[
 /***/ function(module, exports) {
 
 	module.exports = {
-	  props: {
-	    items: {
-	      type: Array,
-	      default: () => []
-	    }
-	  }
+	  props: ['info']
 	};
 
 /***/ },
 /* 111 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"contact section-dark\">\r\n  <section-header icon=\"comments\" title=\"CONTACT\"></section-header>\r\n\r\n  <a v-repeat=\"item in items\" href=\"{{item.link}}\">\r\n    <icon color=\"#fff\" shape=\"{{item.icon}}\" size=\"20\"></icon>\r\n  </a>\r\n</div>";
+	module.exports = "<div class=\"section-dark\">\r\n  <section-header icon=\"user-male\" title=\"ABOUT ME\"></section-header>\r\n  <p v-repeat=\"info\">{{$value}}</p>\r\n</div>";
 
 /***/ },
 /* 112 */
@@ -950,25 +913,15 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(114)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-header.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-header.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-contact.vue"], function () {
+	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-contact.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
@@ -978,14 +931,19 @@ webpackJsonp([0],[
 /***/ function(module, exports) {
 
 	module.exports = {
-	  props: ['icon', 'title']
+	  props: {
+	    items: {
+	      type: Array,
+	      default: function() { return []; }
+	    }
+	  }
 	};
 
 /***/ },
 /* 114 */
 /***/ function(module, exports) {
 
-	module.exports = "<i class=\"icon icons8-{{icon}}\"></i>\r\n  <h1>{{title}}</h1>";
+	module.exports = "<div class=\"contact section-dark\">\r\n  <section-header icon=\"comments\" title=\"CONTACT\"></section-header>\r\n\r\n  <a v-repeat=\"item in items\" href=\"{{item.link}}\">\r\n    <icon color=\"#fff\" shape=\"{{item.icon}}\" size=\"20\"></icon>\r\n  </a>\r\n</div>";
 
 /***/ },
 /* 115 */
@@ -995,25 +953,15 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(117)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-hobbies.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-hobbies.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-header.vue"], function () {
+	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-header.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
@@ -1023,14 +971,14 @@ webpackJsonp([0],[
 /***/ function(module, exports) {
 
 	module.exports = {
-	  props: []
+	  props: ['icon', 'title']
 	};
 
 /***/ },
 /* 117 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"section\">\r\n  <section-header icon=\"airport\" title=\"HOBBIES\"></section-header>\r\n  <p>soon</p>\r\n</div>";
+	module.exports = "<i class=\"icon icons8-{{icon}} wow fadeIn\"></i>\r\n  <h1 class=\"wow fadeIn\">{{title}}</h1>";
 
 /***/ },
 /* 118 */
@@ -1040,25 +988,15 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(120)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-jobs.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-jobs.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-hobbies.vue"], function () {
+	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-hobbies.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
@@ -1068,14 +1006,14 @@ webpackJsonp([0],[
 /***/ function(module, exports) {
 
 	module.exports = {
-	  props: [ "events"]
+	  props: []
 	};
 
 /***/ },
 /* 120 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"section\">\r\n  <section-header icon=\"briefcase\" title=\"JOBS\"></section-header>\r\n  <timeline events='{{events}}'></timeline>\r\n</div>";
+	module.exports = "<div class=\"section\">\r\n  <section-header icon=\"airport\" title=\"HOBBIES\"></section-header>\r\n  <p>soon</p>\r\n</div>";
 
 /***/ },
 /* 121 */
@@ -1085,25 +1023,15 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(123)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-opensource.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-opensource.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-jobs.vue"], function () {
+	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-jobs.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
@@ -1113,14 +1041,14 @@ webpackJsonp([0],[
 /***/ function(module, exports) {
 
 	module.exports = {
-	  props: [ 'projects']
+	  props: [ "events"]
 	};
 
 /***/ },
 /* 123 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"section-accent\">\r\n  <section-header icon=\"idea\" title=\"OPEN-SOURCE\"></section-header>\r\n  <p>soon</p>\r\n</template>";
+	module.exports = "<div class=\"section\">\r\n  <section-header icon=\"briefcase\" title=\"JOBS\"></section-header>\r\n  <timeline events='{{events}}'></timeline>\r\n</div>";
 
 /***/ },
 /* 124 */
@@ -1130,25 +1058,15 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(126)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-skills.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-skills.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-opensource.vue"], function () {
+	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-opensource.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
@@ -1158,27 +1076,14 @@ webpackJsonp([0],[
 /***/ function(module, exports) {
 
 	module.exports = {
-	  props: {
-	    major: {
-	      type: Array,
-	      default: () => []
-	    },
-	    medium: {
-	      type: Array,
-	      default: () => []
-	    },
-	    minor: {
-	      type: Array,
-	      default: () => []
-	    }
-	  }
+	  props: [ 'projects']
 	};
 
 /***/ },
 /* 126 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"section-accent\">\r\n  <section-header icon=\"trophy\" title=\"SKILLS\"></section-header>\r\n\r\n  <template v-repeat=\"skill in major\">\r\n    <bubble size=\"large\" name=\"{{skill.name}}\" description=\"{{skill.type}}\"></bubble>\r\n  </template>\r\n  <template v-repeat=\"skill in medium\">\r\n    <bubble size=\"medium\" name=\"{{skill.name}}\" description=\"{{skill.type}}\"></bubble>\r\n  </template>\r\n  <template v-repeat=\"skill in minor\">\r\n    <bubble size=\"small\" name=\"{{skill.name}}\" description=\"{{skill.type}}\"></bubble>\r\n  </template>\r\n</div>";
+	module.exports = "<div class=\"section-accent\">\r\n  <section-header icon=\"idea\" title=\"OPEN-SOURCE\"></section-header>\r\n  <p>soon</p>\r\n</template>";
 
 /***/ },
 /* 127 */
@@ -1188,25 +1093,15 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(129)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-studies.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-studies.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-skills.vue"], function () {
+	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-skills.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
@@ -1216,14 +1111,27 @@ webpackJsonp([0],[
 /***/ function(module, exports) {
 
 	module.exports = {
-	  props: [ "events"]
+	  props: {
+	    major: {
+	      type: Array,
+	      default: function() { return []; }
+	    },
+	    medium: {
+	      type: Array,
+	      default: function() { return []; }
+	    },
+	    minor: {
+	      type: Array,
+	      default: function() { return []; }
+	    }
+	  }
 	};
 
 /***/ },
 /* 129 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"section-light\">\r\n  <section-header icon=\"diploma-1\" title=\"STUDIES\"></section-header>\r\n  <timeline events='{{events}}'></timeline>\r\n\r\n</div>";
+	module.exports = "<div class=\"section-accent\">\r\n  <section-header icon=\"trophy\" title=\"SKILLS\"></section-header>\r\n\r\n  <template v-repeat=\"skill in major\">\r\n    <bubble size=\"large\" name=\"{{skill.name}}\" description=\"{{skill.type}}\"></bubble>\r\n  </template>\r\n  <template v-repeat=\"skill in medium\">\r\n    <bubble size=\"medium\" name=\"{{skill.name}}\" description=\"{{skill.type}}\"></bubble>\r\n  </template>\r\n  <template v-repeat=\"skill in minor\">\r\n    <bubble size=\"small\" name=\"{{skill.name}}\" description=\"{{skill.type}}\"></bubble>\r\n  </template>\r\n</div>";
 
 /***/ },
 /* 130 */
@@ -1233,25 +1141,15 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(132)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./timeline.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./timeline.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-studies.vue"], function () {
+	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-studies.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
@@ -1268,7 +1166,42 @@ webpackJsonp([0],[
 /* 132 */
 /***/ function(module, exports) {
 
-	module.exports = "<ul class=\"timeline\">\r\n\t<li v-repeat=\"events\">\r\n\t\t<div class=\"time\">\r\n      <span>{{ date }} - {{ duration }}</span>\r\n      <span>{{ name }}</span>\r\n    </div>\r\n\t\t<div class=\"icon\"></div>\r\n\t\t<div class=\"label\">\r\n\t\t\t<h2>{{ title }}</h2>\r\n  \t\t<h3>{{ subtitle }}</h3>\r\n\t\t\t<p>{{ description }}</p>\r\n\t\t</div>\r\n\t</li>\r\n</ul>";
+	module.exports = "<div class=\"section-light\">\r\n  <section-header icon=\"diploma-1\" title=\"STUDIES\"></section-header>\r\n  <timeline events='{{events}}'></timeline>\r\n\r\n</div>";
+
+/***/ },
+/* 133 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(134)
+	module.exports.template = __webpack_require__(135)
+	if (false) {
+	(function () {
+	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./timeline.vue"], function () {
+	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./timeline.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 134 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	  props: [ "events"]
+	};
+
+/***/ },
+/* 135 */
+/***/ function(module, exports) {
+
+	module.exports = "<ul class=\"timeline\">\r\n\t<li v-repeat=\"events\">\r\n\t\t<div class=\"time wow fadeInLeft\">\r\n      <span>{{ date }} - {{ duration }}</span>\r\n      <span>{{ name }}</span>\r\n    </div>\r\n\t\t<div class=\"icon wow zoomIn\"></div>\r\n\t\t<div class=\"label wow fadeInRight\">\r\n\t\t\t<h2>{{ title }}</h2>\r\n  \t\t<h3>{{ subtitle }}</h3>\r\n\t\t\t<p>{{ description }}</p>\r\n\t\t</div>\r\n\t</li>\r\n</ul>";
 
 /***/ }
 ]);

@@ -1,5 +1,6 @@
 var normalize = require('normalize.css/normalize.css')
 var icons = require('windows-10-icons/font/styles.min.css')
+var icons = require('animate.css/animate.min.css')
 var styles = require('./scss/styles.scss')
 var Vue = require('vue')
 var appOptions = require('./main.vue')

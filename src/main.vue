@@ -1,10 +1,10 @@
 <template>
   <div class="header section">
-      <div class="portrait"></div>
-      <h1>{{ header.name }}</h1>
-      <h2>{{ header.profile }}</h2>
-      <i class="icon main icons8-iphone"></i>
-      <i class="icon icons8-angle-down"></i>
+      <div class="portrait animated fadeIn"></div>
+      <h1 class="animated fadeIn">{{ header.name }}</h1>
+      <h2 class="animated fadeIn">{{ header.profile }}</h2>
+      <i class="icon main icons8-iphone animated zoomIn"></i>
+      <i class="icon icons8-angle-down wow rubberBand"></i>
   </div>
 
   <section-about info="{{about}}"></section-about>
@@ -24,6 +24,7 @@
 </template>
 
 <script>
+var wow = require('./js/wow-1.1.0/wow.min.js')
 
 function getAge(dateString) {
     var today = new Date();
@@ -37,6 +38,9 @@ function getAge(dateString) {
 }
 
 module.exports = {
+  ready: function() {
+    new wow.WOW().init();
+  },
   data: {
     header: {
       name: "Aloïs Deniel",

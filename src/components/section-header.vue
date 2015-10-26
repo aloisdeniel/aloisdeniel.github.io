@@ -1,6 +1,6 @@
 <template>
-  <i class="icon icons8-{{icon}}"></i>
-  <h1>{{title}}</h1>
+  <i class="icon icons8-{{icon}} wow fadeIn"></i>
+  <h1 class="wow fadeIn">{{title}}</h1>
 </template>
 
 <script>

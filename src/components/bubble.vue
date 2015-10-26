@@ -1,5 +1,5 @@
 <template>
-<div class="bubble-{{size}}">
+<div class="bubble-{{size}} wow zoomIn">
   <h2>{{name}}</h2>
   <h4>{{description}}</h4>
 </div>
