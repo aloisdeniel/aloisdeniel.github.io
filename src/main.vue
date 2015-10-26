@@ -48,8 +48,11 @@ module.exports = {
     },
     contact: [
       { link: 'mailto:alois.deniel@outlook.com', icon: 'mail'},
+      { link: 'https://www.linkedin.com/profile/view?id=AAIAABCSq6IBXVUHi4NJtgeCQf9bkjUwA8h7UEo', icon: 'linkedin'},
+      { link: 'http://www.viadeo.com/profile/0021f7uowr4zjmgz', icon: 'viadeo' },
       { link: 'https://twitter.com/aloisdeniel', icon: 'twitter'},
-      { link: 'https://github.com/aloisdeniel', icon: 'github'}
+      { link: 'https://github.com/aloisdeniel', icon: 'github'},
+      { link: 'https://play.spotify.com/user/1121031422', icon: 'spotify'}
     ],
     studies: [
       {
