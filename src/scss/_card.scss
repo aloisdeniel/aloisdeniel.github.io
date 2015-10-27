@@ -12,6 +12,32 @@ $card-height: 150px;
   width: 96%;
   max-width: 800px;
   margin: 0 auto;
+
+  h2
+  {
+    text-align: left;
+    font-size: 0.9em;
+    margin: 10px 10px 0px 10px;
+    color: $color-accent;
+  }
+
+  h4
+  {
+    text-align: left;
+    font-size: 0.75em;
+    padding-top: 5px;
+    border-top: 1px solid $color-grey-semilight;
+    margin: 5px 10px 0px 10px;
+    color: $color-grey-dark;
+  }
+
+  p
+  {
+    text-align: left;
+    font-size: 0.75em;
+    margin: 5px 10px 0px 10px;
+    color: $color-grey-dark;
+  }
 }
 
 .cards:after {

@@ -106,15 +106,18 @@ module.exports = {
     hobbies: [
       {
         title: "Badminton",
-        description: "Sport"
+        subtitle: "Sport",
+        description: "3 ans"
       },
       {
         title: "Guitar",
-        description: "Arts"
+        subtitle: "Arts",
+        description: "5 ans"
       },
       {
         title: "Digital design",
-        description: "Arts"
+        subtitle: "Arts",
+        description: "Création de sites webs, conception d'interfaces mobiles"
       }
     ],
     skills: {
