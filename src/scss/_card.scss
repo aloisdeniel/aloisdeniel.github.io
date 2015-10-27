@@ -1,0 +1,40 @@
+$card-margin: 4%;
+$card-wide-columns: 3;
+$card-small-columns: 2;
+
+$card-wide-width: (100% / $card-wide-columns) - $card-margin;
+$card-small-width: (100% / $card-small-columns) - $card-margin;
+$card-height: 150px;
+
+.cards
+{
+  box-sizing: border-box;
+  width: 96%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cards:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card
+{
+  @include card(#fff,4px);
+
+  height: $card-height;
+  width:  $card-wide-width;
+  margin: $card-margin / 2;
+  float: left;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: $media-screen-small) {
+  .card
+  {
+    width:  $card-small-width;
+  }
+
+}

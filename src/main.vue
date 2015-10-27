@@ -17,7 +17,7 @@
 
   <section-opensource></section-opensource>
 
-  <section-hobbies></section-hobbies>
+  <section-hobbies items="{{hobbies}}"></section-hobbies>
 
   <section-contact items="{{contact}}"></section-contact>
 
@@ -99,10 +99,24 @@ module.exports = {
       }
     ],
     about: [
-        getAge("1988/06/02") + ' year old',
-        'live in Rennes, France',
-        'work for Orange Business Services'
-      ],
+      getAge("1988/06/02") + ' year old',
+      'live in Rennes, France',
+      'work for Orange Business Services'
+    ],
+    hobbies: [
+      {
+        title: "Badminton",
+        description: "Sport"
+      },
+      {
+        title: "Guitar",
+        description: "Arts"
+      },
+      {
+        title: "Digital design",
+        description: "Arts"
+      }
+    ],
     skills: {
       major: [ { name: "C#" , type: "L" }, { name: "Xamarin", type: "F" }, { name: "Windows UAP", type: "F" }, { name: "Visual Studio", type: "T" }],
       medium: [ { name: "nodejs", type: "F" }],

@@ -8,6 +8,7 @@ var appOptions = require('./main.vue')
 var components = [
   'icon',
   'bubble',
+  'card',
   'timeline',
   'section-about',
   'section-contact',

@@ -116,14 +116,14 @@
 
 /* Example Media Queries */
 
-@media screen and (max-width: 65.375em) {
+@media screen and (max-width: $media-screen-wide) {
 
 	.timeline > li .time span:last-child {
 		font-size: 1.1em;
 	}
 }
 
-@media screen and (max-width: 47.2em) {
+@media screen and (max-width: $media-screen-small) {
 	.timeline:before {
 		display: none;
 	}
