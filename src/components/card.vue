@@ -1,13 +1,14 @@
 <template>
 <div class="card wow flipInX">
   <h2>{{title}}</h2>
-  <h4>{{subtitle}}</h4>
+  <div class="tags"><span class="tag" v-repeat="tag in tags">{{tag}}</span></div>
   <p>{{description}}</p>
+  <a v-if="link" href="{{link}}">More details</a>
 </div>
 </template>
 
 <script>
 module.exports = {
-  props: ['title', 'subtitle', 'description']
+  props: ['title', 'tags', 'link', 'description']
 };
 </script>

@@ -15,7 +15,7 @@
 
   <section-studies events="{{studies}}"></section-studies>
 
-  <section-opensource></section-opensource>
+  <section-opensource projects="{{opensource}}"></section-opensource>
 
   <section-hobbies items="{{hobbies}}"></section-hobbies>
 
@@ -103,21 +103,34 @@ module.exports = {
       'live in Rennes, France',
       'work for Orange Business Services'
     ],
+    opensource: [
+      {
+        title: "Personnal website",
+        tags: ["html5", "css3", "scss", "javascript", "webpack",  "vue.js" ],
+        description: "The sources of the website you are currently browsing.",
+        link: "https://github.com/aloisdeniel/aloisdeniel.github.io"
+      }
+    ],
     hobbies: [
       {
         title: "Badminton",
-        subtitle: "Sport",
+        tags: ["sport" ],
         description: "3 ans"
       },
       {
         title: "Guitar",
-        subtitle: "Arts",
+        tags: ["art", "music" ],
         description: "5 ans"
       },
       {
+        title: "Drawing",
+        tags: ["art", "traditional", "digital", "photoshop" ],
+        description: "Conception de sites web, prototypage d'interfaces interfaces mobiles"
+      },
+      {
         title: "Digital design",
-        subtitle: "Arts",
-        description: "Création de sites webs, conception d'interfaces mobiles"
+        tags: ["art", "music", "photoshop" ],
+        description: "Conception de sites web, prototypage d'interfaces interfaces mobiles"
       }
     ],
     skills: {

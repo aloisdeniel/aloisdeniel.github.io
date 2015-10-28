@@ -3,7 +3,7 @@
   <section-header icon="airport" title="HOBBIES"></section-header>
   <div class="cards">
     <template v-repeat="item in items">
-      <card title="{{item.title}}" subtitle="{{item.subtitle}}" description="{{item.description}}"></card>
+      <card title="{{item.title}}" tags="{{item.tags}}" link="{{item.link}}" description="{{item.description}}"></card>
     </template>
   </div>
 </div>

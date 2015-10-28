@@ -13,24 +13,6 @@ $card-height: 150px;
   max-width: 800px;
   margin: 0 auto;
 
-  h2
-  {
-    text-align: left;
-    font-size: 0.9em;
-    margin: 10px 10px 0px 10px;
-    color: $color-accent;
-  }
-
-  h4
-  {
-    text-align: left;
-    font-size: 0.75em;
-    padding-top: 5px;
-    border-top: 1px solid $color-grey-semilight;
-    margin: 5px 10px 0px 10px;
-    color: $color-grey-dark;
-  }
-
   p
   {
     text-align: left;
@@ -49,6 +31,50 @@ $card-height: 150px;
 .card
 {
   @include card(#fff,4px);
+
+  h2
+  {
+    text-align: left;
+    font-size: 0.9em;
+    margin: 10px 10px 0px 10px;
+    color: $color-accent;
+  }
+
+  .tags
+  {
+    text-align: left;
+    font-weight: normal;
+    font-size: 0.6em;
+    padding-top: 10px;
+    border-top: 1px solid $color-grey-semilight;
+    margin: 5px 10px 5px 10px;
+    color: $color-white;
+
+    .tag
+    {
+      display: inline;
+      background: $color-accent;
+      padding: 2px 8px;
+      margin-right: 5px;
+      border-radius: 8px;
+    }
+  }
+
+  a
+  {
+    margin-top: 3px;
+    margin-left: 10px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    color: $color-accent;
+  }
+
+  a:hover
+  {
+    color: $color-grey-dark;
+
+  }
 
   height: $card-height;
   width:  $card-wide-width;
