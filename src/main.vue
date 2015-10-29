@@ -4,22 +4,25 @@
       <h1 class="animated fadeIn">{{ header.name }}</h1>
       <h2 class="animated fadeIn">{{ header.profile }}</h2>
       <i class="icon main icons8-iphone animated zoomIn"></i>
+      <div class="langs">
+        <a href="#eng" @click="load('eng')">ENG</a> | <a href="#fr" @click="load('fr')">FR</a>
+      </div>
       <i class="icon icons8-angle-down wow rubberBand"></i>
   </div>
 
-  <section-about info="{{about}}"></section-about>
+  <section-about :title="about.title" :info="about.info"></section-about>
 
-  <section-skills medium="{{ skills.medium }}" major="{{ skills.major }}" minor="{{ skills.minor }}"></section-skills>
+  <section-skills :medium="skills.medium" :major="skills.major" :minor="skills.minor"></section-skills>
 
-  <section-jobs events="{{jobs}}"></section-jobs>
+  <section-jobs :title="jobs.title" :events="jobs.events"></section-jobs>
 
-  <section-studies events="{{studies}}"></section-studies>
+  <section-studies :title="studies.title" :events="studies.events"></section-studies>
 
-  <section-opensource projects="{{opensource}}"></section-opensource>
+  <section-opensource :title="opensource.title" :more="opensource.more" :projects="opensource.projects"></section-opensource>
 
-  <section-hobbies items="{{hobbies}}"></section-hobbies>
+  <section-hobbies :title="hobbies.title" :items="hobbies.items"></section-hobbies>
 
-  <section-contact items="{{contact}}"></section-contact>
+  <section-contact :items="contact"></section-contact>
 
 </template>
 
@@ -41,103 +44,69 @@ module.exports = {
   ready: function() {
     new wow.WOW().init();
   },
-  data: {
-    header: {
-      name: "Aloïs Deniel",
-      profile: "Mobile developer"
+  ready: function(){
+    this.load("eng");
+  },
+  methods: {
+    load: function(lang){
+      console.log("lang:"+lang);
+
+      var vm = this;
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        console.log(">>>"+vm)
+          if (xhr.readyState == 4) {
+              vm.update(JSON.parse(xhr.responseText));
+          }
+      }
+      xhr.open('GET', '/data/'+lang+'.json', true);
+      xhr.send(null);
     },
-    contact: [
-      { link: 'mailto:alois.deniel@outlook.com', icon: 'mail'},
-      { link: 'https://www.linkedin.com/profile/view?id=AAIAABCSq6IBXVUHi4NJtgeCQf9bkjUwA8h7UEo', icon: 'linkedin'},
-      { link: 'http://www.viadeo.com/profile/0021f7uowr4zjmgz', icon: 'viadeo' },
-      { link: 'https://twitter.com/aloisdeniel', icon: 'twitter'},
-      { link: 'https://github.com/aloisdeniel', icon: 'github'},
-      { link: 'https://play.spotify.com/user/1121031422', icon: 'spotify'}
-    ],
-    studies: [
-      {
-        name: 'ESIR',
-        date: 'mars 2015',
-        duration: '6 months',
-        title: 'Diplôme d\'ingénieur',
-        subtitle: 'Genie Informatique',
-        description: 'soon'
-      },
-      {
-        name: 'Université de Rennes I',
-        date: 'janvier 2014',
-        duration: '3 months',
-        title: 'Licence',
-        subtitle: 'Mathématique/Physique/Informatique/Electronique',
-        description: 'soon'
-      },
-      {
-        name: 'Lycée Notre Dame du Mur',
-        date: 'janvier 2014',
-        duration: '3 months',
-        title: 'Baccalauréat',
-        subtitle: 'Scientifique',
-        description: 'soon'
-      }
-    ],
-    jobs: [
-      {
-        name: 'Orange Business Services',
-        date: 'mars 2015',
-        duration: '6 months',
-        title: 'Ingénieur expert / référent technique',
-        subtitle: 'Xamarin & Windows Universal Platform',
-        description: 'soon'
-      },
-      {
-        name: 'Capgemini',
-        date: 'janvier 2014',
-        duration: '3 months',
-        title: 'Stagiaire',
-        subtitle: 'Etude des bases de données NoSQL',
-        description: 'soon'
-      }
-    ],
-    about: [
-      getAge("1988/06/02") + ' year old',
-      'live in Rennes, France',
-      'work for Orange Business Services'
-    ],
-    opensource: [
-      {
-        title: "Personnal website",
-        tags: ["html5", "css3", "scss", "javascript", "webpack",  "vue.js" ],
-        description: "The sources of the website you are currently browsing.",
-        link: "https://github.com/aloisdeniel/aloisdeniel.github.io"
-      }
-    ],
-    hobbies: [
-      {
-        title: "Badminton",
-        tags: ["sport" ],
-        description: "3 ans"
-      },
-      {
-        title: "Guitar",
-        tags: ["art", "music" ],
-        description: "5 ans"
-      },
-      {
-        title: "Drawing",
-        tags: ["art", "traditional", "digital", "photoshop" ],
-        description: "Conception de sites web, prototypage d'interfaces interfaces mobiles"
-      },
-      {
-        title: "Digital design",
-        tags: ["art", "music", "photoshop" ],
-        description: "Conception de sites web, prototypage d'interfaces interfaces mobiles"
-      }
-    ],
-    skills: {
-      major: [ { name: "C#" , type: "L" }, { name: "Xamarin", type: "F" }, { name: "Windows UAP", type: "F" }, { name: "Visual Studio", type: "T" }],
-      medium: [ { name: "nodejs", type: "F" }],
-      minor: [ { name: "Vue.js", type: "F" }]
+    update: function(model) {
+      this.header = model.header;
+      this.about = model.about;
+      this.skills = model.skills;
+      this.jobs = model.jobs;
+      this.studies = model.studies;
+      this.opensource = model.opensource;
+      this.hobbies = model.hobbies;
+      this.contact = model.contact;
+
+      //getAge("1988/06/02") + ' year old',
     }
+  },
+  data: {
+    header:{
+      name:null,
+      profile:null
+    },
+    about : {
+      title: null,
+      info: {}
+    },
+    skills: {
+      medium: [],
+      major: [],
+      minor: []
+    },
+    jobs: {
+      title: null,
+      events: []
+    },
+    studies: {
+      title: null,
+      events: []
+    },
+    opensource: {
+      more: null,
+      title: null,
+      projects: []
+    },
+    hobbies: {
+      title: null,
+      items: []
+    },
+    contact: []
   }
 };
 </script>

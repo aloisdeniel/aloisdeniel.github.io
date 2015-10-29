@@ -1,6 +1,4 @@
 var webpack = require("webpack");
-var vue = require('vue-loader')
-
 module.exports = {
   entry: {
     app: "./src/main.js",
@@ -16,7 +14,7 @@ module.exports = {
     loaders: [
       { test: /\.css$/, loader: "style-loader!css-loader" },
       { test: /\.scss$/, loaders: ["style", "css", "sass"] },
-      { test: /\.vue$/, loader: vue.withLoaders({}) },
+      { test: /\.vue$/, loader: 'vue' },
       { test: /\.(jpe?g|png|gif|svg|eot|woff|ttf)$/i, loader: 'file-loader?name=dist/assets/[hash].[ext]' }
     ]
   }

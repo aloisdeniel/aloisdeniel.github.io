@@ -1,9 +1,9 @@
 <template>
 <div class="card wow flipInX">
   <h2>{{title}}</h2>
-  <div class="tags"><span class="tag" v-repeat="tag in tags">{{tag}}</span></div>
+  <div class="tags"><span class="tag" v-for="tag in tags">{{tag}}</span></div>
   <p>{{description}}</p>
-  <a v-if="link" href="{{link}}">More details</a>
+  <a v-if="link" :href="link">More details</a>
 </div>
 </template>
 

@@ -1,0 +1,144 @@
+{
+  "header": {
+    "name": "Aloïs Deniel",
+    "profile": "Mobile developer"
+  },
+  "studies": {
+    "title" : "STUDIES",
+    "events" : [
+      {
+        "name": "ESIR",
+        "date": "mars 2015",
+        "duration": "6 months",
+        "title": "Diplôme d'ingénieur",
+        "subtitle": "Genie Informatique",
+        "description": "soon"
+      },
+      {
+        "name": "Université de Rennes I",
+        "date": "janvier 2014",
+        "duration": "3 months",
+        "title": "Licence",
+        "subtitle": "Mathématique/Physique/Informatique/Electronique",
+        "description": "soon"
+      },
+      {
+        "name": "Lycée Notre Dame du Mur",
+        "date": "janvier 2014",
+        "duration": "3 months",
+        "title": "Baccalauréat",
+        "subtitle": "Scientifique",
+        "description": "soon"
+      }
+    ]
+  },
+  "jobs": {
+    "title" : "JOBS",
+    "events" : [
+      {
+        "name": "Orange Business Services",
+        "date": "mars 2015",
+        "duration": "6 months",
+        "title": "Ingénieur expert / référent technique",
+        "subtitle": "Xamarin & Windows Universal Platform",
+        "description": "soon"
+      },
+      {
+        "name": "Capgemini",
+        "date": "janvier 2014",
+        "duration": "3 months",
+        "title": "Stagiaire",
+        "subtitle": "Etude des bases de données NoSQL",
+        "description": "soon"
+      }
+    ]
+  },
+  "about": {
+    "title": "ABOUT",
+      "info": {
+      "birth": "1988/06/02",
+      "location" : "Rennes, France",
+      "work" : "Orange Business Services"
+    }
+  },
+  "opensource": {
+    "title" : "OPEN-SOURCE",
+    "more" : "https://github.com/aloisdeniel",
+    "projects" : [
+      {
+        "title": "Personnal website",
+        "tags": ["html5", "css3", "scss", "javascript", "webpack",  "vue.js" ],
+        "description": "The sources of the website you are currently browsing.",
+        "link": "https://github.com/aloisdeniel/aloisdeniel.github.io"
+      },
+      {
+        "title": "Faker.Portable",
+        "tags": ["c#", ".net", "vs2013", "nuget" ],
+        "description": "Fake data generation for testing and prototyping purpose.",
+        "link": "https://github.com/aloisdeniel/Faker.Portable"
+      },
+      {
+        "title": "code-cards",
+        "tags": [ "javascript", "node", "koa", "vue.js" ],
+        "description": "Host your code examples in one centralized place and share it with your team.",
+        "link": "https://github.com/aloisdeniel/code-cards"
+      },
+      {
+        "title": "Stem",
+        "tags": [ "c#", "mvvm", "windows" ],
+        "description": "Base framework for developing MVVM applications.",
+        "link": "https://github.com/aloisdeniel/Stem"
+      },
+      {
+        "title": "CommonExtensions",
+        "tags": [ "c#" ],
+        "description": "All the common C# objects extensions methods I often use.",
+        "link": "https://github.com/aloisdeniel/CommonExtensions"
+      },
+      {
+        "title": "Xamarin.Animations",
+        "tags": [ "c#", "xamarin", "ios", "android", "windows" ],
+        "description": "Some helper functions for easier to configure view animations.",
+        "link": "https://github.com/aloisdeniel/Xamarin.Animations"
+      }
+    ]
+  },
+  "hobbies":  {
+    "title" : "HOBBIES",
+    "items" : [
+      {
+        "title": "Badminton",
+        "tags": ["sport" ],
+        "description": "3 ans"
+      },
+      {
+        "title": "Guitar",
+        "tags": ["art", "music" ],
+        "description": "5 ans"
+      },
+      {
+        "title": "Drawing",
+        "tags": ["art", "traditional", "digital", "photoshop" ],
+        "description": "Conception de sites web, prototypage d'interfaces interfaces mobiles"
+      },
+      {
+        "title": "Digital design",
+        "tags": ["art", "music", "photoshop" ],
+        "description": "Conception de sites web, prototypage d'interfaces interfaces mobiles"
+      }
+    ]
+  },
+  "skills": {
+    "major": [ { "name": "C#" , "type": "L" }, { "name": "Xamarin", "type": "F" }, { "name": "Windows UAP", "type": "F" }, { "name": "Visual Studio", "type": "T" }],
+    "medium": [ { "name": "nodejs", "type": "F" }],
+    "minor": [ { "name": "Vue.js", "type": "F" }]
+  },
+  "contact": [
+    { "link": "mailto:alois.deniel@outlook.com", "icon": "mail" },
+    { "link": "https://www.linkedin.com/profile/view?id=AAIAABCSq6IBXVUHi4NJtgeCQf9bkjUwA8h7UEo", "icon": "linkedin"},
+    { "link": "http://www.viadeo.com/profile/0021f7uowr4zjmgz", "icon": "viadeo" },
+    { "link": "https://twitter.com/aloisdeniel", "icon": "twitter"},
+    { "link": "https://github.com/aloisdeniel", "icon": "github"},
+    { "link": "https://play.spotify.com/user/1121031422", "icon": "spotify"}
+  ]
+}

@@ -42,21 +42,36 @@ $card-height: 150px;
 
   .tags
   {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
     text-align: left;
     font-weight: normal;
     font-size: 0.6em;
-    padding-top: 10px;
+    padding-top: 0px;
     border-top: 1px solid $color-grey-semilight;
     margin: 5px 10px 5px 10px;
     color: $color-white;
 
     .tag
     {
-      display: inline;
+      display: block;
+      float:left;
       background: $color-accent;
       padding: 2px 8px;
       margin-right: 5px;
+      margin-top: 4px;
       border-radius: 8px;
+      overflow: hidden;
+    }
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
     }
   }
 

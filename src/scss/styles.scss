@@ -10,6 +10,23 @@ body
   font-family: $font-open;
   background: $color-grey-light;
   color: $color-grey-dark;
+  min-width: 600px;
+}
+
+.langs {
+  color: $color-grey-dark;
+  a {
+    display: inline-block;
+    width: 30px;
+    text-align: right;
+    color: $color-grey-dark;
+    &:hover {
+      color: $color-accent;
+    }
+    &:last-child {
+      text-align: left;
+    }
+  }
 }
 
 .bubble {

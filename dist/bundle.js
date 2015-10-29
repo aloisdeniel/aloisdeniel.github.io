@@ -516,7 +516,7 @@ webpackJsonp([0],[
 
 
 	// module
-	exports.push([module.id, ".section, .section-accent, .section-dark, .section-light {\n  width: 100%;\n  min-height: 100px;\n  padding-top: 20px;\n  padding-bottom: 20px; }\n  .section .icon, .section-accent .icon, .section-dark .icon, .section-light .icon {\n    display: block;\n    font-size: 2.5em; }\n  .section h1, .section-accent h1, .section-dark h1, .section-light h1 {\n    margin-top: 0px;\n    font-size: 0.75em;\n    font-weight: 400; }\n  .section p, .section-accent p, .section-dark p, .section-light p {\n    margin: 0px;\n    font-size: 0.65em; }\n  .section a, .section-accent a, .section-dark a, .section-light a {\n    margin: 0px;\n    font-size: 0.65em;\n    color: #c0c5cb;\n    text-decoration: none; }\n  .section a:hover, .section-accent a:hover, .section-dark a:hover, .section-light a:hover {\n    color: #ffffff;\n    text-decoration: underline; }\n\n.section-accent {\n  background-color: #2075f5;\n  color: #ffffff; }\n\n.section-dark {\n  background-color: #26262c;\n  color: #ffffff; }\n  .section-dark\np {\n    color: #c0c5cb; }\n\n.section-light {\n  background-color: #c0c5cb; }\n\n@media screen and (max-width: 47.2em) {\n  .section .icon, .section-accent .icon, .section-dark .icon, .section-light .icon {\n    font-size: 1.6em; } }\n\n.cards {\n  box-sizing: border-box;\n  width: 96%;\n  max-width: 800px;\n  margin: 0 auto; }\n  .cards\np {\n    text-align: left;\n    font-size: 0.75em;\n    margin: 5px 10px 0px 10px;\n    color: #26262c; }\n\n.cards:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\n.card {\n  background: #fff;\n  border-radius: 4px;\n  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.22), inset 0 0 2px rgba(0, 0, 0, 0.22);\n  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.22), inset 0 0 2px rgba(0, 0, 0, 0.22);\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.22), inset 0 0 2px rgba(0, 0, 0, 0.22);\n  height: 150px;\n  width: 29.33333%;\n  margin: 2%;\n  float: left;\n  box-sizing: border-box; }\n  .card\nh2 {\n    text-align: left;\n    font-size: 0.9em;\n    margin: 10px 10px 0px 10px;\n    color: #2075f5; }\n  .card\n.tags {\n    text-align: left;\n    font-weight: normal;\n    font-size: 0.6em;\n    padding-top: 10px;\n    border-top: 1px solid #c0c5cb;\n    margin: 5px 10px 5px 10px;\n    color: #ffffff; }\n    .card\n.tags\n.tag {\n      display: inline;\n      background: #2075f5;\n      padding: 2px 8px;\n      margin-right: 5px;\n      border-radius: 8px; }\n  .card\na {\n    margin-top: 3px;\n    margin-left: 10px;\n    text-align: left;\n    display: block;\n    text-decoration: none;\n    color: #2075f5; }\n  .card\na:hover {\n    color: #26262c; }\n\n@media screen and (max-width: 45em) {\n  .card {\n    width: 46%; } }\n\n.timeline {\n  margin: 20px 20px 0px 20px;\n  padding: 0;\n  list-style: none;\n  position: relative; }\n\n/* The line */\n.timeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  width: 4px;\n  border-right: 4px dotted #2075f5;\n  left: 50%;\n  margin: 0px;\n  margin-left: -4px; }\n\n.timeline > li {\n  position: relative; }\n\n/* The date/time */\n.timeline > li .time {\n  display: block;\n  width: 48%;\n  padding-right: 100px;\n  position: absolute; }\n\n.timeline > li .time span {\n  display: block;\n  text-align: right; }\n\n.timeline > li .time span:first-child {\n  font-size: 0.75em;\n  color: #26262c; }\n\n.timeline > li .time span:last-child {\n  font-size: 1.2em;\n  color: #2075f5; }\n\n/* Right content */\n.timeline > li .label {\n  margin: 0 0px 20px 53%;\n  background: rgba(0, 0, 0, 0.12);\n  color: #fff;\n  padding: 0.5em 1em;\n  font-size: 1em;\n  font-weight: 300;\n  position: relative;\n  border-radius: 5px;\n  text-align: left;\n  color: #26262c; }\n\n.timeline > li .label h2 {\n  margin: 0px;\n  font-size: 1em;\n  color: #2075f5;\n  text-align: left; }\n\n.timeline > li .label h3 {\n  margin: 0px;\n  font-size: 0.8em;\n  color: #26262c;\n  text-align: left;\n  margin-bottom: 10px; }\n\n/* The triangle */\n.timeline > li .label:after {\n  right: 100%;\n  border: solid transparent;\n  content: \" \";\n  height: 0;\n  width: 0;\n  position: absolute;\n  pointer-events: none;\n  border-right-color: rgba(0, 0, 0, 0.12);\n  border-width: 10px;\n  top: 10px; }\n\n/* The icons */\n.timeline > li .icon {\n  width: 16px;\n  height: 16px;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  font-size: 1.4em;\n  line-height: 40px;\n  -webkit-font-smoothing: antialiased;\n  position: absolute;\n  background: #2075f5;\n  border-radius: 50%;\n  text-align: center;\n  left: 50%;\n  top: 0;\n  margin: 10px 0 0 -6px; }\n\n/* Example Media Queries */\n@media screen and (max-width: 65em) {\n  .timeline > li .time span:last-child {\n    font-size: 1.1em; } }\n\n@media screen and (max-width: 45em) {\n  .timeline:before {\n    display: none; }\n  .timeline > li .time {\n    width: 100%;\n    position: relative;\n    padding: 0 0 20px 0; }\n  .timeline > li .time span {\n    text-align: center; }\n  .timeline > li .label {\n    margin: 0 0 30px 0;\n    padding: 1em;\n    font-weight: 400;\n    font-size: 95%; }\n  .timeline > li .label:after {\n    right: auto;\n    left: 50%;\n    border-right-color: transparent;\n    border-bottom-color: rgba(0, 0, 0, 0.12);\n    top: -20px;\n    margin-left: -10px; }\n  .timeline > li .icon {\n    display: none; } }\n\nbody {\n  text-align: center;\n  font-family: \"Open Sans\", sans-serif;\n  background: #f3f3f3;\n  color: #26262c; }\n\n.bubble, .bubble-small, .bubble-medium, .bubble-large {\n  background: #ffffff;\n  color: #26262c;\n  display: inline-block;\n  margin: 10px; }\n\n.bubble-small {\n  width: 35px;\n  height: 35px;\n  border-radius: 17.5px; }\n  .bubble-small h2 {\n    margin: 0px;\n    font-size: 8px; }\n  .bubble-small h4 {\n    margin: 0px;\n    margin-top: 3px;\n    font-size: 7px; }\n\n.bubble-medium {\n  width: 45px;\n  height: 45px;\n  border-radius: 22.5px; }\n  .bubble-medium h2 {\n    margin: 0px;\n    font-size: 9px; }\n  .bubble-medium h4 {\n    margin: 0px;\n    margin-top: 4px;\n    font-size: 8px; }\n\n.bubble-large {\n  width: 60px;\n  height: 60px;\n  border-radius: 30px; }\n  .bubble-large h2 {\n    margin: 0px;\n    margin-top: 8px;\n    font-size: 11px; }\n  .bubble-large h4 {\n    margin: 0px;\n    font-size: 9px; }\n\n.contact a {\n  display: inline-block;\n  margin: 5px; }\n\na:hover .contact-icon {\n  opacity: 1; }\n\n.contact-icon {\n  opacity: 0.5; }\n\n.header\n.portrait {\n  -webkit-box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  -moz-box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  width: 150px;\n  height: 150px;\n  background-image: url(" + __webpack_require__(28) + ");\n  margin: auto;\n  margin-top: 50px;\n  border-radius: 75px; }\n\n.header\n.icon {\n  font-size: 1.2em;\n  color: #c0c5cb;\n  margin-bottom: 50px; }\n\n.header\n.icon.main {\n  font-size: 1.8em;\n  color: #2075f5;\n  padding: 0px;\n  margin-bottom: 50px; }\n\n.header\nh1 {\n  font-weight: 700;\n  text-align: center;\n  font-size: 1.3em;\n  margin-top: 50px;\n  margin-bottom: 0px;\n  padding: 0px; }\n\n.header\nh2 {\n  font-family: \"Fira Mono\", sans-serif;\n  font-weight: 400;\n  color: #2075f5;\n  text-align: center;\n  font-size: 0.8em;\n  margin-top: 3px;\n  padding: 0px; }\n", ""]);
+	exports.push([module.id, ".section, .section-accent, .section-dark, .section-light {\n  width: 100%;\n  min-height: 100px;\n  padding-top: 20px;\n  padding-bottom: 20px; }\n  .section .icon, .section-accent .icon, .section-dark .icon, .section-light .icon {\n    display: block;\n    font-size: 2.5em; }\n  .section h1, .section-accent h1, .section-dark h1, .section-light h1 {\n    margin-top: 0px;\n    font-size: 0.75em;\n    font-weight: 400; }\n  .section p, .section-accent p, .section-dark p, .section-light p {\n    margin: 0px;\n    font-size: 0.65em; }\n  .section a, .section-accent a, .section-dark a, .section-light a {\n    margin: 0px;\n    font-size: 0.65em;\n    color: #c0c5cb;\n    text-decoration: none; }\n  .section a:hover, .section-accent a:hover, .section-dark a:hover, .section-light a:hover {\n    color: #ffffff;\n    text-decoration: underline; }\n\n.section-accent {\n  background-color: #2075f5;\n  color: #ffffff; }\n\n.section-dark {\n  background-color: #26262c;\n  color: #ffffff; }\n  .section-dark\np {\n    color: #c0c5cb; }\n\n.section-light {\n  background-color: #c0c5cb; }\n\n@media screen and (max-width: 47.2em) {\n  .section .icon, .section-accent .icon, .section-dark .icon, .section-light .icon {\n    font-size: 1.6em; } }\n\n.cards {\n  box-sizing: border-box;\n  width: 96%;\n  max-width: 800px;\n  margin: 0 auto; }\n  .cards\np {\n    text-align: left;\n    font-size: 0.75em;\n    margin: 5px 10px 0px 10px;\n    color: #26262c; }\n\n.cards:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\n.card {\n  background: #fff;\n  border-radius: 4px;\n  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.22), inset 0 0 2px rgba(0, 0, 0, 0.22);\n  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.22), inset 0 0 2px rgba(0, 0, 0, 0.22);\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.22), inset 0 0 2px rgba(0, 0, 0, 0.22);\n  height: 150px;\n  width: 29.33333%;\n  margin: 2%;\n  float: left;\n  box-sizing: border-box; }\n  .card\nh2 {\n    text-align: left;\n    font-size: 0.9em;\n    margin: 10px 10px 0px 10px;\n    color: #2075f5; }\n  .card\n.tags {\n    text-align: left;\n    font-weight: normal;\n    font-size: 0.6em;\n    padding-top: 0px;\n    border-top: 1px solid #c0c5cb;\n    margin: 5px 10px 5px 10px;\n    color: #ffffff; }\n    .card\n.tags:after {\n      content: \"\";\n      display: table;\n      clear: both; }\n    .card\n.tags\n.tag {\n      display: block;\n      float: left;\n      background: #2075f5;\n      padding: 2px 8px;\n      margin-right: 5px;\n      margin-top: 4px;\n      border-radius: 8px;\n      overflow: hidden; }\n    .card\n.tags:after {\n      content: \"\";\n      display: table;\n      clear: both; }\n  .card\na {\n    margin-top: 3px;\n    margin-left: 10px;\n    text-align: left;\n    display: block;\n    text-decoration: none;\n    color: #2075f5; }\n  .card\na:hover {\n    color: #26262c; }\n\n@media screen and (max-width: 45em) {\n  .card {\n    width: 46%; } }\n\n.timeline {\n  margin: 20px 20px 0px 20px;\n  padding: 0;\n  list-style: none;\n  position: relative; }\n\n/* The line */\n.timeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  width: 4px;\n  border-right: 4px dotted #2075f5;\n  left: 50%;\n  margin: 0px;\n  margin-left: -4px; }\n\n.timeline > li {\n  position: relative; }\n\n/* The date/time */\n.timeline > li .time {\n  display: block;\n  width: 48%;\n  padding-right: 100px;\n  position: absolute; }\n\n.timeline > li .time span {\n  display: block;\n  text-align: right; }\n\n.timeline > li .time span:first-child {\n  font-size: 0.75em;\n  color: #26262c; }\n\n.timeline > li .time span:last-child {\n  font-size: 1.2em;\n  color: #2075f5; }\n\n/* Right content */\n.timeline > li .label {\n  margin: 0 0px 20px 53%;\n  background: rgba(0, 0, 0, 0.12);\n  color: #fff;\n  padding: 0.5em 1em;\n  font-size: 1em;\n  font-weight: 300;\n  position: relative;\n  border-radius: 5px;\n  text-align: left;\n  color: #26262c; }\n\n.timeline > li .label h2 {\n  margin: 0px;\n  font-size: 1em;\n  color: #2075f5;\n  text-align: left; }\n\n.timeline > li .label h3 {\n  margin: 0px;\n  font-size: 0.8em;\n  color: #26262c;\n  text-align: left;\n  margin-bottom: 10px; }\n\n/* The triangle */\n.timeline > li .label:after {\n  right: 100%;\n  border: solid transparent;\n  content: \" \";\n  height: 0;\n  width: 0;\n  position: absolute;\n  pointer-events: none;\n  border-right-color: rgba(0, 0, 0, 0.12);\n  border-width: 10px;\n  top: 10px; }\n\n/* The icons */\n.timeline > li .icon {\n  width: 16px;\n  height: 16px;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  font-size: 1.4em;\n  line-height: 40px;\n  -webkit-font-smoothing: antialiased;\n  position: absolute;\n  background: #2075f5;\n  border-radius: 50%;\n  text-align: center;\n  left: 50%;\n  top: 0;\n  margin: 10px 0 0 -6px; }\n\n/* Example Media Queries */\n@media screen and (max-width: 65em) {\n  .timeline > li .time span:last-child {\n    font-size: 1.1em; } }\n\n@media screen and (max-width: 45em) {\n  .timeline:before {\n    display: none; }\n  .timeline > li .time {\n    width: 100%;\n    position: relative;\n    padding: 0 0 20px 0; }\n  .timeline > li .time span {\n    text-align: center; }\n  .timeline > li .label {\n    margin: 0 0 30px 0;\n    padding: 1em;\n    font-weight: 400;\n    font-size: 95%; }\n  .timeline > li .label:after {\n    right: auto;\n    left: 50%;\n    border-right-color: transparent;\n    border-bottom-color: rgba(0, 0, 0, 0.12);\n    top: -20px;\n    margin-left: -10px; }\n  .timeline > li .icon {\n    display: none; } }\n\nbody {\n  text-align: center;\n  font-family: \"Open Sans\", sans-serif;\n  background: #f3f3f3;\n  color: #26262c;\n  min-width: 600px; }\n\n.bubble, .bubble-small, .bubble-medium, .bubble-large {\n  background: #ffffff;\n  color: #26262c;\n  display: inline-block;\n  margin: 10px; }\n\n.bubble-small {\n  width: 35px;\n  height: 35px;\n  border-radius: 17.5px; }\n  .bubble-small h2 {\n    margin: 0px;\n    font-size: 8px; }\n  .bubble-small h4 {\n    margin: 0px;\n    margin-top: 3px;\n    font-size: 7px; }\n\n.bubble-medium {\n  width: 45px;\n  height: 45px;\n  border-radius: 22.5px; }\n  .bubble-medium h2 {\n    margin: 0px;\n    font-size: 9px; }\n  .bubble-medium h4 {\n    margin: 0px;\n    margin-top: 4px;\n    font-size: 8px; }\n\n.bubble-large {\n  width: 60px;\n  height: 60px;\n  border-radius: 30px; }\n  .bubble-large h2 {\n    margin: 0px;\n    margin-top: 8px;\n    font-size: 11px; }\n  .bubble-large h4 {\n    margin: 0px;\n    font-size: 9px; }\n\n.contact a {\n  display: inline-block;\n  margin: 5px; }\n\na:hover .contact-icon {\n  opacity: 1; }\n\n.contact-icon {\n  opacity: 0.5; }\n\n.header\n.portrait {\n  -webkit-box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  -moz-box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  width: 150px;\n  height: 150px;\n  background-image: url(" + __webpack_require__(28) + ");\n  margin: auto;\n  margin-top: 50px;\n  border-radius: 75px; }\n\n.header\n.icon {\n  font-size: 1.2em;\n  color: #c0c5cb;\n  margin-bottom: 50px; }\n\n.header\n.icon.main {\n  font-size: 1.8em;\n  color: #2075f5;\n  padding: 0px;\n  margin-bottom: 50px; }\n\n.header\nh1 {\n  font-weight: 700;\n  text-align: center;\n  font-size: 1.3em;\n  margin-top: 50px;\n  margin-bottom: 0px;\n  padding: 0px; }\n\n.header\nh2 {\n  font-family: \"Fira Mono\", sans-serif;\n  font-weight: 400;\n  color: #2075f5;\n  text-align: center;\n  font-size: 0.8em;\n  margin-top: 3px;\n  padding: 0px; }\n", ""]);
 
 	// exports
 
@@ -602,15 +602,25 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(99)
 	if (false) {
 	(function () {
-	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(require("vue"))
+	var Vue = require("vue")
+	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(Vue)
 	if (!hotAPI.compatible) return
+	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue"
-	hotAPI.createRecord(id, module.exports)
+	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
+	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
+	}
 	module.hot.accept(["-!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue","-!vue-html!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./main.vue"], function () {
-	var newOptions = require("-!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue")
-	var newTemplate = require("-!vue-html!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./main.vue")
-	hotAPI.update(id, newOptions, newTemplate)
+	if (!map[id]) {
+	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
+	}
+	var Ctor = map[id].Ctor
+	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue"))
+	Ctor.options.template = require("-!vue-html!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./main.vue")
+	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
+	Ctor.linker = null
+	map[id].instances.forEach(hotAPI.update)
 	})
 	})()
 	}
@@ -847,15 +857,25 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(106)
 	if (false) {
 	(function () {
-	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(require("vue"))
+	var Vue = require("vue")
+	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(Vue)
 	if (!hotAPI.compatible) return
+	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue"
-	hotAPI.createRecord(id, module.exports)
+	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
+	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
+	}
 	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./bubble.vue"], function () {
-	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue")
-	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./bubble.vue")
-	hotAPI.update(id, newOptions, newTemplate)
+	if (!map[id]) {
+	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
+	}
+	var Ctor = map[id].Ctor
+	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue"))
+	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./bubble.vue")
+	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
+	Ctor.linker = null
+	map[id].instances.forEach(hotAPI.update)
 	})
 	})()
 	}
@@ -882,15 +902,25 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(109)
 	if (false) {
 	(function () {
-	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(require("vue"))
+	var Vue = require("vue")
+	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(Vue)
 	if (!hotAPI.compatible) return
+	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./card.vue"
-	hotAPI.createRecord(id, module.exports)
+	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
+	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
+	}
 	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./card.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./card.vue"], function () {
-	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./card.vue")
-	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./card.vue")
-	hotAPI.update(id, newOptions, newTemplate)
+	if (!map[id]) {
+	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
+	}
+	var Ctor = map[id].Ctor
+	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./card.vue"))
+	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./card.vue")
+	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
+	Ctor.linker = null
+	map[id].instances.forEach(hotAPI.update)
 	})
 	})()
 	}
@@ -917,15 +947,25 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(112)
 	if (false) {
 	(function () {
-	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(require("vue"))
+	var Vue = require("vue")
+	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(Vue)
 	if (!hotAPI.compatible) return
+	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue"
-	hotAPI.createRecord(id, module.exports)
+	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
+	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
+	}
 	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./icon.vue"], function () {
-	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue")
-	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./icon.vue")
-	hotAPI.update(id, newOptions, newTemplate)
+	if (!map[id]) {
+	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
+	}
+	var Ctor = map[id].Ctor
+	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue"))
+	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./icon.vue")
+	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
+	Ctor.linker = null
+	map[id].instances.forEach(hotAPI.update)
 	})
 	})()
 	}
@@ -952,15 +992,25 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(115)
 	if (false) {
 	(function () {
-	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(require("vue"))
+	var Vue = require("vue")
+	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(Vue)
 	if (!hotAPI.compatible) return
+	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue"
-	hotAPI.createRecord(id, module.exports)
+	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
+	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
+	}
 	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-about.vue"], function () {
-	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue")
-	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-about.vue")
-	hotAPI.update(id, newOptions, newTemplate)
+	if (!map[id]) {
+	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
+	}
+	var Ctor = map[id].Ctor
+	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue"))
+	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-about.vue")
+	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
+	Ctor.linker = null
+	map[id].instances.forEach(hotAPI.update)
 	})
 	})()
 	}
@@ -987,15 +1037,25 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(118)
 	if (false) {
 	(function () {
-	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(require("vue"))
+	var Vue = require("vue")
+	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(Vue)
 	if (!hotAPI.compatible) return
+	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue"
-	hotAPI.createRecord(id, module.exports)
+	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
+	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
+	}
 	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-contact.vue"], function () {
-	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue")
-	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-contact.vue")
-	hotAPI.update(id, newOptions, newTemplate)
+	if (!map[id]) {
+	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
+	}
+	var Ctor = map[id].Ctor
+	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue"))
+	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-contact.vue")
+	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
+	Ctor.linker = null
+	map[id].instances.forEach(hotAPI.update)
 	})
 	})()
 	}
@@ -1027,15 +1087,25 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(121)
 	if (false) {
 	(function () {
-	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(require("vue"))
+	var Vue = require("vue")
+	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(Vue)
 	if (!hotAPI.compatible) return
+	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue"
-	hotAPI.createRecord(id, module.exports)
+	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
+	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
+	}
 	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-header.vue"], function () {
-	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue")
-	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-header.vue")
-	hotAPI.update(id, newOptions, newTemplate)
+	if (!map[id]) {
+	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
+	}
+	var Ctor = map[id].Ctor
+	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue"))
+	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-header.vue")
+	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
+	Ctor.linker = null
+	map[id].instances.forEach(hotAPI.update)
 	})
 	})()
 	}
@@ -1062,15 +1132,25 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(124)
 	if (false) {
 	(function () {
-	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(require("vue"))
+	var Vue = require("vue")
+	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(Vue)
 	if (!hotAPI.compatible) return
+	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue"
-	hotAPI.createRecord(id, module.exports)
+	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
+	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
+	}
 	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-hobbies.vue"], function () {
-	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue")
-	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-hobbies.vue")
-	hotAPI.update(id, newOptions, newTemplate)
+	if (!map[id]) {
+	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
+	}
+	var Ctor = map[id].Ctor
+	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue"))
+	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-hobbies.vue")
+	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
+	Ctor.linker = null
+	map[id].instances.forEach(hotAPI.update)
 	})
 	})()
 	}
@@ -1097,15 +1177,25 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(127)
 	if (false) {
 	(function () {
-	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(require("vue"))
+	var Vue = require("vue")
+	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(Vue)
 	if (!hotAPI.compatible) return
+	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue"
-	hotAPI.createRecord(id, module.exports)
+	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
+	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
+	}
 	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-jobs.vue"], function () {
-	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue")
-	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-jobs.vue")
-	hotAPI.update(id, newOptions, newTemplate)
+	if (!map[id]) {
+	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
+	}
+	var Ctor = map[id].Ctor
+	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue"))
+	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-jobs.vue")
+	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
+	Ctor.linker = null
+	map[id].instances.forEach(hotAPI.update)
 	})
 	})()
 	}
@@ -1132,15 +1222,25 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(130)
 	if (false) {
 	(function () {
-	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(require("vue"))
+	var Vue = require("vue")
+	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(Vue)
 	if (!hotAPI.compatible) return
+	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue"
-	hotAPI.createRecord(id, module.exports)
+	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
+	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
+	}
 	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-opensource.vue"], function () {
-	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue")
-	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-opensource.vue")
-	hotAPI.update(id, newOptions, newTemplate)
+	if (!map[id]) {
+	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
+	}
+	var Ctor = map[id].Ctor
+	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue"))
+	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-opensource.vue")
+	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
+	Ctor.linker = null
+	map[id].instances.forEach(hotAPI.update)
 	})
 	})()
 	}
@@ -1167,15 +1267,25 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(133)
 	if (false) {
 	(function () {
-	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(require("vue"))
+	var Vue = require("vue")
+	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(Vue)
 	if (!hotAPI.compatible) return
+	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue"
-	hotAPI.createRecord(id, module.exports)
+	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
+	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
+	}
 	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-skills.vue"], function () {
-	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue")
-	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-skills.vue")
-	hotAPI.update(id, newOptions, newTemplate)
+	if (!map[id]) {
+	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
+	}
+	var Ctor = map[id].Ctor
+	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue"))
+	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-skills.vue")
+	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
+	Ctor.linker = null
+	map[id].instances.forEach(hotAPI.update)
 	})
 	})()
 	}
@@ -1215,15 +1325,25 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(136)
 	if (false) {
 	(function () {
-	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(require("vue"))
+	var Vue = require("vue")
+	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(Vue)
 	if (!hotAPI.compatible) return
+	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue"
-	hotAPI.createRecord(id, module.exports)
+	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
+	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
+	}
 	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-studies.vue"], function () {
-	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue")
-	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-studies.vue")
-	hotAPI.update(id, newOptions, newTemplate)
+	if (!map[id]) {
+	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
+	}
+	var Ctor = map[id].Ctor
+	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue"))
+	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-studies.vue")
+	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
+	Ctor.linker = null
+	map[id].instances.forEach(hotAPI.update)
 	})
 	})()
 	}
@@ -1250,15 +1370,25 @@ webpackJsonp([0],[
 	module.exports.template = __webpack_require__(139)
 	if (false) {
 	(function () {
-	var hotAPI = require("C:\\Users\\Alois Deniel\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(require("vue"))
+	var Vue = require("vue")
+	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
+	hotAPI.install(Vue)
 	if (!hotAPI.compatible) return
+	var map = Vue.config._hotComponents
 	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue"
-	hotAPI.createRecord(id, module.exports)
+	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
+	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
+	}
 	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./timeline.vue"], function () {
-	var newOptions = require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue")
-	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./timeline.vue")
-	hotAPI.update(id, newOptions, newTemplate)
+	if (!map[id]) {
+	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
+	}
+	var Ctor = map[id].Ctor
+	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue"))
+	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./timeline.vue")
+	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
+	Ctor.linker = null
+	map[id].instances.forEach(hotAPI.update)
 	})
 	})()
 	}

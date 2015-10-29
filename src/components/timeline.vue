@@ -1,15 +1,15 @@
 <template>
 <ul class="timeline">
-	<li v-repeat="events">
+	<li v-for="event in events">
 		<div class="time wow fadeInLeft">
-      <span>{{ date }} - {{ duration }}</span>
-      <span>{{ name }}</span>
+      <span>{{ event.date }} - {{ event.duration }}</span>
+      <span>{{ event.name }}</span>
     </div>
 		<div class="icon wow zoomIn"></div>
 		<div class="label wow fadeInRight">
-			<h2>{{ title }}</h2>
-  		<h3>{{ subtitle }}</h3>
-			<p>{{ description }}</p>
+			<h2>{{ event.title }}</h2>
+  		<h3>{{ event.subtitle }}</h3>
+			<p>{{ event.description }}</p>
 		</div>
 	</li>
 </ul>

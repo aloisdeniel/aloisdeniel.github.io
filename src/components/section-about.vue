@@ -1,12 +1,12 @@
 <template>
 <div class="section-dark">
-  <section-header icon="user-male" title="ABOUT ME"></section-header>
-  <p v-repeat="info">{{$value}}</p>
+  <section-header icon="user-male" :title="title"></section-header>
+  <p v-for="line in info">{{line}}</p>
 </div>
 </template>
 
 <script>
 module.exports = {
-  props: ['info']
+  props: ['title','info']
 };
 </script>

@@ -1,9 +1,9 @@
 <template>
 <div class="section">
-  <section-header icon="airport" title="HOBBIES"></section-header>
+  <section-header icon="airport" :title="title"></section-header>
   <div class="cards">
-    <template v-repeat="item in items">
-      <card title="{{item.title}}" tags="{{item.tags}}" link="{{item.link}}" description="{{item.description}}"></card>
+    <template v-for="item in items">
+      <card :title="item.title" :tags="item.tags" :link="item.link" :description="item.description"></card>
     </template>
   </div>
 </div>
@@ -11,6 +11,6 @@
 
 <script>
 module.exports = {
-  props: [ 'items']
+  props: [ 'title', 'items']
 };
 </script>

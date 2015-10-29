@@ -51,7 +51,6 @@
 
 .timeline > li .label {
 	margin: 0 0px 20px 53%;
-	background: $color-grey-semitransparent;
 	color: #fff;
 	padding: 0.5em 1em;
 	font-size: 1em;
@@ -60,6 +59,7 @@
 	border-radius: 5px;
   text-align: left;
   color: $color-grey-dark;
+	max-width: 450px;
 }
 
 .timeline > li .label h2 {
@@ -87,7 +87,6 @@
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-right-color: $color-grey-semitransparent;
 	border-width: 10px;
 	top: 10px;
 }
@@ -143,18 +142,59 @@
 		padding: 1em;
 		font-weight: 400;
 		font-size: 95%;
+		max-width: 1000px;
 	}
 
+
+
+	.timeline > li .icon {
+		display: none;
+	}
+}
+
+
+/* Colors */
+
+.section {
 	.timeline > li .label:after {
+		border-right-color: $color-grey-semitransparent;
+	}
+
+	.timeline > li .label {
+		background: $color-grey-semitransparent;
+	}
+}
+
+.section-light {
+	.timeline > li .label:after {
+		border-right-color: $color-white-semitransparent;
+	}
+
+	.timeline > li .label {
+		background: $color-white-semitransparent;
+	}
+}
+
+
+@media screen and (max-width: $media-screen-small) {
+
+	.section .timeline > li .label:after {
 		right: auto;
 		left: 50%;
 		border-right-color: transparent;
 		border-bottom-color: $color-grey-semitransparent;
 		top: -20px;
-    margin-left: -10px;
+		margin-left: -10px;
 	}
 
-	.timeline > li .icon {
-		display: none;
+	.section-light .timeline > li .label:after {
+		right: auto;
+		left: 50%;
+		border-right-color: transparent;
+		border-bottom-color: $color-white-semitransparent;
+		top: -20px;
+		margin-left: -10px;
 	}
+
+
 }
