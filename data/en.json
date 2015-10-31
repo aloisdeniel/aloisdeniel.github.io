@@ -98,17 +98,61 @@
     "events" : [
       {
         "name": "Orange Business Services",
-        "date": "mars 2015",
+        "date": "03/2012",
         "duration": "6 months",
         "title": "Ingénieur expert / référent technique",
         "subtitle": "Xamarin & Windows Universal Platform",
-        "description": "soon"
+        "description": "soon",
+        "events": [
+          {
+            "name" : "Formations",
+            "date": "03/2013",
+            "title": "Windows & Windows Phone (8.0,8.1)",
+            "description" : "For customers and internal collaborators"
+          },
+          {
+            "name" : "Orange internal commercial projects",
+            "date": "03/2013",
+            "title": "Projects - 2 year - Xamarin (Windows 8.1, iOS, Android)",
+            "description" : "Architect, Lead developer"
+          },
+          {
+            "name" : "Ottobock",
+            "date": "03/2013",
+            "title": "Project - 2 month - Xamarin (iOS)",
+            "description" : "Architect, Lead developer"
+          },
+          {
+            "name" : "Orange services for car",
+            "date": "03/2013",
+            "title": "Projects - 5 month - Xamarin (Android)",
+            "description" : "Architect, Lead developer"
+          },
+          {
+            "name" : "Météo france",
+            "date": "03/2013",
+            "title": "Project - 1 year - Windows Phone 8.0",
+            "description" : "Developer"
+          },
+          {
+            "name" : "Polyexpert",
+            "date": "03/2013",
+            "title": "Project - 1 year - iOS (iPad)",
+            "description" : "Architect, Developer"
+          },
+          {
+            "name" : "Internship",
+            "date": "03/2013",
+            "title": "Augmented reality - 6 months",
+            "description" : "OpenGL & CocoaTouch"
+          }
+        ]
       },
       {
         "name": "Capgemini",
         "date": "janvier 2014",
         "duration": "3 months",
-        "title": "Stagiaire",
+        "title": "Internship",
         "subtitle": "Etude des bases de données NoSQL",
         "description": "soon"
       }

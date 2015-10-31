@@ -1,6 +1,6 @@
 <template>
 <div class="section-accent">
-  <section-header icon="trophy" title="SKILLS"></section-header>
+  <section-header icon="trophy" :title="title"></section-header>
 
   <div class="cards">
     <template v-for="skill in items">

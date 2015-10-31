@@ -19,6 +19,7 @@ body
     display: inline-block;
     width: 30px;
     text-align: right;
+    text-transform: uppercase;
     color: $color-grey-dark;
     &:hover {
       color: $color-accent;

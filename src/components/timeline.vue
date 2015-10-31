@@ -6,11 +6,20 @@
       <span>{{ event.name }}</span>
     </div>
 		<div class="icon wow zoomIn"></div>
-		<div class="label wow fadeInRight">
-			<h2>{{ event.title }}</h2>
-  		<h3>{{ event.subtitle }}</h3>
-			<p>{{ event.description }}</p>
+		<div class="labels">
+			<div class="label wow fadeInRight">
+				<h2>{{ event.title }}</h2>
+	  		<h3>{{ event.subtitle }}</h3>
+				<p>{{ event.description }}</p>
+			</div>
+
+			<div v-for="subevent in event.events" class="label sub wow fadeInRight">
+				<h2>{{ subevent.name }}</h2>
+				<h3>{{ subevent.title }}</h3>
+				<p>{{ subevent.description }}</p>
+			</div>
 		</div>
+
 	</li>
 </ul>
 </template>

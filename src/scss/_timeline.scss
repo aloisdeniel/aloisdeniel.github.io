@@ -50,26 +50,41 @@
 /* Right content */
 
 .timeline > li .label {
-	margin: 0 0px 20px 53%;
+	margin: 0 0px 2px 53%;
 	color: #fff;
 	padding: 0.5em 1em;
 	font-size: 1em;
 	font-weight: 300;
 	position: relative;
-	border-radius: 5px;
   text-align: left;
   color: $color-grey-dark;
 	max-width: 450px;
+
+	&:first-child {
+		margin: 0 0px 2px 53%;
+		border-radius: 5px 5px 0px 0px;
+	}
+
+	&:last-child {
+		margin: 0 0px 20px 53%;
+		border-radius: 0px 0px 5px 5px;
+
+	}
+
+	&:only-child {
+		margin: 0 0px 20px 53%;
+		border-radius: 5px;
+	}
 }
 
-.timeline > li .label h2 {
+.timeline > li .labels .label h2 {
 	margin: 0px;
 	font-size: 1em;
   color: $color-accent;
   text-align: left;
 }
 
-.timeline > li .label h3 {
+.timeline > li .labels .label h3 {
 	margin: 0px;
 	font-size: 0.8em;
   color: $color-grey-dark;
@@ -77,9 +92,20 @@
   margin-bottom: 10px;
 }
 
+.timeline > li .labels .label.sub h2 {
+	font-size: 0.9em;
+  color: $color-grey-semidark;
+}
+
+.timeline > li .labels .label.sub h3 {
+	font-size: 0.75em;
+  color: $color-grey-dark;
+  margin-bottom: 3px;
+}
+
 /* The triangle */
 
-.timeline > li .label:after {
+.timeline > li .label:first-child:after {
 	right: 100%;
 	border: solid transparent;
 	content: " ";
@@ -137,11 +163,26 @@
 	}
 
 	.timeline > li .label {
-		margin: 0 0 30px 0;
+		margin: 0 0 2px 0;
 		padding: 1em;
 		font-weight: 400;
 		font-size: 95%;
 		max-width: 1000px;
+
+
+		&:first-child {
+			margin: 0 0 2px 0;
+		}
+
+		&:last-child {
+			margin: 0 0 30px 0;
+
+		}
+
+		&:only-child {
+			margin: 0 0 30px 0;
+		}
+
 	}
 
 	.timeline > li .icon {

@@ -1,11 +1,15 @@
 <template>
   <div class="header section">
       <div class="portrait animated fadeIn"></div>
-      <h1 class="animated fadeIn">{{ header.name }}</h1>
-      <h2 class="animated fadeIn">{{ header.profile }}</h2>
+      <h1 class="animated fadeIn">{{header.name}}</h1>
+      <h2 class="animated fadeIn">{{header.profile}}</h2>
       <i class="icon main icons8-iphone animated zoomIn"></i>
       <div class="langs">
-        <a href="#eng" @click="load('eng')">EN</a> | <a href="#fr" @click="load('fr')">FR</a>
+        <template v-for="lang in langs">
+            <span v-if="$index > 0"> | </span>
+            <a href="#eng" @click="load(lang)">{{lang}}</a>
+        </template>
+
       </div>
       <i class="icon icons8-angle-down wow rubberBand"></i>
   </div>
@@ -45,7 +49,7 @@ module.exports = {
     new wow.WOW().init();
   },
   ready: function(){
-    this.load("eng");
+    this.load("en");
   },
   methods: {
     load: function(lang){
@@ -76,6 +80,7 @@ module.exports = {
     }
   },
   data: {
+    langs: ['en', 'fr'],
     header:{
       name:null,
       profile:null
