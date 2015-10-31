@@ -7,7 +7,7 @@ webpackJsonp([0],[
 	var icons = __webpack_require__(24)
 	var styles = __webpack_require__(26)
 	var Vue = __webpack_require__(29)
-	var appOptions = __webpack_require__(96)
+	var appOptions = __webpack_require__(97)
 
 	var components = [
 	  'icon',
@@ -32,12 +32,12 @@ webpackJsonp([0],[
 
 	// Filters
 	filters.forEach(function(f) {
-	  Vue.filter(f, __webpack_require__(100)("./"+f+'.js'));
+	  Vue.filter(f, __webpack_require__(101)("./"+f+'.js'));
 	});
 
 	//Components
 	components.forEach(function(c) {
-	  Vue.component(c, __webpack_require__(103)("./"+c+'.vue'));
+	  Vue.component(c, __webpack_require__(105)("./"+c+'.vue'));
 	});
 
 	var app = new Vue(appOptions).$mount('#app')
@@ -516,7 +516,7 @@ webpackJsonp([0],[
 
 
 	// module
-	exports.push([module.id, ".section, .section-accent, .section-dark, .section-light {\n  width: 100%;\n  min-height: 100px;\n  padding-top: 20px;\n  padding-bottom: 20px; }\n  .section .icon, .section-accent .icon, .section-dark .icon, .section-light .icon {\n    display: block;\n    font-size: 2.5em; }\n  .section h1, .section-accent h1, .section-dark h1, .section-light h1 {\n    margin-top: 0px;\n    font-size: 0.75em;\n    font-weight: 400; }\n  .section p, .section-accent p, .section-dark p, .section-light p {\n    margin: 0px;\n    font-size: 0.65em; }\n  .section a, .section-accent a, .section-dark a, .section-light a {\n    margin: 0px;\n    font-size: 0.65em;\n    color: #c0c5cb;\n    text-decoration: none; }\n  .section a:hover, .section-accent a:hover, .section-dark a:hover, .section-light a:hover {\n    color: #ffffff;\n    text-decoration: underline; }\n\n.section-accent {\n  background-color: #2075f5;\n  color: #ffffff; }\n\n.section-dark {\n  background-color: #26262c;\n  color: #ffffff; }\n  .section-dark\np {\n    color: #c0c5cb; }\n\n.section-light {\n  background-color: #c0c5cb; }\n\n@media screen and (max-width: 47.2em) {\n  .section .icon, .section-accent .icon, .section-dark .icon, .section-light .icon {\n    font-size: 1.6em; } }\n\n.cards {\n  box-sizing: border-box;\n  width: 96%;\n  max-width: 800px;\n  margin: 0 auto; }\n  .cards\np {\n    text-align: left;\n    font-size: 0.75em;\n    margin: 5px 10px 0px 10px;\n    color: #26262c; }\n\n.cards:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\n.card {\n  background: #fff;\n  border-radius: 4px;\n  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.22), inset 0 0 2px rgba(0, 0, 0, 0.22);\n  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.22), inset 0 0 2px rgba(0, 0, 0, 0.22);\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.22), inset 0 0 2px rgba(0, 0, 0, 0.22);\n  height: 150px;\n  width: 29.33333%;\n  margin: 2%;\n  float: left;\n  box-sizing: border-box; }\n  .card\nh2 {\n    text-align: left;\n    font-size: 0.9em;\n    margin: 10px 10px 0px 10px;\n    color: #2075f5; }\n  .card\n.tags {\n    text-align: left;\n    font-weight: normal;\n    font-size: 0.6em;\n    padding-top: 0px;\n    border-top: 1px solid #c0c5cb;\n    margin: 5px 10px 5px 10px;\n    color: #ffffff; }\n    .card\n.tags:after {\n      content: \"\";\n      display: table;\n      clear: both; }\n    .card\n.tags\n.tag {\n      display: block;\n      float: left;\n      background: #2075f5;\n      padding: 2px 8px;\n      margin-right: 5px;\n      margin-top: 4px;\n      border-radius: 8px;\n      overflow: hidden; }\n    .card\n.tags:after {\n      content: \"\";\n      display: table;\n      clear: both; }\n  .card\na {\n    margin-top: 3px;\n    margin-left: 10px;\n    text-align: left;\n    display: block;\n    text-decoration: none;\n    color: #2075f5; }\n  .card\na:hover {\n    color: #26262c; }\n\n@media screen and (max-width: 45em) {\n  .card {\n    width: 46%; } }\n\n.timeline {\n  margin: 20px 20px 0px 20px;\n  padding: 0;\n  list-style: none;\n  position: relative; }\n\n/* The line */\n.timeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  width: 4px;\n  border-right: 4px dotted #2075f5;\n  left: 50%;\n  margin: 0px;\n  margin-left: -4px; }\n\n.timeline > li {\n  position: relative; }\n\n/* The date/time */\n.timeline > li .time {\n  display: block;\n  width: 48%;\n  padding-right: 100px;\n  position: absolute; }\n\n.timeline > li .time span {\n  display: block;\n  text-align: right; }\n\n.timeline > li .time span:first-child {\n  font-size: 0.75em;\n  color: #26262c; }\n\n.timeline > li .time span:last-child {\n  font-size: 1.2em;\n  color: #2075f5; }\n\n/* Right content */\n.timeline > li .label {\n  margin: 0 0px 20px 53%;\n  background: rgba(0, 0, 0, 0.12);\n  color: #fff;\n  padding: 0.5em 1em;\n  font-size: 1em;\n  font-weight: 300;\n  position: relative;\n  border-radius: 5px;\n  text-align: left;\n  color: #26262c; }\n\n.timeline > li .label h2 {\n  margin: 0px;\n  font-size: 1em;\n  color: #2075f5;\n  text-align: left; }\n\n.timeline > li .label h3 {\n  margin: 0px;\n  font-size: 0.8em;\n  color: #26262c;\n  text-align: left;\n  margin-bottom: 10px; }\n\n/* The triangle */\n.timeline > li .label:after {\n  right: 100%;\n  border: solid transparent;\n  content: \" \";\n  height: 0;\n  width: 0;\n  position: absolute;\n  pointer-events: none;\n  border-right-color: rgba(0, 0, 0, 0.12);\n  border-width: 10px;\n  top: 10px; }\n\n/* The icons */\n.timeline > li .icon {\n  width: 16px;\n  height: 16px;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  font-size: 1.4em;\n  line-height: 40px;\n  -webkit-font-smoothing: antialiased;\n  position: absolute;\n  background: #2075f5;\n  border-radius: 50%;\n  text-align: center;\n  left: 50%;\n  top: 0;\n  margin: 10px 0 0 -6px; }\n\n/* Example Media Queries */\n@media screen and (max-width: 65em) {\n  .timeline > li .time span:last-child {\n    font-size: 1.1em; } }\n\n@media screen and (max-width: 45em) {\n  .timeline:before {\n    display: none; }\n  .timeline > li .time {\n    width: 100%;\n    position: relative;\n    padding: 0 0 20px 0; }\n  .timeline > li .time span {\n    text-align: center; }\n  .timeline > li .label {\n    margin: 0 0 30px 0;\n    padding: 1em;\n    font-weight: 400;\n    font-size: 95%; }\n  .timeline > li .label:after {\n    right: auto;\n    left: 50%;\n    border-right-color: transparent;\n    border-bottom-color: rgba(0, 0, 0, 0.12);\n    top: -20px;\n    margin-left: -10px; }\n  .timeline > li .icon {\n    display: none; } }\n\nbody {\n  text-align: center;\n  font-family: \"Open Sans\", sans-serif;\n  background: #f3f3f3;\n  color: #26262c;\n  min-width: 600px; }\n\n.bubble, .bubble-small, .bubble-medium, .bubble-large {\n  background: #ffffff;\n  color: #26262c;\n  display: inline-block;\n  margin: 10px; }\n\n.bubble-small {\n  width: 35px;\n  height: 35px;\n  border-radius: 17.5px; }\n  .bubble-small h2 {\n    margin: 0px;\n    font-size: 8px; }\n  .bubble-small h4 {\n    margin: 0px;\n    margin-top: 3px;\n    font-size: 7px; }\n\n.bubble-medium {\n  width: 45px;\n  height: 45px;\n  border-radius: 22.5px; }\n  .bubble-medium h2 {\n    margin: 0px;\n    font-size: 9px; }\n  .bubble-medium h4 {\n    margin: 0px;\n    margin-top: 4px;\n    font-size: 8px; }\n\n.bubble-large {\n  width: 60px;\n  height: 60px;\n  border-radius: 30px; }\n  .bubble-large h2 {\n    margin: 0px;\n    margin-top: 8px;\n    font-size: 11px; }\n  .bubble-large h4 {\n    margin: 0px;\n    font-size: 9px; }\n\n.contact a {\n  display: inline-block;\n  margin: 5px; }\n\na:hover .contact-icon {\n  opacity: 1; }\n\n.contact-icon {\n  opacity: 0.5; }\n\n.header\n.portrait {\n  -webkit-box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  -moz-box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  width: 150px;\n  height: 150px;\n  background-image: url(" + __webpack_require__(28) + ");\n  margin: auto;\n  margin-top: 50px;\n  border-radius: 75px; }\n\n.header\n.icon {\n  font-size: 1.2em;\n  color: #c0c5cb;\n  margin-bottom: 50px; }\n\n.header\n.icon.main {\n  font-size: 1.8em;\n  color: #2075f5;\n  padding: 0px;\n  margin-bottom: 50px; }\n\n.header\nh1 {\n  font-weight: 700;\n  text-align: center;\n  font-size: 1.3em;\n  margin-top: 50px;\n  margin-bottom: 0px;\n  padding: 0px; }\n\n.header\nh2 {\n  font-family: \"Fira Mono\", sans-serif;\n  font-weight: 400;\n  color: #2075f5;\n  text-align: center;\n  font-size: 0.8em;\n  margin-top: 3px;\n  padding: 0px; }\n", ""]);
+	exports.push([module.id, ".section, .section-accent, .section-dark, .section-light {\n  width: 100%;\n  min-height: 100px;\n  padding-top: 20px;\n  padding-bottom: 20px; }\n  .section .icon, .section-accent .icon, .section-dark .icon, .section-light .icon {\n    display: block;\n    font-size: 2.5em; }\n  .section h1, .section-accent h1, .section-dark h1, .section-light h1 {\n    margin-top: 0px;\n    font-size: 0.75em;\n    font-weight: 400;\n    text-transform: uppercase; }\n  .section p, .section-accent p, .section-dark p, .section-light p {\n    margin: 0px;\n    font-size: 0.65em; }\n  .section a, .section-accent a, .section-dark a, .section-light a {\n    margin: 0px;\n    font-size: 0.65em;\n    color: #c0c5cb;\n    text-decoration: none; }\n  .section a:hover, .section-accent a:hover, .section-dark a:hover, .section-light a:hover {\n    color: #ffffff;\n    text-decoration: underline; }\n\n.section-accent {\n  background-color: #2075f5;\n  color: #ffffff; }\n\n.section-dark {\n  background-color: #26262c;\n  color: #ffffff; }\n  .section-dark p {\n    color: #c0c5cb; }\n\n.section-light {\n  background-color: #c0c5cb; }\n\n@media screen and (max-width: 47.2em) {\n  .section .icon, .section-accent .icon, .section-dark .icon, .section-light .icon {\n    font-size: 1.6em; } }\n\n.cards {\n  box-sizing: border-box;\n  width: 96%;\n  max-width: 800px;\n  margin: 0 auto; }\n  .cards p {\n    text-align: left;\n    font-size: 0.75em;\n    margin: 5px 10px 0px 10px;\n    color: #26262c; }\n\n.cards:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\n.card {\n  background: #fff;\n  border-radius: 4px;\n  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.22), inset 0 0 2px rgba(0, 0, 0, 0.22);\n  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.22), inset 0 0 2px rgba(0, 0, 0, 0.22);\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.22), inset 0 0 2px rgba(0, 0, 0, 0.22);\n  height: 150px;\n  width: 29.33333%;\n  margin: 2%;\n  float: left;\n  box-sizing: border-box; }\n  .card h2 {\n    text-align: left;\n    font-size: 0.9em;\n    margin: 10px 10px 0px 10px;\n    color: #707070; }\n  .card .tags {\n    text-align: left;\n    font-weight: normal;\n    font-size: 0.6em;\n    padding-top: 0px;\n    border-top: 1px solid #c0c5cb;\n    margin: 5px 10px 5px 10px;\n    color: #ffffff; }\n    .card .tags:after {\n      content: \"\";\n      display: table;\n      clear: both; }\n    .card .tags .tag {\n      display: block;\n      float: left;\n      background: #707070;\n      padding: 2px 8px;\n      margin-right: 5px;\n      margin-top: 4px;\n      border-radius: 8px;\n      overflow: hidden;\n      text-transform: uppercase; }\n    .card .tags:after {\n      content: \"\";\n      display: table;\n      clear: both; }\n  .card a {\n    margin-top: 3px;\n    margin-left: 10px;\n    text-align: left;\n    display: block;\n    text-decoration: none;\n    color: #2075f5; }\n  .card a:hover {\n    color: #26262c; }\n  .card.small {\n    height: 120px;\n    height: 120px;\n    width: 16%; }\n    .card.small .tags {\n      font-size: 0.5em; }\n    .card.small h2 {\n      font-size: 0.75em; }\n\n@media screen and (max-width: 45em) {\n  .card {\n    width: 46%; }\n    .card.small {\n      width: 29.33333%; } }\n\n.section-accent .card h2 {\n  color: #2075f5; }\n\n.section-accent .card .tags .tag {\n  background: #2075f5; }\n\n.timeline {\n  margin: 20px 20px 0px 20px;\n  padding: 0;\n  list-style: none;\n  position: relative; }\n\n/* The line */\n.timeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  width: 4px;\n  border-right: 4px dotted #2075f5;\n  left: 50%;\n  margin: 0px;\n  margin-left: -4px; }\n\n.timeline > li {\n  position: relative; }\n\n/* The date/time */\n.timeline > li .time {\n  display: block;\n  width: 48%;\n  padding-right: 100px;\n  position: absolute; }\n\n.timeline > li .time span {\n  display: block;\n  text-align: right; }\n\n.timeline > li .time span:first-child {\n  font-size: 0.75em;\n  color: #26262c; }\n\n.timeline > li .time span:last-child {\n  font-size: 1.2em;\n  color: #2075f5; }\n\n/* Right content */\n.timeline > li .label {\n  margin: 0 0px 20px 53%;\n  color: #fff;\n  padding: 0.5em 1em;\n  font-size: 1em;\n  font-weight: 300;\n  position: relative;\n  border-radius: 5px;\n  text-align: left;\n  color: #26262c;\n  max-width: 450px; }\n\n.timeline > li .label h2 {\n  margin: 0px;\n  font-size: 1em;\n  color: #2075f5;\n  text-align: left; }\n\n.timeline > li .label h3 {\n  margin: 0px;\n  font-size: 0.8em;\n  color: #26262c;\n  text-align: left;\n  margin-bottom: 10px; }\n\n/* The triangle */\n.timeline > li .label:after {\n  right: 100%;\n  border: solid transparent;\n  content: \" \";\n  height: 0;\n  width: 0;\n  position: absolute;\n  pointer-events: none;\n  border-width: 10px;\n  top: 10px; }\n\n/* The icons */\n.timeline > li .icon {\n  width: 16px;\n  height: 16px;\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  font-size: 1.4em;\n  line-height: 40px;\n  -webkit-font-smoothing: antialiased;\n  position: absolute;\n  border-radius: 50%;\n  text-align: center;\n  left: 50%;\n  top: 0;\n  margin: 10px 0 0 -6px; }\n\n/* Example Media Queries */\n@media screen and (max-width: 65em) {\n  .timeline > li .time span:last-child {\n    font-size: 1.1em; } }\n\n@media screen and (max-width: 45em) {\n  .timeline:before {\n    display: none; }\n  .timeline > li .time {\n    width: 100%;\n    position: relative;\n    padding: 0 0 20px 0; }\n  .timeline > li .time span {\n    text-align: center; }\n  .timeline > li .label {\n    margin: 0 0 30px 0;\n    padding: 1em;\n    font-weight: 400;\n    font-size: 95%;\n    max-width: 1000px; }\n  .timeline > li .icon {\n    display: none; } }\n\n/* Colors */\n.section .timeline > li .label h2, .section-accent .timeline > li .label h2, .section-dark .timeline > li .label h2, .section-light .timeline > li .label h2 {\n  color: #707070; }\n\n.section .timeline:before, .section-accent .timeline:before, .section-dark .timeline:before, .section-light .timeline:before {\n  border-right: 4px dotted #707070; }\n\n.section .timeline > li .icon, .section-accent .timeline > li .icon, .section-dark .timeline > li .icon, .section-light .timeline > li .icon {\n  background: #707070; }\n\n.section .timeline > li .label:after, .section-accent .timeline > li .label:after, .section-dark .timeline > li .label:after, .section-light .timeline > li .label:after {\n  border-right-color: rgba(0, 0, 0, 0.12); }\n\n.section .timeline > li .label, .section-accent .timeline > li .label, .section-dark .timeline > li .label, .section-light .timeline > li .label {\n  background: rgba(0, 0, 0, 0.12); }\n\n.section-light .timeline > li .label h2 {\n  color: #2075f5; }\n\n.section-light .timeline:before {\n  border-right: 4px dotted #2075f5; }\n\n.section-light .timeline > li .icon {\n  background: #2075f5; }\n\n.section-light .timeline > li .label:after {\n  border-right-color: rgba(255, 255, 255, 0.5); }\n\n.section-light .timeline > li .label {\n  background: rgba(255, 255, 255, 0.5); }\n\n@media screen and (max-width: 45em) {\n  .section .timeline > li .label:after, .section-accent .timeline > li .label:after, .section-dark .timeline > li .label:after, .section-light .timeline > li .label:after {\n    right: auto;\n    left: 50%;\n    border-right-color: transparent;\n    border-bottom-color: rgba(0, 0, 0, 0.12);\n    top: -20px;\n    margin-left: -10px; }\n  .section-light .timeline > li .label:after {\n    right: auto;\n    left: 50%;\n    border-right-color: transparent;\n    border-bottom-color: rgba(255, 255, 255, 0.5);\n    top: -20px;\n    margin-left: -10px; } }\n\nbody {\n  text-align: center;\n  font-family: \"Open Sans\", sans-serif;\n  background: #f3f3f3;\n  color: #26262c;\n  min-width: 600px; }\n\n.langs {\n  color: #26262c; }\n  .langs a {\n    display: inline-block;\n    width: 30px;\n    text-align: right;\n    color: #26262c; }\n    .langs a:hover {\n      color: #2075f5; }\n    .langs a:last-child {\n      text-align: left; }\n\n.bubble, .bubble-small, .bubble-medium, .bubble-large {\n  background: #ffffff;\n  color: #26262c;\n  display: inline-block;\n  margin: 10px; }\n\n.bubble-small {\n  width: 35px;\n  height: 35px;\n  border-radius: 17.5px; }\n  .bubble-small h2 {\n    margin: 0px;\n    font-size: 8px; }\n  .bubble-small h4 {\n    margin: 0px;\n    margin-top: 3px;\n    font-size: 7px; }\n\n.bubble-medium {\n  width: 45px;\n  height: 45px;\n  border-radius: 22.5px; }\n  .bubble-medium h2 {\n    margin: 0px;\n    font-size: 9px; }\n  .bubble-medium h4 {\n    margin: 0px;\n    margin-top: 4px;\n    font-size: 8px; }\n\n.bubble-large {\n  width: 60px;\n  height: 60px;\n  border-radius: 30px; }\n  .bubble-large h2 {\n    margin: 0px;\n    margin-top: 8px;\n    font-size: 11px; }\n  .bubble-large h4 {\n    margin: 0px;\n    font-size: 9px; }\n\n.contact a {\n  display: inline-block;\n  margin: 5px; }\n\na:hover .contact-icon {\n  opacity: 1; }\n\n.contact-icon {\n  opacity: 0.5; }\n\n.header .portrait {\n  -webkit-box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  -moz-box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  box-shadow: 0 0 15px #fff, inset 0 0 2px #fff;\n  width: 150px;\n  height: 150px;\n  background-image: url(" + __webpack_require__(28) + ");\n  margin: auto;\n  margin-top: 50px;\n  border-radius: 75px; }\n\n.header .icon {\n  font-size: 1.2em;\n  color: #c0c5cb;\n  margin-bottom: 50px; }\n\n.header .icon.main {\n  font-size: 1.8em;\n  color: #2075f5;\n  padding: 0px;\n  margin-bottom: 50px; }\n\n.header h1 {\n  font-weight: 700;\n  text-align: center;\n  font-size: 1.3em;\n  margin-top: 50px;\n  margin-bottom: 0px;\n  padding: 0px; }\n\n.header h2 {\n  font-family: \"Fira Mono\", sans-serif;\n  font-weight: 400;\n  color: #2075f5;\n  text-align: center;\n  font-size: 0.8em;\n  margin-top: 3px;\n  padding: 0px; }\n", ""]);
 
 	// exports
 
@@ -595,177 +595,139 @@ webpackJsonp([0],[
 /* 93 */,
 /* 94 */,
 /* 95 */,
-/* 96 */
+/* 96 */,
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(97)
-	module.exports.template = __webpack_require__(99)
+	module.exports = __webpack_require__(98)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(100)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue","-!vue-html!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./main.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue"))
-	Ctor.options.template = require("-!vue-html!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./main.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = "-!babel?optional[]=runtime&loose=all&nonStandard=false!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel?optional[]=runtime&loose=all&nonStandard=false!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue","-!vue-html!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./main.vue"], function () {
+	var newOptions = require("-!babel?optional[]=runtime&loose=all&nonStandard=false!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./main.vue")
+	var newTemplate = require("-!vue-html!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./main.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 97 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var wow = __webpack_require__(98)
+	"use strict";
+
+	var wow = __webpack_require__(99);
 
 	function getAge(dateString) {
-	    var today = new Date();
-	    var birthDate = new Date(dateString);
-	    var age = today.getFullYear() - birthDate.getFullYear();
-	    var m = today.getMonth() - birthDate.getMonth();
-	    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-	        age--;
-	    }
-	    return age;
+	  var today = new Date();
+	  var birthDate = new Date(dateString);
+	  var age = today.getFullYear() - birthDate.getFullYear();
+	  var m = today.getMonth() - birthDate.getMonth();
+	  if (m < 0 || m === 0 && today.getDate() < birthDate.getDate()) {
+	    age--;
+	  }
+	  return age;
 	}
 
 	module.exports = {
-	  ready: function() {
+	  ready: function ready() {
 	    new wow.WOW().init();
+	  },
+	  ready: function ready() {
+	    this.load("eng");
+	  },
+	  methods: {
+	    load: function load(lang) {
+	      console.log("lang:" + lang);
+
+	      var vm = this;
+	      var xhr = new XMLHttpRequest();
+	      xhr.onreadystatechange = function () {
+	        console.log(">>>" + vm);
+	        if (xhr.readyState == 4) {
+	          vm.update(JSON.parse(xhr.responseText));
+	        }
+	      };
+	      xhr.open('GET', '/data/' + lang + '.json', true);
+	      xhr.send(null);
+	    },
+	    update: function update(model) {
+	      this.header = model.header;
+	      this.about = model.about;
+	      this.skills = model.skills;
+	      this.jobs = model.jobs;
+	      this.studies = model.studies;
+	      this.opensource = model.opensource;
+	      this.hobbies = model.hobbies;
+	      this.contact = model.contact;
+
+	      //getAge("1988/06/02") + ' year old',
+	    }
 	  },
 	  data: {
 	    header: {
-	      name: "Aloïs Deniel",
-	      profile: "Mobile developer"
+	      name: null,
+	      profile: null
 	    },
-	    contact: [
-	      { link: 'mailto:alois.deniel@outlook.com', icon: 'mail'},
-	      { link: 'https://www.linkedin.com/profile/view?id=AAIAABCSq6IBXVUHi4NJtgeCQf9bkjUwA8h7UEo', icon: 'linkedin'},
-	      { link: 'http://www.viadeo.com/profile/0021f7uowr4zjmgz', icon: 'viadeo' },
-	      { link: 'https://twitter.com/aloisdeniel', icon: 'twitter'},
-	      { link: 'https://github.com/aloisdeniel', icon: 'github'},
-	      { link: 'https://play.spotify.com/user/1121031422', icon: 'spotify'}
-	    ],
-	    studies: [
-	      {
-	        name: 'ESIR',
-	        date: 'mars 2015',
-	        duration: '6 months',
-	        title: 'Diplôme d\'ingénieur',
-	        subtitle: 'Genie Informatique',
-	        description: 'soon'
-	      },
-	      {
-	        name: 'Université de Rennes I',
-	        date: 'janvier 2014',
-	        duration: '3 months',
-	        title: 'Licence',
-	        subtitle: 'Mathématique/Physique/Informatique/Electronique',
-	        description: 'soon'
-	      },
-	      {
-	        name: 'Lycée Notre Dame du Mur',
-	        date: 'janvier 2014',
-	        duration: '3 months',
-	        title: 'Baccalauréat',
-	        subtitle: 'Scientifique',
-	        description: 'soon'
-	      }
-	    ],
-	    jobs: [
-	      {
-	        name: 'Orange Business Services',
-	        date: 'mars 2015',
-	        duration: '6 months',
-	        title: 'Ingénieur expert / référent technique',
-	        subtitle: 'Xamarin & Windows Universal Platform',
-	        description: 'soon'
-	      },
-	      {
-	        name: 'Capgemini',
-	        date: 'janvier 2014',
-	        duration: '3 months',
-	        title: 'Stagiaire',
-	        subtitle: 'Etude des bases de données NoSQL',
-	        description: 'soon'
-	      }
-	    ],
-	    about: [
-	      getAge("1988/06/02") + ' year old',
-	      'live in Rennes, France',
-	      'work for Orange Business Services'
-	    ],
-	    opensource: [
-	      {
-	        title: "Personnal website",
-	        tags: ["html5", "css3", "scss", "javascript", "webpack",  "vue.js" ],
-	        description: "The sources of the website you are currently browsing.",
-	        link: "https://github.com/aloisdeniel/aloisdeniel.github.io"
-	      }
-	    ],
-	    hobbies: [
-	      {
-	        title: "Badminton",
-	        tags: ["sport" ],
-	        description: "3 ans"
-	      },
-	      {
-	        title: "Guitar",
-	        tags: ["art", "music" ],
-	        description: "5 ans"
-	      },
-	      {
-	        title: "Drawing",
-	        tags: ["art", "traditional", "digital", "photoshop" ],
-	        description: "Conception de sites web, prototypage d'interfaces interfaces mobiles"
-	      },
-	      {
-	        title: "Digital design",
-	        tags: ["art", "music", "photoshop" ],
-	        description: "Conception de sites web, prototypage d'interfaces interfaces mobiles"
-	      }
-	    ],
+	    about: {
+	      title: null,
+	      info: {}
+	    },
 	    skills: {
-	      major: [ { name: "C#" , type: "L" }, { name: "Xamarin", type: "F" }, { name: "Windows UAP", type: "F" }, { name: "Visual Studio", type: "T" }],
-	      medium: [ { name: "nodejs", type: "F" }],
-	      minor: [ { name: "Vue.js", type: "F" }]
+	      title: null,
+	      items: []
+	    },
+	    jobs: {
+	      title: null,
+	      events: []
+	    },
+	    studies: {
+	      title: null,
+	      events: []
+	    },
+	    opensource: {
+	      more: null,
+	      title: null,
+	      projects: []
+	    },
+	    hobbies: {
+	      title: null,
+	      items: []
+	    },
+	    contact: {
+	      title: null,
+	      items: []
 	    }
 	  }
 	};
 
 /***/ },
-/* 98 */
+/* 99 */
 /***/ function(module, exports) {
 
 	/*! WOW - v1.1.0 - 2015-04-04
 	* Copyright (c) 2015 Matthieu Aussaguel; Licensed MIT */(function(){var a,b,c,d,e,f=function(a,b){return function(){return a.apply(b,arguments)}},g=[].indexOf||function(a){for(var b=0,c=this.length;c>b;b++)if(b in this&&this[b]===a)return b;return-1};b=function(){function a(){}return a.prototype.extend=function(a,b){var c,d;for(c in b)d=b[c],null==a[c]&&(a[c]=d);return a},a.prototype.isMobile=function(a){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(a)},a.prototype.createEvent=function(a,b,c,d){var e;return null==b&&(b=!1),null==c&&(c=!1),null==d&&(d=null),null!=document.createEvent?(e=document.createEvent("CustomEvent"),e.initCustomEvent(a,b,c,d)):null!=document.createEventObject?(e=document.createEventObject(),e.eventType=a):e.eventName=a,e},a.prototype.emitEvent=function(a,b){return null!=a.dispatchEvent?a.dispatchEvent(b):b in(null!=a)?a[b]():"on"+b in(null!=a)?a["on"+b]():void 0},a.prototype.addEvent=function(a,b,c){return null!=a.addEventListener?a.addEventListener(b,c,!1):null!=a.attachEvent?a.attachEvent("on"+b,c):a[b]=c},a.prototype.removeEvent=function(a,b,c){return null!=a.removeEventListener?a.removeEventListener(b,c,!1):null!=a.detachEvent?a.detachEvent("on"+b,c):delete a[b]},a.prototype.innerHeight=function(){return"innerHeight"in window?window.innerHeight:document.documentElement.clientHeight},a}(),c=this.WeakMap||this.MozWeakMap||(c=function(){function a(){this.keys=[],this.values=[]}return a.prototype.get=function(a){var b,c,d,e,f;for(f=this.keys,b=d=0,e=f.length;e>d;b=++d)if(c=f[b],c===a)return this.values[b]},a.prototype.set=function(a,b){var c,d,e,f,g;for(g=this.keys,c=e=0,f=g.length;f>e;c=++e)if(d=g[c],d===a)return void(this.values[c]=b);return this.keys.push(a),this.values.push(b)},a}()),a=this.MutationObserver||this.WebkitMutationObserver||this.MozMutationObserver||(a=function(){function a(){"undefined"!=typeof console&&null!==console&&console.warn("MutationObserver is not supported by your browser."),"undefined"!=typeof console&&null!==console&&console.warn("WOW.js cannot detect dom mutations, please call .sync() after loading new content.")}return a.notSupported=!0,a.prototype.observe=function(){},a}()),d=this.getComputedStyle||function(a){return this.getPropertyValue=function(b){var c;return"float"===b&&(b="styleFloat"),e.test(b)&&b.replace(e,function(a,b){return b.toUpperCase()}),(null!=(c=a.currentStyle)?c[b]:void 0)||null},this},e=/(\-([a-z]){1})/g,this.WOW=function(){function e(a){null==a&&(a={}),this.scrollCallback=f(this.scrollCallback,this),this.scrollHandler=f(this.scrollHandler,this),this.start=f(this.start,this),this.scrolled=!0,this.config=this.util().extend(a,this.defaults),this.animationNameCache=new c,this.wowEvent=this.util().createEvent(this.config.boxClass)}return e.prototype.defaults={boxClass:"wow",animateClass:"animated",offset:0,mobile:!0,live:!0,callback:null},e.prototype.init=function(){var a;return this.element=window.document.documentElement,"interactive"===(a=document.readyState)||"complete"===a?this.start():this.util().addEvent(document,"DOMContentLoaded",this.start),this.finished=[]},e.prototype.start=function(){var b,c,d,e;if(this.stopped=!1,this.boxes=function(){var a,c,d,e;for(d=this.element.querySelectorAll("."+this.config.boxClass),e=[],a=0,c=d.length;c>a;a++)b=d[a],e.push(b);return e}.call(this),this.all=function(){var a,c,d,e;for(d=this.boxes,e=[],a=0,c=d.length;c>a;a++)b=d[a],e.push(b);return e}.call(this),this.boxes.length)if(this.disabled())this.resetStyle();else for(e=this.boxes,c=0,d=e.length;d>c;c++)b=e[c],this.applyStyle(b,!0);return this.disabled()||(this.util().addEvent(window,"scroll",this.scrollHandler),this.util().addEvent(window,"resize",this.scrollHandler),this.interval=setInterval(this.scrollCallback,50)),this.config.live?new a(function(a){return function(b){var c,d,e,f,g;for(g=[],c=0,d=b.length;d>c;c++)f=b[c],g.push(function(){var a,b,c,d;for(c=f.addedNodes||[],d=[],a=0,b=c.length;b>a;a++)e=c[a],d.push(this.doSync(e));return d}.call(a));return g}}(this)).observe(document.body,{childList:!0,subtree:!0}):void 0},e.prototype.stop=function(){return this.stopped=!0,this.util().removeEvent(window,"scroll",this.scrollHandler),this.util().removeEvent(window,"resize",this.scrollHandler),null!=this.interval?clearInterval(this.interval):void 0},e.prototype.sync=function(){return a.notSupported?this.doSync(this.element):void 0},e.prototype.doSync=function(a){var b,c,d,e,f;if(null==a&&(a=this.element),1===a.nodeType){for(a=a.parentNode||a,e=a.querySelectorAll("."+this.config.boxClass),f=[],c=0,d=e.length;d>c;c++)b=e[c],g.call(this.all,b)<0?(this.boxes.push(b),this.all.push(b),this.stopped||this.disabled()?this.resetStyle():this.applyStyle(b,!0),f.push(this.scrolled=!0)):f.push(void 0);return f}},e.prototype.show=function(a){return this.applyStyle(a),a.className=a.className+" "+this.config.animateClass,null!=this.config.callback&&this.config.callback(a),this.util().emitEvent(a,this.wowEvent),this.util().addEvent(a,"animationend",this.resetAnimation),this.util().addEvent(a,"oanimationend",this.resetAnimation),this.util().addEvent(a,"webkitAnimationEnd",this.resetAnimation),this.util().addEvent(a,"MSAnimationEnd",this.resetAnimation),a},e.prototype.applyStyle=function(a,b){var c,d,e;return d=a.getAttribute("data-wow-duration"),c=a.getAttribute("data-wow-delay"),e=a.getAttribute("data-wow-iteration"),this.animate(function(f){return function(){return f.customStyle(a,b,d,c,e)}}(this))},e.prototype.animate=function(){return"requestAnimationFrame"in window?function(a){return window.requestAnimationFrame(a)}:function(a){return a()}}(),e.prototype.resetStyle=function(){var a,b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],e.push(a.style.visibility="visible");return e},e.prototype.resetAnimation=function(a){var b;return a.type.toLowerCase().indexOf("animationend")>=0?(b=a.target||a.srcElement,b.className=b.className.replace(config.animateClass,"").trim()):void 0},e.prototype.customStyle=function(a,b,c,d,e){return b&&this.cacheAnimationName(a),a.style.visibility=b?"hidden":"visible",c&&this.vendorSet(a.style,{animationDuration:c}),d&&this.vendorSet(a.style,{animationDelay:d}),e&&this.vendorSet(a.style,{animationIterationCount:e}),this.vendorSet(a.style,{animationName:b?"none":this.cachedAnimationName(a)}),a},e.prototype.vendors=["moz","webkit"],e.prototype.vendorSet=function(a,b){var c,d,e,f;d=[];for(c in b)e=b[c],a[""+c]=e,d.push(function(){var b,d,g,h;for(g=this.vendors,h=[],b=0,d=g.length;d>b;b++)f=g[b],h.push(a[""+f+c.charAt(0).toUpperCase()+c.substr(1)]=e);return h}.call(this));return d},e.prototype.vendorCSS=function(a,b){var c,e,f,g,h,i;for(h=d(a),g=h.getPropertyCSSValue(b),f=this.vendors,c=0,e=f.length;e>c;c++)i=f[c],g=g||h.getPropertyCSSValue("-"+i+"-"+b);return g},e.prototype.animationName=function(a){var b;try{b=this.vendorCSS(a,"animation-name").cssText}catch(c){b=d(a).getPropertyValue("animation-name")}return"none"===b?"":b},e.prototype.cacheAnimationName=function(a){return this.animationNameCache.set(a,this.animationName(a))},e.prototype.cachedAnimationName=function(a){return this.animationNameCache.get(a)},e.prototype.scrollHandler=function(){return this.scrolled=!0},e.prototype.scrollCallback=function(){var a;return!this.scrolled||(this.scrolled=!1,this.boxes=function(){var b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],a&&(this.isVisible(a)?this.show(a):e.push(a));return e}.call(this),this.boxes.length||this.config.live)?void 0:this.stop()},e.prototype.offsetTop=function(a){for(var b;void 0===a.offsetTop;)a=a.parentNode;for(b=a.offsetTop;a=a.offsetParent;)b+=a.offsetTop;return b},e.prototype.isVisible=function(a){var b,c,d,e,f;return c=a.getAttribute("data-wow-offset")||this.config.offset,f=window.pageYOffset,e=f+Math.min(this.element.clientHeight,this.util().innerHeight())-c,d=this.offsetTop(a),b=d+a.clientHeight,e>=d&&b>=f},e.prototype.util=function(){return null!=this._util?this._util:this._util=new b},e.prototype.disabled=function(){return!this.config.mobile&&this.util().isMobile(navigator.userAgent)},e}()}).call(this);
 
 /***/ },
-/* 99 */
+/* 100 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"header section\">\r\n      <div class=\"portrait animated fadeIn\"></div>\r\n      <h1 class=\"animated fadeIn\">{{ header.name }}</h1>\r\n      <h2 class=\"animated fadeIn\">{{ header.profile }}</h2>\r\n      <i class=\"icon main icons8-iphone animated zoomIn\"></i>\r\n      <i class=\"icon icons8-angle-down wow rubberBand\"></i>\r\n  </div>\r\n\r\n  <section-about info=\"{{about}}\"></section-about>\r\n\r\n  <section-skills medium=\"{{ skills.medium }}\" major=\"{{ skills.major }}\" minor=\"{{ skills.minor }}\"></section-skills>\r\n\r\n  <section-jobs events=\"{{jobs}}\"></section-jobs>\r\n\r\n  <section-studies events=\"{{studies}}\"></section-studies>\r\n\r\n  <section-opensource projects=\"{{opensource}}\"></section-opensource>\r\n\r\n  <section-hobbies items=\"{{hobbies}}\"></section-hobbies>\r\n\r\n  <section-contact items=\"{{contact}}\"></section-contact>";
+	module.exports = "<div class=\"header section\">\r\n      <div class=\"portrait animated fadeIn\"></div>\r\n      <h1 class=\"animated fadeIn\">{{ header.name }}</h1>\r\n      <h2 class=\"animated fadeIn\">{{ header.profile }}</h2>\r\n      <i class=\"icon main icons8-iphone animated zoomIn\"></i>\r\n      <div class=\"langs\">\r\n        <a href=\"#eng\" @click=\"load('eng')\">EN</a> | <a href=\"#fr\" @click=\"load('fr')\">FR</a>\r\n      </div>\r\n      <i class=\"icon icons8-angle-down wow rubberBand\"></i>\r\n  </div>\r\n\r\n  <section-about :title=\"about.title\" :info=\"about.info\"></section-about>\r\n\r\n  <section-skills :title=\"skills.title\" :items=\"skills.items\"></section-skills>\r\n\r\n  <section-jobs :title=\"jobs.title\" :events=\"jobs.events\"></section-jobs>\r\n\r\n  <section-studies :title=\"studies.title\" :events=\"studies.events\"></section-studies>\r\n\r\n  <section-opensource :title=\"opensource.title\" :more=\"opensource.more\" :projects=\"opensource.projects\"></section-opensource>\r\n\r\n  <section-hobbies :title=\"hobbies.title\" :items=\"hobbies.items\"></section-hobbies>\r\n\r\n  <section-contact :title=\"contact.title\" :items=\"contact.items\"></section-contact>";
 
 /***/ },
-/* 100 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./age.js": 101,
-		"./shape.js": 102
+		"./age.js": 102,
+		"./l18n.js": 103,
+		"./shape.js": 104
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -778,11 +740,11 @@ webpackJsonp([0],[
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 100;
+	webpackContext.id = 101;
 
 
 /***/ },
-/* 101 */
+/* 102 */
 /***/ function(module, exports) {
 
 	module.exports = function (value) {
@@ -798,7 +760,28 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 102 */
+/* 103 */
+/***/ function(module, exports) {
+
+	var strings = {
+	  fr: {
+	    about: "A PROPOS"
+	  },
+	  default: {
+	    about: "ABOUT"
+	  }
+	};
+
+	module.exports = function (value,lang) {
+	  if (typeof(x[lang]) !== 'undefined'){
+	    return strings[lang][value];
+	  }
+	  return strings.default[value];
+	};
+
+
+/***/ },
+/* 104 */
 /***/ function(module, exports) {
 
 	module.exports = function (value) {
@@ -818,22 +801,22 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 103 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./bubble.vue": 104,
-		"./card.vue": 107,
-		"./icon.vue": 110,
-		"./section-about.vue": 113,
-		"./section-contact.vue": 116,
-		"./section-header.vue": 119,
-		"./section-hobbies.vue": 122,
-		"./section-jobs.vue": 125,
-		"./section-opensource.vue": 128,
-		"./section-skills.vue": 131,
-		"./section-studies.vue": 134,
-		"./timeline.vue": 137
+		"./bubble.vue": 106,
+		"./card.vue": 109,
+		"./icon.vue": 112,
+		"./section-about.vue": 115,
+		"./section-contact.vue": 118,
+		"./section-header.vue": 121,
+		"./section-hobbies.vue": 124,
+		"./section-jobs.vue": 127,
+		"./section-opensource.vue": 130,
+		"./section-skills.vue": 133,
+		"./section-studies.vue": 136,
+		"./timeline.vue": 139
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -846,566 +829,452 @@ webpackJsonp([0],[
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 103;
+	webpackContext.id = 105;
 
 
 /***/ },
-/* 104 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(105)
-	module.exports.template = __webpack_require__(106)
+	module.exports = __webpack_require__(107)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(108)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./bubble.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./bubble.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = "-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./bubble.vue"], function () {
+	var newOptions = require("-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./bubble.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./bubble.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 105 */
+/* 107 */
 /***/ function(module, exports) {
+
+	'use strict';
 
 	module.exports = {
 	  props: ['name', 'description', 'size']
 	};
 
 /***/ },
-/* 106 */
+/* 108 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"bubble-{{size}} wow zoomIn\">\r\n  <h2>{{name}}</h2>\r\n  <h4>{{description}}</h4>\r\n</div>";
 
 /***/ },
-/* 107 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(108)
-	module.exports.template = __webpack_require__(109)
+	module.exports = __webpack_require__(110)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(111)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./card.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./card.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./card.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./card.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./card.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = "-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./card.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./card.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./card.vue"], function () {
+	var newOptions = require("-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./card.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./card.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
-
-/***/ },
-/* 108 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  props: ['title', 'tags', 'link', 'description']
-	};
-
-/***/ },
-/* 109 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"card wow flipInX\">\r\n  <h2>{{title}}</h2>\r\n  <div class=\"tags\"><span class=\"tag\" v-repeat=\"tag in tags\">{{tag}}</span></div>\r\n  <p>{{description}}</p>\r\n  <a v-if=\"link\" href=\"{{link}}\">More details</a>\r\n</div>";
 
 /***/ },
 /* 110 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__(111)
-	module.exports.template = __webpack_require__(112)
-	if (false) {
-	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
-	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./icon.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./icon.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
-	})
-	})()
-	}
+	'use strict';
+
+	module.exports = {
+	  props: ['title', 'tags', 'link', 'description', 'small']
+	};
 
 /***/ },
 /* 111 */
 /***/ function(module, exports) {
 
-	module.exports = {
-	  props: [ 'size', 'color', 'shape']
-	};
+	module.exports = "<div :class=\"['card', 'wow', 'flipInX', small ? 'small' : '']\">\r\n  <h2>{{title}}</h2>\r\n  <div class=\"tags\"><span class=\"tag\" v-for=\"tag in tags\">{{tag}}</span></div>\r\n  <p v-if=\"description\">{{description}}</p>\r\n  <a v-if=\"link\" :href=\"link\">More details</a>\r\n</div>";
 
 /***/ },
 /* 112 */
-/***/ function(module, exports) {
-
-	module.exports = "<svg viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:{{size}}px;height:{{size}}px;\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"1.414\"><path class=\"contact-icon\" d=\"{{shape | shape}}\" fill=\"{{color}}\" fill-rule=\"nonzero\"/></svg>";
-
-/***/ },
-/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(114)
-	module.exports.template = __webpack_require__(115)
+	module.exports = __webpack_require__(113)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(114)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-about.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-about.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = "-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./icon.vue"], function () {
+	var newOptions = require("-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./icon.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./icon.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
+
+/***/ },
+/* 113 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	module.exports = {
+	  props: ['size', 'color', 'shape']
+	};
 
 /***/ },
 /* 114 */
 /***/ function(module, exports) {
 
-	module.exports = {
-	  props: ['info']
-	};
+	module.exports = "<svg viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" :style=\"{ width: size + 'px', width: size + 'px' }\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"1.414\"><path class=\"contact-icon\" :d=\"shape | shape\" :fill=\"color\" fill-rule=\"nonzero\"/></svg>";
 
 /***/ },
 /* 115 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"section-dark\">\r\n  <section-header icon=\"user-male\" title=\"ABOUT ME\"></section-header>\r\n  <p v-repeat=\"info\">{{$value}}</p>\r\n</div>";
-
-/***/ },
-/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(117)
-	module.exports.template = __webpack_require__(118)
+	module.exports = __webpack_require__(116)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(117)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-contact.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-contact.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = "-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-about.vue"], function () {
+	var newOptions = require("-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-about.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-about.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
+
+/***/ },
+/* 116 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	module.exports = {
+	  props: ['title', 'info']
+	};
 
 /***/ },
 /* 117 */
 /***/ function(module, exports) {
 
-	module.exports = {
-	  props: {
-	    items: {
-	      type: Array,
-	      default: function() { return []; }
-	    }
-	  }
-	};
+	module.exports = "<div class=\"section-dark\">\r\n  <section-header icon=\"user-male\" :title=\"title\"></section-header>\r\n  <p v-for=\"line in info\">{{line}}</p>\r\n</div>";
 
 /***/ },
 /* 118 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"contact section-dark\">\r\n  <section-header icon=\"comments\" title=\"CONTACT\"></section-header>\r\n\r\n  <a v-repeat=\"item in items\" href=\"{{item.link}}\">\r\n    <icon color=\"#fff\" shape=\"{{item.icon}}\" size=\"20\"></icon>\r\n  </a>\r\n</div>";
-
-/***/ },
-/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(120)
-	module.exports.template = __webpack_require__(121)
+	module.exports = __webpack_require__(119)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(120)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-header.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-header.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = "-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-contact.vue"], function () {
+	var newOptions = require("-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-contact.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-contact.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
+/* 119 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	module.exports = {
+	    props: ['title', 'items']
+	};
+
+/***/ },
 /* 120 */
 /***/ function(module, exports) {
+
+	module.exports = "<div class=\"contact section-dark\">\r\n  <section-header icon=\"comments\" :title=\"title\"></section-header>\r\n  <a v-for=\"item in items\" :href=\"item.link\">\r\n    <icon color=\"#fff\" :shape=\"item.icon\" size=\"20\"></icon>\r\n  </a>\r\n</div>";
+
+/***/ },
+/* 121 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(122)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(123)
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-header.vue"], function () {
+	var newOptions = require("-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-header.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-header.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 122 */
+/***/ function(module, exports) {
+
+	'use strict';
 
 	module.exports = {
 	  props: ['icon', 'title']
 	};
 
 /***/ },
-/* 121 */
+/* 123 */
 /***/ function(module, exports) {
 
 	module.exports = "<i class=\"icon icons8-{{icon}} wow fadeIn\"></i>\r\n  <h1 class=\"wow fadeIn\">{{title}}</h1>";
 
 /***/ },
-/* 122 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(123)
-	module.exports.template = __webpack_require__(124)
+	module.exports = __webpack_require__(125)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(126)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-hobbies.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-hobbies.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = "-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-hobbies.vue"], function () {
+	var newOptions = require("-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-hobbies.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-hobbies.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
-
-/***/ },
-/* 123 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	  props: [ 'items']
-	};
-
-/***/ },
-/* 124 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"section\">\r\n  <section-header icon=\"airport\" title=\"HOBBIES\"></section-header>\r\n  <div class=\"cards\">\r\n    <template v-repeat=\"item in items\">\r\n      <card title=\"{{item.title}}\" tags=\"{{item.tags}}\" link=\"{{item.link}}\" description=\"{{item.description}}\"></card>\r\n    </template>\r\n  </div>\r\n</div>";
 
 /***/ },
 /* 125 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__(126)
-	module.exports.template = __webpack_require__(127)
-	if (false) {
-	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
-	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-jobs.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-jobs.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
-	})
-	})()
-	}
+	'use strict';
+
+	module.exports = {
+	  props: ['title', 'items']
+	};
 
 /***/ },
 /* 126 */
 /***/ function(module, exports) {
 
-	module.exports = {
-	  props: [ "events"]
-	};
+	module.exports = "<div class=\"section\">\r\n  <section-header icon=\"airport\" :title=\"title\"></section-header>\r\n  <div class=\"cards\">\r\n    <template v-for=\"item in items\">\r\n      <card small=\"true\" :title=\"item.title\" :tags=\"item.tags\" :link=\"item.link\" :description=\"item.description\"></card>\r\n    </template>\r\n  </div>\r\n</div>";
 
 /***/ },
 /* 127 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"section\">\r\n  <section-header icon=\"briefcase\" title=\"JOBS\"></section-header>\r\n  <timeline events='{{events}}'></timeline>\r\n</div>";
-
-/***/ },
-/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(129)
-	module.exports.template = __webpack_require__(130)
+	module.exports = __webpack_require__(128)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(129)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-opensource.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-opensource.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = "-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-jobs.vue"], function () {
+	var newOptions = require("-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-jobs.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-jobs.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
+
+/***/ },
+/* 128 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	module.exports = {
+	  props: ["title", "events"]
+	};
 
 /***/ },
 /* 129 */
 /***/ function(module, exports) {
 
-	module.exports = {
-	  props: [ 'projects']
-	};
+	module.exports = "<div class=\"section-light\">\r\n  <section-header icon=\"briefcase\" :title=\"title\"></section-header>\r\n  <timeline :events='events'></timeline>\r\n</div>";
 
 /***/ },
 /* 130 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"section-accent\">\r\n  <section-header icon=\"idea\" title=\"OPEN-SOURCE\"></section-header>\r\n  <div class=\"cards\">\r\n    <template v-repeat=\"item in projects\">\r\n      <card title=\"{{item.title}}\" tags=\"{{item.tags}}\" link=\"{{item.link}}\" description=\"{{item.description}}\"></card>\r\n    </template>\r\n  </div>\r\n</template>";
-
-/***/ },
-/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(132)
-	module.exports.template = __webpack_require__(133)
+	module.exports = __webpack_require__(131)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(132)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-skills.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-skills.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = "-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-opensource.vue"], function () {
+	var newOptions = require("-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-opensource.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-opensource.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
+
+/***/ },
+/* 131 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	module.exports = {
+	  props: ['more', 'title', 'projects']
+	};
 
 /***/ },
 /* 132 */
 /***/ function(module, exports) {
 
-	module.exports = {
-	  props: {
-	    major: {
-	      type: Array,
-	      default: function() { return []; }
-	    },
-	    medium: {
-	      type: Array,
-	      default: function() { return []; }
-	    },
-	    minor: {
-	      type: Array,
-	      default: function() { return []; }
-	    }
-	  }
-	};
+	module.exports = "<div class=\"section-accent\">\r\n  <section-header icon=\"idea\" :title=\"title\"></section-header>\r\n  <div class=\"cards\">\r\n    <template v-for=\"item in projects\">\r\n      <card :title=\"item.title\" :tags=\"item.tags\" :link=\"item.link\" :description=\"item.description\"></card>\r\n    </template>\r\n  </div>\r\n  <a :href=\"more\">See all my projects on GitHub</a>\r\n</template>";
 
 /***/ },
 /* 133 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"section-accent\">\r\n  <section-header icon=\"trophy\" title=\"SKILLS\"></section-header>\r\n\r\n  <template v-repeat=\"skill in major\">\r\n    <bubble size=\"large\" name=\"{{skill.name}}\" description=\"{{skill.type}}\"></bubble>\r\n  </template>\r\n  <template v-repeat=\"skill in medium\">\r\n    <bubble size=\"medium\" name=\"{{skill.name}}\" description=\"{{skill.type}}\"></bubble>\r\n  </template>\r\n  <template v-repeat=\"skill in minor\">\r\n    <bubble size=\"small\" name=\"{{skill.name}}\" description=\"{{skill.type}}\"></bubble>\r\n  </template>\r\n</div>";
-
-/***/ },
-/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(135)
-	module.exports.template = __webpack_require__(136)
+	module.exports = __webpack_require__(134)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(135)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-studies.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-studies.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = "-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-skills.vue"], function () {
+	var newOptions = require("-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-skills.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-skills.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
+
+/***/ },
+/* 134 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	module.exports = {
+	  props: ['title', "items"]
+	};
 
 /***/ },
 /* 135 */
 /***/ function(module, exports) {
 
-	module.exports = {
-	  props: [ "events"]
-	};
+	module.exports = "<div class=\"section-accent\">\r\n  <section-header icon=\"trophy\" title=\"SKILLS\"></section-header>\r\n\r\n  <div class=\"cards\">\r\n    <template v-for=\"skill in items\">\r\n      <card :small=\"skill.minor\" :title=\"skill.title\" :tags=\"skill.tags\" :link=\"skill.link\" :description=\"skill.description\"></card>\r\n    </template>\r\n  </div>\r\n</div>";
 
 /***/ },
 /* 136 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"section-light\">\r\n  <section-header icon=\"diploma-1\" title=\"STUDIES\"></section-header>\r\n  <timeline events='{{events}}'></timeline>\r\n\r\n</div>";
-
-/***/ },
-/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(138)
-	module.exports.template = __webpack_require__(139)
+	module.exports = __webpack_require__(137)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(138)
 	if (false) {
 	(function () {
-	var Vue = require("vue")
-	var hotAPI = require("C:\\Users\\alois\\Documents\\aloisdeniel.github.io\\node_modules\\vue-loader\\lib\\hot-reload-api.js")
-	hotAPI.install(Vue)
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var map = Vue.config._hotComponents
-	var id = module.exports.hotID = "-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue"
-	if (typeof module.exports.el !== "string" && typeof module.exports.data !== "object") {
-	map[id] = { Ctor: Vue.extend(module.exports), instances: [] }
-	}
-	module.hot.accept(["-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./timeline.vue"], function () {
-	if (!map[id]) {
-	throw new Error("Root or manually-mounted instance modified. Full reload is required.")
-	}
-	var Ctor = map[id].Ctor
-	Ctor.options = Vue.util.mergeOptions(Vue.options, require("-!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue"))
-	Ctor.options.template = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./timeline.vue")
-	if (Ctor.options.name) Ctor.options.components[Ctor.options.name] = Ctor
-	Ctor.linker = null
-	map[id].instances.forEach(hotAPI.update)
+	var id = "-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-studies.vue"], function () {
+	var newOptions = require("-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./section-studies.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./section-studies.vue")
+	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 138 */
+/* 137 */
 /***/ function(module, exports) {
 
+	"use strict";
+
 	module.exports = {
-	  props: [ "events"]
+	  props: ['title', "events"]
 	};
 
 /***/ },
-/* 139 */
+/* 138 */
 /***/ function(module, exports) {
 
-	module.exports = "<ul class=\"timeline\">\r\n\t<li v-repeat=\"events\">\r\n\t\t<div class=\"time wow fadeInLeft\">\r\n      <span>{{ date }} - {{ duration }}</span>\r\n      <span>{{ name }}</span>\r\n    </div>\r\n\t\t<div class=\"icon wow zoomIn\"></div>\r\n\t\t<div class=\"label wow fadeInRight\">\r\n\t\t\t<h2>{{ title }}</h2>\r\n  \t\t<h3>{{ subtitle }}</h3>\r\n\t\t\t<p>{{ description }}</p>\r\n\t\t</div>\r\n\t</li>\r\n</ul>";
+	module.exports = "<div class=\"section\">\r\n  <section-header icon=\"diploma-1\" :title=\"title\"></section-header>\r\n  <timeline :events='events'></timeline>\r\n\r\n</div>";
+
+/***/ },
+/* 139 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(140)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(141)
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue","-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./timeline.vue"], function () {
+	var newOptions = require("-!babel?optional[]=runtime&loose=all&nonStandard=false!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./timeline.vue")
+	var newTemplate = require("-!vue-html!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./timeline.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 140 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	module.exports = {
+	  props: ["events"]
+	};
+
+/***/ },
+/* 141 */
+/***/ function(module, exports) {
+
+	module.exports = "<ul class=\"timeline\">\r\n\t<li v-for=\"event in events\">\r\n\t\t<div class=\"time wow fadeInLeft\">\r\n      <span>{{ event.date }} - {{ event.duration }}</span>\r\n      <span>{{ event.name }}</span>\r\n    </div>\r\n\t\t<div class=\"icon wow zoomIn\"></div>\r\n\t\t<div class=\"label wow fadeInRight\">\r\n\t\t\t<h2>{{ event.title }}</h2>\r\n  \t\t<h3>{{ event.subtitle }}</h3>\r\n\t\t\t<p>{{ event.description }}</p>\r\n\t\t</div>\r\n\t</li>\r\n</ul>";
 
 /***/ }
 ]);
