@@ -1,5 +1,5 @@
 <template>
-<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" :style="{ width: size + 'px', width: height + 'px' }" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path class="contact-icon" :d="shape | shape" :fill="color" fill-rule="nonzero"/></svg>
+<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" :style="{ width: size + 'px', width: size + 'px' }" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path class="contact-icon" :d="shape | shape" :fill="color" fill-rule="nonzero"/></svg>
 </template>
 
 <script>

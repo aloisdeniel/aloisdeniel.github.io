@@ -1,10 +1,71 @@
 {
   "header": {
     "name": "Aloïs Deniel",
-    "profile": "Développeur mobile"
+    "profile": "Mobile developer"
+  },
+  "about": {
+    "title": "ABOUT",
+      "info": {
+      "birth": "1988/06/02",
+      "location" : "Rennes, France",
+      "work" : "Orange Business Services"
+    }
+  },
+  "skills": {
+    "title" : "skills",
+    "items": [
+      {
+        "title": "Windows Universal Apps",
+        "tags": ["C#", "visualstudio","winrt", "mobile", "UAP", "TFS"  ],
+        "description": "Expert",
+        "minor": false
+      },
+      {
+        "title": "Xamarin",
+        "tags": ["C#", "visual-studio","iOS", "Android", "forms", "mobile" ],
+        "description": "Expert",
+        "minor": false
+      },
+      {
+        "title": "iOS",
+        "tags": ["Swift", "Objective-C", "iOS", "Xcode", "mobile"  ],
+        "description": "Experienced",
+        "minor": false
+      },
+      {
+        "title": "Node.js",
+        "tags": ["js", "npm", "koajs", "express"  ],
+        "description": "Experienced",
+        "minor": true
+      },
+      {
+        "title": "Web",
+        "tags": ["html5", "css3", "js"  ],
+        "description": "Experienced",
+        "minor": true
+      },
+      {
+        "title": "Android",
+        "tags": ["Android-studio", "Java", "mobile"  ],
+        "description": "Experienced",
+        "minor": true
+      },
+      {
+        "title": "Design",
+        "tags": ["photoshop"  ],
+        "description": "Experienced",
+        "minor": true
+      },
+      {
+        "title": "Git",
+        "tags": ["git", "sourcetree"  ],
+        "description": "Experienced",
+        "minor": true
+      }
+    ]
   },
   "studies": {
-    "title" : "ETUDES",
+    "title" : "STUDIES",
     "events" : [
       {
         "name": "ESIR",
@@ -33,7 +94,7 @@
     ]
   },
   "jobs": {
-    "title" : "PARCOURS PROFESSIONNEL",
+    "title" : "JOBS",
     "events" : [
       {
         "name": "Orange Business Services",
@@ -52,14 +113,6 @@
         "description": "soon"
       }
     ]
-  },
-  "about": {
-    "title": "A PROPOS",
-    "info": {
-      "birth": "1988/06/02",
-      "location" : "Rennes, France",
-      "work" : "Orange Business Services"
-    }
   },
   "opensource": {
     "title" : "OPEN-SOURCE",
@@ -109,36 +162,39 @@
       {
         "title": "Badminton",
         "tags": ["sport" ],
-        "description": "3 ans"
+        "description": "3 years"
       },
       {
         "title": "Guitar",
         "tags": ["art", "music" ],
-        "description": "5 ans"
+        "description": "5 years"
       },
       {
         "title": "Drawing",
-        "tags": ["art", "traditional", "digital", "photoshop" ],
-        "description": "Conception de sites web, prototypage d'interfaces interfaces mobiles"
+        "tags": ["traditional", "digital" ],
+        "description": ""
       },
       {
         "title": "Digital design",
-        "tags": ["art", "music", "photoshop" ],
-        "description": "Conception de sites web, prototypage d'interfaces interfaces mobiles"
+        "tags": ["digital" , "photoshop" ],
+        "description": "Websites, mobile user  interfaces"
+      },
+      {
+        "title": "Travels",
+        "tags": ["travels" ],
+        "description": "Turkey, Corsica, Crete, Swiss"
       }
     ]
   },
-  "skills": {
-    "major": [ { "name": "C#" , "type": "L" }, { "name": "Xamarin", "type": "F" }, { "name": "Windows UAP", "type": "F" }, { "name": "Visual Studio", "type": "T" }],
-    "medium": [ { "name": "nodejs", "type": "F" }],
-    "minor": [ { "name": "Vue.js", "type": "F" }]
-  },
-  "contact": [
-    { "link": "mailto:alois.deniel@outlook.com", "icon": "mail" },
-    { "link": "https://www.linkedin.com/profile/view?id=AAIAABCSq6IBXVUHi4NJtgeCQf9bkjUwA8h7UEo", "icon": "linkedin"},
-    { "link": "http://www.viadeo.com/profile/0021f7uowr4zjmgz", "icon": "viadeo" },
-    { "link": "https://twitter.com/aloisdeniel", "icon": "twitter"},
-    { "link": "https://github.com/aloisdeniel", "icon": "github"},
-    { "link": "https://play.spotify.com/user/1121031422", "icon": "spotify"}
-  ]
+  "contact": {
+    "title" : "CONTACT",
+    "items" : [
+      { "link": "mailto:alois.deniel@outlook.com", "icon": "mail" },
+      { "link": "https://www.linkedin.com/profile/view?id=AAIAABCSq6IBXVUHi4NJtgeCQf9bkjUwA8h7UEo", "icon": "linkedin"},
+      { "link": "http://www.viadeo.com/profile/0021f7uowr4zjmgz", "icon": "viadeo" },
+      { "link": "https://twitter.com/aloisdeniel", "icon": "twitter"},
+      { "link": "https://github.com/aloisdeniel", "icon": "github"},
+      { "link": "https://play.spotify.com/user/1121031422", "icon": "spotify"}
+    ]
+  }
 }

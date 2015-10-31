@@ -5,14 +5,14 @@
       <h2 class="animated fadeIn">{{ header.profile }}</h2>
       <i class="icon main icons8-iphone animated zoomIn"></i>
       <div class="langs">
-        <a href="#eng" @click="load('eng')">ENG</a> | <a href="#fr" @click="load('fr')">FR</a>
+        <a href="#eng" @click="load('eng')">EN</a> | <a href="#fr" @click="load('fr')">FR</a>
       </div>
       <i class="icon icons8-angle-down wow rubberBand"></i>
   </div>
 
   <section-about :title="about.title" :info="about.info"></section-about>
 
-  <section-skills :medium="skills.medium" :major="skills.major" :minor="skills.minor"></section-skills>
+  <section-skills :title="skills.title" :items="skills.items"></section-skills>
 
   <section-jobs :title="jobs.title" :events="jobs.events"></section-jobs>
 
@@ -22,7 +22,7 @@
 
   <section-hobbies :title="hobbies.title" :items="hobbies.items"></section-hobbies>
 
-  <section-contact :items="contact"></section-contact>
+  <section-contact :title="contact.title" :items="contact.items"></section-contact>
 
 </template>
 
@@ -85,9 +85,8 @@ module.exports = {
       info: {}
     },
     skills: {
-      medium: [],
-      major: [],
-      minor: []
+      title: null,
+      items: []
     },
     jobs: {
       title: null,
@@ -106,7 +105,10 @@ module.exports = {
       title: null,
       items: []
     },
-    contact: []
+    contact: {
+      title: null,
+      items: []
+    }
   }
 };
 </script>

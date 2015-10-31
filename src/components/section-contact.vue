@@ -1,7 +1,6 @@
 <template>
 <div class="contact section-dark">
-  <section-header icon="comments" title="CONTACT"></section-header>
-
+  <section-header icon="comments" :title="title"></section-header>
   <a v-for="item in items" :href="item.link">
     <icon color="#fff" :shape="item.icon" size="20"></icon>
   </a>
@@ -10,11 +9,6 @@
 
 <script>
 module.exports = {
-  props: {
-    items: {
-      type: Array,
-      default: function() { return []; }
-    }
-  }
+    props: [ 'title', 'items']
 };
 </script>

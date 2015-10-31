@@ -1,14 +1,14 @@
 <template>
-<div class="card wow flipInX">
+<div :class="['card', 'wow', 'flipInX', small ? 'small' : '']">
   <h2>{{title}}</h2>
   <div class="tags"><span class="tag" v-for="tag in tags">{{tag}}</span></div>
-  <p>{{description}}</p>
+  <p v-if="description">{{description}}</p>
   <a v-if="link" :href="link">More details</a>
 </div>
 </template>
 
 <script>
 module.exports = {
-  props: ['title', 'tags', 'link', 'description']
+  props: ['title', 'tags', 'link', 'description', 'small']
 };
 </script>

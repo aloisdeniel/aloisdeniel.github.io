@@ -11,5 +11,5 @@ module.exports = function (value,lang) {
   if (typeof(x[lang]) !== 'undefined'){
     return strings[lang][value];
   }
-  return strings.default.[value];
+  return strings.default[value];
 };

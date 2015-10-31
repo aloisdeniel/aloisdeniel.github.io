@@ -105,7 +105,6 @@
 	line-height: 40px;
 	-webkit-font-smoothing: antialiased;
 	position: absolute;
-	background: $color-accent;
 	border-radius: 50%;
 	text-align: center;
 	left: 50%;
@@ -145,8 +144,6 @@
 		max-width: 1000px;
 	}
 
-
-
 	.timeline > li .icon {
 		display: none;
 	}
@@ -156,6 +153,19 @@
 /* Colors */
 
 .section {
+
+	.timeline > li .label h2 {
+	  color: $color-grey-semidark;
+	}
+
+	.timeline:before {
+	  border-right: 4px dotted $color-grey-semidark;
+	}
+
+	.timeline > li .icon {
+		background: $color-grey-semidark;
+	}
+
 	.timeline > li .label:after {
 		border-right-color: $color-grey-semitransparent;
 	}
@@ -166,6 +176,19 @@
 }
 
 .section-light {
+
+	.timeline > li .label h2 {
+	  color: $color-accent;
+	}
+
+	.timeline:before {
+	  border-right: 4px dotted $color-accent;
+	}
+
+	.timeline > li .icon {
+		background: $color-accent;
+	}
+
 	.timeline > li .label:after {
 		border-right-color: $color-white-semitransparent;
 	}

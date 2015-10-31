@@ -1,10 +1,17 @@
 $card-margin: 4%;
+
 $card-wide-columns: 3;
 $card-small-columns: 2;
-
 $card-wide-width: (100% / $card-wide-columns) - $card-margin;
 $card-small-width: (100% / $card-small-columns) - $card-margin;
 $card-height: 150px;
+
+
+$smallcard-wide-columns: 5;
+$smallcard-small-columns: 3;
+$smallcard-wide-width: (100% / $smallcard-wide-columns) - $card-margin;
+$smallcard-small-width: (100% / $smallcard-small-columns) - $card-margin;
+$smallcard-height: 120px;
 
 .cards
 {
@@ -37,7 +44,7 @@ $card-height: 150px;
     text-align: left;
     font-size: 0.9em;
     margin: 10px 10px 0px 10px;
-    color: $color-accent;
+    color: $color-grey-semidark;
   }
 
   .tags
@@ -60,12 +67,13 @@ $card-height: 150px;
     {
       display: block;
       float:left;
-      background: $color-accent;
+      background: $color-grey-semidark;
       padding: 2px 8px;
       margin-right: 5px;
       margin-top: 4px;
       border-radius: 8px;
       overflow: hidden;
+      text-transform: uppercase;
     }
 
     &:after {
@@ -88,7 +96,6 @@ $card-height: 150px;
   a:hover
   {
     color: $color-grey-dark;
-
   }
 
   height: $card-height;
@@ -96,12 +103,45 @@ $card-height: 150px;
   margin: $card-margin / 2;
   float: left;
   box-sizing: border-box;
+
+  &.small {
+    height: $smallcard-height;
+    height: $smallcard-height;
+    width:  $smallcard-wide-width;
+    .tags
+    {
+      font-size: 0.5em;
+    }
+    h2
+    {
+      font-size: 0.75em;
+    }
+  }
 }
 
 @media screen and (max-width: $media-screen-small) {
   .card
   {
     width:  $card-small-width;
-  }
 
+    &.small {
+      width:  $smallcard-small-width;
+    }
+  }
+}
+
+.section-accent {
+  .card {
+    h2
+    {
+      color: $color-accent;
+    }
+    .tags
+    {
+      .tag
+      {
+        background: $color-accent;
+      }
+    }
+  }
 }

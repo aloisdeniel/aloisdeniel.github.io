@@ -2,33 +2,16 @@
 <div class="section-accent">
   <section-header icon="trophy" title="SKILLS"></section-header>
 
-  <template v-for="skill in major">
-    <bubble size="large" :name="skill.name" :description="skill.type"></bubble>
-  </template>
-  <template v-for="skill in medium">
-    <bubble size="medium" :name="skill.name" :description="skill.type"></bubble>
-  </template>
-  <template v-for="skill in minor">
-    <bubble size="small" :name="skill.name" :description="skill.type"></bubble>
-  </template>
+  <div class="cards">
+    <template v-for="skill in items">
+      <card :small="skill.minor" :title="skill.title" :tags="skill.tags" :link="skill.link" :description="skill.description"></card>
+    </template>
+  </div>
 </div>
 </template>
 
 <script>
 module.exports = {
-  props: {
-    major: {
-      type: Array,
-      default: function() { return []; }
-    },
-    medium: {
-      type: Array,
-      default: function() { return []; }
-    },
-    minor: {
-      type: Array,
-      default: function() { return []; }
-    }
-  }
+  props: [ 'title', "items"]
 };
 </script>
