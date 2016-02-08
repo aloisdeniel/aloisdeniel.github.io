@@ -1,0 +1,147 @@
+body
+{
+	background: #191919;
+	font-family: 'Source Sans Pro';
+	margin: 0px;
+	padding: 0px;
+
+}
+
+.profilepic
+{
+	margin-bottom: 26px;
+	background: url('../image/profilepic.png') no-repeat center;
+	height: 76px;
+}
+
+/* Introduction */
+
+#introduction
+{
+	margin-top: 140px;
+}
+
+#introduction h1
+{
+	margin: 0px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: 200;
+}
+
+#introduction h2
+{
+	margin: 0px;
+	text-align: center;
+	color: #9877dc;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+/* Contact */
+
+#contact, #contact:visited
+{
+	margin-top: 26px;
+	display: block;
+	text-decoration: none;
+	color: #9877dc;
+	font-size: 54px;
+	text-align: center;
+}
+
+#contact:hover
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* About */
+
+#about
+{
+	margin-top: 26px;
+	padding: 0px;
+	text-align: center;
+	list-style-type: none;
+}
+
+#about li
+{
+	margin: 0px;
+	padding: 0px;
+	font-size: 13px;
+	color: #505050;
+}
+
+/* Section */
+
+.section
+{
+	margin-top: 70px;
+}
+
+.section h1
+{
+	margin: 5px;
+	color: #505050;
+	font-size: 12px
+}
+
+.section .content
+{
+	margin: 0px;
+	background-color: #252525;
+	padding: 10px;
+}
+
+/* Competences */
+
+.section .content .competence
+{
+	margin: 10px;
+	height: 60px;
+}
+
+.section .content .competence img
+{
+	float: left;
+}
+
+.section .content .competence .header
+{
+	float: left;
+	margin-left: 5px;
+}
+.section .content .competence .header h2
+{
+	margin: 0px;
+	margin-top: 6px;
+	font-size: 15px;
+    text-transform: uppercase;
+	color: #9877dc;
+	width: 160px;
+}
+
+.section .content .competence .header h3
+{
+	margin: 0px;
+	font-size: 13px;
+	color: #cccccc;
+}
+
+.section .content .competence .header h3 i
+{
+	font-size: 10px;
+}
+
+.section .content .competence p
+{
+	font-size: 13px;
+	color: #eeeeee;
+	background: #303030;
+	padding: 5px;
+	margin-left: 200px;
+	height: 50px;
+}
