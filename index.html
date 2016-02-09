@@ -13,6 +13,7 @@
   <body>
     <div id="app">
       
+      
       <div id="introduction">
         <div class="profilepic"></div>
         <h1>Aloïs Deniel</h1>
@@ -29,24 +30,27 @@
         <li>Currently working at Orange Business Services<li>
       </ul>
       
+      <div id="indicator" class="down">
+        <i class="icon ion-ios-arrow-down"></i>
+      </div>
+      
+      <!-- Competences -->
+      
       <div class="section">
         <h1>main competences</h1>
         <div id="competences" class="content">
           
           <script id="competences-template" type="text/x-handlebars-template">
             {{#each competences}}
-            <div class="competence">
+            <div class="competence {{type}}">
               <img src="image/{{ logo }}" />
               <div class="header">
                 <h2>{{ title }}</h2>
                 <h3>
                   {{#each circles}}
-                  <i class="icon ion-ios-circle-{{ state }}"></i>
-                  <i class="icon ion-ios-circle-{{ state }}"></i>
-                  <i class="icon ion-ios-circle-{{ state }}"></i>
-                  <i class="icon ion-ios-circle-{{ state }}"></i>
+                  <i class="icon ion-ios-circle-{{levelValue this}}"></i>
                   {{/each}}
-                  &nbsp; {{ level }}
+                  &nbsp; {{levelName circles}}
                 </h3>
               </div>
               <div class="description">
@@ -55,98 +59,12 @@
             </div>
           {{/each}}
           </script>
-          
-          <div class="competence">
-            <img src="image/logo_xamarin.png" />
-            <div class="header">
-              <h2>xamarin</h2>
-              <h3>
-                <i class="icon ion-ios-circle-filled"></i>
-                <i class="icon ion-ios-circle-filled"></i>
-                <i class="icon ion-ios-circle-filled"></i>
-                <i class="icon ion-ios-circle-filled"></i>
-                &nbsp; referent
-              </h3>
-            </div>
-            <div class="description">
-              <p>Blah blah blah ...</p>
-            </div>
-          </div>
-          
-          <div class="competence">
-            <img src="image/logo_windows.png" />
-            <div class="header">
-              <h2>windows platform</h2>
-              <h3>
-                <i class="icon ion-ios-circle-filled"></i>
-                <i class="icon ion-ios-circle-filled"></i>
-                <i class="icon ion-ios-circle-filled"></i>
-                <i class="icon ion-ios-circle-filled"></i>
-                &nbsp; referent
-              </h3>
-            </div>
-            <div class="description">
-              <p>Blah blah blah ...</p>
-            </div>
-          </div>
-          
-          <div class="competence">
-            <img src="image/logo_apple.png" />
-            <div class="header">
-              <h2>iOS</h2>
-              <h3>
-                <i class="icon ion-ios-circle-filled"></i>
-                <i class="icon ion-ios-circle-filled"></i>
-                <i class="icon ion-ios-circle-filled"></i>
-                <i class="icon ion-ios-circle-outline"></i>
-                &nbsp; expert
-              </h3>
-            </div>
-            <div class="description">
-              <p>Blah blah blah ...</p>
-            </div>
-          </div>
-          
-          <div class="competence secondary">
-            <img src="image/logo_nodejs.png" />
-            <div class="header">
-              <h2>node.js</h2>
-              <h3>
-                <i class="icon ion-ios-circle-filled"></i>
-                <i class="icon ion-ios-circle-filled"></i>
-                <i class="icon ion-ios-circle-outline"></i>
-                <i class="icon ion-ios-circle-outline"></i>
-                &nbsp; experienced
-              </h3>
-            </div>
-            <div class="description">
-              <p>Blah blah blah ...</p>
-            </div>
-          </div>
-          
-          
-          <div class="competence secondary">
-            <img src="image/logo_android.png" />
-            <div class="header">
-              <h2>android</h2>
-              <h3>
-                <i class="icon ion-ios-circle-filled"></i>
-                <i class="icon ion-ios-circle-filled"></i>
-                <i class="icon ion-ios-circle-outline"></i>
-                <i class="icon ion-ios-circle-outline"></i>
-                &nbsp; experienced
-              </h3>
-            </div>
-            <div class="description">
-              <p>Blah blah blah ...</p>
-            </div>
-          </div>
-          
+                
         </div>
       </div>
       
       
-      <div class="section">
+      <div class="section dark">
         <h1>experience</h1>
         <div class="content">
           
@@ -176,20 +94,67 @@
         competences: [
           {
             title: "xamarin",
+            description: "Blah blah blah",
             type: "primary",
             logo: "logo_xamarin.png",
-            level: "referent",
-            circles: []
+            circles: [1,1,1,1]
+          },
+          {
+            title: "windows platform",
+            description: "Blah blah blah",
+            type: "primary",
+            logo: "logo_windows.png",
+            circles: [1,1,1,1]
           },
           {
             title: "ios",
+            description: "Blah blah blah",
             type: "primary",
             logo: "logo_apple.png",
-            level: "expert",
-            circles: []
+            circles: [1,1,1,0]
+          },
+          {
+            title: "node.js",
+            description: "Blah blah blah",
+            type: "secondary",
+            logo: "logo_nodejs.png",
+            circles: [1,1,0,0]
+          },
+          {
+            title: "design",
+            description: "Blah blah blah",
+            type: "secondary",
+            logo: "logo_ps.png",
+            circles: [1,1,0,0]
+          },
+          {
+            title: "android",
+            description: "Blah blah blah",
+            type: "secondary",
+            logo: "logo_android.png",
+            circles: [1,1,0,0]
           }
         ]
       };
+      
+      Handlebars.registerHelper('levelValue', function(value) {
+        return value > 0 ? "filled" : "outline";
+      });
+      
+      Handlebars.registerHelper('levelName', function(values) {
+        
+        var value = 0
+        for(var v in values) { value += values[v];  }
+        switch(value)
+        {
+          case 4: return "referent";
+          case 3: return "expert";
+          case 2: return "experienced";
+          case 1: return "beginner";
+          default: return "none";
+        } 
+        return value > 0 ? "filled" : "outline";
+      });
       
       var source   = document.getElementById("competences-template");
       var template = Handlebars.compile(source.innerHTML);

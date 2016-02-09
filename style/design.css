@@ -1,9 +1,9 @@
 body
 {
-	background: #191919;
 	font-family: 'Source Sans Pro';
 	margin: 0px;
 	padding: 0px;
+	background: #191919 url("../image/background.png") no-repeat;
 }
 
 .profilepic
@@ -11,6 +11,14 @@ body
 	margin-bottom: 26px;
 	background: url('../image/profilepic.png') no-repeat center;
 	height: 76px;
+}
+
+/* Header bar */
+
+#bar
+{
+	background-color: #111111;
+	height: 50px;
 }
 
 /* Introduction */
@@ -36,6 +44,61 @@ body
 	color: #9877dc;
 	font-size: 20px;
 	font-weight: 400;
+}
+
+/* Indicator */
+
+@-webkit-keyframes down {
+  from {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  50% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes down {
+  from {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  50% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+.down
+{
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: down;
+  animation-name: down;
+  animation-iteration-count: infinite;
+}
+
+#indicator
+{
+	margin-top: 40px;
+	text-align: center;
+	color: #9877dc;
+	font-size: 20px;
 }
 
 /* Contact */
@@ -126,7 +189,7 @@ body
 
 .section
 {
-	margin-top: 70px;
+	margin-top: 65px;
 }
 
 .section h1
@@ -141,6 +204,18 @@ body
 	margin: 0px;
 	background-color: #252525;
 	padding: 10px;
+}
+
+
+
+.section.dark h1
+{
+	color: #404040;
+}
+
+.section.dark .content
+{
+	background-color: #111111;
 }
 
 /* Competences */
@@ -175,7 +250,16 @@ body
 
 .section .content .competence.secondary .header h2
 {
+	margin-top: 10px;
+	font-size: 12px;
 	color: #a6a6a6;
+}
+
+
+.section .content .competence.secondary .header h3
+{
+	font-size: 11px;
+	color: #cccccc;
 }
 
 .section .content .competence .header h3
@@ -201,10 +285,16 @@ body
 
 }
 
+.section .content .competence.secondary .description
+{
+	background: linear-gradient(to right, #2b2b2b, #252525, #252525);
+
+}
+
 .section .content .competence .description p
 {
 	font-size: 13px;
-	color: #eeeeee;
+	color: #999999;
 	padding: 0px;
 	padding-left:20px;
 	margin: 0px;
