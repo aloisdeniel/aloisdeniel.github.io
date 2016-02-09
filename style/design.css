@@ -327,9 +327,19 @@ body
 
 /* Experience */
 
-.exp
+#experiences > h2
 {
 	margin-top: 60px;
+	font-size: 30px;
+    text-transform: uppercase;
+	color: #555555;
+	text-align: center;
+	font-weight: 100;
+}
+
+.exp
+{
+	margin-top: 68px;
 	margin-bottom: 20px;
 }
 
