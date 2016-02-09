@@ -38,37 +38,61 @@
       
       <div class="section">
         <h1>main competences</h1>
-        <div id="competences" class="content">
+        <div id="competences" class="content shadow">
           
           <script id="competences-template" type="text/x-handlebars-template">
             {{#each competences}}
-            <div class="competence {{type}}">
-              <img src="image/{{ logo }}" />
-              <div class="header">
-                <h2>{{ title }}</h2>
-                <h3>
-                  {{#each circles}}
-                  <i class="icon ion-ios-circle-{{levelValue this}}"></i>
-                  {{/each}}
-                  &nbsp; {{levelName circles}}
-                </h3>
+            <div class="col">
+              {{#each this}}
+              <div class="competence {{type}}">
+                <img src="image/{{ logo }}" />
+                <div class="header">
+                  <h2>{{ title }}</h2>
+                  <h3>
+                    {{#each circles}}
+                    <i class="icon ion-ios-circle-{{levelValue this}}"></i>
+                    {{/each}}
+                    &nbsp; {{levelName circles}}
+                  </h3>
+                </div>
+                <div class="description">
+                  <p>{{ description }}</p>
+                </div>
               </div>
-              <div class="description">
-                <p>{{ description }}</p>
-              </div>
+              {{/each}}
             </div>
-          {{/each}}
+            {{/each}}
+          </div>
           </script>
                 
         </div>
       </div>
       
-      
       <div class="section dark">
         <h1>experience</h1>
         <div class="content">
+          <div class="exp">
+            <h4>since 2012</h4>
+            <img src="image/logo_orange.png" />
+            <h2>Orange Business Services</h2>
+            <h3>Orange Applications for Business</h3>
+          </div>
           
+          <div class="exp">
+            <h4>2011</h4>
+            <img src="image/logo_capgemini.png" />
+            <h2>Capgemini</h2>
+            <h3>TELECOM</h3>
+          </div>
+          
+          <div class="exp secondary">
+            <h4>2011</h4>
+            <img src="image/logo_ur1.png" />
+            <h2>ESIR</h2>
+            <h3>Université de Rennes I</h3>
+          </div>
         </div>
+        
       </div>
       
       <div class="section">
@@ -92,6 +116,7 @@
       
       var context = {
         competences: [
+          [
           {
             title: "xamarin",
             description: "Blah blah blah",
@@ -112,8 +137,8 @@
             type: "primary",
             logo: "logo_apple.png",
             circles: [1,1,1,0]
-          },
-          {
+          }],
+          [{
             title: "node.js",
             description: "Blah blah blah",
             type: "secondary",
@@ -133,7 +158,7 @@
             type: "secondary",
             logo: "logo_android.png",
             circles: [1,1,0,0]
-          }
+          }]
         ]
       };
       
