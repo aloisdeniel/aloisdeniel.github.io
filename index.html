@@ -11,13 +11,14 @@
     <link href='style/design.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div id="app">
-      
+    <div id="app"></div>
+    
+    <script id="app-template" type="text/x-handlebars-template">
       
       <div id="introduction">
         <div class="profilepic"></div>
         <h1>Aloïs Deniel</h1>
-        <h2>mobile developer</h2>
+        <h2>{{l18n "user_status"}}</h2>
       </div>
       
       <a id="contact" href="#" class="pulse">
@@ -25,9 +26,9 @@
       </a>
       
       <ul id="about">
-        <li>Born in 1988</li>
-        <li>Living in Rennes, France<li>
-        <li>Currently working at Orange Business Services<li>
+        <li>{{l18n "about_born"}} 1988</li>
+        <li>{{l18n "about_livein"}} Rennes, France<li>
+        <li>{{l18n "about_workingat"}} Orange Business Services<li>
       </ul>
       
       <div id="indicator" class="down">
@@ -37,10 +38,9 @@
       <!-- Competences -->
       
       <div class="section">
-        <h1>main competences</h1>
+        <h1>{{l18n "section_skills"}}</h1>
         <div id="competences" class="content shadow">
           
-          <script id="competences-template" type="text/x-handlebars-template">
             {{#each competences}}
             <div class="col">
               {{#each this}}
@@ -56,26 +56,32 @@
                   </h3>
                 </div>
                 <div class="description">
-                  <p>{{ description }}</p>
+                  <div class="container">
+                    <p>{{ description }}</p>
+                    <div class="tools">
+                      {{#each tools}}
+                        <span>{{ this }}</span>
+                      {{/each}}
+                    </div>
+                  </div>
                 </div>
               </div>
               {{/each}}
             </div>
             {{/each}}
           </div>
-          </script>
                 
         </div>
       </div>
       
       <div class="section dark">
-        <h1>experience</h1>
+        <h1>{{l18n "section_experience"}}</h1>
         <div id="experiences" class="content">
           
-          <h2>Jobs</h2>
+          <h2>{{l18n "section_experience_jobs"}}</h2>
           
           <div class="exp">
-            <h4>since 2012</h4>
+            <h4>{{l18n "since"}} 2012</h4>
             <img src="image/logo_orange.png" />
             <h2>Orange Business Services</h2>
             <h3>Orange Applications for Business</h3>
@@ -88,7 +94,7 @@
             <h3>TELECOM</h3>
           </div>
           
-          <h2>Studies</h2>
+          <h2>{{l18n "section_experience_studies"}}</h2>
           
           <div class="exp secondary">
             <h4>2011</h4>
@@ -101,99 +107,23 @@
       </div>
       
       <div class="section">
-        <h1>open-source</h1>
+        <h1>{{l18n "section_opensource"}}</h1>
         <div class="content">
           
         </div>
       </div>
       
       <div class="section">
-        <h1>hobbies</h1>
+        <h1>{{l18n "section_hobbies"}}</h1>
         <div class="content">
           
         </div>
       </div>
       
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-    <script>
-      
-      
-      var context = {
-        competences: [
-          [
-          {
-            title: "xamarin",
-            description: "Blah blah blah",
-            type: "primary",
-            logo: "logo_xamarin.png",
-            circles: [1,1,1,1]
-          },
-          {
-            title: "windows platform",
-            description: "Blah blah blah",
-            type: "primary",
-            logo: "logo_windows.png",
-            circles: [1,1,1,1]
-          },
-          {
-            title: "ios",
-            description: "Blah blah blah",
-            type: "primary",
-            logo: "logo_apple.png",
-            circles: [1,1,1,0]
-          }],
-          [{
-            title: "node.js",
-            description: "Blah blah blah",
-            type: "secondary",
-            logo: "logo_nodejs.png",
-            circles: [1,1,0,0]
-          },
-          {
-            title: "design",
-            description: "Blah blah blah",
-            type: "secondary",
-            logo: "logo_ps.png",
-            circles: [1,1,0,0]
-          },
-          {
-            title: "android",
-            description: "Blah blah blah",
-            type: "secondary",
-            logo: "logo_android.png",
-            circles: [1,1,0,0]
-          }]
-        ]
-      };
-      
-      Handlebars.registerHelper('levelValue', function(value) {
-        return value > 0 ? "filled" : "outline";
-      });
-      
-      Handlebars.registerHelper('levelName', function(values) {
-        
-        var value = 0
-        for(var v in values) { value += values[v];  }
-        switch(value)
-        {
-          case 4: return "referent";
-          case 3: return "expert";
-          case 2: return "experienced";
-          case 1: return "beginner";
-          default: return "none";
-        } 
-        return value > 0 ? "filled" : "outline";
-      });
-      
-      var source   = document.getElementById("competences-template");
-      var template = Handlebars.compile(source.innerHTML);
-      var html    = template(context);
-      var div = document.createElement('div');
-      div.innerHTML = html;
-      var node = document.getElementById("competences");
-      console.log(node)
-      node.appendChild(div);
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="scripts/001-l18n.js"></script>
+    <script src="scripts/002-viewmodel.js"></script>
+    <script src="scripts/003-render.js"></script>
   </body>
 </html>

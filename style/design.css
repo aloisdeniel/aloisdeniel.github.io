@@ -246,26 +246,26 @@ body
 
 /* Competences */
 
-.section .content .competence
+.competence
 {
 	margin:  10px auto;
 	height: 60px;
 	max-width: 1024px;
 }
 
-.section .content .competence img
+.competence img
 {
 	float: left;
 	margin-top:8px;
 }
 
-.section .content .competence .header
+.competence .header
 {
 	float: left;
 	margin-left: 8px;
 }
 
-.section .content .competence .header h2
+.competence .header h2
 {
 	margin: 0px;
 	margin-top: 10px;
@@ -275,30 +275,30 @@ body
 	width: 160px;
 }
 
-.section .content .competence.secondary .header h2
+.competence.secondary .header h2
 {
 	color: #a6a6a6;
 }
 
 
-.section .content .competence.secondary .header h3
+.competence.secondary .header h3
 {
 	color: #cccccc;
 }
 
-.section .content .competence .header h3
+.competence .header h3
 {
 	margin: 0px;
 	font-size: 11px;
 	color: #cccccc;
 }
 
-.section .content .competence .header h3 i
+.competence .header h3 i
 {
 	font-size: 10px;
 }
 
-.section .content .competence .description
+.competence .description
 {
 	font-size: 13px;
 	margin: 0px;
@@ -308,21 +308,45 @@ body
 	background: linear-gradient(to right, #303030, #252525, #252525);
 }
 
-.section .content .competence.secondary .description
+.competence.secondary .description
 {
+	height: 58px;
 	background: linear-gradient(to right, #2b2b2b, #252525, #252525);
 
 }
 
-.section .content .competence .description p
+.competence .description .container
+{
+	font-size: 11px;
+	padding-left:17px;
+	margin: 0px;
+	background: url('../image/bg_round.png') no-repeat left;
+}
+
+.competence .description p
 {
 	font-size: 11px;
 	color: #999999;
 	padding: 0px;
-	padding-left:20px;
 	margin: 0px;
-	height: 58px;
-	background: url('../image/bg_round.png') no-repeat left;
+	height: 33px;
+}
+
+.competence .description .tools
+{
+	margin: 0px;
+}
+
+.competence .description .tools span
+{
+	margin-right: 1px;
+	margin-left: 1px;
+	padding-right: 3px;
+	padding-left: 3px;
+	font-size: 11px;
+	background-color: #999999;
+	border-radius: 2px;
+	color: #191919;
 }
 
 /* Experience */
@@ -383,7 +407,6 @@ body
 	color: #777777;
 }
 
-
 /* Large screens */
 
 @media (min-width: 1024px) {
@@ -421,10 +444,10 @@ body
 		background: linear-gradient(to right, #252525, #252525, #303030);
 	}
 	
-	.section .content .col:nth-child(2n+1) .competence .description p
+	.section .content .col:nth-child(2n+1) .competence .description .container
 	{
 		padding-left: 0px;
-		padding-right: 20px;
+		padding-right: 17px;
 		background: url('../image/bg_round_l.png') no-repeat right;
 	}
 	
