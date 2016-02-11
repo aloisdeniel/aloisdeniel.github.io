@@ -2,18 +2,77 @@
 
 var context = {
 email: "alois.deniel@outlook.com",
+experiences: {
+      jobs: [
+            {
+                  date: { since: true, start: 2012},
+                  company: "ORANGE BUSINESS SERVICES",
+                  logo: "logo_orange.png",
+                  service: "Orange Applications for Business",
+                  projects: [
+                        {
+                              date: { duration: 4, year: 2014 },
+                              name: "Online Services for Cars",
+                              role: { en: "Project lead developer", fr: "Architecte et développeur" },
+                              description: "A set of five Android companion applications for managing a company vehicle",
+                              tools: ["Xamarin.Android", "C#", "GIT"]
+                        },
+                        {
+                              date: { duration: 16, year: 2012 },
+                              name: "Polyexpert",
+                              role: { en: "Developer", fr: "Développeur" },
+                              description: "An enterprise application for insurency ...",
+                              tools: ["iOS", "Objective-C", "XCode", "Jenkins", "SVN"]
+                        },
+                        {
+                              date: { duration: 6, year: 2012 },
+                              name: "Augmented Reality solution for iOS",
+                              role: { en: "Internship", fr: "Stagiaire" },
+                              description: { en: "Built a 3D engine for real time rendering augmented reality layer on top of camera stream.", fr: "Réalisation d'un moteur 3D temps réel pour ajouter une couche de réalité augmenté au dessus du flux vidéo de la caméra." },
+                              tools: ["OpenGL ES 2", "iOS", "XCode", "C", "Objective-C"]
+                        }
+                  ]
+            },
+            {
+                  date: { start: 2011},
+                  company: "CAPGEMINI",
+                  logo: "logo_capgemini.png",
+                  service: "TELECOM",
+                  projects: [
+                        {
+                              date: { duration: 6, year: 2011 },
+                              name: "NoSQL databases",
+                              role: { en: "Internship", fr: "Stagiaire" },
+                              description: { en: "My role was to evaluate the different relational database alternatives", fr: "Evaluation des différentes alternatives aux base de données relationnelles." },
+                              tools: ["MongoDB","CouchDB", "Neo4J"]
+                        }
+                  ]
+            }
+      ]
+},
 hobbies: [
       {
             title: "Sport",
-            activities: ["Badminton", "Tennis"]
+            activities: [ "Badminton", "Tennis"]
       },
       {
             title: "Art",
-            activities: ["Guitar", "Digital design", "Drawing", "Pixel"]
+            activities: [ 
+                  { en: "Guitar", fr:"Guitare" }, 
+                  "Digital design", 
+                  { en: "Drawing", fr: "Dessin" },
+                  "Pixelart"
+            ]
       },
       {
-            title: "Travels",
-            activities: ["Turkey", "Corsica", "Crete", "Swiss", "Italy"]
+            title: { en: "Travels", fr: "Voyages" },
+            activities: [
+                  { en: "Turkey", fr: "Turquie" }, 
+                  { en: "Corsica", fr: "Corse" }, 
+                  { en: "Crete", fr: "Crète" },
+                  { en: "Swiss", fr: "Suisse"}, 
+                  { en: "Italy", fr: "Italie" }
+           ]
       }
 ],
 opensource:[

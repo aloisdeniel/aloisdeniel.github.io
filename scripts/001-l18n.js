@@ -58,20 +58,35 @@ L18n.prototype.translate = function (key,lang) {
         }
         
         var translated = null;
-        
-        if(this.strings[lang] !== null)
+                
+        if(typeof(key) === 'object')
         {
-          translated = this.strings[lang][key];
+               if(key[lang] !== null)
+                {
+                        translated = key[lang];
+                }
+                
+                if(translated == null)
+                {
+                        translated = key["en"];
+                } 
         }
-        
-        if(translated == null)
+        else
         {
-          translated = this.strings["en"][key];
-        }
-        
-        if(translated == null)
-        {
-          translated = key;
+                if(this.strings[lang] !== null)
+                {
+                        translated = this.strings[lang][key];
+                }
+                
+                if(translated == null)
+                {
+                        translated = this.strings["en"][key];
+                }
+                
+                if(translated == null)
+                {
+                        translated = key;
+                }  
         }
         
         return translated;

@@ -15,9 +15,13 @@
     
     <script id="app-template" type="text/x-handlebars-template">
       
+      <div class="languages">
+        <a href="index.html?lang=en">english</a> | <a href="index.html?lang=fr">français</a>
+      </div>
+      
       <div id="introduction">
         <div class="profilepic"></div>
-        <h1>Aloïs Deniel</h1>
+        <h1>Aloïs Deniel - Portfolio</h1>
         <h2>{{l18n "user_status"}}</h2>
       </div>
       
@@ -57,7 +61,7 @@
                 </div>
                 <div class="description">
                   <div class="container">
-                    <p>{{content description }}</p>
+                    <p>{{l18n description }}</p>
                     <div class="tools">
                       {{#each tools}}
                         <span>{{ this }}</span>
@@ -80,19 +84,31 @@
           
           <h2>{{l18n "section_experience_jobs"}}</h2>
           
+          {{#each experiences.jobs}}
           <div class="exp">
-            <h4>{{l18n "since"}} 2012</h4>
-            <img src="image/logo_orange.png" />
-            <h2>Orange Business Services</h2>
-            <h3>Orange Applications for Business</h3>
+            <h4>{{#if date.since }}{{l18n "since"}} {{/if}}{{ date.start }}</h4>
+            <img src="image/{{ logo }}" />
+            <h2>{{ company }}</h2>
+            <h3>{{ service }}</h3>
+            <div class="end"></div>
+            <div class="projects">
+              {{#each projects}}
+              <div class="project col">
+                <h6><span>{{ date.year}}</span> - <span>{{ date.duration}}&nbsp;months</span></h6>
+                <h5>{{ name }}</h5>
+                <h5>{{l18n role }}</h5>
+                <div class="tools">
+                  {{#each tools}}
+                    <span>{{ this }}</span>
+                  {{/each}}
+                </div>
+                <p>{{l18n description }}</p>
+              </div>
+              {{/each}}
+            </div>
+            <div class="start"></div>
           </div>
-          
-          <div class="exp">
-            <h4>2011</h4>
-            <img src="image/logo_capgemini.png" />
-            <h2>Capgemini</h2>
-            <h3>TELECOM</h3>
-          </div>
+          {{/each}}
           
           <h2>{{l18n "section_experience_studies"}}</h2>
           
@@ -126,8 +142,8 @@
            <div id="hobbies" class="content">
            {{#each hobbies}}
             <div class="hobby col">
-              <h2>{{ title}}</h2>
-              {{#each activities}}<span>{{ this }}</span>{{/each}}
+              <h2>{{l18n title}}</h2>
+              {{#each activities}}<span>{{l18n this }}</span>{{/each}}
             </div>
             {{/each}}
         </div>

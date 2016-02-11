@@ -1,4 +1,17 @@
-var l18n = new L18n("en")
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return null;
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+var lang = getParameterByName("lang")
+if(lang == null) lang = "en"
+
+var l18n = new L18n(lang)
 
 /* Rendering */
 

@@ -21,11 +21,34 @@ body
 	height: 50px;
 }
 
+/* Languages */
+
+.languages
+{
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.languages a, .languages a:visited
+{
+	color:#777;
+	text-decoration: none;
+    text-transform: uppercase;
+	font-size: 11px;
+}
+
+.languages a:hover
+{
+	color: #9877dc;
+	text-decoration: underline;
+}
+
 /* Introduction */
 
 #introduction
 {
-	margin-top: 140px;
+	margin-top: 120px;
 }
 
 #introduction h1
@@ -333,12 +356,12 @@ body
 	height: 33px;
 }
 
-.competence .description .tools
+.tools
 {
 	margin: 0px;
 }
 
-.competence .description .tools span
+.tools span
 {
 	margin-right: 1px;
 	margin-left: 1px;
@@ -354,7 +377,7 @@ body
 
 #experiences > h2
 {
-	margin-top: 60px;
+	margin-top: 40px;
 	font-size: 30px;
     text-transform: uppercase;
 	color: #555555;
@@ -362,9 +385,26 @@ body
 	font-weight: 100;
 }
 
+#experiences .start
+{
+	height: 13px;
+	width: 13px;
+	background: #555555;
+	border-radius: 7px;
+	margin: 0px auto 15px auto;
+}
+
+#experiences .end
+{
+	height: 13px;
+	width: 1px;
+	background: url('../image/line_end.png');
+	margin: 15px auto 0px auto;
+}
+
 .exp
 {
-	margin-top: 68px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -406,6 +446,47 @@ body
 	text-align: center;
 	font-size: 12px;
 	color: #777777;
+}
+
+.exp .projects
+{
+	background: url('../image/line.png') repeat-y center;
+}
+
+.exp .projects:after {
+  content: "";
+  display: table;
+  clear: both; 
+ }
+
+.exp .project
+{
+	padding: 10px;
+	background: url('../image/project_arrow_left.png') left top no-repeat;
+}
+
+.exp .project h5
+{
+	font-weight: 400;
+	font-size: 13px;
+	color: #aaa;
+	margin: 0px;
+}
+
+.exp .project h6
+{
+	font-weight: 400;
+	font-size: 13px;
+	color: #eee;
+	margin: 0px;
+}
+
+.exp .project p
+{
+	font-weight: 400;
+	font-size: 13px;
+	color: #777;
+	margin: 0px;
 }
 
 /* Open source & hobbies */
@@ -504,6 +585,13 @@ body
 		font-size: 20px;
 	}
 	
+	
+	.section h1
+	{
+		text-align: center;
+	}
+	
+	
 	#contact, #contact:visited
 	{
 		font-size: 54px;
@@ -559,5 +647,21 @@ body
 		width: 48%;
 		float: left;
 		box-sizing: border-box; 
+	}
+		
+		
+	.projects .project:nth-child(2n+1) h6
+	{
+  		direction : rtl ;
+	}
+	
+	.projects .project:nth-child(2n+1) h6 span
+	{
+  		direction : ltr ;
+	}
+	
+	.projects .project:nth-child(2n+1)
+	{
+		background: url('../image/project_arrow_right.png') right top no-repeat;
 	}
 }
