@@ -249,7 +249,7 @@ body
 .competence
 {
 	margin:  10px auto;
-	height: 60px;
+	height: 54px;
 	max-width: 1024px;
 }
 
@@ -303,14 +303,14 @@ body
 	font-size: 13px;
 	margin: 0px;
 	padding: 0px;
-	margin-left: 200px;
-	height: 58px;
+	margin-left: 195px;
+	height: 54px;
 	background: linear-gradient(to right, #303030, #252525, #252525);
 }
 
 .competence.secondary .description
 {
-	height: 58px;
+	height: 52px;
 	background: linear-gradient(to right, #2b2b2b, #252525, #252525);
 
 }
@@ -329,6 +329,7 @@ body
 	color: #999999;
 	padding: 0px;
 	margin: 0px;
+	padding-top: 2px;
 	height: 33px;
 }
 
@@ -370,7 +371,7 @@ body
 .exp img
 {
 	display: block;
-	width: 42px;
+	width: 30px;
 	margin: auto;
 }
 
@@ -407,6 +408,83 @@ body
 	color: #777777;
 }
 
+/* Open source & hobbies */
+
+.technology, .hobby
+{
+	text-align: left;
+	padding-bottom: 15px;
+}
+
+.technology h2, .hobby h2
+{
+	margin-top: 20px;
+	font-size: 20px;
+    text-transform: uppercase;
+	color: #555555;
+	font-weight: 100;
+}
+
+.technology a, .technology a:visited
+{
+	font-size: 12px;
+	color: #9877dc;
+	text-decoration: none;
+	margin: 5px;
+	
+}
+
+.technology a:hover
+{
+	color: #ffffff;
+	text-decoration: underline;
+	
+}
+
+.hobby span
+{
+	font-size: 12px;
+	color: #aaaaaa;
+	margin: 5px;
+	
+}
+
+/* Contact */
+
+.contact
+{
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.contact h2
+{
+	margin-top: 20px;
+	font-size: 20px;
+    text-transform: uppercase;
+	color: #888888;
+	font-weight: 100;
+}
+
+.contact a, .contact a:visited
+{
+	font-size: 26px;
+	color: #555555;
+	text-decoration: none;
+	margin: 5px;
+	
+}
+
+.contact a:hover
+{
+	color: #9877dc;
+	text-decoration: underline;
+	
+}
+
 /* Large screens */
 
 @media (min-width: 1024px) {
@@ -439,7 +517,7 @@ body
 	.section .content .col:nth-child(2n+1) .competence .description
 	{
 		margin-left: 0px;
-		margin-right: 200px;
+		margin-right: 195px;
 		text-align: right;
 		background: linear-gradient(to right, #252525, #252525, #303030);
 	}
@@ -456,8 +534,6 @@ body
 	{
   		direction : rtl ;
 	}
-	
-	
 	
 	.section .content .col:nth-child(2n+1)
 	{

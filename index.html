@@ -21,7 +21,7 @@
         <h2>{{l18n "user_status"}}</h2>
       </div>
       
-      <a id="contact" href="#" class="pulse">
+      <a id="contact" href="mailto:{{ email }}" class="pulse">
         <i class="icon ion-ios-email-outline"></i>
       </a>
       
@@ -57,7 +57,7 @@
                 </div>
                 <div class="description">
                   <div class="container">
-                    <p>{{ description }}</p>
+                    <p>{{content description }}</p>
                     <div class="tools">
                       {{#each tools}}
                         <span>{{ this }}</span>
@@ -106,17 +106,41 @@
         
       </div>
       
-      <div class="section">
+      <div class="section dark">
         <h1>{{l18n "section_opensource"}}</h1>
-        <div class="content">
-          
+        <div id="opensource" class="content">
+           {{#each opensource}}
+            <div class="technology col">
+              <h2>{{ title}}</h2>
+              {{#each projects}}
+                <a href="{{ link }}">{{ title }}</a>
+              {{/each}}
+            </div>
+            {{/each}}
         </div>
       </div>
       
       <div class="section">
         <h1>{{l18n "section_hobbies"}}</h1>
         <div class="content">
-          
+           <div id="hobbies" class="content">
+           {{#each hobbies}}
+            <div class="hobby col">
+              <h2>{{ title}}</h2>
+              {{#each activities}}<span>{{ this }}</span>{{/each}}
+            </div>
+            {{/each}}
+        </div>
+        </div>
+      </div>
+      
+      <div class="contact">
+        <h2>{{l18n "section_contact"}}</h2>
+        <div>
+          <a href="mailto:{{ email }}"><i class="icon ion-ios-email-outline"></i></a>
+          <a href="https://twitter.com/aloisdeniel"><i class="icon ion-social-twitter-outline"></i></a>
+          <a href="https://github.com/aloisdeniel"><i class="icon ion-social-github"></i></a>
+          <a href="https://www.linkedin.com/profile/view?id=AAIAABCSq6IBXVUHi4NJtgeCQf9bkjUwA8h7UEo"><i class="icon ion-social-linkedin-outline"></i></a>
         </div>
       </div>
       

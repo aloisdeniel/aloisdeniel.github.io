@@ -1,4 +1,4 @@
-var l18n = new L18n("fr")
+var l18n = new L18n("en")
 
 /* Rendering */
 
@@ -21,6 +21,12 @@ Handlebars.registerHelper('levelName', function(values) {
       default: return l18n.translate("skilllevel0");
       } 
       return value > 0 ? "filled" : "outline";
+});
+
+Handlebars.registerHelper('content', function(text) {
+    text = Handlebars.Utils.escapeExpression(text);
+    text = text.replace(/(\r\n|\n|\r)/gm, '<br>');
+    return new Handlebars.SafeString(text);
 });
 
 var source   = document.getElementById("app-template");
