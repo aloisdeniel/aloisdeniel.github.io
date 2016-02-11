@@ -21,7 +21,7 @@ experiences: {
                               date: { duration: 16, year: 2012 },
                               name: "Polyexpert",
                               role: { en: "Developer", fr: "Développeur" },
-                              description: "An enterprise application for insurency ...",
+                              description: { en: "TBD", fr: "Développement d'une application tablette iPad à destination des experts d'assurance. Participations aux phases de conceptions." },
                               tools: ["iOS", "Objective-C", "XCode", "Jenkins", "SVN"]
                         },
                         {

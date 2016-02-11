@@ -381,7 +381,6 @@ body
 	font-size: 30px;
     text-transform: uppercase;
 	color: #555555;
-	text-align: center;
 	font-weight: 100;
 }
 
@@ -391,7 +390,7 @@ body
 	width: 13px;
 	background: #555555;
 	border-radius: 7px;
-	margin: 0px auto 15px auto;
+	margin: 0px 0px 15px 0px;
 }
 
 #experiences .end
@@ -399,7 +398,7 @@ body
 	height: 13px;
 	width: 1px;
 	background: url('../image/line_end.png');
-	margin: 15px auto 0px auto;
+	margin: 15px 0px 0px 6px;
 }
 
 .exp
@@ -410,16 +409,16 @@ body
 
 .exp img
 {
+	float: left;
 	display: block;
 	width: 30px;
-	margin: auto;
+	margin: 3px 10px 10px 0px;
 }
 
 .exp h2
 {
 	margin-top:10px;
 	margin-bottom:0px;
-	text-align: center;
 	font-size: 14px;
     text-transform: uppercase;
 	color: #9877dc;
@@ -434,7 +433,6 @@ body
 {
 	margin-top:0px;
 	margin-bottom:0px;
-	text-align: center;
 	font-size: 12px;
 	color: #555555;
 }
@@ -443,14 +441,14 @@ body
 {
 	margin-top:10px;
 	margin-bottom:20px;
-	text-align: center;
 	font-size: 12px;
 	color: #777777;
 }
 
 .exp .projects
 {
-	background: url('../image/line.png') repeat-y center;
+	padding-left:18px;
+	background: url('../image/line.png') repeat-y 6px;
 }
 
 .exp .projects:after {
@@ -568,6 +566,16 @@ body
 
 /* Large screens */
 
+
+@media (min-width: 1920px) {
+	body
+	{
+		background: #191919 url("../image/background.png") no-repeat center fixed; 
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+}
+
 @media (min-width: 1024px) {
 	
 	body
@@ -663,5 +671,31 @@ body
 	.projects .project:nth-child(2n+1)
 	{
 		background: url('../image/project_arrow_right.png') right top no-repeat;
+	}
+	
+	#experiences .start
+	{
+		margin: 0px auto 15px auto;
+	}
+	#experiences .end
+	{
+		margin: 15px auto 0px auto;
+	}
+	
+	.exp .projects
+	{
+		padding-left:0px;
+		background: url('../image/line.png') repeat-y center;
+	}
+
+	#experiences > h2, .exp h4, .exp h2, .exp.secondary h2, .exp h3
+	{
+		text-align: center;
+	}
+
+	.exp img
+	{
+		float: none;
+		margin: auto;
 	}
 }
