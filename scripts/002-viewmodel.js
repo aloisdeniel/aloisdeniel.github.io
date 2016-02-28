@@ -14,14 +14,14 @@ experiences: {
                               date: { duration: 4, year: 2014 },
                               name: "Online Services for Cars",
                               role: { en: "Project lead developer", fr: "Architecte et développeur" },
-                              description: "A set of five Android companion applications for managing a company vehicle",
+                              description: { en: "A set of five Android companion applications for managing a company vehicle", fr: "Ensemble de cinq applications permettant le suivi d'un véhicule de flotte d'entreprise." },
                               tools: ["Xamarin.Android", "C#", "GIT"]
                         },
                         {
                               date: { duration: 16, year: 2012 },
                               name: "Polyexpert",
                               role: { en: "Developer", fr: "Développeur" },
-                              description: { en: "TBD", fr: "Développement d'une application tablette iPad à destination des experts d'assurance. Participations aux phases de conceptions." },
+                              description: { en: "An iPad Application for insurance experts. Design phases and development.", fr: "Application tablette iPad à destination des experts d'assurance. Participation aux phases de conceptions et de développement." },
                               tools: ["iOS", "Objective-C", "XCode", "Jenkins", "SVN"]
                         },
                         {
@@ -43,7 +43,7 @@ experiences: {
                               date: { duration: 6, year: 2011 },
                               name: "NoSQL databases",
                               role: { en: "Internship", fr: "Stagiaire" },
-                              description: { en: "My role was to evaluate the different relational database alternatives", fr: "Evaluation des différentes alternatives aux base de données relationnelles." },
+                              description: { en: "My role was to evaluate the different relational database alternatives.", fr: "Evaluation des différentes alternatives aux base de données relationnelles." },
                               tools: ["MongoDB","CouchDB", "Neo4J"]
                         }
                   ]
@@ -161,7 +161,7 @@ competences: [
             },
             {
                   title: "ios",
-                  description: "Lead developer on native and Xamarin applications",
+                  description: { fr: "P", en: "Lead developer on native and Xamarin applications" },
                   type: "primary",
                   logo: "logo_apple.png",
                   tools: [ "Objective-C", "Swift 2", "XCode","CocoaPods"],
@@ -171,7 +171,7 @@ competences: [
       [
             {
                   title: "node.js",
-                  description: "Several professionnal projects for internal enterprise tools, opensource projects",
+                  description: { fr: "Plusieurs projets internes d'outils d'entreprise, projets open-source", en: "Several professionnal projects for internal enterprise tools, opensource projects" },
                   type: "secondary",
                   logo: "logo_nodejs.png",
                   tools: ["js", "npm", "express.js", "koa.js"],
@@ -179,7 +179,7 @@ competences: [
             },
             {
                   title: "design",
-                  description: "Designer for several mobile applications and websites",
+                  description:  { fr: "Design de plusieures applications et sites web", en: "Designer for several mobile applications and websites" },
                   type: "secondary",
                   logo: "logo_ps.png",
                   tools: ["Photoshop"],
@@ -187,7 +187,7 @@ competences: [
             },
             {
                   title: "android",
-                  description: "Professional training, one production application made Xamarin.Android",
+                  description: { fr: "Formation interne d'enteprise suivie, une application en production réalisée en Xamarin.Android", en:"Professional training, one production application made with Xamarin.Android" },
                   type: "secondary",
                   logo: "logo_android.png",
                   tools: ["Android Studio","Gradle"],
