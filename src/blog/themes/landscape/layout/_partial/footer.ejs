@@ -1,0 +1,20 @@
+<footer id="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="outer">
+  
+    <div id="footer-links">
+      <a href="mailto:alois.deniel@outlook.com"><i class="icon ion-ios-email-outline"></i></a>
+      <a href="https://twitter.com/aloisdeniel"><i class="icon ion-social-twitter-outline"></i></a>
+      <a href="https://github.com/aloisdeniel"><i class="icon ion-social-github"></i></a>
+      <a href="https://www.linkedin.com/profile/view?id=AAIAABCSq6IBXVUHi4NJtgeCQf9bkjUwA8h7UEo"><i class="icon ion-social-linkedin-outline"></i></a>
+    </div>
+    
+    <div id="footer-info" class="inner">
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
+      <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+    
+  </div>
+</footer>
