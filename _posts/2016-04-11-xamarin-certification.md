@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Now a Xamarin Certified Developer"
+image: images/post_xamarin-certification.jpg
 categories:
   - Xamarin
 tags:
