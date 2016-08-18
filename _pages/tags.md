@@ -19,7 +19,9 @@ permalink: /tags.html
    <h2 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h2>
    <ul>
     {% for post in site.tags[this_word] %}{% if post.title != null %}
+    {% unless post.draft %}
     <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endunless %}
     {% endif %}{% endfor %}
   </ul>
 {% endunless %}{% endfor %}
