@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: post
 title:  "Authenticating your web services with JWT"
 lang: en

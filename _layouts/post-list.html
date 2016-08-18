@@ -23,6 +23,7 @@ layout: compress
       <div class="content">
         <ul class="posts-list">
         {% for post in site.posts %}
+         {% unless post.draft %}
           <li>
             <h2>
               <a href="{{ site.url }}{{ post.url }}" class="post-title">
@@ -39,6 +40,7 @@ layout: compress
             {% endfor %}
             </ul>
           </li>
+           {% endunless %}
           {% endfor %}
         </ul>
       </div>
