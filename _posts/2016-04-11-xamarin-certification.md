@@ -8,9 +8,9 @@ tags:
   - Xamarin.University
 ---
 
-![Trophy & Certificate]({{ site.url }}/img/post000_certificate.png)
-
 Maybe you've seen the small badge at the bottom of this blog : I'm officialy a **Xamarin Certified Developer**!
+
+![Trophy & Certificate]({{ site.url }}/img/post000_certificate.png)
 
 I followed all the required courses of the Xamarin University for about two weeks and passed the exam with a score of 92%.
 

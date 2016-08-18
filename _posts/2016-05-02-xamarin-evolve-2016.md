@@ -10,9 +10,9 @@ tags:
   - Xamarin.University
 ---
 
-![photo]({{ site.url }}/img/evolve16_001.png)
-
 This year was my first attendee to the **Xamarin Evolve** conference thanks to my company **Orange Applications for Business**.
+
+![photo]({{ site.url }}/img/evolve16_001.png)
 
 ## University
 
