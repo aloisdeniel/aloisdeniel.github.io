@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Transforming events intents to Tasks"
+title: "Transforming events intents into Tasks"
 image: images/post_task-intent.jpg
 categories:
   - Microsoft
