@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Now a Xamarin Certified Developer"
+categories:
+  - Xamarin
+tags:
+  - Xamarin
+  - Xamarin.University
+---
+
+![Trophy & Certificate]({{ site.url }}/img/post000_certificate.png)
+
+Maybe you've seen the small badge at the bottom of this blog : I'm officialy a **Xamarin Certified Developer**!
+
+I followed all the required courses of the Xamarin University for about two weeks and passed the exam with a score of 92%.
+
+I really enjoyed each class, the University team did a great job at creating a solid learning program.

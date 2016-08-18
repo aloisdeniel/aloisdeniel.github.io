@@ -1,0 +1,64 @@
+# Site
+title: Aloïs Deniel
+description: "Xamarin & Windows development"
+url: http://aloisdeniel.github.io/blog
+logo: halve.png                                       # Site logo
+locale: en_US
+
+# Left Block Images
+background:
+  homepage: "images/home.png"                           # this image will be shown on homepage's left block
+  post-list: "images/posts.jpg"             # this image will be shown on post list page
+  default-post: "images/default-post.jpg"   # this image will be shown when post's front matter doesn't specify any image
+
+# Jekyll
+permalink:          /:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+sass:
+  sass_dir:         assets/_sass
+  style:            compressed
+
+# Google Analytics
+#google-analytics: UA-XXXXX-Y
+
+# Social Links
+#email:             email
+#google.plus:        username
+twitter:            aloisdeniel
+#facebook:           username
+github:             aloisdeniel
+stackoverflow:     4494931/alois 
+linkedin:          aloïs-deniel-25614b79
+#xing:              username
+#instagram:          username
+#lastfm:            username
+#tumblr:            username
+#pinterest:         username
+#foursquare:        username
+#steam:              username
+#dribbble:          username
+#youtube:           username
+#soundcloud:        username
+#weibo:             username
+#flickr:            username
+#codepen:           username
+#keybase:           username
+#xmpp:              username@server.com
+#hackernews:        username
+
+# Gems
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+
+# Exclude list
+include: [_pages]
+exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]
