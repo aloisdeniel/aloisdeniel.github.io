@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Transforming events intents into Tasks"
+title: "Turn events into Tasks"
 image: images/post_task-intent.jpg
 categories:
   - Microsoft
@@ -45,7 +45,7 @@ var task = source.Task;
 await task;
 ```
 
-Then you can choose of the task output status at any time :
+Then you can choose the task output status at any time :
 
 ```csharp
 // Success
