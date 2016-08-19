@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Adding an Android Floating Action Button to your Xamarin.Forms apps"
-image: images/post_fab.jpg
+image: images/post_fab.png
 categories:
   - Xamarin
 tags:
