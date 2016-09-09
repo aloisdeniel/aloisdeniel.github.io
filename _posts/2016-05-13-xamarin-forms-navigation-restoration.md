@@ -1,5 +1,6 @@
 ---
 layout: post
+lang: en
 title: "Navigation restoration in Xamarin.Forms"
 categories:
   - Xamarin
@@ -25,7 +26,7 @@ The main component for navigation in Xamarin.Forms is the `NavigationPage` that 
 
 ![schema]({{ site.url }}/img/post001_navigationpage.png)
 
-All those steps are stored in its `Navigation` property (also shared by all its children), which has a simple collection of `Page`s called `NavigationStack`. The the first step to be able to restore the user navigation state would be to serialize this stack,store it, and restore it whenever the app has been killed and launched again. Because `Pages` are heavy user interface objects, you shouldn't store its entire property values, but only the minimum for restoration : each page `Type` seems to be the etential needed information in most cases.
+All those steps are stored in its `Navigation` property (also shared by all its children), which has a simple collection of `Page`s called `NavigationStack`. The first step to be able to restore the user navigation state would be to serialize this stack,store it, and restore it whenever the app has been killed and launched again. Because `Pages` are heavy user interface objects, you shouldn't store its entire property values, but only the minimum for restoration : each page `Type` seems to be the etential needed information in most cases.
 
 {% highlight csharp %}
 var pages = navigationPage.Navigation.NavigationStack;

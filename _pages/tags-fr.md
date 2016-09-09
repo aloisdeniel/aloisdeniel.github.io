@@ -1,9 +1,9 @@
 ---
 layout: page
-lang: en
-title: Tag Archive
+lang: fr
+title: Archive par tag
 description: "An archive of posts sorted by tag."
-permalink: /tags.html
+permalink: /tags-fr.html
 ---
 
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}

@@ -1,5 +1,6 @@
 ---
 layout: post
+lang: en
 title: "Now a Xamarin Certified Developer"
 image: images/post_xamarin-certification.jpg
 categories:
@@ -9,7 +10,7 @@ tags:
   - Xamarin.University
 ---
 
-Maybe you've seen the small badge at the bottom of this blog : I'm officialy a **Xamarin Certified Developer**!
+Maybe you've seen the small badge at on this blog : I'm officialy a **Xamarin Certified Developer**!
 
 ![Trophy & Certificate]({{ site.url }}/img/post000_certificate.png)
 

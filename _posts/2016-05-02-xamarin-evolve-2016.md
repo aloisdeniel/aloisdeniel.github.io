@@ -1,5 +1,6 @@
 ---
 layout: post
+lang: en
 title: "Xamarin Evolve 2016"
 image: images/post_xamarin-evolve-2016.jpg
 categories:
@@ -39,7 +40,7 @@ But there was other cool new features announced such as :
 
 ### Day 03 : Xammy Awards
 
-Enteprise project was rewarded during Xammy Awards, and my though was that we must be part of it with Orange Applications for Business and my co-workers next year! 
+Enteprise projects was rewarded during Xammy Awards, and my though was that we must be part of it with Orange Applications for Business and my co-workers next year! 
 
 ### Day 03 : Closing session
 

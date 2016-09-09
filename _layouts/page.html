@@ -20,7 +20,7 @@ layout: compress
               {% endunless %}
             {% endfor %}
           </ul>
-          <div class="section-line reverse"><a href="{{ site.url}}/posts">Back to posts</a> <em>/</em></div>
+          <div class="section-line reverse"><a href="{{ site.url}}/posts{% unless page.lang == "en" %}-{{ page.lang }}{% endunless %}">{% if page.lang == "en" %} Back to posts {% endif %} {% if page.lang == "fr" %} Retour {% endif %}</a></div>
         </div>
       </div>
     </div>
@@ -30,9 +30,6 @@ layout: compress
         {% include share.html %}
       </div>
       <a href="../posts.html" title="posts" class="posts-menu-icon"></a>
-      <a title="projects" class="projects-menu-icon">
-        <span></span>
-      </a>
       <div class="inner-post content">
         <div class="date-highlight">{% if page.date %}{{ page.date | date: '%d %b %Y' }}{% else %}&#x2756;{% endif %}</div>
         {{ content }}

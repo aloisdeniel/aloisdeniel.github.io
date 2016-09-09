@@ -1,5 +1,6 @@
 ---
 layout: post
+lang: en
 title: "Turn events into Tasks"
 image: images/post_task-intent.jpg
 categories:

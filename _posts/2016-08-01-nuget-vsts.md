@@ -1,5 +1,6 @@
 ---
 draft: true
+lang: en
 layout: post
 title: "Auto-publish a NuGet package from Visual Studio Team Services"
 image: images/post_nuget-vsts.jpg

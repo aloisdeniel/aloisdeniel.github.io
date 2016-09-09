@@ -659,7 +659,8 @@ canvas {
     font-size: 15px;
   }
   .section-line {
-    color: $green;
+    color: rgba(255,255,255,0.4);
+    font-size: 15px;
     position: relative;
     display: -webkit-box;
     display: -moz-box;
@@ -667,7 +668,6 @@ canvas {
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    font-size: 25px;
     margin-bottom: 20px;
     &:after {
       content: '';
@@ -691,6 +691,8 @@ canvas {
       margin: 0 10px;
     }
     &.reverse {
+      color: $green;
+      font-size: 25px;
       margin-top: 40px;
       &:before {
         content: '';
@@ -934,5 +936,38 @@ canvas {
         color:darken($white, 15%) !important;
       }
     }
+  }
+}
+
+.languages {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    color: #ffffff;
+    text-align: right;
+    z-index: 1;
+  
+  span {
+    font-size: 10px;
+    color: #DDD;
+  }
+
+  h3 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    color: #DDD;
+
+  }
+
+  a {
+    font-size: 12px;
+    color: #bbb;
+  }
+
+  a.selected
+  {
+    font-weight:  bold;
+    color: $green;
   }
 }

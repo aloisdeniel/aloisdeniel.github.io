@@ -1,7 +1,7 @@
 ---
 layout: post
-lang: en
-title: "Creating custom Xamarin.Forms maps"
+lang: fr
+title: "Créer une map Xamarin.Forms personnalisée"
 image: images/post_xamarin-forms-custom-maps.png
 categories:
   - Xamarin
@@ -14,68 +14,68 @@ tags:
   - C#
 ---
 
-I'll tell you how I achieved custom tile rendering from a Xamarin.Forms map component.
+Je vais vous présenter la manière dont j'ai pu personnaliser l'aspect des tuiles affichées sur une map Xamarin.Forms.
 
-## What is a map image tile ?
+## Qu'est ce qu'une tuile de map
 
-The easier way to create custom map rendering from existing map components (`Android.Gms.GoogleMap` and `MapKit.MKMapView`) is by using overlay from multiple image tiles.
+Le moyen le plus simple pour créer un rendu de map depuis les composants proposés (`Android.Gms.GoogleMap` and `MapKit.MKMapView`) peut se faire au travers d'un calque personnalisé.
 
-Before delving into code, let's review how the image tiles are represented.
+Avant de plonger dans le code, voyons rapidement ce qu'est une tuile.
 
 ![schema]({{ site.url }}/img/custommaps_001.png)
 
 ![schema]({{ site.url }}/img/custommaps_002.png)
 
-A tile is defined by :
+Une tuile est donc définie par :
 
-* `size` : all tiles from your map representation must have the exact same size for all available zoom levels (commonly `256px*256px`)
-* `z` : a zoom level (`1` is the minimum zoom level that should show all the covered area in one tile)
-* `x` : the horizontal position of the tile
-* `y` : the vertical position of the tile
+* `size` : toutes les tuiles doivent tous avoir la même taille, quelque soit le niveau de zoom (souvent `256px*256px`)
+* `z` : un niveau de zoom (`1` est le zoom minimal qio doit couvrir la totalité de la zone naviguable sur une tuile)
+* `x` : la position horizontale de la tuile
+* `y` : la position verticale de la tuile
 
-## How can I get custom tiles ?
+## Comment obtenir des tuiles personnalisées ?
 
-The first step to get a custom styled map is to get those tiles. There`s two main ways, and like often : do it yourself, or use an existing provider.
+Vous avez deux possibilités, comme souvent : générez les par vous-même, ou bien utilisez un service tierce (souvent payants).
 
-### Providers
+### Services
 
-Several services provide custom tiles from urls. Generaly, advanced customization requires paid service. Paid services often provide also custom components that use native vector rendering (which uses more device resources to be rendered, but that are much lighter than image tiles).
+Plusieurs services permettent la génération de tuiles depuis des urls. Des options de personnalisation avancée nécessitent souvent un abonnement payant. Ces derniers proposent souvent également des composants natifs qui effectuent du rendu vectoriel (qui utilise plus de ressources systèmes pour le rendu, mais plus légères que des images)
 
-Most of the time, those services uses data from [OpenStreetMaps](https://www.openstreetmap.org/).
+La source de données géographiques généralement utilisée est [OpenStreetMaps](https://www.openstreetmap.org/).
 
-The tiles are provided through HTTP with url like the above with the properties of a tile (`z`, `x`, `y`) to get the corresponding image :
+Les tuiles sont proposées au travers du protocole HTTP, avec des urls contenant les propriété de tuiles (`z`, `x`, `y`) pour obtenir l'image associée :
 
 ```
 https://{host}/{z}/{x}/{y}.png
 ```
 
-#### Free
+#### Gratuit
 
 * [Stamen](http://maps.stamen.com/)
 * [CartoDb-Basemaps](https://carto.com/location-data-services/basemaps/)
 
-#### Paid
+#### Payant
 
 * [MapBox](https://www.mapbox.com/maps/)
 * [CartoDb](https://carto.com/)
 
-### Generating tiles
+### Génération 
 
-If you need really customized maps, you can also generate all those images by yourself and provide them to you mobile app the way you want (packaged with the app, through an http server).
+Si vous nécessitez une personnalisation maximale, vous pouvez également générer toutes ces tuiles par vous-même et les mettre à disposition de votre mobile (soit packagée avec l'application, soit avec un serveur).
 
-[Mapnik](http://mapnik.org/) is a great tool for achieving this. If you want to go further, I have a node library called
-[mapzen-tile-generator](https://github.com/aloisdeniel/mapzen-tile-generator) on github that creates images from [mapzen metro extracts](https://mapzen.com/data/metro-extracts/).
+[Mapnik](http://mapnik.org/) un super outil pour réaliser cela. Si vous voulez voir un exemple plus simple, j'ai créé une librairie qui l'utilise
+[mapzen-tile-generator](https://github.com/aloisdeniel/mapzen-tile-generator), disponible sur GitHub, qui crée des images à partir de [mapzen metro extracts](https://mapzen.com/data/metro-extracts/).
 
 ## Xamarin custom renderers
 
-### Prerequirements
+### Pré-requis
 
-To use Xamarin.Forms, you must install 
-[Xamarin.Forms.Maps](https://www.nuget.org/packages/Xamarin.Forms.Maps) nuget package to your projects.
+Pour utiliser les maps Xamarin.Forms, vous devez installer le package
+[Xamarin.Forms.Maps](https://www.nuget.org/packages/Xamarin.Forms.Maps).
 
 ### iOS
 
-The iOS renderer is mainly based on `MKTileOverlayRenderer` and `MKTileOverlay`.
+Le renderer iOS est principalement basé sur `MKTileOverlayRenderer` and `MKTileOverlay`.
 
 ```csharp
 namespace CustomMaps.iOS.MapOverlays
@@ -160,8 +160,7 @@ namespace CustomMaps.iOS.Renderers
 
 ### Android
 
-The Android renderer has lot of similarities and is based on `UrlTileProvider` and `MKTileOverlay`.
-
+Le renderer Android a un fonctionnement relativement similaire, et est basé sur `UrlTileProvider` and `MKTileOverlay`.
 
 ```csharp
 namespace CustomMaps.Droid
@@ -245,10 +244,12 @@ namespace CustomMaps.Droid.Renderers
 }
 ```
 
-### Sample
+### Exemple
 
-I publish those [samples on github](https://github.com/aloisdeniel/blog/tree/gh-pages/samples/CustomMaps) if you want a complete working project.
+J'ai publié ces [projets d'exemple sur GitHub](https://github.com/aloisdeniel/blog/tree/gh-pages/samples/CustomMaps) si vous voulez un exemple concret.
 
 ## Conclusion
 
-You should have all the pointers now to implement your own custom maps! You're even able to improve this by combining local and distant storage to create a cache of distants tiles for offline use. You can also render custom tiles directly from the mobile app and having multiple overlays. Have fun and be creative!
+Vous devez désormais avoir touts les éléments pour implémenter vos propres cartes personnalisées! Vous pouvez améliorer tout cela en combinant du stockage local et disant pour créer un cache des images distantes en cas de perte de connexion. Vous pouvez également eventuellement générer les tuiles directement depuis le mobile.
+
+Amusez vous, et soyez créatif!

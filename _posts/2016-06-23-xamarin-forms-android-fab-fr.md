@@ -1,7 +1,7 @@
 ---
 layout: post
-lang: en
-title: "Adding an Android Floating Action Button to your Xamarin.Forms apps"
+lang: fr
+title: "Ajouter un Android Floating Action Button à votre app Xamarin.Forms"
 image: images/post_fab.png
 categories:
   - Xamarin
@@ -12,15 +12,15 @@ tags:
   - C#
 ---
 
-Today I'll explain you how to add a **Floating Action Button** from Google's Material Design to a Xamarin.Forms application.
+Aujourd'hui je vais vous expliquer comment ajouter un **Floating Action Button** adapté au Material Design de Google dans vos applications Xamarin.Forms.
 
-## Adding the button on Android
+## Ajouter le bouton sur Android
 
-First, I want to clarify that this **will only be explained for Android**, because, for me, this control fits better to Android navigation paradigmes. On other systems other navigation patterns can be used (like toolbar items, or command bar buttons).
+Pour être clair, cet article sera **dédié à Android uniquement**, car, pour moin ce contrôle est plutôt adapté aux paradigmes de navigation Android. Sur les autres systèmes d'autres moyens existent (toolbars, command bars), mais des librairies tierces iOS sont eventuellement intégrables.
 
-So, we will develop a basic custom renderer that will add a `FloatingActionButton` at the bottom of the area.
+Nous allons donc développer un *custom renderer* qui va ajouter un `FloatingActionButton` dans la zone basse de l'écran.
 
-First, we start by declaring our shared component in the PCL projet :
+Commencons par déclarer notre composant partagé au sein du projet de PCL :
 
 ```csharp
 using System;
@@ -121,11 +121,11 @@ public class FloatingButton : View
 
 ```
 
-We've declared three customization properties that can be bound : the tint color of the button, its animated visibility, and its icon image source. There's also an event for intercepting user interractions (we could also have added a Command).
+Nous avons déclaré trois propriétés de customisation qui pourrons être branchées : la teinte du bouton, une visibilité avec animation, et la source de l'icone du bouton. Nous aurrons également un événement pour intercepter les interractions utilisateur (une commande pourrait également être ajoutée).
 
-For the renderer, we will use the `Android.Support.Design` library that is luckily already present if you have a recent version of Xamarin.Forms installed.
+Pour le renderer, nous allons utiliser la librairie de support `Android.Support.Design` qui est heuresement déjà intégré si vous avez une version récente de Xamarin.Forms d'installée.
 
-So, we create a `FloatingActionButton`, place it at the bottom right of the view, and start observing the element properties to update our button accordingly.
+Alors, nous allons créer sur Android le `FloatingActionButton`, le placer en bas a droite de la vue et commencer à observer les propriétés de l'élément natif pour mettre à jour notre bouton en conséquence.
 
 ```csharp
 using System;
@@ -262,12 +262,11 @@ namespace Project.Droid.Renderers
 }
 ```
 
-## Hiding the button when scrolling into a ListView
+## Cacher le bouton lors d'un scroll d'une ListView
 
-Unfortunately, we can't have the current scrolling state from a ListView. But fortunately, we have `ItemAppearing` and `ItemDisappearing` events. After the first disappearance of an item, it indicates that the user has started scrolling and thats it's not the initial render and that we can observe item appearance to find user's scrolling direction. If he scrolls up we show the button, else we hide it.
+Nous avons hélas pas la possibilité d'avoir la possition actuelle de scroll dans une ListView, mais nous avons deux évenements `ItemAppearing` and `ItemDisappearing` qui vont nous aider. Après la première disparition d'un élément, l'utilisateur à commencé à scroller et que ce n'est pas des création de cellules pour l'état initial : nous pouvons donc commencer a observer les création et disparition de cellules pour en déduire le sens de navigation. Si l'utilisateur scroll vers le haut nous cacherons le bouton, sinon nous le ferons réapparaître.
 
-Here an example behavior that achieves this :
-
+Voici un behavior à cet effet :
 
 ```csharp
 using System.Linq;
@@ -359,9 +358,9 @@ public class FloatingScrollingBehavior : ScrollingBehavior
 
 ```
 
-## Usage
+## Utilisation
 
-You can now declare your button :
+Nous pouvons donc désormais utiliser notre bouton depuis nos pages :
 
 ```csharp
 var fab = new FloatingButton()
@@ -378,6 +377,6 @@ listview.Behaviors.Add(new FloatingScrollingBehavior() { Button = fab });
 
 ## Conclusion
 
-Wow, lot of code today, but its a good beginning for understanding custom renderers and behaviors! And we solved the ListView scrolling state issue whithout the need of a custom renderer.
+Wow, beaucoup de code aujourd'hui, mais c'est une bonne introduction aux custom renderers et aux behaviors. Nous avons également résolu la problématique de détection de scroll, sans la nécessité d'un custom renderer.
 
-I'll post this component to NuGet with more customization properties soon.
+Je posterai probablement un composant sur NuGet sous peu avec plus de propriétés de personnalisation.
