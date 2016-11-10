@@ -2,7 +2,7 @@
 layout: post
 lang: fr
 title: "Talk Xamarin à Microsoft Experiences"
-image: images/msexp2016.jpg
+image: images/msexp2016.png
 categories:
   - Microsoft
 tags:

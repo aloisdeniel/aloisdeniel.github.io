@@ -2,7 +2,7 @@
 layout: post
 lang: en
 title: "Xamarin talk at the Microsoft Experiences in Paris"
-image: images/msexp2016.jpg
+image: images/msexp2016.png
 categories:
   - Microsoft
 tags:
