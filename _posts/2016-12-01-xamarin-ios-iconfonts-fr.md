@@ -44,7 +44,7 @@ var c = GetUnicode("2605");
 
 ## Afficher une icône
 
-Ok, we have all the elements to insert your icon into a `UILabel` :
+Nous avons réunis tous les éléments pour afficher note icône dans un `UILabel` :
 
 ```csharp
 var label = new UILabel()
