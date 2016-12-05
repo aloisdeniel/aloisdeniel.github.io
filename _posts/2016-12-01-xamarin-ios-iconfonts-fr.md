@@ -33,13 +33,7 @@ Il faut désormais trouver à quels codes de caractères sont associés les icô
 Pour créer un caractère C# depuis votre code, vous pouvez utiliser cette méthode :
 
 ```csharp
-private static string GetUnicode(string code)
-{
-    int codeValue = int.Parse(code, System.Globalization.NumberStyles.HexNumber);
-    return char.ConvertFromUtf32(codeValue);
-}
-
-var c = GetUnicode("2605");
+var c = char.ConvertFromUtf32(0x2605);
 ```
 
 ## Afficher une icône
@@ -50,7 +44,7 @@ Nous avons réunis tous les éléments pour afficher note icône dans un `UILabe
 var label = new UILabel()
 {
     Font = UIFont.FromName("entypo", 20),
-    Text = GetUnicode("2605"),
+    Text = char.ConvertFromUtf32(0x2605),
 };
 ```
 
@@ -61,17 +55,17 @@ Générer une `UIImage` depuis vos icônes peut parfois être utile (par exemple
 Voici un extrait de code qui vous aidera peut-être pour cela :
 
 ```csharp
-public static UIImage RenderIcon(string code, CGSize imageSize, float size, UIColor color)
+public static UIImage RenderIcon(int code, CGSize imageSize, float size, UIColor color)
 {
-	var unicodeString = GetUnicode(code);
+	var unicodeChar = char.ConvertFromUtf32(code);
 	UIGraphics.BeginImageContextWithOptions(imageSize, false, 0);
 	var paragraphStyle = new NSMutableParagraphStyle();
 	paragraphStyle.Alignment = UITextAlignment.Center;
 	var font = UIFont.FromName("entypo", size);
-	var measure = unicodeString.StringSize(font, UIScreen.MainScreen.Bounds.Width, UILineBreakMode.TailTruncation);
+	var measure = new NSString(unicodeChar).GetSizeUsingAttributes(new UIStringAttributes() { Font = font });
 	var area = new CGRect(imageSize.Width / 2 - measure.Width / 2, imageSize.Height / 2 - measure.Height / 2, measure.Width, measure.Height);
 	color.SetColor();
-	unicodeString.DrawString(area, font);
+	unicodeChar.DrawString(area, font);
 	var result = UIGraphics.GetImageFromCurrentImageContext();
 	UIGraphics.EndImageContext();
 	return result;
