@@ -57,22 +57,25 @@ Here's a short snippet of code to do so :
 ```csharp
 public static UIImage RenderIcon(int code, CGSize imageSize, float size, UIColor color)
 {
-    var unicodeString = new NSString(char.ConvertFromUtf32(code));    
+    var unicodeString = new NSString(char.ConvertFromUtf32(code));
+    
     var attributes = new UIStringAttributes()
     {
-    	Font = UIFont.FromName("entypo", size),
-    	ParagraphStyle = new NSMutableParagraphStyle()
-    	{
-    		Alignment = UITextAlignment.Center,
-    	},
-    };    
-	
+        Font = UIFont.FromName("entypo", size),
+        ParagraphStyle = new NSMutableParagraphStyle()
+        {
+            Alignment = UITextAlignment.Center,
+        },
+    };
+    
+    var measure = unicodeString.GetSizeUsingAttributes(attributes);
+    
     UIGraphics.BeginImageContextWithOptions(imageSize, false, 0);
     color.SetColor();
-    unicodeString.DrawString(new CGRect(CGPoint.Empty, imageSize), attributes);
+    unicodeString.DrawString(new CGRect(0, imageSize.Height - measure.Height / 2, imageSize.Width, measure.Height), attributes);
     var result = UIGraphics.GetImageFromCurrentImageContext();
-    UIGraphics.EndImageContext();   
-
-	return result;
+    UIGraphics.EndImageContext();  
+    
+    return result;
 }
 ```
