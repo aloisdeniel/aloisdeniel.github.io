@@ -36,6 +36,16 @@ To create a C# character from your unicode, you can use the `char.ConvertFromUtf
 var c = char.ConvertFromUtf32(0x2605);
 ```
 
+Another great resource for generating webfont you should use : [fontello](http://fontello.com/).
+
+Pick the icons you wish and download the webfont file.
+
+![schema]({{ site.url }}/img/xamarin-ios-font-4.png)
+
+You have also a tab with unicodes!
+
+![schema]({{ site.url }}/img/xamarin-ios-font-5.png)
+
 ## Displaying the icon
 
 Ok, we have all the elements to insert your icon into a `UILabel` :
@@ -72,7 +82,7 @@ public static UIImage RenderIcon(int code, CGSize imageSize, float size, UIColor
     
     UIGraphics.BeginImageContextWithOptions(imageSize, false, 0);
     color.SetColor();
-    unicodeString.DrawString(new CGRect(0, imageSize.Height - measure.Height / 2, imageSize.Width, measure.Height), attributes);
+    unicodeString.DrawString(new CGRect(0, imageSize.Height / 2 - measure.Height / 2, imageSize.Width, measure.Height), attributes);
     var result = UIGraphics.GetImageFromCurrentImageContext();
     UIGraphics.EndImageContext();  
     
