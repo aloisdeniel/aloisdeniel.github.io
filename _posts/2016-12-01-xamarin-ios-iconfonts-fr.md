@@ -36,13 +36,13 @@ Pour créer un caractère C# depuis votre code, vous pouvez utiliser cette méth
 var c = char.ConvertFromUtf32(0x2605);
 ```
 
-Un super outil très pratique que vous pouvez utiliser pour générer vos fichiers de polices : [fontello](http://fontello.com/).
+[fontello](http://fontello.com/) est un autre outil très pratique pour générer vos fichiers de polices.
 
-Selectionnez que vous souhaitez et téléchargez votre fichier de police.
+Selectionnez les icônes que vous souhaitez parmi la liste proposée et téléchargez votre fichier de police.
 
 ![schema]({{ site.url }}/img/xamarin-ios-font-4.png)
 
-Vous avez également accès aux codes de caractères directement depuis le site!
+Vous avez également accès aux codes de caractères, et pouvez les modifier directement depuis le site!
 
 ![schema]({{ site.url }}/img/xamarin-ios-font-5.png)
 
