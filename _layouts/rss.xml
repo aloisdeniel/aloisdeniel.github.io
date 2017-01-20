@@ -19,7 +19,7 @@ layout: null
             <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
             <link>{{ post.url | prepend: site.url }}</link>
             <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
-            <content type="html">{{ post.content | cdata_escape }}</encoded>
+            <content type="html">{{ post.content | xml_escape }}</encoded>
           </item>
       {% endunless %}
      {% endif %}
