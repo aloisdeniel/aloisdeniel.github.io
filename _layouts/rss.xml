@@ -4,8 +4,8 @@ layout: null
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xml:lang="{{ page.lang }}">
   <channel>
-    <title></title>
-    <description>Various technical articles about mobile development with Microsoft technologies.</description>
+    <title>{{ page.title }}</title>
+    <description>{{ page.description }}</description>
     <author>
         <name>Aloïs Deniel</name>
     </author>
