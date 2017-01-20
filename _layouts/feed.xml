@@ -1,23 +1,23 @@
 ---
-layout: null
+layout: compress
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xml:lang="{{ page.lang }}">
   <channel>
     <title></title>
     <description>Various technical articles about mobile development with Microsoft technologies.</description>
     <link>{{ site.url }}</link>
-      {% for post in site.posts %}
-        {% if post.lang == page.lang %}
+        {% for post in site.posts %}
+         {% if post.lang == page.lang %}
          {% unless post.draft %}
-        <item>
-          <title>{{ post.title | xml_escape }}</title>
-          <description>{{ post.excerpt | strip_html | truncatewords:20 }}</description>
-          <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-          <link>{{ post.url | prepend: site.url }}</link>
-          <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
-          <content:encoded><![CDATA[{{ post.content | cdata_escape }}]]></content:encoded>
-        </item>
+          <item>
+            <title>{{ post.title | xml_escape }}</title>
+            <description>{{ post.excerpt | strip_html | truncatewords:20 }}</description>
+            <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+            <link>{{ post.url | prepend: site.url }}</link>
+            <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
+            <content:encoded><![CDATA[{{ post.content | cdata_escape }}]]></content:encoded>
+          </item>
       {% endunless %}
      {% endif %}
     {% endfor %}
