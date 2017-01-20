@@ -55,8 +55,12 @@ linkedin:          aloïs-deniel-25614b79
 
 # Gems
 gems:
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+
+feed:
+  path: feed-gen-global.xml
 
 # Exclude list
 include: [_pages]

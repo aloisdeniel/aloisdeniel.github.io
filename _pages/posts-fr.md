@@ -2,6 +2,6 @@
 layout: post-list
 title: Blog
 lang: fr
-description: "Listes articles"
+description: "Liste des articles"
 permalink: /posts-fr.html
 ---
