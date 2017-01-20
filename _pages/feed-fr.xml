@@ -3,5 +3,5 @@ layout: feed
 title: "Aloïs Deniel - Blog technique"
 lang: fr
 description: "Articles variés à propos du development mobile avec technologies Microsoft."
-permalink: /feed-fr
+permalink: /feed-fr.xml
 ---
