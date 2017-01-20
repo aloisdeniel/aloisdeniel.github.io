@@ -6,6 +6,9 @@ layout: compress
   <channel>
     <title></title>
     <description>Various technical articles about mobile development with Microsoft technologies.</description>
+    <author>
+        <name>Aloïs Deniel</name>
+    </author>
     <link>{{ site.url }}</link>
         {% for post in site.posts %}
          {% if post.lang == page.lang %}
@@ -16,7 +19,7 @@ layout: compress
             <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
             <link>{{ post.url | prepend: site.url }}</link>
             <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
-            <content:encoded><![CDATA[{{ post.content | cdata_escape }}]]></content:encoded>
+            <content type="html">{{ post.content | cdata_escape }}</encoded>
           </item>
       {% endunless %}
      {% endif %}
