@@ -237,5 +237,7 @@ private void CreateSubview(YogaNode node)
 
 You could also imagine a build task that generate C# code for each node to have fully optimized rendering.
 
+For a Monogame sample implementation, you can see the [SampleGame.cs](https://github.com/aloisdeniel/Yoga.Xml/blob/master/Sources.Xml/Yoga.Xml.Sample.Monogame.iOS/SampleGame.cs) class.
+
 For a full and more complete sample, clone the [github repo](https://github.com/aloisdeniel/Yoga.Xml) and watch yourself.
 

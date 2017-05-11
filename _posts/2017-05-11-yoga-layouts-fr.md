@@ -236,5 +236,7 @@ private void CreateSubview(YogaNode node)
 
 Il est également aisé d'imaginer une tâche de build générant le code C# associé à chaque noeuds pour améliorer la performance globale du rendu.
 
+Pour un exemple d'implémentation Monogame, vous pouvez parcourir les sources de la classe [SampleGame.cs](https://github.com/aloisdeniel/Yoga.Xml/blob/master/Sources.Xml/Yoga.Xml.Sample.Monogame.iOS/SampleGame.cs).
+
 Pour parcourir l'exemple complet, clonez le [repo github](https://github.com/aloisdeniel/Yoga.Xml) et voyez par vous-même!
 
