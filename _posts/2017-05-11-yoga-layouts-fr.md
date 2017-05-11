@@ -161,11 +161,11 @@ public class View
 Vous pouvez simplifier la réalisation de votre implémentation sur la classe `XmlRenderer<T>` incluse :
 
 ```csharp
-public class ViewRenderer : XmlRenderer<UIView>
+public class ViewRenderer : XmlRenderer<View>
 {
     public ViewRenderer() : base("View") { }
     
-    public override UIView Render(XElement node)
+    public override View Render(XElement node)
     {
         var view = base.Render(node);
 		 view.Id = node.Attribute("Id")?.Name.LocalName;
@@ -187,6 +187,7 @@ public class ViewRenderer : XmlRenderer<UIView>
                 view.Background = new byte [] { 255, 255, 255 };
                 break;
         }
+        return view;
     }
 }
 ```

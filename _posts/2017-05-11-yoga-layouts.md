@@ -123,7 +123,7 @@ It's easy to generate the previous node instances with the built-in .NET seriali
 
 ## Associating data
 
-Each `YogaNode` have a `object Data { get; set; }` property to associate your custom representation to each visual layout node.
+Each `YogaNode` has a `object Data { get; set; }` property to associate your custom representation to each visual layout node.
 
 It's generally a good place to put your view custom properties, to proceed to a rendering by visiting your `YogaNode` tree.
 
@@ -162,11 +162,11 @@ public class View
 You can base your implementation on included `XmlRenderer<T>` :
 
 ```csharp
-public class ViewRenderer : XmlRenderer<UIView>
+public class ViewRenderer : XmlRenderer<View>
 {
     public ViewRenderer() : base("View") { }
     
-    public override UIView Render(XElement node)
+    public override View Render(XElement node)
     {
         var view = base.Render(node);
 		 view.Id = node.Attribute("Id")?.Name.LocalName;
@@ -188,6 +188,7 @@ public class ViewRenderer : XmlRenderer<UIView>
                 view.Background = new byte [] { 255, 255, 255 };
                 break;
         }
+        return view;
     }
 }
 ```
