@@ -131,7 +131,7 @@ C'est généralement l'endroit parfait pour stocker vos propriétés nécéssair
 
 J'ai publié un projet [Yoga.Xml](https://github.com/aloisdeniel/Yoga.Xml) pour vous simplifier la réalisation de ce type de parser.
 
-Ce dernier contient également un exemple, appliqué aux technologies *Monogame.iOS* and *Xamarin.iOS* (*j'ajouterai éventuellement d'autres plateforme, mais le principe reste le même*), pour lequel le résultat affiché est strictement le même.
+Ce dernier contient également un exemple, appliqué aux technologies *Monogame.iOS* and *Xamarin.iOS* (*j'ajouterai éventuellement d'autres plateformes, mais le principe reste le même*), pour lequel le résultat affiché est strictement le même.
 
 Un `YogaParser` parcourera chaque propriété d'un `YogaNode`. En complément, vous devrez proposer un moyen de créer chaque donnée associée au travers d'une implémentation de `IXmlRenderer`.
 
