@@ -24,7 +24,7 @@ Maybe you never heard about me, but I have been a Xamarin developer for four yea
 
 I almost never seen any [Dart](https://www.dartlang.org/) mention in many years and  my first thought when I knew that the Flutter team chose this language for the core tools was : 
 
->	Why this language? Their are plenties of already well-known languages, including Kotlin that is currently pushed for Android development. This will slow down user adoption for sure...
+> Why this language? Their are plenties of already well-known languages, including Kotlin that is currently pushed for Android development. This will slow down user adoption for sure...
 
 Anyway, after a few lines of code I understood : this language is developped internally at Google, and they have a total control on how it should adapt on every platform, and you can feel it. It doesn't have a long history behind it, with various compatibility constraints (like Java/.NET environment). So everything has been designed for what you are using today, and it's really pleasant to use.
 
