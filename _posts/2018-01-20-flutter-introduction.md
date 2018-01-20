@@ -394,7 +394,7 @@ Though I missed several libraries I use in every Xamarin project : a rest client
 
 The most important thing when developing a software is what the user will have between his hands. You could have the best developer tools, if the user interface doesn't feel good for the user it's not worth it.
 
-But Google did great with Flutter because the performances are great and the components are beautifuls. 
+But Google did great with Flutter because the performances are great and the components are beautiful. 
 
 But, even if they thought about system specifities with Cupertino widgets, it is arguable that you Flutter app could be less well integrated to the user current operating system version than a native/Xamarin application. I personnaly find it interresting because it also means that you will have access to all widgets even on older system versions : no more specific UI bugs that could become a nightmare to fix.
 
