@@ -180,9 +180,9 @@ The steps are well described [on the website](https://flutter.io/setup/).
 
 #### IntelliJ / Android Studio
 
-![photo]({{ site.url }}/img/flutter_ide.png)
-
 I use [IntelliJ IDE](https://www.jetbrains.com/idea/) with the Flutter plugin, and I have to say that the experience is pretty good : you have templates for application projects, autocompletion, code navigation. The great thing for me is the reactivity of the text editor unlike the one from Visual Studio for mac that could become pretty laggy on big projects.
+
+![photo]({{ site.url }}/img/flutter_ide.png)
 
 I am not tool-obssessed developer (I could even accept a simple text editor and a CLI) so it may be a big deal for you if you love to have dozens of configured helper tools.
 
