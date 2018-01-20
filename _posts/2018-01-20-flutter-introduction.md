@@ -352,9 +352,19 @@ Even the Flutter team [has experimentations around it](https://github.com/flutte
 
 I have to say that the documentation is very complete and clear. 
 
+![photo]({{ site.url }}/img/flutter_doc.png)
+
 Since you have all the code cloned on your computer, you can navigate directly to it at any time and look at the implementation under the documentation comments too. Again, it is simple and handy.
 
 The Dart way to write documentation is also very smart : you don't have to list all the parameters in a list, but just mark them into you description. This removes a lot of boilerplate documentation that is almost always redundant with description in other languages.
+
+```dart
+/// Defines a flag.
+///
+/// Throws an [ArgumentError] if there is already an option named [name] or
+/// there is already an option using abbreviation [abbr]. Returns the new flag.
+Flag addFlag(String name, String abbr) => ...
+```
 
 ### Accessing native features with plugins
 
