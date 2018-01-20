@@ -32,10 +32,6 @@ Anyway, after a few lines of code I understood : this language is developped int
 
 It is very easy to learn Dart syntax if you are familiar with OOP languages like C#, Java, Swift, Kotlin or Javascript. I made a quick selection of language specificities to make you more condifent with understanding the language.
 
-#### Conventions
-
-[style guide](https://www.dartlang.org/guides/language/effective-dart/style).
-
 #### Modules
 
 The strange thing when coming from Java or C# world, is the module oriented architecture (much like Javascript). It is then common to have multiple classes in the same file, and also to declare elements at the module level since module imports can be explicitely named.
@@ -105,7 +101,7 @@ Again, .NET developers have similar operations with C# 7 (and even more with pat
 
 #### Named constructors
 
-It is common to have static factory functions to instanciate objects in other languages to make clear of how it was constructed. Dart provides a way to name constructor variants for this purpose.
+It is common to have static factory functions to instanciate objects in other languages to make clear of how they were constructed. Dart provides a way to name constructor variants for this purpose.
 
 ```dart
 class Customer {
@@ -121,7 +117,7 @@ class Customer {
 
 You also have all the helpers functionalities you could expect from a modern language like `Future`/`async`/`await` keywords that greatly simplifies the state management of asynchonous operations.
 
-Here a short example of an HTTP call to a REST api (*it should look really familiar to any .NET developer that used `HttpClient`/`Task`/`async`/`await`/`JsonConvert`*) :
+Here a short example of an HTTP call to a REST api (it should look really familiar to any .NET developer that used `HttpClient`/`Task`/`async`/`await`/`JsonConvert`) :
 
 ```dart
 /// Gets a list of customers from a distant server.
@@ -188,13 +184,13 @@ I am not tool-obssessed developer (I could even accept a simple text editor and 
 
 #### Pub dependency manager
 
-Dart has its own built-in very simple dependency manager (*just like NuGet or npm*), you simply have to declare you dependencies in you project configuration file:
+Dart has its own built-in very simple dependency manager (*just like NuGet or npm*), you simply have to declare you dependencies in you `yaml` project configuration file.
 
 #### Hot Reloading
 
 Flutter provides two modes : a **development** (also called `slow mode`) one and a **release** one. The first mode packages an interpreter that allows you to push new code continuously. The second one actually compiles it to native code to offers the best performances and allow three shaking to have smaller binaries.
 
-Concretely, it means that your application is updating on your device while you are typing your code. It is a major productivity boost : it will change completely the way you work. To be honest, once you tried it, it is difficult to go back to a cycle where you compile your entire app just for checking that a padding is okay.
+Concretely, it means that with development mode your application is updating on your device while you are typing your code. It is a major productivity boost : it will change completely the way you work. To be honest, once you tried it, it is difficult to go back to a cycle where you compile your entire app just for checking that a padding is okay.
 
 ![Hot reloading](https://flutter.io/images/intellij/hot-reload.gif)
 
@@ -360,8 +356,8 @@ Flutter teams have included a way to access native features through [plugins and
 
 The difference here is that you have to deal with native tools for implementing platform specific code : 
 
-* **iOS** : XCode, Cocoapods, Objective-C|Swift
-* **Android** : Gradle, Java|Kotlin
+* **iOS** : XCode, Cocoapods, Objective-C or Swift
+* **Android** : Gradle, Java or Kotlin
 
 This seems more complex at first to implement one compared to Xamarin (because there are C# binding/wrapper around every native API, and you have to switch between multiple environments), but it is easier to integrate native dependencies because you don't have to create bindings for them.
 
@@ -373,7 +369,7 @@ I'm sure they took inspiration from [Xamarin plugins](https://github.com/xamarin
 
 ### It feels stable, even with `alpha` tag
 
-The `alpha` makes it difficult for convincing your customer that this solution is the best, but from a technical point of view almost everything is ready.
+The `alpha` state makes it difficult for convincing your customers that this solution is the best, but from a technical point of view almost everything is ready.
 
 The only important missing components for me are : **better accessibility, map views, web views**. I pretty confident that all of them will come this year.
 
@@ -406,8 +402,6 @@ But, even if they thought about system specifities with Cupertino widgets, it is
 It is always sad to admit it when you have invested so much time in a technology you love but today **I feel a lot more productive with Flutter than I am with Xamarin and native solutions**. The tools are stable, very coherent, the native feeling is real, the performances are astonishing, and when you are developing on a platform, you could be sure that it will look perfect at first launch on the other platform : a really fun developer experience.
 
 ### Can I have a look to an app developped with it?
-
-![gallery](flutter-002.png)
 
 Go have a see at the [Flutter Gallery app](https://play.google.com/store/apps/details?id=io.flutter.gallery&hl=fr) which demonstrate many components.
 
