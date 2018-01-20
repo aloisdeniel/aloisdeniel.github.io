@@ -397,7 +397,7 @@ Only **iOS** and **Android** are supported at the moment.
 
 But a really cool feature of Dart is its ability [to transpile to Javascript](https://webdev.dartlang.org/), so with a well architectured solution you should be able to share a large part of your logic between your web application (moreover if you use React and flux), you mobile app and eventually a [Node.js](https://nodejs.org/en/) server.
 
-Flutter app development is the core of the future Operating System of Google known as [Fushia](https://fuchsia.googlesource.com/);
+Flutter app development is the core of the future Operating System of Google known as [Fuchsia](https://fuchsia.googlesource.com/);
 
 We could also dream of more supported platforms in the future with many more form factors supported (*desktop and TVs*). All the core technologies should allow that and we could have a unique development platform.
 
