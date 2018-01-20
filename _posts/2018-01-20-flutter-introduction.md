@@ -388,7 +388,7 @@ We could also dream of more supported platforms in the future with many more for
 
 You couldn't expect the Flutter community to be as developed as the Xamarin one, but you already have a very good selection of plugins and libraries. Since Dart has a strong community you also have many pure logical libraries.
 
-Though I missed several library I use in every Xamarin project : a rest client generator ([Refit](https://github.com/paulcbetts/refit)), a simple NoSQL local database ([LiteDB](https://github.com/mbdavid/LiteDB)).
+Though I missed several libraries I use in every Xamarin project : a rest client generator ([Refit](https://github.com/paulcbetts/refit)), a simple NoSQL local database ([LiteDB](https://github.com/mbdavid/LiteDB)).
 
 ### Great user experience
 
