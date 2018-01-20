@@ -116,7 +116,7 @@ class Customer {
 
 #### Asynchronicity
 
-You also have all the helper functionalities you could expect from a modern language like `Future`/`async`/`await` keywords that greatly simplifies the state management of asynchonous operations.
+You also have all the helper functionalities you could expect from a modern language like `async`/`await` keywords and the `Future` type that greatly simplifies the state management of asynchonous operations.
 
 Here a short example of an HTTP call to a REST api (it should look really familiar to any .NET developer that used `HttpClient`/`Task`/`async`/`await`/`JsonConvert`) :
 
