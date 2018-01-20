@@ -319,7 +319,7 @@ class HomePage extends StatelessWidget {
 }
 ```
 
-A lot better, no? You should also have noticed that all the framework is architectured this way : instead of having a `padding` property in many components, simply nest any component into a `Padding` object. Have you also noticed how easy it is to create a `ListView` compared to native solution ? I find the **APIs very well designed**, all focused on developer experience, simplicity and productivity. Congratulations to Google engineers.
+A lot better, no? You should also have noticed that all the framework is architectured this way : instead of having a `padding` property in many components, simply nest any component into a `Padding` object. Have you also noticed how easy it is to create a `ListView` compared to native solutions ? I find the **APIs very well designed**, all focused on developer experience, simplicity and productivity. Congratulations to Google engineers.
 
 #### Wide catalog of widgets
 
@@ -331,17 +331,17 @@ The great thing is that you can do your own catalog of custom widgets very easil
 
 #### Custom painting
 
-All the rendering is made with [Skia](https://skia.org/), and it is really easy to make a widget completely by drawing manually to a canvas. It is absolutely awesome when you have very specific components that don't fit native components **like charts** for examples.
+All the rendering is made with [Skia](https://skia.org/), and it is really easy to make a widget completely by drawing manually to a canvas. It is absolutely awesome when you have very specific components that don't fit native components, **like charts** for examples.
 
 This is perfectly doable in Xamarin with [SkiaSharp](https://github.com/mono/SkiaSharp) (I used it for my [Microcharts library](https://github.com/aloisdeniel/Microcharts)), but here it is built-in and that follows the same approach than other components.
 
 ### Any architectural standard?
 
-Unlike Xamarin with its well-known [Model-View-ViewModel](https://developer.xamarin.com/guides/xamarin-forms/enterprise-application-patterns/mvvm/) architectural pattern, Flutter doesn't have highly integrated architectures for designing your application.
+Unlike Xamarin with its well-known [Model-View-ViewModel](https://developer.xamarin.com/guides/xamarin-forms/enterprise-application-patterns/mvvm/) architectural pattern, Flutter doesn't have highly integrated architecture guidelines for designing your application.
 
-However, you can adopt a [Facebook flux](https://facebook.github.io/flux/) and [Redux](https://redux.js.org/) architectures since Flutter widgets are really similar to React components. There are already many community libraries available for that purpose : [greencat](https://github.com/alexeieleusis/greencat), [built_redux](https://github.com/davidmarne/flutter_built_redux), [redux.dart](https://github.com/johnpryan/redux.dart).
+However, you can adopt a [Facebook flux](https://facebook.github.io/flux/) and [Redux](https://redux.js.org/) architectures since Flutter widgets are really similar to React components. There are already many community-driven libraries available for that purpose : [greencat](https://github.com/alexeieleusis/greencat), [built_redux](https://github.com/davidmarne/flutter_built_redux), [redux.dart](https://github.com/johnpryan/redux.dart).
 
-Even the Flutter teams [have experimentations around it](https://github.com/flutter/flutter_flux), althougth it seems to be more a guidance for developers than a standard.
+Even the Flutter team [has experimentations around it](https://github.com/flutter/flutter_flux), althougth it seems to be more a guidance for developers than a standard.
 
 ### A rich documentation
 
@@ -353,14 +353,14 @@ The Dart way to write documentation is also very smart : you don't have to list 
 
 ### Accessing native features with plugins
 
-Flutter teams have included a way to access native features through [plugins and platform channels](https://flutter.io/platform-channels/). Yes, it should sound familiar to any Xamarin developer because you have the same concepts : a common abstraction over native features implemented differently with platform APIs.
+Flutter team has included a way to access native features through [plugins and platform channels](https://flutter.io/platform-channels/). Yes, it should sound familiar to any Xamarin developer because you have the same concepts : a common abstraction over native features implemented differently with platform APIs.
 
 The difference here is that you have to deal with native tools for implementing platform specific code : 
 
 * **iOS** : XCode, Cocoapods, Objective-C or Swift
 * **Android** : Gradle, Java or Kotlin
 
-This seems more complex at first to implement one compared to Xamarin (because there are C# binding/wrapper around every native API, and you have to switch between multiple environments), but it is easier to integrate native dependencies because you don't have to create bindings for them.
+This seems more complex at first to implement one compared to Xamarin (because there are C# binding/wrapper around every native API with Xamarin, but you have to switch between multiple environments with Flutter), but it is easier to integrate native dependencies because you don't have to create bindings for them.
 
 The great part is that Flutter team already provides and maintains a great [selection of plugins](https://github.com/flutter/plugins) : [connectivity](https://github.com/flutter/plugins/tree/master/packages/connectivity), [battery](https://github.com/flutter/plugins/tree/master/packages/battery), [shared_preferences](https://github.com/flutter/plugins/tree/master/packages/shared_preferences), [path_provider](https://github.com/flutter/plugins/tree/master/packages/path_provider) ...
 
