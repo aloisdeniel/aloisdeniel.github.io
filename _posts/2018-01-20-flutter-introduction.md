@@ -26,7 +26,7 @@ I almost never seen any [Dart](https://www.dartlang.org/) mention in many years 
 
 > Why this language? Their are plenties of already well-known languages, including Kotlin that is currently pushed for Android development. This will slow down user adoption for sure...
 
-Anyway, after a few lines of code I understood : this language is developped internally at Google, and they have a total control on how it should adapt on every platform, and you can feel it. It doesn't have a long history behind it, with various compatibility constraints (like Java/.NET environment). So everything has been designed for what you are using today, and it's really pleasant to use.
+Anyway, after a few lines of code I understood: this language is developped internally at Google, and they have a total control on how it should adapt on every platform, and you can feel it. It doesn't have a long history behind it, with various compatibility constraints (like Java/.NET environment). So everything has been designed for what you are using today, and it's really pleasant to use.
 
 ### A simple but powerful language
 
@@ -60,7 +60,7 @@ Moreover, unlike typical languages, there isn't any keyword for defining a metho
 
 You can have `static` and readonly fields with `final` keyword.
 
-Syntaxic sugar is also available to make constructor declarations simplier.
+Syntaxic sugar is also available to make constructor declarations simpler.
 
 ```dart
 class User {
@@ -140,8 +140,9 @@ Future<List<String>> getCustomers() async {
 The Dart language has built-in [Stream](https://www.dartlang.org/tutorials/language/streams) APIs that are well fitted for reactive-like programming.
 
 ```dart
-Future<String> join([String separator = ""]) async {
-  return (await this.toList()).join(separator);
+Future<int> sum() async {
+	final Stream<int> stream = this.openStream();
+	return await stream.reduce((a,b) => a + b);
 }
 ```
 
@@ -157,9 +158,9 @@ Visit the [Dart website](https://www.dartlang.org/guides/language/language-tour)
 
 ### Overview
 
-Flutter is a cross platform mobile app SDK that is different from Xamarin and React-Native in the way the rendering is done. Google, that is the company behind Flutter, chose to re-implement all the rendering pipeline on top of [Skia](https://skia.org/), [Dart](https://www.dartlang.org/).
+Flutter is a cross platform mobile app SDK that is different from Xamarin and React-Native in the way the rendering is done. Google, that is the company behind Flutter, chose to re-implement all the rendering pipeline on top of [Skia](https://skia.org/) and [Dart](https://www.dartlang.org/).
 
-This means that you have basically the exact same visual experience on every platform that runs Flutter. It is a lot like Hybrid web-based approaches, but without the overhead of the HTML and javascript interpreters. You have here only the mobile visual components needed and everything is compiled so you have the best performance.
+This means that you have basically the exact same visual experience on every platform that runs Flutter. It is a lot like Hybrid web-based approaches, but without the overhead of the HTML and javascript interpreters. You have here only the mobile visual components needed and everything is ahead-of-time compiled so you have the best performances.
 
 Fortunately, inside of it, Flutter provides specific components that make the user feels like he is on his platform. So you have iOS specific scrolling behaviors, typography, icons. But, you are absolutely not forced to use it, and that is the real power of Flutter : you are completely free since everything is included.
 
@@ -380,7 +381,7 @@ Only **iOS** and **Android** are supported at the moment.
 
 But a really cool feature of Dart is its ability [to transpile to Javascript](https://webdev.dartlang.org/), so with a well architectured solution you should be able to share a large part of your logic between your web application (moreover if you use React and flux), you mobile app and eventually a [Node.js](https://nodejs.org/en/) server.
 
-Flutter app development is the core of the future Operating System of Google formely known as [Fushia](https://fuchsia.googlesource.com/);
+Flutter app development is the core of the future Operating System of Google known as [Fushia](https://fuchsia.googlesource.com/);
 
 We could also dream of more supported platforms in the future with many more form factors supported (*desktop and TVs*). All the core technologies should allow that and we could have a unique development platform.
 
@@ -414,7 +415,7 @@ Stay tuned, I should also publish an app made with the tools soon!
 
 ### They have the potential
 
-Microsoft is still a step ahead in term of busines intergration and they also have awesome associated services like [Visual Studio App Center](https://appcenter.ms). They now have to improve a lot their mobile development tools else Flutter will become the new standard for mobile (*maybe software?*) development .
+Microsoft is still a step ahead in term of busines intergration and they also have awesome associated services like [Visual Studio App Center](https://appcenter.ms). They now have to improve a lot their mobile development tools otherwise Flutter will become the new standard for mobile (*maybe software?*) development .
 
 ### A crucial year for cross-platform development
 
