@@ -161,9 +161,9 @@ Flutter is a cross platform mobile app SDK that is different from Xamarin and Re
 
 This means that you have basically the exact same visual experience on every platform that runs Flutter. It is a lot like Hybrid web-based approaches, but without the overhead of the HTML and javascript interpreters. You have here only the mobile visual components needed and everything is compiled so you have the best performance.
 
-Fortunately, inside of it, Flutter provides specific components that make the user feels on its platform. So you have iOS specific scrolling behaviors, typography, icons. But, you are absolutely not forced to use it, and that is the real power of Flutter : you are completely free since everything is included.
+Fortunately, inside of it, Flutter provides specific components that make the user feels like he is on his platform. So you have iOS specific scrolling behaviors, typography, icons. But, you are absolutely not forced to use it, and that is the real power of Flutter : you are completely free since everything is included.
 
-The other great benefit of the engine is that you will have the same rendering on all system version. If your user have an old 4.0 limited Android device he will have the same visual rendering that the user that have a modern Android.
+The other great benefit of the engine is that you will have the same rendering on all system versions. If your user have an old 4.0 limited Android device he will have the same visual rendering that the user that have a modern Android.
 
 For anyone who debugged obscure visual bugs that appear on specific devices, or made dozens of Xamarin.Forms renderers, it is a real game changer.
 
