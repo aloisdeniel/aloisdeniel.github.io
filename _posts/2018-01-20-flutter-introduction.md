@@ -180,6 +180,8 @@ The steps are well described [on the website](https://flutter.io/setup/).
 
 #### IntelliJ / Android Studio
 
+![photo]({{ site.url }}/img/flutter_ide.png)
+
 I use [IntelliJ IDE](https://www.jetbrains.com/idea/) with the Flutter plugin, and I have to say that the experience is pretty good : you have templates for application projects, autocompletion, code navigation. The great thing for me is the reactivity of the text editor unlike the one from Visual Studio for mac that could become pretty laggy on big projects.
 
 I am not tool-obssessed developer (I could even accept a simple text editor and a CLI) so it may be a big deal for you if you love to have dozens of configured helper tools.
@@ -332,6 +334,8 @@ The great thing is that you can do your own catalog of custom widgets very easil
 
 #### Custom painting
 
+![photo]({{ site.url }}/img/flutter_custom-painter.png)
+
 All the rendering is made with [Skia](https://skia.org/), and it is really easy to make a widget completely by drawing manually to a canvas. It is absolutely awesome when you have very specific components that don't fit native components, **like charts** for examples.
 
 This is perfectly doable in Xamarin with [SkiaSharp](https://github.com/mono/SkiaSharp) (I used it for my [Microcharts library](https://github.com/aloisdeniel/Microcharts)), but here it is built-in and that follows the same approach than other components.
@@ -405,11 +409,13 @@ It is always sad to admit it when you have invested so much time in a technology
 
 ### Can I have a look to an app developped with it?
 
+![photo]({{ site.url }}/img/flutter_gallery.png)
+
 Go have a see at the [Flutter Gallery app](https://play.google.com/store/apps/details?id=io.flutter.gallery&hl=fr) which shows off many components.
 
 There is also the [Hamilton app](https://play.google.com/store/apps/details?id=com.hamilton.app&hl=fr) (*I'm not a big fan of the design choices, but anyway, look at how smooth it is*).
 
-Stay tuned, I should also publish an app made with the tools soon!
+Stay tuned, I should also publish an app made with the tools soon (yes the guitar app)!
 
 ## Microsoft has to react
 
