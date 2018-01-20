@@ -50,7 +50,7 @@ Again, type inference is also present in C#, but in Dart you can often omit it f
 
 The `dynamic` keyword looks a lot like the C# one too. 
 
-### Declaring objects
+#### Declaring objects
 
 There are several differences with Java or C#.
 
