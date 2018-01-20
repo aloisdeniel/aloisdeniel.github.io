@@ -26,11 +26,11 @@ I almost never seen any [Dart](https://www.dartlang.org/) mention in many years 
 
 >	Why this language? Their are plenties of already well-known languages, including Kotlin that is currently pushed for Android development. This will slow down user adoption for sure...
 
-Anyway, after a few lines of code I understood : this language is developped internally at Google, and they have a total control on how it should adapt on every platform, and you can feel it. It doesn't have a long history behind it, with various compatibility constraints (like Java/.NET environment). So everything has been designed for what you are using today, and it's really pleasant to yse.
+Anyway, after a few lines of code I understood : this language is developped internally at Google, and they have a total control on how it should adapt on every platform, and you can feel it. It doesn't have a long history behind it, with various compatibility constraints (like Java/.NET environment). So everything has been designed for what you are using today, and it's really pleasant to use.
 
 ### A simple but powerful language
 
-It is very easy to learn Dart syntax if you are familiar with OOP languages like C#, Java, Swift, Kotlin or Javascript. I made a quick selection of language specificities to make you more condifent with understanding the language.
+It is very easy to learn Dart syntax if you are familiar with OOP languages like C#, Java, Swift, Kotlin or Javascript. I made a quick selection of language specificities to make you more confident with it.
 
 #### Modules
 
@@ -56,10 +56,11 @@ There are several differences with Java or C#.
 
 First in Dart, interfaces are implicit : every class could be used as an interface with the `implements` keyword. Though, you can declare a class as `abstract` to make it not instanciable.
 
-More over Unlike typical languages, there isn't any keyword for defining a method as `private` or `public`. In Dart, you simply prefix your member by `_` for declaring it as private, else it is public. The interesting part is that a private member is visible from the library (aka module), so it's more an `internal` equivalent than private and it is clear that you have to think your software architecture differently around modules.
+Moreover, unlike typical languages, there isn't any keyword for defining a method as `private` or `public`. In Dart, you simply prefix your member by `_` for declaring it as private, else it is public. The interesting part is that a private member is visible from the library (aka module), so it's more an `internal` equivalent than private and it is clear that you have to think your software architecture differently around modules.
 
 You can have `static` and readonly fields with `final` keyword.
 
+Syntaxic sugar is also available to make constructor declarations simplier.
 
 ```dart
 class User {
@@ -115,7 +116,7 @@ class Customer {
 
 #### Asynchronicity
 
-You also have all the helpers functionalities you could expect from a modern language like `Future`/`async`/`await` keywords that greatly simplifies the state management of asynchonous operations.
+You also have all the helper functionalities you could expect from a modern language like `Future`/`async`/`await` keywords that greatly simplifies the state management of asynchonous operations.
 
 Here a short example of an HTTP call to a REST api (it should look really familiar to any .NET developer that used `HttpClient`/`Task`/`async`/`await`/`JsonConvert`) :
 
@@ -144,7 +145,7 @@ Future<String> join([String separator = ""]) async {
 }
 ```
 
-There are already reactive extensions available on [GitHub](https://github.com/ReactiveX/rxdart) for having more control (*retry, timer, throttle, combine, ...*) over Streams.
+There are already reactive extensions available on [GitHub](https://github.com/ReactiveX/rxdart) for having more control (*retry, timer, throttle, combine, ...*) over streams.
 
 #### I wasn't lost at all so you shouldn't be
 
@@ -156,11 +157,11 @@ Visit the [Dart website](https://www.dartlang.org/guides/language/language-tour)
 
 ### Overview
 
-Flutter is a cross platform  mobile app SDK that is different from Xamarin and React-Native in the way the rendering is done. Google, that is the company behind Flutter, chose to re-implement all the rendering pipeline on top of [Skia](https://skia.org/), [Dart]().
+Flutter is a cross platform mobile app SDK that is different from Xamarin and React-Native in the way the rendering is done. Google, that is the company behind Flutter, chose to re-implement all the rendering pipeline on top of [Skia](https://skia.org/), [Dart](https://www.dartlang.org/).
 
-This means that you have basically the exact same visual experience on every platform that runs Flutter. It is a lot like Hybrid web-based solutions, but without the overhead of the HTML and javascript interpreters. You have here only the mobile visual components needed and everything is compiled so you have awesome performances.
+This means that you have basically the exact same visual experience on every platform that runs Flutter. It is a lot like Hybrid web-based approaches, but without the overhead of the HTML and javascript interpreters. You have here only the mobile visual components needed and everything is compiled so you have the best performance.
 
-Fortunately, inside of it, Flutter provides specific components that make the user feels on the platform it runs from. So you have an iOS specific scrolling behaviors, typography, icon. But, you are absolutely not forced to use it, and that is the real power of Flutter : you are completely free since everything is included.
+Fortunately, inside of it, Flutter provides specific components that make the user feels on its platform. So you have iOS specific scrolling behaviors, typography, icons. But, you are absolutely not forced to use it, and that is the real power of Flutter : you are completely free since everything is included.
 
 The other great benefit of the engine is that you will have the same rendering on all system version. If your user have an old 4.0 limited Android device he will have the same visual rendering that the user that have a modern Android.
 
@@ -172,15 +173,15 @@ Check out the [official technical overview](https://flutter.io/technical-overvie
 
 #### Install
 
-The install was pretty smooth on my mac since I already had XCode, Android SDks and so on for Xamarin. I just had to clone the [Flutter](https://github.com/flutter/flutter) repository from GitHub (it is fully open-source), and that was all as far as I remember.
+The install was pretty smooth on my mac since I already had XCode, Android SDks and so on for Xamarin. I just had to clone the [Flutter](https://github.com/flutter/flutter) repository from GitHub (oh, yes, it is fully open-source), and that was all as far as I remember.
 
-Everything is well described [on the website](https://flutter.io/setup/). 
+The steps are well described [on the website](https://flutter.io/setup/). 
 
 #### IntelliJ / Android Studio
 
-I use IntelliJ IDE with the Flutter plugin, and I have to say that the experience is pretty good. you have templates for application projects. The great thing was the reactivity of the text editor that could become pretty laggy on Visual Studio for mac sometimes.
+I use [IntelliJ IDE](https://www.jetbrains.com/idea/) with the Flutter plugin, and I have to say that the experience is pretty good : you have templates for application projects, autocompletion, code navigation. The great thing for me is the reactivity of the text editor unlike the one from Visual Studio for mac that could become pretty laggy on big projects.
 
-I am not tool-obssessed developer (I could even accept a simple text editor and cli) so it may be a big deal for you if you love to have dozens of configured helper tools.
+I am not tool-obssessed developer (I could even accept a simple text editor and a CLI) so it may be a big deal for you if you love to have dozens of configured helper tools.
 
 #### Pub dependency manager
 
@@ -405,7 +406,7 @@ It is always sad to admit it when you have invested so much time in a technology
 
 Go have a see at the [Flutter Gallery app](https://play.google.com/store/apps/details?id=io.flutter.gallery&hl=fr) which demonstrate many components.
 
-There is also the [Hamilton app](https://play.google.com/store/apps/details?id=com.hamilton.app&hl=fr) (*I'm not a big fan of the design choices, but anyway, look at the fluidity*).
+There is also the [Hamilton app](https://play.google.com/store/apps/details?id=com.hamilton.app&hl=fr) (*I'm not a big fan of the design choices, but anyway, alook at how smooth it is*).
 
 Stay tuned, I should also publish an app made with the tools soon!
 
