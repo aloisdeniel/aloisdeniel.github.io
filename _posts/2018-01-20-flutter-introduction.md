@@ -203,7 +203,7 @@ Fortunately, Xamarin is also working on its [Live Player](https://www.xamarin.co
 
 There isn't any markup language for describing layouts (like [XAML with Xamarin Forms](https://developer.xamarin.com/guides/xamarin-forms/xaml/xaml-basics/) or UWP) : very unsettling first. But you will see that it is perfectly adaptated to the APIs functionnal-like philosophy.
 
-So, to describe any visual component onto the user screen you will create a `Widget` class that implements a `build` method which explains how to structure the layout as a tree of nested objects. This method will be called everytime your component changes and the Flutter framework manages the dif checkcking onto this immutable tree *(you are a React-native developer? this should sound very familiar)*.
+So, to describe any visual component onto the user screen you will create a `Widget` class that implements a `build` method which explains how to structure the layout as a tree of nested objects. This method will be called everytime your component changes and the Flutter framework manages the diff between this immutable tree and the previous one *(you are a React-native developer? this should sound very familiar)*.
 
 ```dart
 class HomePage extends StatelessWidget {
