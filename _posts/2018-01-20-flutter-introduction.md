@@ -156,6 +156,8 @@ Visit the [Dart website](https://www.dartlang.org/guides/language/language-tour)
 
 ## The framework : Flutter
 
+![photo]({{ site.url }}/img/flutter_logo.png)
+
 ### Overview
 
 Flutter is a cross platform mobile app SDK that is different from Xamarin and React-Native in the way the rendering is done. Google, that is the company behind Flutter, chose to re-implement all the rendering pipeline on top of [Skia](https://skia.org/) and [Dart](https://www.dartlang.org/).
