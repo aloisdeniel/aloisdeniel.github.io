@@ -334,9 +334,9 @@ The great thing is that you can do your own catalog of custom widgets very easil
 
 #### Custom painting
 
-![photo]({{ site.url }}/img/flutter_custom-painter.png)
-
 All the rendering is made with [Skia](https://skia.org/), and it is really easy to make a widget completely by drawing manually to a canvas. It is absolutely awesome when you have very specific components that don't fit native components, **like charts** for examples.
+
+![photo]({{ site.url }}/img/flutter_custom-painter.png)
 
 This is perfectly doable in Xamarin with [SkiaSharp](https://github.com/mono/SkiaSharp) (I used it for my [Microcharts library](https://github.com/aloisdeniel/Microcharts)), but here it is built-in and that follows the same approach than other components.
 
