@@ -404,9 +404,9 @@ It is always sad to admit it when you have invested so much time in a technology
 
 ### Can I have a look to an app developped with it?
 
-Go have a see at the [Flutter Gallery app](https://play.google.com/store/apps/details?id=io.flutter.gallery&hl=fr) which demonstrate many components.
+Go have a see at the [Flutter Gallery app](https://play.google.com/store/apps/details?id=io.flutter.gallery&hl=fr) which shows off many components.
 
-There is also the [Hamilton app](https://play.google.com/store/apps/details?id=com.hamilton.app&hl=fr) (*I'm not a big fan of the design choices, but anyway, alook at how smooth it is*).
+There is also the [Hamilton app](https://play.google.com/store/apps/details?id=com.hamilton.app&hl=fr) (*I'm not a big fan of the design choices, but anyway, look at how smooth it is*).
 
 Stay tuned, I should also publish an app made with the tools soon!
 
