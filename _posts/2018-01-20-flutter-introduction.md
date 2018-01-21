@@ -219,7 +219,7 @@ class HomePage extends StatelessWidget {
 }
 ```
 
-So, while this tree is immutable you will not be able to modify it afterwards. So, for example, for hiding a component you wouldn't change its visibility (*like ou would have done with native UI APIs or Xamarin forms*), but simply don't include the component into the next entirely new built tree.
+So, while this tree is immutable you will not be able to modify it afterwards. So, for example, for hiding a component you wouldn't change its visibility (*like you would have done with native UI APIs or Xamarin forms*), but simply don't include the component into the next entirely new built tree.
 
 ```dart
 Widget build(BuildContext context) {
