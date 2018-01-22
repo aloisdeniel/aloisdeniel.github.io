@@ -203,6 +203,14 @@ Concretely, it means that with development mode your application is updating on 
 ![Hot reloading](https://flutter.io/images/intellij/hot-reload.gif)
 
 Fortunately, Xamarin is also working on its [Live Player](https://www.xamarin.com/live). To be clear, in comparison with Flutter, Xamarin Live Player is a lot more limited and could not be used for real life production development. But I know that [James Montemagno](https://montemagno.com/) and [Frank Krueger](http://praeclarum.org/) are working hard on it, and the recent announcement around Mono interpreter should bring it in the right direction.
+
+#### Asset management
+
+![photo]({{ site.url }}/img/flutter_assets.png)
+
+something that always bothered me while developing mobile app is the time you lost at exporting assets for various target platforms and densities. 
+
+With flutter you now have to manage only one set of images and resources. You still have to provide densities variants (in `./@X.X/` folders), but it makes the whole process simpler.
  
 ### Designing user interfaces
 
