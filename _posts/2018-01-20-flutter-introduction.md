@@ -208,7 +208,7 @@ Fortunately, Xamarin is also working on its [Live Player](https://www.xamarin.co
 
 ![photo]({{ site.url }}/img/flutter_assets.png)
 
-something that always bothered me while developing mobile app is the time you lost at exporting assets for various target platforms and densities. 
+Something that always bothered me while developing mobile app is the time you lost at exporting assets for various target platforms and densities. 
 
 With flutter you now have to manage only one set of images and resources. You still have to provide densities variants (in `./@X.X/` folders), but it makes the whole process simpler.
  
