@@ -252,7 +252,7 @@ Widget build(BuildContext context) {
 
 After previous paragraph you should be very worried about code readability for complex user interfaces.
 
-That's why everything should be splitted as multiple small components you then compose.
+That's why everything should be splitted into multiple small components you then compose.
 
 Imagine you want a vertical list of users, you could do everything in one widget.
 
