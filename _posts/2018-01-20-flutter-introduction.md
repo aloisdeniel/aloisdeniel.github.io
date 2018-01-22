@@ -20,6 +20,8 @@ Maybe you never heard about me, but I have been a Xamarin developer for four yea
 
 ## The language : Dart
 
+![photo]({{ site.url }}/img/flutter_dart_logo.png)
+
 ### Seriously ?
 
 I almost never seen any [Dart](https://www.dartlang.org/) mention in many years and  my first thought when I knew that the Flutter team chose this language for the core tools was : 
@@ -244,7 +246,9 @@ After previous paragraph you should be very worried about code readability for c
 
 That's why everything should be splitted as multiple small components you then compose.
 
-Imagine you want a vertical list of users, you could do everything in one widget:
+Imagine you want a vertical list of users, you could do everything in one widget.
+
+![photo]({{ site.url }}/img/flutter_list.png)
 
 ```dart
 class HomePage extends StatelessWidget {
@@ -274,7 +278,7 @@ class HomePage extends StatelessWidget {
 }
 ```
 
-This starts to become difficult to understand, so instead you would have prefered this :
+This could to be difficult to understand for a newcomer, so instead you would have prefered to split it into several classes.
 
 ```dart
 class UserTile extends StatelessWidget {
@@ -411,7 +415,7 @@ Though I missed several libraries I use in every Xamarin project : a rest client
 
 The most important thing when developing a software is what the user will have between his hands. You could have the best developer tools, if the user interface doesn't feel good for the user it's not worth it.
 
-But Google did great with Flutter because the performances are great and the components are beautiful. 
+But Google did great with Flutter because the performances are excellent and the components are beautiful. 
 
 But, even if they thought about system specifities with Cupertino widgets, it is arguable that you Flutter app could be less well integrated to the user current operating system version than a native/Xamarin application. I personnaly find it interresting because it also means that you will have access to all widgets even on older system versions : no more specific UI bugs that could become a nightmare to fix.
 
@@ -433,7 +437,7 @@ Stay tuned, I should also publish an app made with the tools soon (yes the guita
 
 ### They have the potential
 
-Microsoft is still a step ahead in term of busines intergration and they also have awesome associated services like [Visual Studio App Center](https://appcenter.ms). They now have to improve a lot their mobile development tools otherwise Flutter will become the new standard for mobile (*maybe software?*) development .
+Microsoft is still a step ahead in term of busines integration and they also have awesome associated services like [Visual Studio App Center](https://appcenter.ms). They now have to improve a lot their mobile development tools otherwise Flutter will become the new standard for mobile (*maybe software?*) development .
 
 ### A crucial year for cross-platform development
 
@@ -441,6 +445,6 @@ That will sound very optimistic : **finally, 2018 will be the year where cross-p
 
 ### Please, try it yourself!
 
-Finally, just try [Flutter](http://flutter.io), you should understand really quickly why this post is so enthusiast. I hope Microsoft teams will do so and take inspiration from it too!
+Finally, just try [Flutter](http://flutter.io), you should understand really quickly why this post is so enthusiastic. I hope Microsoft teams will do so and take inspiration from it too!
 
 Thank you for reading.
