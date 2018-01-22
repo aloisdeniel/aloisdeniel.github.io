@@ -397,7 +397,7 @@ I'm sure they took inspiration from [Xamarin plugins](https://github.com/xamarin
 
 ## Current state
 
-### It feels stable, even with `alpha` tag
+### It feels stable, even with an `alpha` tag
 
 The `alpha` state makes it difficult for convincing your customers that this solution is the best, but from a technical point of view almost everything is ready.
 
