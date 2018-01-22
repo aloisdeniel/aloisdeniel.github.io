@@ -168,7 +168,7 @@ This means that you have basically the exact same visual experience on every pla
 
 Fortunately, inside of it, Flutter provides specific components that make the user feels like he is on his platform. So you have iOS specific scrolling behaviors, typography, icons. But, you are absolutely not forced to use it, and that is the real power of Flutter : you are completely free since everything is included.
 
-The other great benefit of the engine is that you will have the same rendering on all system versions. If your user have an old 4.0 limited Android device he will have the same visual rendering that the user that have a modern Android.
+The other great benefit of the engine is that you will have the same rendering on all system versions. If your user have an old 4.0 limited Android device he will have the same visual rendering that the user that has a modern Android.
 
 For anyone who debugged obscure visual bugs that appear on specific devices, or made dozens of Xamarin.Forms renderers, it is a real game changer.
 
