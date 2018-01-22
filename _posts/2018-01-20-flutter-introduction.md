@@ -431,7 +431,7 @@ But, even if they thought about system specifities with Cupertino widgets, it is
 
 It is always sad to admit it when you have invested so much time in a technology you love but today **I feel a lot more productive with Flutter than I am with Xamarin and native solutions**. The tools are stable, very coherent, the native feeling is real, the performances are astonishing, and when you are developing on a platform, you can be sure that it will look perfect at first launch on the other platform : all of this results in a really fun developer experience.
 
-### Can I have a look to an app developped with it?
+### Can I have a look to an app developed with it?
 
 ![photo]({{ site.url }}/img/flutter_gallery.png)
 
