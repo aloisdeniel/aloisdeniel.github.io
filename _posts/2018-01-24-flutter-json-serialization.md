@@ -277,7 +277,7 @@ pub run build_runner <watch|build>
 ```
 ## Conclusion
 
-The whole process could seem heavy compared to reflection based solutions, but it is a real benefit for performances. If you adopt the option 2, you will also benefit of data validation, hash codes and other functionalities that go far beyond serialization (though it is not always needed).
+The whole process could seem heavy compared to reflection based solutions, but it is a real benefit from a performance point of view. If you adopt the most complex option (2, with `build_value`), you will also have data validation, hash codes and other functionalities that go far beyond serialization (though it is not always needed).
 
 As suggested on [built_value](https://github.com/google/built_value.dart) documentation, you may want to add a code snippet to your editor for a quicker type declaration.
 
