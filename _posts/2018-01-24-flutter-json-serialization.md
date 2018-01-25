@@ -16,7 +16,7 @@ A common task when building application nowadays consists of communicating with 
 
 ## Converting a JSON string to a map
 
-Creating a `Map` object from a JSON content is pretty straightforward and integrated not the SDK with the `dart:convert` package.
+Creating a `Map` object from a JSON content is pretty straightforward and integrated to the SDK with the `dart:convert` package.
 
 ```dart
 import 'dart:convert';
