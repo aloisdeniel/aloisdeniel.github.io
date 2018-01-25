@@ -78,7 +78,19 @@ class Customer extends Object with _$PersonSerializerMixin {
 
   Person(this.firstname, this.lastname, this. company);
 
+  // Boilerplate code needed to wire-up generated code
   factory Customer.fromJson(Map<String, dynamic> json) => _$CustomerFromJson(json);
+}
+
+@JsonSerializable()
+class Company extends Object with _$CompanySerializerMixin {
+
+  Company(this.name);
+
+  String name;
+  
+  // Boilerplate code needed to wire-up generated code
+  factory Company.fromJson(Map<String, dynamic> json) => _$CompanyFromJson(json);
 }
 ```
 
@@ -172,7 +184,7 @@ abstract class Customer implements Built<Customer, CustomerBuilder> {
   String get lastname;
   Company get company; // This is a nested Built<..,..>
 	
-  // Boilerplate code that is needed by generated part
+  // Boilerplate code needed to wire-up generated code
   Customer._();
   factory Customer([updates(CustomerBuilder b)]) = _$Customer;
   static Serializer<Customer> get serializer => _$customerSerializer;
@@ -184,7 +196,7 @@ abstract class Company implements Built<Company, CompanyBuilder> {
   // Various fields
   String get name;
 
-  // Boilerplate code that is needed by generated part
+  // Boilerplate code needed to wire-up generated code
   Company._();
   factory Company([updates(CompanyBuilder b)]) = _$Company;
   static Serializer<Company> get serializer => _$companySerializer;
