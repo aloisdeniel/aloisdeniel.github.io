@@ -112,7 +112,7 @@ To generate the `*.g.dart` files, run the `dart tool/build.dart` command.
 
 ### 5°) Use it
 
-To deserialize you JSON from a json string, just use the `<Model>.fromJson(<json>)` constructor to instantiate you object from you decoded JSON.
+To deserialize your JSON from a json string, just use the `<Model>.fromJson(<json>)` constructor to instantiate you object from you decoded JSON.
 
 ```dart
 final json = JSON.decode('{ "firstname" : "John", "lastname" : "Doe", "company" : { "name": "Awesome Inc." } }');
@@ -241,9 +241,9 @@ Future main(List<String> args) async {
 
 To generate the `*.g.dart` files, run the `dart tool/build.dart` command.
 
-### 5°) Use it
+### 6°) Use it
 
-To deserialize you JSON from your string, we need to plug the `StandardJsonPlugin` to serializers first. Use the `standardSerializers.deserializeWith` method to instantiate you object from you decoded JSON.
+To deserialize your JSON from your string, we need to plug the `StandardJsonPlugin` to serializers first. Use the `standardSerializers.deserializeWith` method to instantiate you object from you decoded JSON.
 
 ```dart
 import 'package:<YOUR PROJECT ID>/model.dart';
