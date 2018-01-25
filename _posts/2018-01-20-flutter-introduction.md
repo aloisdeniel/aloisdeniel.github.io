@@ -12,7 +12,7 @@ tags:
   - versus
 ---
 
-Maybe you've never heard about me, but I have been a Xamarin developer for four years now, always obsessed in code sharing strategies. You can't imagine how excited I was to find tools which allowed me to share big amounts of logic in the C# language, and today I feel the same way with [Flutter](http://www.flutter.io). In this long post, I will try to share various reflections after several weeks of experimentation.
+Maybe you've never heard of me, but I have been a Xamarin developer for four years now, always obsessed with code sharing strategies. You can't imagine how exited I was when I first discovered tools which allowed me to share a large amount of logic in the C# language; and today I feel the same way with [Flutter](http://www.flutter.io). In this long post, I will try to share various reflections after several weeks of experimentation.
 
 ##### Disclaimer
 
@@ -24,11 +24,11 @@ Maybe you've never heard about me, but I have been a Xamarin developer for four 
 
 ### Seriously ?
 
-For many years I have seen very little information about [Dart](https://www.dartlang.org/) and my first thought when I knew that the Flutter team chose this language for the core tools was : 
+For many years I have seen very little information about [Dart](https://www.dartlang.org/), and my first thought when I knew that the Flutter team chose this language for the core tools was : 
 
-> Why this language? Their are plenties of already well-known languages, including Kotlin that is currently pushed for Android development. This will slow down user adoption for sure...
+> Why this language? Their are plenty of already well-known languages, including Kotlin that is currently being pushed for Android development. This will slow down user adoption for sure...
 
-Anyway, after a few lines of code I understood: this language is developed internally at Google, and they have a total control on how it should adapt on every platform, and you can feel it. It doesn't have a long history behind it, with various compatibility constraints (like Java/.NET environment). So everything has been designed for what you are using today, and it's really pleasant to use.
+Anyway, after a few lines of code I understood: this language is developed internally at Google, and they have total control over how it should adapt on every platform, and you can feel it. It doesn't have a long history behind it, with various compatibility constraints (like Java/.NET environment). So everything has been designed for what you are using today, and it's really pleasant to use.
 
 ### A simple but powerful language
 
@@ -152,9 +152,9 @@ There are already reactive extensions available on [GitHub](https://github.com/R
 
 #### I wasn't lost at all so you shouldn't be
 
-Many features seem to be picked-up from existings languages, with simplification and easiness of use in mind. I quickly felt at home, and you will see that it matches pretty well the goals of Flutter. I hope that you got the philosophy behind this cute language (*it personally reminds me of the simplicity of [Lua](https://www.lua.org/), which I love, but with a lot more functionality*). 
+Many features seem to be borrowed from existing languages, with simplification and easiness of use in mind. I quickly felt at home, and you will see that it matches pretty well the goals of Flutter. I hope that you got the philosophy behind this cute language (*it personally reminds me of the simplicity of [Lua](https://www.lua.org/), which I love, but with a lot more functionality*). 
 
-Visit the [Dart website](https://www.dartlang.org/guides/language/language-tour) to learn a lot more about it (their are more cool features like `callable class`, `factory constructors`, `class: mixins`) and [DartPad](https://dartpad.dartlang.org/) to experiment with it right in the browser.
+Visit the [Dart website](https://www.dartlang.org/guides/language/language-tour) to learn a lot more about it (there are more cool features like `callable class`, `factory constructors`, `class: mixins`) and [DartPad](https://dartpad.dartlang.org/) to experiment it right in the browser.
 
 ## The framework : Flutter
 
@@ -164,9 +164,9 @@ Visit the [Dart website](https://www.dartlang.org/guides/language/language-tour)
 
 Flutter is a cross platform mobile app SDK that is different from Xamarin and React-Native in the way the rendering is done. Google, that is the company behind Flutter, chose to re-implement the entire rendering pipeline on top of [Skia](https://skia.org/) and [Dart](https://www.dartlang.org/).
 
-This means that you have basically the exact same visual experience on every platform that runs Flutter. It is a lot like Hybrid web-based approaches, but without the overhead of the HTML and javascript interpreters. Here you only have the mobile visual components needed and everything is compiled ahead of time so you have the best performance.
+This means that you have basically the exact same visual experience on every platform that runs Flutter. It is a lot like Hybrid web-based approaches, but without the overhead of the HTML and javascript interpreters. Here you only have the mobile visual components needed and everything is ahead-of-time compiled so you have the best performance.
 
-Fortunately, inside of it, Flutter provides specific components that make the user feel like he is on his platform. So you have iOS specific scrolling behaviors, typography, icons. But, you are absolutely not forced to use them, and that is the real power of Flutter : you are completely free since everything is included.
+Fortunately, inside of it, Flutter provides specific components that make the user feel like he is on his platform. So you have iOS specific scrolling behaviors, typography, icons. But, you are absolutely not forced to use the,, and that is the real power of Flutter : you are completely free since everything is included.
 
 The other great benefit of the engine is that you will have the same rendering on all system versions. If your user has an old 4.0 limited Android device he will have the same visual rendering as the user that has a modern Android.
 
@@ -196,7 +196,7 @@ Dart has its own built-in very simple dependency manager (*just like NuGet or np
 
 #### Hot Reloading
 
-Flutter provides two modes : a **development** (also called `slow mode`) one and a **release** one. The first mode packages an interpreter that allows you to push new code continuously. The second one actually compiles it to native code to offers the best performances and allow tree shaking to have smaller binaries.
+Flutter provides two modes : a **development** (also called `slow mode`) one and a **release** one. The first mode packages an interpreter that allows you to push new code continuously. The second one actually compiles it to native code to offer the best performance and allow tree shaking resulting in smaller binaries.
 
 Concretely, it means that with development mode your application is updating on your device while you are typing your code. It is a major productivity boost : it will change completely the way you work. To be honest, once you tried it, it is difficult to go back to a cycle where you compile your entire app just for checking that a padding is okay.
 
@@ -286,7 +286,7 @@ class HomePage extends StatelessWidget {
 }
 ```
 
-This could to be difficult to understand for a newcomer, so instead you would have prefered to split it into several classes.
+This could to be difficult to understand for a newcomer, so instead you might prefer to split it into several classes.
 
 ```dart
 class UserTile extends StatelessWidget {
@@ -342,7 +342,7 @@ A lot better, no? You should also have noticed that all the framework is archite
 
 The number of widgets already available is just incredible. It's more adapted to material design, but you also have Cupertino components that look more like iOS native components. Every widget looks clean, I haven't seen any bugs while using it.
 
-Check-out the [documentation](https://flutter.io/widgets/) and [Flutter Gallery app](https://play.google.com/store/apps/details?id=io.flutter.gallery&hl=fr) for examples of widget usage and demonstrations.
+Check-out the [documentation](https://flutter.io/widgets/) and [Flutter Gallery app](https://play.google.com/store/apps/details?id=io.flutter.gallery&hl=fr) for examples widget usage and demonstrations.
 
 The great thing is that you can make your own catalog of custom widgets very easily, by implementing your visual design guidelines, and everthing will run perfectly on all platforms.
 
@@ -370,7 +370,7 @@ I have to say that the documentation is very complete and clear.
 
 Since you have all the code cloned on your computer, you can navigate directly to it at any time and look at the implementation under the documentation comments too. Again, it is simple and handy.
 
-The Dart way to document code is also very smart : you don't have to list all the parameters in a list, but just mark them into you description. This removes a lot of boilerplate documentation that is almost always redundant with description in other languages.
+The Dart way to document code is also very smart : you don't have to list all the parameters in a list, but just mark them in your description. This removes a lot of boilerplate documentation that is almost always redundant with description in other languages.
 
 ```dart
 /// Defines a flag.
@@ -389,7 +389,7 @@ The difference here is that you have to deal with native tools for implementing 
 * **iOS** : XCode, Cocoapods, Objective-C or Swift
 * **Android** : Gradle, Java or Kotlin
 
-This seems more complex at first to implement one compared to Xamarin (because there are C# binding/wrapper around every native API with Xamarin, but you have to switch between multiple environments with Flutter), but it is easier to integrate native dependencies because you don't have to create bindings for them.
+This seems more complex to implement at first compared to Xamarin (because there are C# binding/wrapper around every native API with Xamarin, but you have to switch between multiple environments with Flutter), but it is easier to integrate native dependencies because you don't have to create bindings for them.
 
 The great part is that Flutter team already provides and maintains a great [selection of plugins](https://github.com/flutter/plugins) : [connectivity](https://github.com/flutter/plugins/tree/master/packages/connectivity), [battery](https://github.com/flutter/plugins/tree/master/packages/battery), [shared_preferences](https://github.com/flutter/plugins/tree/master/packages/shared_preferences), [path_provider](https://github.com/flutter/plugins/tree/master/packages/path_provider) ...
 
@@ -401,23 +401,23 @@ I'm sure they took inspiration from [Xamarin plugins](https://github.com/xamarin
 
 The `alpha` state makes it difficult to convince your customers that this solution is the best, but from a technical point of view almost everything is ready.
 
-The only important missing components for me are : **better accessibility, map views, web views**. I pretty confident that all of them will come this year.
+The only important missing components for me are : **better accessibility, map views, web views**. I am pretty confident that all of them will come this year.
 
 ### Only two target platforms with Flutter, but web compatible
 
 Only **iOS** and **Android** are supported at the moment. 
 
-But a really cool feature of Dart is its ability [to transpile to Javascript](https://webdev.dartlang.org/), so with a well architectured solution you should be able to share a large part of your logic between your web application (moreover if you use React and flux), you mobile app and eventually a [Node.js](https://nodejs.org/en/) server.
+But a really cool feature of Dart is its ability [to transpile to Javascript](https://webdev.dartlang.org/), so with a well architectured solution you should be able to share a large part of your logic between your web application (moreover if you use React and flux), your mobile app and eventually a [Node.js](https://nodejs.org/en/) server.
 
-Flutter app development is the core of the future Operating System of Google known as [Fuchsia](https://fuchsia.googlesource.com/);
+Flutter app development is also the core of the future Operating System of Google known as [Fuchsia](https://fuchsia.googlesource.com/);
 
-We could also dream of more supported platforms in the future with many more form factors supported (*desktop and TVs*). All the core technologies should allow that and we could have a unique development platform.
+We might also dream of more supported platforms in the future with many more form factors supported (*desktop and TVs*). All the core technologies should allow that and we could have a unique development platform.
 
 ### Still a growing community
 
 You wouldn't expect the Flutter community to be as developed as the Xamarin one, but you already have a very good selection of plugins and libraries. Since Dart has a strong community you also have many pure logical libraries.
 
-Though I missed several libraries I use in every Xamarin project : a rest client generator ([Refit](https://github.com/paulcbetts/refit)), a simple NoSQL local database ([LiteDB](https://github.com/mbdavid/LiteDB)).
+Though I miss several libraries I currently use in every Xamarin project : a rest client generator ([Refit](https://github.com/paulcbetts/refit)), a simple NoSQL local database ([LiteDB](https://github.com/mbdavid/LiteDB)).
 
 ### Great user experience
 
@@ -425,11 +425,11 @@ The most important thing when developing a software is what the user will have b
 
 But Google did great with Flutter because the performance is excellent and the components are beautiful. 
 
-But, even if they thought about system specifities with Cupertino widgets, it is arguable that your Flutter app could be less well integrated to the user's current operating system version than a native/Xamarin application. I personaly find it interresting because it also means that you will have access to all widgets even on older system versions : no more specific UI bugs that could become a nightmare to fix.
+But, even if they thought about system specifities with Cupertino widgets, it is arguable that your Flutter app could be less well integrated to the user's current operating system version than a native/Xamarin application. I personally find it interesting because it also means that you will have access to all widgets even on older system versions : no more specific UI bugs that could become a nightmare to fix.
 
 ### Already the most productive solution
 
-It is always sad to admit it when you have invested so much time in a technology you love but today **I feel a lot more productive with Flutter than I am with Xamarin and native solutions**. The tools are stable, very coherent, the native feeling is real, the performance is astonishing, and when you are developing on a platform, you can be sure that it will look perfect at first launch on the other platform : a really fun developer experience.
+It is always sad to admit it when you have invested so much time in a technology you love but today **I feel a lot more productive with Flutter than I am with Xamarin and native solutions**. The tools are stable, very coherent, the native feeling is real, the performances are astonishing, and when you are developing on a platform, you can be sure that it will look perfect at first launch on the other platform : all of this results in a really fun developer experience.
 
 ### Can I have a look to an app developed with it?
 
@@ -439,7 +439,7 @@ Go have a see at the [Flutter Gallery app](https://play.google.com/store/apps/de
 
 There is also the [Hamilton app](https://play.google.com/store/apps/details?id=com.hamilton.app&hl=fr) (*I'm not a big fan of the design choices, but anyway, look at how smooth it is*).
 
-Stay tuned, I should also publish an app made with the tools soon (yes the guitar app)!
+Stay tuned, I will also publish an app made with the tools soon (yes the guitar app)!
 
 ## Microsoft has to react
 
@@ -449,7 +449,7 @@ Microsoft is still a step ahead in term of business integration and they also ha
 
 ### A crucial year for cross-platform development
 
-That will sound very optimistic : **finally, 2018 will be the year where cross-platform development will feel as polished as native development.** And I think even the more reticient native developers could be tempted by those solutions. 
+That will sound very optimistic : **finally, 2018 will be the year where cross-platform development will feel as polished as native development.** And I think even the more reticient native developers could be tempted by these solutions. 
 
 ### Please, try it yourself!
 
