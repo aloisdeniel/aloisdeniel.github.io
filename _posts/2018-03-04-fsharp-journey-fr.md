@@ -19,7 +19,7 @@ Je pense que les développeurs F# introduisent souvent mal le langage à leurs c
 
 ### Citations courantes
 
-Il est ainsi courant de d'entendre ce type de déclaration (qui sont certes vraies) qui peuvent prêter à confusion ou imprécisions.
+Il est ainsi courant de d'entendre ce type de déclarations (qui sont certes vraies) qui peuvent prêter à confusion ou imprécisions.
 
 > La programmation fonctionnelle est une approche totalement différente de la programmation orientée objet.
 
