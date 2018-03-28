@@ -39,7 +39,7 @@ Cette déclaration n'est pas prise au sérieux. Il est difficilement concevable 
 
 ### Comment je le présenterais
 
-Le F# est un langage de la famille Microsoft .NET qui simplifie certaines déclarations grâce à une plus variété d'opérateurs et des APIs adaptées.
+Le F# est un langage de la famille Microsoft .NET qui simplifie certaines déclarations grâce à une plus grande variété d'opérateurs et des APIs adaptées.
 
 Pour commencer à développer en F#, vous avez déjà tous les outils, tout ce que vous connaissez déjà pour le C# s'applique également ici : créez un projet Visual Studio et n'hésitez pas à le référencer depuis un projet habituel développé (Xamarin, UWP, .NET Core, ...).
 
