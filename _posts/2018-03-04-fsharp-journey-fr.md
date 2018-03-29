@@ -23,7 +23,7 @@ Il est ainsi courant de d'entendre ce type de déclarations qui peuvent prêter 
 
 > La programmation fonctionnelle est une approche totalement différente de la programmation orientée objet.
 
-Lorsque l'on est familier avec la programmation orientée objet, il est difficilement concevable d'abandonner tous ces concepts qui nous sont chers. De plus cet assertion est bien trop extrême puisque de nombreux concepts sont partagés par les deux approches.
+Lorsque l'on est familier avec la programmation orientée objet, il est difficilement concevable d'abandonner tous ces concepts qui nous sont chers. De plus cette assertion est bien trop extrême puisque de nombreux concepts sont partagés par les deux approches.
 
 > Tout est fonction en F#.
 
