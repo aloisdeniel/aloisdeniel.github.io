@@ -32,7 +32,7 @@ A first natural step would be to unify the platform specific branches. To achiev
 
 ![photo]({{ site.url }}/img/ftf_comic_2.png)
 
-Okay, we now have a far less specific tools and potential specific issues and simpler global overall process. Great!
+Okay, we now have a far less specific toolchain and less potential specific issues : a simpler global overall process. Great!
 
 ## What if ... ?
 
