@@ -26,17 +26,17 @@ So, we've got a first step where the designer create the visual content and expo
 
 Concerning the business logic, the developers will have to make sure they have clear specs to not introduce different behaviours.
 
-## Unifying development
+## Unified development
 
 A first natural step would be to unify the platform specific branches. To achieve this, you can bet on a cross-platform solution. My personnal favorite today is [Flutter](http://www.flutter.io), but [Xamarin](http://www.xamarin.com) is a great choice too.
 
 ![photo]({{ site.url }}/img/ftf_comic_2.png)
 
-Okay, we now have a lot more specific tools and potential specific issues and simpler global overall process. Great!
+Okay, we now have a far less specific tools and potential specific issues and simpler global overall process. Great!
 
 ## What if ... ?
 
-But, I'm sure you noticed that the first tasks of the developer is to adapt the designer resources for its platform. This is a really long task where the developer has to understand what the designer thought when he created the content.
+But, I'm sure you noticed that the first tasks of the developer are to adapt the designer resources to its platform. Those are really long tasks where the developer has to understand what the designer thought when he created the content.
 
 Just imagine if developers could directly use the content of the designer as components into their code.
 
