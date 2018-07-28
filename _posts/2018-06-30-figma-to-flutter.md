@@ -54,13 +54,26 @@ I started to work on a little tool that converts Figma files to Flutter widgets 
 
 Even if still under active development, you can already try it in your browser here : [Figma-to-Flutter](http://aloisdeniel.github.com/figma-to-flutter).
 
-I will probably write a more detailled post later on how it works, and how to use it from your build environment.
+I will probably write a more detailled post later on how it works, its features and how to use it from your build environment.
 
-## Still experimental
+## Still very experimental
 
-Unfortunately several things are missing from my implementation and Figma doesn't cover everything that is needed for modern dynamic layouts and I hope that they will add :
+Several things are still missing from my implementation :
+
+* **Angular and diamond gradients** : only linear and radial gradient are supported
+* **Text supports only solid fills** : it is not possible to have text filled with effects.
+* **Theme - colors and text styles** : an `InheritedWidget` will be generated to be able to update colors and styles globally.
+* **Images** : I plan to add image support with possibility to override source from code
+* **Only "Pass Through" blend mode**
+* **Maybe more... :)**
+
+Unfortunately Figma doesn't cover everything that is needed for modern dynamic layouts and I hope that they will add it :
 
 * **Element-to-element constraints** : at the moment you can declare relative margin constraint only from an element to its parent. Unfortunately this doesn't cover dynamic stack of elements that are common.
+
+## I use Xamarin too
+
+I wait for the [Drawing Spec](https://github.com/xamarin/Xamarin.Forms/issues/2452) to be implemented to eventually support Xamarin too.
 
 If you want to react to this, please post a comment!
 
