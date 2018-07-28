@@ -66,11 +66,13 @@ Several things are still missing from my implementation (stay tuned for new feat
 * **Images** : I plan to add image support with possibility to override source from code
 * **Only "Pass Through" blend mode**
 * **Only "Drop Shadow" effect**
+* **Masks aren't supported**
 * **Maybe more... :)**
 
 Unfortunately Figma doesn't cover everything that is needed for modern dynamic layouts and I hope that they will add it :
 
 * **Element-to-element constraints** : at the moment you can declare relative margin constraint only from an element to its parent. Unfortunately this doesn't cover dynamic stack of elements that are common.
+* **Animations** : only basic transitions are supported today today.
 
 ## I use Xamarin too
 
