@@ -46,11 +46,11 @@ Just imagine if developers could directly use the content of the designer as com
 
 I liked the [Figma](http://www.figma.com) designer tool really quickly when I discovered it : runs everywhere, simple, collaborative.
 
-But I felt in love after studying a little bit more the software architecture behinf it. The engineering team is really incredible : the software is based on modern web technologies (WebAssembly!), and as a bonus they offer open API for anyone.
-
-![photo]({{ site.url }}/img/ftf_icon.png)
+But I felt in love after studying a little bit more the software architecture behind it. The engineering team is really incredible : the software is based on modern web technologies (WebAssembly!), and as a bonus they offer open API for anyone.
 
 I started to work on a little tool that converts Figma files to Flutter widgets (Dart code).
+
+![photo]({{ site.url }}/img/ftf_icon.png)
 
 Even if still under active development, you can already try it in your browser here : [Figma-to-Flutter](http://aloisdeniel.github.com/figma-to-flutter).
 
@@ -58,13 +58,14 @@ I will probably write a more detailled post later on how it works, its features 
 
 ## Still very experimental
 
-Several things are still missing from my implementation :
+Several things are still missing from my implementation (stay tuned for new features) :
 
-* **Angular and diamond gradients** : only linear and radial gradient are supported
+* **Angular and diamond gradients** : only linear and radial gradients are supported
 * **Text supports only solid fills** : it is not possible to have text filled with effects.
 * **Theme - colors and text styles** : an `InheritedWidget` will be generated to be able to update colors and styles globally.
 * **Images** : I plan to add image support with possibility to override source from code
 * **Only "Pass Through" blend mode**
+* **Only "Drop Shadow" effect**
 * **Maybe more... :)**
 
 Unfortunately Figma doesn't cover everything that is needed for modern dynamic layouts and I hope that they will add it :
