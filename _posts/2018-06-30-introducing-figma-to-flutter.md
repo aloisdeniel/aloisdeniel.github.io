@@ -58,15 +58,15 @@ I will probably write a more detailled post later on how it works, its features 
 
 ## Still very experimental
 
-Several things are still missing from my implementation (stay tuned for new features):
+All of this is purely experimental and under active development. If I would have access to Figma rendering source code it would have been a lot easier and quicker (**if a Figma employee read this and can share the algorithm, it would be awesome!**), but be aware that all the rendering logic is reverse engineered, so you will experience a lot of inconsistencies!
+
+Though, several things are still missing from my implementation (*stay tuned for new features*):
 
 * **Angular and diamond gradients**: only linear and radial gradients
 * **Text supports only solid fills** : it is not possible to have text filled with effects.
 * **Theme - colors and text styles** : an `InheritedWidget` will be generated to be able to update colors and styles globally.
-* **Images** : I plan to add image support with possibility to override source from code
 * **Only "Pass Through" blend mode**
 * **Only "Drop Shadow" effect**
-* **Masks aren't supported**
 * **Maybe more... :)**
 
 Unfortunately Figma doesn't cover everything that is needed for modern dynamic layouts and I hope that they will add it :
