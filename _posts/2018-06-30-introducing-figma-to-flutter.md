@@ -2,7 +2,7 @@
 layout: post
 lang: en
 title: "From design to code, let's think about it"
-image: images/ftf
+image: images/pattern_ftf
 categories:
   - Flutter
 tags:
