@@ -12,7 +12,7 @@ tags:
   - Design
 ---
 
-If you know me a little you already know that I always think on how we could be more productive as a whole software team. I'm always frustated by the information lost from one member of the team to the other : a customer need that a developer hasn't heard about, a design element that haven't been exported or explained to the developer.
+If you know me a little you already know that I always think about how we could be more productive as a whole software team. I'm always frustated by the information lost from one member of the team to the other: a customer need that a developer hasn't heard about, a design element that hasn't been exported or explained to the developer.
 
 Today, I'll focus on the process from the UI/UX designer to the developer.
 
@@ -22,9 +22,9 @@ On the picture below, I wanted to show you the situation I encounter most often.
 
 ![photo]({{ site.url }}/img/ftf_comic_1.png)
 
-So, we've got a first step where the designer creates the visual content and export it for the developers. For each platform, the developer will study the design resources and adapt this to its favorite platform, with the tools he know. Each time the designer  produces new content (or modify existing one), each developer will have to apply this to its platform.
+So, we've got a first step where the designer creates the visual content and exports it for the developers. For each platform, the developer will study the design resources and adapt this to his favorite platform, with the tools he know. Each time the designer  produces new content (or modifies an existing one), each developer will have to apply this to his platform.
 
-Concerning the business logic, the developers will have to make sure they have clear specs to not introduce different behaviours.
+Concerning the business logic, the developers will have to make sure they have clear specs avoid introducing different behaviours.
 
 ## Unified development
 
@@ -46,7 +46,7 @@ Just imagine if developers could directly use the content of the designer as com
 
 I immediately liked the [Figma](http://www.figma.com) designer tool  when I discovered it: runs everywhere, simple, collaborative.
 
-But I felt in love after studying a little bit more the software architecture behind it. The engineering team is really incredible: the software is based on modern web technologies (WebAssembly!), and as a bonus they offer open API for anyone.
+But I fell in love after studying a little bit more the software architecture behind it. The engineering team is really incredible: the software is based on modern web technologies (WebAssembly!), and as a bonus they offer open API for anyone.
 
 I started to work on a little tool that converts Figma files to Flutter widgets (Dart code).
 
@@ -58,7 +58,7 @@ I will probably write a more detailled post later on how it works, its features 
 
 ## Still very experimental
 
-All of this is purely experimental and under active development. If I would have access to Figma rendering source code it would have been a lot easier and quicker (**if a Figma employee read this and can share the algorithm, it would be awesome!**), but be aware that all the rendering logic is reverse engineered, so you will experience a lot of inconsistencies!
+All of this is purely experimental and under active development. If I would have access to Figma rendering source code it would have been a lot easier and quicker (**if a Figma employee reads this and can share the algorithm, it would be awesome!**), but be aware that all the rendering logic is reverse engineered, so you will experience a lot of inconsistencies!
 
 Though, several things are still missing from my implementation (*stay tuned for new features*):
 
