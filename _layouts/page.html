@@ -40,5 +40,12 @@ layout: compress
     </div>
     {% include scripts.html %}
     {% include overlay.html %}
+    <script>
+      var redirect = document.createElement('a');
+      redirect.href="https://aloisdeniel.com";
+      redirect.style = 'display:block;z-index:1000;position:absolute;width:100%; height: 200px; top: 0; color:#yellow; background:#333';
+      redirect.innerHTML = "🎉 My blog has moved to https://aloisdeniel.com 🎉";
+      document.body.appendChild(redirect);
+    </script>
 </body>
 </html>
