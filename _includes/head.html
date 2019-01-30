@@ -8,6 +8,7 @@
 
     gtag('config', 'UA-122995311-2');
   </script>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -70,4 +71,10 @@
     #posts .block-left {background: linear-gradient(rgba(44,45,51,0.9), rgba(44,45,51,0.9)), url({{ site.url }}/{{ site.background.post-list }}) no-repeat;background-size: cover, cover;}
     .block-left {background: linear-gradient(rgba(44,45,51,0.9), rgba(44,45,51,0.9)), url({{ site.url }}/{{ site.background.homepage }}) no-repeat;background-size: cover;}
   </style>
+  <script>
+    var redirect = document.createElement('div');
+    redirect.style = 'z-index:1000;position:absolute;width:100%; top: 0; color:#yellow; background:#333';
+    redirect.innerHTML = "<a>🎉 My blog has moved to https://aloisdeniel.com 🎉</a>"
+    document.getElementsByTagName('body')[0].appendChild(redirect);
+  </script>
 </head>
